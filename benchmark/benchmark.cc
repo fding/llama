@@ -58,6 +58,7 @@
 #include "benchmarks/bc_adj.h"
 #include "benchmarks/bc_random.h"
 #include "benchmarks/bfs.h"
+#include "benchmarks/friend_of_friends.h"
 #include "benchmarks/pagerank.h"
 #include "benchmarks/sssp.h"
 #include "benchmarks/tarjan_scc.h"
@@ -346,6 +347,9 @@ static ll_runnable_thing g_runnable_things[] = {
 	                              , false },
 	{ "ll_b_sssp_unweighted_iter" , "sssp_unweighted_iter"
 	                              , "Unweighted SSSP - iterative"
+	                              , false },
+	{ "ll_b_friend_of_friends"    , "friend_of_friends"
+	                              , "Friend of friends - count number"
 	                              , false },
 	{ NULL, NULL, NULL, false }
 };
@@ -1057,6 +1061,9 @@ int main(int argc, char** argv)
 #endif
 #if B < 0 || B == 21
 	LL_RT_COND_CREATE(run_task_class, 21, ll_b_sssp_unweighted_iter, G, root_node);
+#endif
+#if B < 0 || B == 22
+	LL_RT_COND_CREATE(run_task_class, 22, ll_b_friend_of_friends, G);
 #endif
 #undef B
 
