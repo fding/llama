@@ -45,45 +45,21 @@
 #include <cmath>
 #include <algorithm>
 #include <omp.h>
+#include <vector>
 
-#include "llama/ll_bfs_template.h"
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
 
+// TODO(fding): make runtime flag, etc
+#define DO_MADVISE
 
-// BFS/DFS definitions for the procedure
-template <class Graph>
-class bfs_bfs : public ll_bfs_template
-    <Graph, short, true, false, false, false>
-{
-public:
-    bfs_bfs(Graph& _G, node_t& _root, int32_t& _count)
-    : ll_bfs_template<Graph, short, true, false, false, false>(_G),
-    G(_G), root(_root), count(_count){}
-
-private:  // list of varaibles
-    Graph& G;
-    node_t& root;
-    int32_t& count;
-
-protected:
-    virtual void visit_fw(node_t v) 
-    {
-        ATOMIC_ADD<int32_t>(&count, 1);
-    }
-
-    virtual void visit_rv(node_t v) {}
-    virtual bool check_navigator(node_t v, edge_t v_idx) {return true;}
-
-
-};
-
+using std::vector;
 
 /**
- * Count vertices in the given BFS traversal
+ * Count vertices in the given friends of friends traversal
  */
 template <class Graph>
-class ll_b_bfs : public ll_benchmark<Graph> {
+class ll_b_friend_of_friends : public ll_benchmark<Graph> {
 
 	node_t root;
 
@@ -96,17 +72,15 @@ public:
 	 * @param graph the graph
 	 * @param r the root
 	 */
-	ll_b_bfs(Graph& graph, node_t r)
-		: ll_benchmark<Graph>(graph, "BFS - Count") {
-
-		root = r;
+	ll_b_friend_of_friends(Graph& graph)
+		: ll_benchmark<Graph>(graph, "Friend of friends") {
 	}
 
 
 	/**
 	 * Destroy the benchmark
 	 */
-	virtual ~ll_b_bfs(void) {
+	virtual ~ll_b_friend_of_friends(void) {
 	}
 
 
@@ -115,17 +89,50 @@ public:
 	 *
 	 * @return the numerical result, if applicable
 	 */
+#define THRESHOLD 1000
 	virtual double run(void) {
 
-		Graph& G = this->_graph;
-		int32_t count = 0;
+	    Graph& G = this->_graph;
+	    float avg = 0;
+	    int num_vertices = 10000;
 
-		bfs_bfs<Graph> _BFS(G, root, count);
-		_BFS.prepare(root);
-		_BFS.do_bfs_forward();
+	    for (int i = 0; i < num_vertices; ++i) {
+		node_t n = G.pick_random_node();
+		ll_edge_iterator iter;
+		vector<node_t> results;
+		G.out_iter_begin(iter, n);
 
-		return count; 
+		FOREACH_OUTEDGE_ITER(v_idx, G, iter) {
+			node_t n2 = LL_ITER_OUT_NEXT_NODE(G, iter, v_idx);
+#ifdef DO_MADVISE
+			// TODO(awu): Hack
+			ll_edge_iterator copy = iter;
+			G.out_iter_next(copy);
+			edge_t first = copy.edge;
+			G.out_iter_next(copy);
+			edge_t last = copy.edge;
+#endif
+			
+			ll_edge_iterator iter2;
+			G.out_iter_begin(iter2, n2);
+			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
+				node_t n3 = LL_ITER_OUT_NEXT_NODE(G, iter2, v2_idx);
+				results.push_back(n3);
+#ifdef DO_MADVISE
+				if (iter2.left < THRESHOLD) {
+				    G.out().edge_table(G.num_levels()-1)->advise(first, last);
+				}
+#endif
+			}
+		}
+		avg += results.size();
+		results.clear();
+	    }
+
+	    return avg / num_vertices; 
 	}
+#undef THRESHOLD
 };
 
+#undef DO_MADVISE
 #endif
