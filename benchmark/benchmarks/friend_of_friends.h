@@ -108,10 +108,10 @@ public:
 		G.out_iter_begin(iterm, n);
 		auto vtable = G.out().vertex_table(0);
 		auto etable = G.out().edge_table(0);
-		int i = 0;
+		int j = 0;
 		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-		    if (i <= done) {
-			i++;
+		    if (j <= done) {
+			j++;
 			continue;
 		    }
 		    node_t next_node = iterm.last_node;
@@ -119,7 +119,7 @@ public:
 		    edge_t last = first + (*vtable)[next_node].level_length;
 		    if (last - first > 0)
                         etable->advise(first, last);
-		    i++;
+		    j++;
 		}
     }
     #pragma omp section
