@@ -60,6 +60,7 @@
 #include "benchmarks/bfs.h"
 #include "benchmarks/friend_of_friends.h"
 #include "benchmarks/pagerank.h"
+#include "benchmarks/query_simulator.h"
 #include "benchmarks/sssp.h"
 #include "benchmarks/tarjan_scc.h"
 #include "benchmarks/triangle_counting.h"
@@ -350,6 +351,9 @@ static ll_runnable_thing g_runnable_things[] = {
 	                              , false },
 	{ "ll_b_friend_of_friends"    , "friend_of_friends"
 	                              , "Friend of friends - count number"
+	                              , false },
+	{ "ll_b_query_simulator"      , "query_simulator"
+	                              , "Query simulator"
 	                              , false },
 	{ NULL, NULL, NULL, false }
 };
@@ -1064,6 +1068,9 @@ int main(int argc, char** argv)
 #endif
 #if B < 0 || B == 22
 	LL_RT_COND_CREATE(run_task_class, 22, ll_b_friend_of_friends, G);
+#endif
+#if B < 0 || B == 23
+	LL_RT_COND_CREATE(run_task_class, 23, ll_b_query_simulator, G);
 #endif
 #undef B
 

@@ -1,5 +1,5 @@
 /*
- * friend_of_friends.h
+ * query_simulator.h
  * LLAMA Graph Analytics
  *
  * Copyright 2014
@@ -34,8 +34,8 @@
  */
 
 
-#ifndef LL_FRIEND_OF_FRIENDS_H
-#define LL_FRIEND_OF_FRIENDS_H
+#ifndef LL_QUERY_SIMULATOR_H
+#define LL_QUERY_SIMULATOR_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,14 +55,67 @@
 // #define DO_MUNADVISE
 
 using std::vector;
+using std::deque;
+
+template <class Graph>
+class request_generator {
+
+	Graph& graph;
+	deque<node_t> cache;
+	double alpha;
+	unsigned int cache_size;
+public:
+	request_generator(Graph& graph, double alpha=0.5, unsigned int cache_size=200)
+		: graph(graph), alpha(alpha), cache_size(cache_size) {
+	}
+
+	node_t generate() {
+		Graph& G = this->graph;
+		int rand_num = 0;
+		node_t retval;
+		if (!cache.empty()) {
+			// choose random number
+			rand_num = rand();
+		}
+
+		if (rand_num < RAND_MAX * alpha) {
+			// choose uniformly over all graph nodes
+			retval = G.pick_random_node();
+		} else {
+			int rand_cache = rand() % cache.size();
+			retval = cache[rand_cache];
+		}
+
+		unsigned int i = 0;
+		while (i++ < cache_size/5 && cache.size() > cache_size) {
+			cache.pop_back();
+		}
+
+		cache.push_front(retval);
+		ll_edge_iterator iterm;
+		G.out_iter_begin(iterm, retval);
+		unsigned int num_inserted = 0;
+		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
+		    node_t next_node = iterm.last_node;
+		    int rand_insert = rand() % 4;
+		    if (rand_insert == 0) {
+			    num_inserted++;
+			    cache.push_front(next_node);
+		    }
+		    if (num_inserted > cache_size/5) break;
+		}
+		return retval;
+	}
+};
 
 /**
  * Count vertices in the given friends of friends traversal
  */
 template <class Graph>
-class ll_b_friend_of_friends : public ll_benchmark<Graph> {
+class ll_b_query_simulator : public ll_benchmark<Graph> {
 
 	node_t root;
+	request_generator<Graph> generator;
 
 
 public:
@@ -73,15 +126,15 @@ public:
 	 * @param graph the graph
 	 * @param r the root
 	 */
-	ll_b_friend_of_friends(Graph& graph)
-		: ll_benchmark<Graph>(graph, "Friend of friends") {
+	ll_b_query_simulator(Graph& graph)
+		: ll_benchmark<Graph>(graph, "Query simulator"), generator(graph, 0.5, 2000) {
 	}
 
 
 	/**
 	 * Destroy the benchmark
 	 */
-	virtual ~ll_b_friend_of_friends(void) {
+	virtual ~ll_b_query_simulator(void) {
 	}
 
 
@@ -93,63 +146,30 @@ public:
 	virtual double run(void) {
 
 	    Graph& G = this->_graph;
-	    float avg = 0;
-	    int num_vertices = 50;
+	    // float avg = 0;
+	    int num_vertices = 1000;
 
+	    // Query the graph
 	    for (int i = 0; i < num_vertices; ++i) {
-		node_t n = G.pick_random_node();
-#ifdef DO_MADVISE
-		int done = 0;
-#pragma omp parallel sections
-{
-    #pragma omp section
-    {
+		node_t n = this->generator.generate();
 		ll_edge_iterator iterm;
 		G.out_iter_begin(iterm, n);
+#ifdef DO_MADVISE
 		auto vtable = G.out().vertex_table(0);
 		auto etable = G.out().edge_table(0);
-		int j = 0;
+#endif
 		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-		    if (j <= done) {
-			j++;
-			continue;
-		    }
-		    node_t next_node = iterm.last_node;
-		    edge_t first = (*vtable)[next_node].adj_list_start;
-		    edge_t last = first + (*vtable)[next_node].level_length;
-		    if (last - first > 0)
-                        etable->advise(first, last);
-		    j++;
-		}
-    }
-    #pragma omp section
-    { // Friend of friends iteration
-#endif
-		ll_edge_iterator iter;
-		vector<node_t> results;
-		G.out_iter_begin(iter, n);
-		FOREACH_OUTEDGE_ITER(v_idx, G, iter) {
-			node_t n2 = LL_ITER_OUT_NEXT_NODE(G, iter, v_idx);
-			
-			ll_edge_iterator iter2;
-			G.out_iter_begin(iter2, n2);
+			node_t next_node = iterm.last_node;
+			(void) next_node; // Don't optimize this out
 #ifdef DO_MADVISE
-			done++;
+			edge_t first = (*vtable)[next_node].adj_list_start;
+		        edge_t last = first + (*vtable)[next_node].level_length;
+			if (last - first > 0)
+			    etable->advise(first, last);
 #endif
-			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
-				node_t n3 = LL_ITER_OUT_NEXT_NODE(G, iter2, v2_idx);
-				results.push_back(n3);
-			}
 		}
-		avg += results.size();
-		results.clear();
-#ifdef DO_MADVISE
-    } // END friend of friends section
-} // #pragma omp sections
-#endif
-	    }
-
-	    return avg / num_vertices; 
+            }
+	    return 0; 
 	}
 };
 
