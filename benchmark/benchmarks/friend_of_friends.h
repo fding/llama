@@ -52,6 +52,7 @@
 
 // TODO(fding): make runtime flag, etc
 #define DO_MADVISE
+// #define DO_MUNADVISE
 
 using std::vector;
 
@@ -89,50 +90,66 @@ public:
 	 *
 	 * @return the numerical result, if applicable
 	 */
-#define THRESHOLD 1000
 	virtual double run(void) {
 
 	    Graph& G = this->_graph;
 	    float avg = 0;
-	    int num_vertices = 10000;
+	    int num_vertices = 50;
 
 	    for (int i = 0; i < num_vertices; ++i) {
 		node_t n = G.pick_random_node();
+#ifdef DO_MADVISE
+		int done = 0;
+#pragma omp parallel sections
+{
+    #pragma omp section
+    {
+		ll_edge_iterator iterm;
+		G.out_iter_begin(iterm, n);
+		auto vtable = G.out().vertex_table(0);
+		auto etable = G.out().edge_table(0);
+		int i = 0;
+		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
+		    if (i <= done) {
+			i++;
+			continue;
+		    }
+		    node_t next_node = iterm.last_node;
+		    edge_t first = (*vtable)[next_node].adj_list_start;
+		    edge_t last = first + (*vtable)[next_node].level_length;
+		    if (last - first > 0)
+                        etable->advise(first, last);
+		    i++;
+		}
+    }
+    #pragma omp section
+    { // Friend of friends iteration
+#endif
 		ll_edge_iterator iter;
 		vector<node_t> results;
 		G.out_iter_begin(iter, n);
-
 		FOREACH_OUTEDGE_ITER(v_idx, G, iter) {
 			node_t n2 = LL_ITER_OUT_NEXT_NODE(G, iter, v_idx);
-#ifdef DO_MADVISE
-			// TODO(awu): Hack
-			ll_edge_iterator copy = iter;
-			G.out_iter_next(copy);
-			edge_t first = copy.edge;
-			G.out_iter_next(copy);
-			edge_t last = copy.edge;
-#endif
 			
 			ll_edge_iterator iter2;
 			G.out_iter_begin(iter2, n2);
+			done++;
 			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
 				node_t n3 = LL_ITER_OUT_NEXT_NODE(G, iter2, v2_idx);
 				results.push_back(n3);
-#ifdef DO_MADVISE
-				if (iter2.left < THRESHOLD) {
-				    G.out().edge_table(G.num_levels()-1)->advise(first, last);
-				}
-#endif
 			}
 		}
 		avg += results.size();
 		results.clear();
+#ifdef DO_MADVISE
+    } // END friend of friends section
+} // #pragma omp sections
+#endif
 	    }
 
 	    return avg / num_vertices; 
 	}
-#undef THRESHOLD
 };
 
 #undef DO_MADVISE
-#endif
+#endif // #ifndef LL_FRIEND_OF_FRIENDS_H
