@@ -51,7 +51,7 @@
 #include "benchmarks/benchmark.h"
 
 // TODO(fding): make runtime flag, etc
-// #define DO_MADVISE
+#define DO_MADVISE
 // #define DO_MUNADVISE
 
 using std::vector;
@@ -149,28 +149,66 @@ public:
 	    // float avg = 0;
 	    int num_vertices = 1000;
 
+#ifdef DO_MADVISE
+	    deque<node_t> nodes_to_advise;
+	    omp_lock_t deq_lock;
+	    omp_init_lock(&deq_lock);
+	    bool still_adding = true;
+#pragma omp parallel sections
+{
+    #pragma omp section
+    {
+	    while (still_adding) {
+		    omp_set_lock(&deq_lock);
+		    if (nodes_to_advise.size() == 0) {
+			    omp_unset_lock(&deq_lock);
+			    continue;
+		    }
+		    node_t add = nodes_to_advise.back();
+		    nodes_to_advise.pop_back();
+		    omp_unset_lock(&deq_lock);
+
+		    ll_edge_iterator iteradd;
+		    G.out_iter_begin(iteradd, add);
+		    auto vtable = G.out().vertex_table(0);
+		    auto etable = G.out().edge_table(0);
+		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
+			    node_t next_node = iteradd.last_node;
+			    edge_t first = (*vtable)[next_node].adj_list_start;
+			    edge_t last = first + (*vtable)[next_node].level_length;
+			    if (last - first > 0)
+				    etable->advise(first, last);
+		    }
+	    }
+    }
+    #pragma omp section
+    {
+#endif
 	    // Query the graph
 	    for (int i = 0; i < num_vertices; ++i) {
 		node_t n = this->generator.generate();
 		ll_edge_iterator iterm;
 		G.out_iter_begin(iterm, n);
-#ifdef DO_MADVISE
-		auto vtable = G.out().vertex_table(0);
-		auto etable = G.out().edge_table(0);
-#endif
 		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
 			node_t next_node = iterm.last_node;
 			(void) next_node; // Don't optimize this out
 #ifdef DO_MADVISE
-			edge_t first = (*vtable)[next_node].adj_list_start;
-		        edge_t last = first + (*vtable)[next_node].level_length;
-			if (last - first > 0)
-			    etable->advise(first, last);
+			omp_set_lock(&deq_lock);
+			nodes_to_advise.push_front(next_node);
+			omp_unset_lock(&deq_lock);
 #endif
-		}
-            }
-	    return 0; 
-	}
+	        }
+    	    }
+            
+#ifdef DO_MADVISE
+	    still_adding = false;
+#endif
+    }
+
+}
+    return 0; 
+    }
+
 };
 
 #undef DO_MADVISE
