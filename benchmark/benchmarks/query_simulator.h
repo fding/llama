@@ -46,12 +46,13 @@
 #include <algorithm>
 #include <omp.h>
 #include <vector>
+#include <time.h>
 
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
 
 // TODO(fding): make runtime flag, etc
-#define DO_MADVISE
+// #define DO_MADVISE
 // #define DO_MUNADVISE
 
 using std::vector;
@@ -63,7 +64,7 @@ using std::deque;
  * Enqueues and dequeues can occur in different threads.
  * Data structure does not need to acquire locks to guarantee
  * synchronization in this situation. */
-template <class T, int BLOCKSIZE=4096-32>
+template <class T, int BLOCKSIZE=16384-32>
 class syncqueue {
     // Not particularly memory efficient, but make implementation really simple and easy to reason about
     struct node {
@@ -136,8 +137,9 @@ class request_generator {
 	double alpha;
 	unsigned int cache_size;
 public:
-	request_generator(Graph& graph, double alpha=0.5, unsigned int cache_size=200)
+	request_generator(Graph& graph, double alpha=0.1, unsigned int cache_size=200)
 		: graph(graph), alpha(alpha), cache_size(cache_size) {
+		srand(time(NULL));
 	}
 
 	node_t generate() {
@@ -263,10 +265,9 @@ public:
             
 #ifdef DO_MADVISE
 	    still_adding = false;
-#endif
     }
-
 }
+#endif
     return 0; 
     }
 

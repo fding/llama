@@ -46,6 +46,7 @@
 #include <algorithm>
 #include <omp.h>
 #include <vector>
+#include <time.h>
 
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
@@ -75,6 +76,7 @@ public:
 	 */
 	ll_b_friend_of_friends(Graph& graph)
 		: ll_benchmark<Graph>(graph, "Friend of friends") {
+		srand(time(NULL));
 	}
 
 
