@@ -223,7 +223,6 @@ public:
 #ifdef DO_MADVISE
         // Page-size, minus malloc overhead.
         syncqueue<node_t> nodes_to_advise;
-	    deque<node_t> nodes_to_advise;
 	    bool still_adding = true;
 #pragma omp parallel sections
 {
