@@ -57,6 +57,77 @@
 using std::vector;
 using std::deque;
 
+/* A queue implementation for producer-consumer problems.
+ * All enqueues are assumed to happen in one thread,
+ * and all dequeues in another.
+ * Enqueues and dequeues can occur in different threads.
+ * Data structure does not need to acquire locks to guarantee
+ * synchronization in this situation. */
+template <class T, int BLOCKSIZE=4096-32>
+class syncqueue {
+    // Not particularly memory efficient, but make implementation really simple and easy to reason about
+    struct node {
+        T value;
+        node* next;
+    };
+    node* head;
+    node* tail;
+    node* head_section;
+    node* tail_section;
+    // To avoid race conditions when freeing after dequeue
+    node* tmp_head_section;
+    public:
+        syncqueue(): head(NULL), tail(NULL), head_section(NULL), tail_section(NULL), tmp_head_section(NULL)
+        {
+        }
+
+        ~syncqueue(){
+            if (tmp_head_section) {
+                free(tmp_head_section);
+            }
+        }
+
+        int enqueue(T x) {
+            int i;
+            if (tail_section == NULL || tail-tail_section == BLOCKSIZE - 1) {
+                tail_section = (node*) malloc(BLOCKSIZE * sizeof(node));
+                if (!tail_section) return 1;
+                i = 0;
+            }
+            else i = tail-tail_section + 1;
+            // We fully initialize the new node before linking it in.
+            tail_section[i].value = x;
+            tail_section[i].next = NULL;
+            node* old = tail;
+            tail = tail_section + i;
+            if (old) old->next = tail;
+            if (head == NULL) {
+                head_section = tail_section;
+                head = tail;
+            }
+            return 0;
+        }
+
+        int dequeue(T& ret) {
+            if (head == NULL) return 1;
+            ret = head->value;
+            if (tmp_head_section) {
+                free(tmp_head_section);
+                tmp_head_section = NULL;
+            }
+            // Instead of freeing head_section (which could equal tail_section),
+            // we record that we need to free it.
+            if (head-head_section == BLOCKSIZE - 1) {
+                tmp_head_section = head_section;
+                head_section = head->next;
+            }
+            head = head->next;
+            return 0;
+        }
+};
+
+
+
 template <class Graph>
 class request_generator {
 
@@ -150,24 +221,17 @@ public:
 	    int num_vertices = 1000;
 
 #ifdef DO_MADVISE
+        // Page-size, minus malloc overhead.
+        syncqueue<node_t> nodes_to_advise;
 	    deque<node_t> nodes_to_advise;
-	    omp_lock_t deq_lock;
-	    omp_init_lock(&deq_lock);
 	    bool still_adding = true;
 #pragma omp parallel sections
 {
     #pragma omp section
     {
 	    while (still_adding) {
-		    omp_set_lock(&deq_lock);
-		    if (nodes_to_advise.size() == 0) {
-			    omp_unset_lock(&deq_lock);
-			    continue;
-		    }
-		    node_t add = nodes_to_advise.back();
-		    nodes_to_advise.pop_back();
-		    omp_unset_lock(&deq_lock);
-
+            node_t add;
+            if (nodes_to_advise.dequeue(add)) continue;
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
 		    auto vtable = G.out().vertex_table(0);
@@ -193,9 +257,7 @@ public:
 			node_t next_node = iterm.last_node;
 			(void) next_node; // Don't optimize this out
 #ifdef DO_MADVISE
-			omp_set_lock(&deq_lock);
-			nodes_to_advise.push_front(next_node);
-			omp_unset_lock(&deq_lock);
+			nodes_to_advise.enqueue(next_node);
 #endif
 	        }
     	    }
