@@ -67,8 +67,10 @@ using std::deque;
 template <class T, int BLOCKSIZE=16384-32>
 class syncqueue {
     // Not particularly memory efficient, but make implementation really simple and easy to reason about
+    private:
     struct node {
         T value;
+        unsigned int epoch;
         node* next;
     };
     node* head;
@@ -77,10 +79,13 @@ class syncqueue {
     node* tail_section;
     // To avoid race conditions when freeing after dequeue
     node* tmp_head_section;
+    unsigned int current_epoch;
+
     public:
-        syncqueue(): head(NULL), tail(NULL), head_section(NULL), tail_section(NULL), tmp_head_section(NULL)
-        {
-        }
+        syncqueue():
+            head(NULL), tail(NULL), head_section(NULL), tail_section(NULL),
+            tmp_head_section(NULL), epoch(0)
+        {}
 
         ~syncqueue(){
             if (tmp_head_section) {
@@ -98,6 +103,7 @@ class syncqueue {
             else i = tail-tail_section + 1;
             // We fully initialize the new node before linking it in.
             tail_section[i].value = x;
+            tail_section[i].epoch = current_epoch;
             tail_section[i].next = NULL;
             node* old = tail;
             tail = tail_section + i;
@@ -109,9 +115,18 @@ class syncqueue {
             return 0;
         }
 
-        int dequeue(T& ret) {
+        void increment_epoch() {
+            current_epoch++;
+        }
+
+        unsigned int get_current_epoch() {
+            return current_epoch;
+        }
+
+        int dequeue(T* ret, unsigned int * epoch) {
             if (head == NULL) return 1;
             ret = head->value;
+            epoch = head->epoch;
             if (tmp_head_section) {
                 free(tmp_head_section);
                 tmp_head_section = NULL;
@@ -221,18 +236,22 @@ public:
 	    Graph& G = this->_graph;
 	    // float avg = 0;
 	    int num_vertices = 1000;
+        node_t sum = 0; // We don't want compiler to optimize away loops
 
 #ifdef DO_MADVISE
         // Page-size, minus malloc overhead.
         syncqueue<node_t> nodes_to_advise;
 	    bool still_adding = true;
+
 #pragma omp parallel sections
 {
     #pragma omp section
     {
 	    while (still_adding) {
             node_t add;
-            if (nodes_to_advise.dequeue(add)) continue;
+            unsigned int epoch;
+            if (nodes_to_advise.dequeue(&add, &epoch)) continue;
+            if (nodes_to_advise.get_current_epoch() - epoch > 2) continue;
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
 		    auto vtable = G.out().vertex_table(0);
@@ -245,30 +264,33 @@ public:
 				    etable->advise(first, last);
 		    }
 	    }
-    }
+    }  // end #pragma omp section
     #pragma omp section
     {
 #endif
 	    // Query the graph
 	    for (int i = 0; i < num_vertices; ++i) {
-		node_t n = this->generator.generate();
-		ll_edge_iterator iterm;
-		G.out_iter_begin(iterm, n);
-		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-			node_t next_node = iterm.last_node;
-			(void) next_node; // Don't optimize this out
+            node_t n = this->generator.generate();
+            ll_edge_iterator iterm;
+            G.out_iter_begin(iterm, n);
 #ifdef DO_MADVISE
-			nodes_to_advise.enqueue(next_node);
+            nodes_to_advise.increment_epoch();
+#endif
+            FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
+                node_t next_node = iterm.last_node;
+                sum += next_node; // Don't optimize this out
+#ifdef DO_MADVISE
+                nodes_to_advise.enqueue(next_node);
 #endif
 	        }
-    	    }
+        }
             
 #ifdef DO_MADVISE
 	    still_adding = false;
-    }
-}
+    }  // end #pragma omp section
+}  // end #pragma omp sections
 #endif
-    return 0; 
+    return sum; 
     }
 
 };
