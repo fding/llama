@@ -137,6 +137,11 @@ ${T_BASE}-persistent: benchmark.cc ${COMMON_DEPENDENCIES}
 	@mkdir -p ${T_DIR}
 	@${CC} -DLL_PERSISTENCE ${CFLAGS} $< ${LFLAGS} -o $@
 
+${T_BASE}-persistent-madvise: benchmark.cc ${COMMON_DEPENDENCIES}
+	@echo CC $@ >&2
+	@mkdir -p ${T_DIR}
+	@${CC} -DLL_PERSISTENCE -DLL_BM_DO_MADVISE ${CFLAGS} $< ${LFLAGS} -o $@
+
 ${T_BASE}-slcsr: benchmark.cc ${COMMON_DEPENDENCIES}
 	@echo CC $@ >&2
 	@mkdir -p ${T_DIR}

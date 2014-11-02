@@ -51,10 +51,6 @@
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
 
-// TODO(fding): make runtime flag, etc
-// #define DO_MADVISE
-// #define DO_MUNADVISE
-
 using std::vector;
 
 /**
@@ -100,7 +96,7 @@ public:
 
 	    for (int i = 0; i < num_vertices; ++i) {
 		node_t n = G.pick_random_node();
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
 		int done = 0;
 #pragma omp parallel sections
 {
@@ -135,7 +131,7 @@ public:
 			
 			ll_edge_iterator iter2;
 			G.out_iter_begin(iter2, n2);
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
 			done++;
 #endif
 			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
@@ -145,7 +141,7 @@ public:
 		}
 		avg += results.size();
 		results.clear();
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
     } // END friend of friends section
 } // #pragma omp sections
 #endif
@@ -155,5 +151,4 @@ public:
 	}
 };
 
-#undef DO_MADVISE
 #endif // #ifndef LL_FRIEND_OF_FRIENDS_H

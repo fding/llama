@@ -51,10 +51,6 @@
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
 
-// TODO(fding): make runtime flag, etc
-// #define DO_MADVISE
-// #define DO_MUNADVISE
-
 using std::vector;
 using std::deque;
 
@@ -84,7 +80,7 @@ class syncqueue {
     public:
         syncqueue():
             head(NULL), tail(NULL), head_section(NULL), tail_section(NULL),
-            tmp_head_section(NULL), epoch(0)
+            tmp_head_section(NULL), current_epoch(0)
         {}
 
         ~syncqueue(){
@@ -125,8 +121,8 @@ class syncqueue {
 
         int dequeue(T* ret, unsigned int * epoch) {
             if (head == NULL) return 1;
-            ret = head->value;
-            epoch = head->epoch;
+            *ret = head->value;
+            *epoch = head->epoch;
             if (tmp_head_section) {
                 free(tmp_head_section);
                 tmp_head_section = NULL;
@@ -238,7 +234,7 @@ public:
 	    int num_vertices = 1000;
         node_t sum = 0; // We don't want compiler to optimize away loops
 
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
         // Page-size, minus malloc overhead.
         syncqueue<node_t> nodes_to_advise;
 	    bool still_adding = true;
@@ -273,19 +269,19 @@ public:
             node_t n = this->generator.generate();
             ll_edge_iterator iterm;
             G.out_iter_begin(iterm, n);
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
             nodes_to_advise.increment_epoch();
 #endif
             FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
                 node_t next_node = iterm.last_node;
                 sum += next_node; // Don't optimize this out
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
                 nodes_to_advise.enqueue(next_node);
 #endif
 	        }
         }
             
-#ifdef DO_MADVISE
+#ifdef LL_BM_DO_MADVISE
 	    still_adding = false;
     }  // end #pragma omp section
 }  // end #pragma omp sections
@@ -295,5 +291,4 @@ public:
 
 };
 
-#undef DO_MADVISE
 #endif // #ifndef LL_FRIEND_OF_FRIENDS_H
