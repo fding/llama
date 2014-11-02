@@ -266,12 +266,12 @@ public:
 		    edge_t last = first + (*vtable)[add].level_length;
 		    if (last - first > 0) etable->advise(first, last);
 
-		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
+		    /*FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
 			    node_t next_node = iteradd.last_node;
 			    edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
 			    if (last - first > 0) etable->advise(first, last);
-		    }
+		    }*/
 	    }
     }  // end #pragma omp section
     #pragma omp section
