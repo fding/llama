@@ -70,8 +70,8 @@ class syncqueue {
         node* next;
     };
     node* head;
-    int tail;
     node* head_section;
+    int tail;
     node* tail_section;
     // To avoid race conditions when freeing after dequeue
     node* tmp_head_section;
@@ -109,12 +109,12 @@ class syncqueue {
             tail_section[i].value = x;
             tail_section[i].epoch = current_epoch;
             tail_section[i].next = NULL;
-            node* old = tail_section[tail];
+            node* old = &tail_section[tail];
             tail = i;
-            if (old) old->next = tail_section[tail];
+            if (old) old->next = &tail_section[tail];
             if (head == NULL) {
                 head_section = tail_section;
-                head = tail_section[tail];
+                head = &tail_section[tail];
             }
             return 0;
         }
