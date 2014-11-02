@@ -248,16 +248,21 @@ public:
             unsigned int epoch;
             if (nodes_to_advise.dequeue(&add, &epoch)) continue;
             if (nodes_to_advise.get_current_epoch() - epoch > 2) continue;
+
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
+
 		    auto vtable = G.out().vertex_table(0);
 		    auto etable = G.out().edge_table(0);
+            edge_t first = (*vtable)[add].adj_list_start;
+            edge_t last = first + (*vtable)[add].level_length;
+            if (last - first > 0) etable->advise(first, last);
+
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
 			    node_t next_node = iteradd.last_node;
 			    edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
-			    if (last - first > 0)
-				    etable->advise(first, last);
+			    if (last - first > 0) etable->advise(first, last);
 		    }
 	    }
     }  // end #pragma omp section
@@ -271,13 +276,11 @@ public:
             G.out_iter_begin(iterm, n);
 #ifdef LL_BM_DO_MADVISE
             nodes_to_advise.increment_epoch();
+            nodes_to_advise.enqueue(n);
 #endif
             FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
                 node_t next_node = iterm.last_node;
                 sum += next_node; // Don't optimize this out
-#ifdef LL_BM_DO_MADVISE
-                nodes_to_advise.enqueue(next_node);
-#endif
 	        }
         }
             
