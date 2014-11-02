@@ -70,7 +70,7 @@ class syncqueue {
         node* next;
     };
     node* head;
-    node* tail;
+    int tail;
     node* head_section;
     node* tail_section;
     // To avoid race conditions when freeing after dequeue
@@ -78,12 +78,20 @@ class syncqueue {
     unsigned int current_epoch;
 
     public:
+
+        // We set tail=BLOCKSIZE-1 to guarantee that in the first enqueue,
+        // tail_section is malloced.
         syncqueue():
-            head(NULL), tail(NULL), head_section(NULL), tail_section(NULL),
+            head(NULL), head_section(NULL), tail(BLOCKSIZE-1), tail_section(NULL),
             tmp_head_section(NULL), current_epoch(0)
         {}
 
         ~syncqueue(){
+            // TODO(fding): This code is completely bogus.
+            // It actually doesn't free up all the memory. Fix! (we'd need to walk the linked list)
+            //
+            // TODO(fding): It would be helpful to add logging information here,
+            // to see how fast dequeuing occurs relative to enqueuing.
             if (tmp_head_section) {
                 free(tmp_head_section);
             }
@@ -91,22 +99,22 @@ class syncqueue {
 
         int enqueue(T x) {
             int i;
-            if (tail_section == NULL || tail-tail_section == BLOCKSIZE - 1) {
+            if (tail == BLOCKSIZE - 1) {
                 tail_section = (node*) malloc(BLOCKSIZE * sizeof(node));
                 if (!tail_section) return 1;
                 i = 0;
             }
-            else i = tail-tail_section + 1;
+            else i = tail + 1;
             // We fully initialize the new node before linking it in.
             tail_section[i].value = x;
             tail_section[i].epoch = current_epoch;
             tail_section[i].next = NULL;
-            node* old = tail;
-            tail = tail_section + i;
-            if (old) old->next = tail;
+            node* old = tail_section[tail];
+            tail = i;
+            if (old) old->next = tail_section[tail];
             if (head == NULL) {
                 head_section = tail_section;
-                head = tail;
+                head = tail_section[tail];
             }
             return 0;
         }
