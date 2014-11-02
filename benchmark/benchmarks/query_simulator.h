@@ -53,6 +53,8 @@
 
 using std::vector;
 using std::deque;
+using std::min;
+using std::max;
 
 /* A queue implementation for producer-consumer problems.
  * All enqueues are assumed to happen in one thread,
@@ -86,12 +88,25 @@ class syncqueue {
             tmp_head_section(NULL), current_epoch(0)
         {}
 
-        ~syncqueue(){
+        ~syncqueue() {
             // TODO(fding): This code is completely bogus.
             // It actually doesn't free up all the memory. Fix! (we'd need to walk the linked list)
             //
             // TODO(fding): It would be helpful to add logging information here,
             // to see how fast dequeuing occurs relative to enqueuing.
+            node* curr_node = head;
+	    int count = 0;
+	    unsigned int min_epoch = UINT_MAX;
+            unsigned int max_epoch = 0;
+	    while (curr_node != NULL) {
+		count++;
+		min_epoch = min(min_epoch, curr_node->epoch);
+		max_epoch = max(max_epoch, curr_node->epoch);
+                curr_node = curr_node->next;
+	    }
+
+	    printf("count: %d\n", count);
+	    printf("epoch difference: %u\n", max_epoch - min_epoch);
             if (tmp_head_section) {
                 free(tmp_head_section);
             }
@@ -240,11 +255,11 @@ public:
 	    Graph& G = this->_graph;
 	    // float avg = 0;
 	    int num_vertices = 1000;
-        node_t sum = 0; // We don't want compiler to optimize away loops
+	    node_t sum = 0; // We don't want compiler to optimize away loops
 
 #ifdef LL_BM_DO_MADVISE
-        // Page-size, minus malloc overhead.
-        syncqueue<node_t> nodes_to_advise;
+	    // Page-size, minus malloc overhead.
+	    syncqueue<node_t> nodes_to_advise;
 	    bool still_adding = true;
 
 #pragma omp parallel sections
@@ -266,12 +281,12 @@ public:
 		    edge_t last = first + (*vtable)[add].level_length;
 		    if (last - first > 0) etable->advise(first, last);
 
-		    /*FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
-			    node_t next_node = iteradd.last_node;
-			    edge_t first = (*vtable)[next_node].adj_list_start;
+		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
+                            node_t next_node = iteradd.last_node;
+                            edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
 			    if (last - first > 0) etable->advise(first, last);
-		    }*/
+		    }
 	    }
     }  // end #pragma omp section
     #pragma omp section
@@ -279,25 +294,25 @@ public:
 #endif
 	    // Query the graph
 	    for (int i = 0; i < num_vertices; ++i) {
-            node_t n = this->generator.generate();
-            ll_edge_iterator iterm;
-            G.out_iter_begin(iterm, n);
+                    node_t n = this->generator.generate();
+                    ll_edge_iterator iterm;
+                    G.out_iter_begin(iterm, n);
 #ifdef LL_BM_DO_MADVISE
-            nodes_to_advise.increment_epoch();
-            nodes_to_advise.enqueue(n);
+                    nodes_to_advise.increment_epoch();
+                    nodes_to_advise.enqueue(n);
 #endif
-            FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-                node_t next_node = iterm.last_node;
-                sum += next_node; // Don't optimize this out
-	    }
-        }
+                    FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
+                           node_t next_node = iterm.last_node;
+                           sum += next_node; // Don't optimize this out
+	            }
+            }
             
 #ifdef LL_BM_DO_MADVISE
-	    still_adding = false;
+            still_adding = false;
     }  // end #pragma omp section
 }  // end #pragma omp sections
 #endif
-    return sum; 
+            return sum; 
     }
 
 };
