@@ -58,7 +58,7 @@ using std::max;
 
 // templated class T, but really, only supports T=unsigned int
 // This class does not guarantee full consistency (some enqueues might get lost).
-template <class T, int BLOCKSIZE=16384-32>
+template <class T, int BLOCKSIZE=16384>
 class circular_buffer {
     private:
         // An array of values. UINT_MAX indicates nothing is present,
@@ -91,7 +91,10 @@ class circular_buffer {
             *epoch = 0;
             buffer[head] = UINT_MAX;
             head = (head + 1) % BLOCKSIZE;
-            if (*ret == UINT_MAX) return 1;
+            if ((unsigned)(*ret) == UINT_MAX) {
+		    return 1;
+	    }
+
             return 0;
         }
 };
@@ -139,15 +142,15 @@ class syncqueue {
             unsigned int min_epoch = UINT_MAX;
                 unsigned int max_epoch = 0;
             while (curr_node != NULL) {
-            count++;
-            min_epoch = min(min_epoch, curr_node->epoch);
-            max_epoch = max(max_epoch, curr_node->epoch);
-                    curr_node = curr_node->next;
+                count++;
+                min_epoch = min(min_epoch, curr_node->epoch);
+                max_epoch = max(max_epoch, curr_node->epoch);
+                curr_node = curr_node->next;
             }
 
             printf("count: %d\n", count);
             printf("epoch difference: %u\n", max_epoch - min_epoch);
-                if (tmp_head_section) {
+            if (tmp_head_section) {
                 free(tmp_head_section);
             }
         }
@@ -303,7 +306,8 @@ public:
 
 #ifdef LL_BM_DO_MADVISE
 	    // Page-size, minus malloc overhead.
-	    syncqueue<node_t> nodes_to_advise;
+	    // syncqueue<node_t> nodes_to_advise;
+	    circular_buffer<node_t> nodes_to_advise;
 	    bool still_adding = true;
 
 #pragma omp parallel sections
@@ -325,13 +329,13 @@ public:
 		    edge_t last = first + (*vtable)[add].level_length;
 		    if (last - first > 0) etable->advise(first, last);
 
-            // TODO(fding): We should experiment moving this sequence of madvises
-            // to a different #pragma omp section.
-            // One thought: have two queues, one for each madvise thread.
-            // In the query thread, enqueue node to both threads.
-            // In one madvise thread, advise the node (so that its corresponding queue is emptied faster).
-            // In other madvise thread, advise the friends of the node,
-            // but only if the thread is not too far behind.
+		    // TODO(fding): We should experiment moving this sequence of madvises
+		    // to a different #pragma omp section.
+		    // One thought: have two queues, one for each madvise thread.
+		    // In the query thread, enqueue node to both threads.
+		    // In one madvise thread, advise the node (so that its corresponding queue is emptied faster).
+		    // In other madvise thread, advise the friends of the node,
+		    // but only if the thread is not too far behind.
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
                             node_t next_node = iteradd.last_node;
                             edge_t first = (*vtable)[next_node].adj_list_start;
