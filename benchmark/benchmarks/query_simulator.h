@@ -137,10 +137,10 @@ class syncqueue {
             //
             // TODO(fding): It would be helpful to add logging information here,
             // to see how fast dequeuing occurs relative to enqueuing.
-            node* curr_node = head;
+            /* node* curr_node = head;
             int count = 0;
             unsigned int min_epoch = UINT_MAX;
-                unsigned int max_epoch = 0;
+            unsigned int max_epoch = 0;
             while (curr_node != NULL) {
                 count++;
                 min_epoch = min(min_epoch, curr_node->epoch);
@@ -152,7 +152,7 @@ class syncqueue {
             printf("epoch difference: %u\n", max_epoch - min_epoch);
             if (tmp_head_section) {
                 free(tmp_head_section);
-            }
+            }*/
         }
 
         // TODO(fding): this function keeps checking head,
@@ -301,33 +301,34 @@ public:
 
 	    Graph& G = this->_graph;
 	    // float avg = 0;
-	    int num_vertices = 1000;
+	    int num_vertices = 10000;
 	    node_t sum = 0; // We don't want compiler to optimize away loops
 
 #ifdef LL_BM_DO_MADVISE
 	    // Page-size, minus malloc overhead.
-	    // syncqueue<node_t> nodes_to_advise;
-	    circular_buffer<node_t> nodes_to_advise;
+	    syncqueue<node_t> nodes_to_advise;
+	    syncqueue<node_t> friends_to_advise;
+	    // circular_buffer<node_t> nodes_to_advise;
 	    bool still_adding = true;
+	    unsigned int num_node_advises = 0;
+	    unsigned int num_friend_advises = 0;
 
 #pragma omp parallel sections
 {
+#define EPOCH_DIFF 0
     #pragma omp section
     {
 	    while (still_adding) {
 		    node_t add;
 		    unsigned int epoch;
-		    if (nodes_to_advise.dequeue(&add, &epoch)) continue;
-		    if (nodes_to_advise.get_current_epoch() - epoch > 2) continue;
+		    if (friends_to_advise.dequeue(&add, &epoch)) continue;
+		    if (friends_to_advise.get_current_epoch() - epoch > EPOCH_DIFF) continue;
 
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
 
 		    auto vtable = G.out().vertex_table(0);
 		    auto etable = G.out().edge_table(0);
-		    edge_t first = (*vtable)[add].adj_list_start;
-		    edge_t last = first + (*vtable)[add].level_length;
-		    if (last - first > 0) etable->advise(first, last);
 
 		    // TODO(fding): We should experiment moving this sequence of madvises
 		    // to a different #pragma omp section.
@@ -337,12 +338,42 @@ public:
 		    // In other madvise thread, advise the friends of the node,
 		    // but only if the thread is not too far behind.
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
+			    if (!still_adding) break;
+		            if (friends_to_advise.get_current_epoch() - epoch > EPOCH_DIFF) break;
                             node_t next_node = iteradd.last_node;
                             edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
-			    if (last - first > 0) etable->advise(first, last);
+			    if (last - first > 0) {
+				    etable->advise(first, last);
+				    num_friend_advises++;
+			    }
 		    }
 	    }
+
+	    printf("Number of madvises (friend thread): %u\n", num_friend_advises);
+    }  // end #pragma omp section
+    #pragma omp section
+    {
+	    while (still_adding) {
+		    node_t add;
+		    unsigned int epoch;
+		    if (nodes_to_advise.dequeue(&add, &epoch)) continue;
+		    if (nodes_to_advise.get_current_epoch() - epoch > EPOCH_DIFF) continue;
+
+		    ll_edge_iterator iteradd;
+		    G.out_iter_begin(iteradd, add);
+
+		    auto vtable = G.out().vertex_table(0);
+		    auto etable = G.out().edge_table(0);
+		    edge_t first = (*vtable)[add].adj_list_start;
+		    edge_t last = first + (*vtable)[add].level_length;
+		    if (last - first > 0) {
+			    etable->advise(first, last);
+			    num_node_advises++;
+		    }
+	    }
+
+	    printf("Number of madvises (node itself): %u\n", num_node_advises);
     }  // end #pragma omp section
     #pragma omp section
     {
@@ -355,6 +386,8 @@ public:
 #ifdef LL_BM_DO_MADVISE
                     nodes_to_advise.increment_epoch();
                     nodes_to_advise.enqueue(n);
+                    friends_to_advise.increment_epoch();
+                    friends_to_advise.enqueue(n);
 #endif
                     FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
                            node_t next_node = iterm.last_node;
