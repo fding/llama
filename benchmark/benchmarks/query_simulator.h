@@ -137,7 +137,7 @@ class syncqueue {
             //
             // TODO(fding): It would be helpful to add logging information here,
             // to see how fast dequeuing occurs relative to enqueuing.
-            node* curr_node = head;
+            /* node* curr_node = head;
             int count = 0;
             unsigned int min_epoch = UINT_MAX;
                 unsigned int max_epoch = 0;
@@ -152,7 +152,7 @@ class syncqueue {
             printf("epoch difference: %u\n", max_epoch - min_epoch);
             if (tmp_head_section) {
                 free(tmp_head_section);
-            }
+            }*/
         }
 
         // TODO(fding): this function keeps checking head,
@@ -301,13 +301,13 @@ public:
 
 	    Graph& G = this->_graph;
 	    // float avg = 0;
-	    int num_vertices = 1000;
+	    int num_vertices = 10000;
 	    node_t sum = 0; // We don't want compiler to optimize away loops
 
 #ifdef LL_BM_DO_MADVISE
 	    // Page-size, minus malloc overhead.
-	    // syncqueue<node_t> nodes_to_advise;
-	    circular_buffer<node_t> nodes_to_advise;
+	    syncqueue<node_t> nodes_to_advise;
+	    // circular_buffer<node_t> nodes_to_advise;
 	    bool still_adding = true;
 
 #pragma omp parallel sections
@@ -318,7 +318,7 @@ public:
 		    node_t add;
 		    unsigned int epoch;
 		    if (nodes_to_advise.dequeue(&add, &epoch)) continue;
-		    if (nodes_to_advise.get_current_epoch() - epoch > 2) continue;
+		    if (nodes_to_advise.get_current_epoch() - epoch > 0) continue;
 
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
@@ -337,6 +337,8 @@ public:
 		    // In other madvise thread, advise the friends of the node,
 		    // but only if the thread is not too far behind.
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
+			    if (!still_adding) break;
+			    if (nodes_to_advise.get_current_epoch() - epoch > 0) break;
                             node_t next_node = iteradd.last_node;
                             edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
