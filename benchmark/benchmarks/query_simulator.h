@@ -56,6 +56,11 @@ using std::deque;
 using std::min;
 using std::max;
 
+#define PARAM_ALPHA 0.5
+#define PARAM_CACHE_SIZE 2000
+#define PARAM_NUM_VERTICES 10000
+#define PARAM_EPOCH_THRESHOLD 1
+
 // templated class T, but really, only supports T=unsigned int
 // This class does not guarantee full consistency (some enqueues might get lost).
 template <class T, int BLOCKSIZE=16384>
@@ -281,7 +286,7 @@ public:
 	 * @param r the root
 	 */
 	ll_b_query_simulator(Graph& graph)
-		: ll_benchmark<Graph>(graph, "Query simulator"), generator(graph, 0.5, 2000) {
+		: ll_benchmark<Graph>(graph, "Query simulator"), generator(graph, PARAM_ALPHA, PARAM_CACHE_SIZE) {
 	}
 
 
@@ -301,7 +306,6 @@ public:
 
 	    Graph& G = this->_graph;
 	    // float avg = 0;
-	    int num_vertices = 10000;
 	    node_t sum = 0; // We don't want compiler to optimize away loops
 
 #ifdef LL_BM_DO_MADVISE
@@ -318,7 +322,7 @@ public:
 		    node_t add;
 		    unsigned int epoch;
 		    if (nodes_to_advise.dequeue(&add, &epoch)) continue;
-		    if (nodes_to_advise.get_current_epoch() - epoch > 0) continue;
+		    if (nodes_to_advise.get_current_epoch() - epoch > PARAM_EPOCH_THRESHOLD) continue;
 
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
@@ -338,7 +342,7 @@ public:
 		    // but only if the thread is not too far behind.
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
 			    if (!still_adding) break;
-			    if (nodes_to_advise.get_current_epoch() - epoch > 0) break;
+			    if (nodes_to_advise.get_current_epoch() - epoch > PARAM_EPOCH_THRESHOLD) break;
                             node_t next_node = iteradd.last_node;
                             edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
@@ -350,7 +354,7 @@ public:
     {
 #endif
 	    // Query the graph
-	    for (int i = 0; i < num_vertices; ++i) {
+	    for (int i = 0; i < PARAM_NUM_VERTICES; ++i) {
                     node_t n = this->generator.generate();
                     ll_edge_iterator iterm;
                     G.out_iter_begin(iterm, n);
