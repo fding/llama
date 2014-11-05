@@ -41,7 +41,7 @@ function run() {
     do
         echo "TRIAL $i" >> ../output.log
         echo "==========LLAMA OUTPUT==========" >> ../output.log
-        benchmark-persistent --run query_simulator -d db/ >> ../output.log
+        benchmark-persistent-madvise --run query_simulator -d db/ >> ../output.log
         echo "==========END LLAMA OUTPUT==========" >> ../output.log
     done
     cd ..
