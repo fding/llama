@@ -1,7 +1,7 @@
-ALPHA_VALUES=(0.01 0.05 0.1 0.2 0.5)
+ALPHA_VALUES=(0.1 0.2 0.5)
 EPOCH_VALUES=(0 1 2 3 4)
 NVERT_VALUES=(1000 5000 10000 20000 40000)
-CACHE_VALUES=(50 100 200 500 1000 2000)
+CACHE_VALUES=(1000 2000)
 
 function run() {
 # $1 is alpha, $2 is epoch, $3 is num_vertices, $4 is cache size
@@ -27,7 +27,7 @@ function run() {
 
     cd bin
     echo "NO_MADVISE" >> ../output.log
-    for m in {1..10}
+    for m in {1..5}
     do
         echo "TRIAL $m" >> ../output.log
         echo "==========LLAMA OUTPUT==========" >> ../output.log
@@ -37,7 +37,7 @@ function run() {
     done
 
     echo "WITH_MADVISE" >> ../output.log
-    for n in {1..10}
+    for n in {1..5}
     do
         echo "TRIAL $n" >> ../output.log
         echo "==========LLAMA OUTPUT==========" >> ../output.log
