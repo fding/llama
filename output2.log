@@ -181109,3 +181109,8624 @@ Return value: 9651611669243496.000000
 ==========END LLAMA OUTPUT==========
 TRIAL 8
 ==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:24:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 31.233 seconds
+User Time  : 2.901 seconds
+System Time: 4.503 seconds
+CPU Time   : 7.403 seconds
+CPU Util.  : 2.96%
+
+RESOURCE USAGE
+Mjr Faults : 305361
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10474739140149350.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:25:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 32.253 seconds
+User Time  : 3.038 seconds
+System Time: 4.799 seconds
+CPU Time   : 7.837 seconds
+CPU Util.  : 3.04%
+
+RESOURCE USAGE
+Mjr Faults : 309175
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10455819830112512.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:26:01
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 33.074 seconds
+User Time  : 3.086 seconds
+System Time: 5.108 seconds
+CPU Time   : 8.194 seconds
+CPU Util.  : 3.10%
+
+RESOURCE USAGE
+Mjr Faults : 311851
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10029933815216008.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:26:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 14.655 seconds
+User Time  : 3.247 seconds
+System Time: 7.880 seconds
+CPU Time   : 11.127 seconds
+CPU Util.  : 9.49%
+
+RESOURCE USAGE
+Mjr Faults : 377787
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 9897909390708772.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:26:50
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 14.712 seconds
+User Time  : 3.298 seconds
+System Time: 7.944 seconds
+CPU Time   : 11.242 seconds
+CPU Util.  : 9.55%
+
+RESOURCE USAGE
+Mjr Faults : 374213
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10383902024494372.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:27:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 14.789 seconds
+User Time  : 3.249 seconds
+System Time: 8.043 seconds
+CPU Time   : 11.292 seconds
+CPU Util.  : 9.54%
+
+RESOURCE USAGE
+Mjr Faults : 380529
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 9827646882662068.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:27:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 14.625 seconds
+User Time  : 3.200 seconds
+System Time: 7.900 seconds
+CPU Time   : 11.099 seconds
+CPU Util.  : 9.49%
+
+RESOURCE USAGE
+Mjr Faults : 372302
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 9709414862888744.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:27:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 14.691 seconds
+User Time  : 3.235 seconds
+System Time: 7.945 seconds
+CPU Time   : 11.180 seconds
+CPU Util.  : 9.51%
+
+RESOURCE USAGE
+Mjr Faults : 376643
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 9755351493756730.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:27:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 14.682 seconds
+User Time  : 3.261 seconds
+System Time: 7.777 seconds
+CPU Time   : 11.039 seconds
+CPU Util.  : 9.40%
+
+RESOURCE USAGE
+Mjr Faults : 371615
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10507871448624424.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:28:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 14.551 seconds
+User Time  : 3.333 seconds
+System Time: 7.861 seconds
+CPU Time   : 11.194 seconds
+CPU Util.  : 9.62%
+
+RESOURCE USAGE
+Mjr Faults : 376170
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10930526285364888.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:28:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 14.776 seconds
+User Time  : 3.306 seconds
+System Time: 7.963 seconds
+CPU Time   : 11.268 seconds
+CPU Util.  : 9.53%
+
+RESOURCE USAGE
+Mjr Faults : 374687
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10504878102961184.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:28:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 14.719 seconds
+User Time  : 3.254 seconds
+System Time: 7.961 seconds
+CPU Time   : 11.215 seconds
+CPU Util.  : 9.52%
+
+RESOURCE USAGE
+Mjr Faults : 373685
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 9742677769225144.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:28:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 14.691 seconds
+User Time  : 3.261 seconds
+System Time: 7.887 seconds
+CPU Time   : 11.148 seconds
+CPU Util.  : 9.49%
+
+RESOURCE USAGE
+Mjr Faults : 374756
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 10082713357498304.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=50
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:50
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.057 seconds
+User Time  : 0.105 seconds
+System Time: 0.148 seconds
+CPU Time   : 0.253 seconds
+CPU Util.  : 2.99%
+
+RESOURCE USAGE
+Mjr Faults : 21406
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 608754219538753.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 0.879 seconds
+User Time  : 0.070 seconds
+System Time: 0.103 seconds
+CPU Time   : 0.173 seconds
+CPU Util.  : 2.47%
+
+RESOURCE USAGE
+Mjr Faults : 12513
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 392686001151906.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 0.856 seconds
+User Time  : 0.086 seconds
+System Time: 0.093 seconds
+CPU Time   : 0.179 seconds
+CPU Util.  : 2.62%
+
+RESOURCE USAGE
+Mjr Faults : 16011
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 580841886047814.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:54
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.060 seconds
+User Time  : 0.094 seconds
+System Time: 0.153 seconds
+CPU Time   : 0.247 seconds
+CPU Util.  : 2.91%
+
+RESOURCE USAGE
+Mjr Faults : 23207
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 451044189498830.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.155 seconds
+User Time  : 0.146 seconds
+System Time: 0.156 seconds
+CPU Time   : 0.303 seconds
+CPU Util.  : 3.28%
+
+RESOURCE USAGE
+Mjr Faults : 24095
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 965309458639512.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 0.998 seconds
+User Time  : 0.108 seconds
+System Time: 0.134 seconds
+CPU Time   : 0.242 seconds
+CPU Util.  : 3.04%
+
+RESOURCE USAGE
+Mjr Faults : 20268
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 637188441701449.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:29:59
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 1.048 seconds
+User Time  : 0.076 seconds
+System Time: 0.143 seconds
+CPU Time   : 0.219 seconds
+CPU Util.  : 2.61%
+
+RESOURCE USAGE
+Mjr Faults : 19352
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 356282989409217.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 0.929 seconds
+User Time  : 0.060 seconds
+System Time: 0.132 seconds
+CPU Time   : 0.193 seconds
+CPU Util.  : 2.59%
+
+RESOURCE USAGE
+Mjr Faults : 13691
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 264524259110749.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:01
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.099 seconds
+User Time  : 0.119 seconds
+System Time: 0.161 seconds
+CPU Time   : 0.280 seconds
+CPU Util.  : 3.18%
+
+RESOURCE USAGE
+Mjr Faults : 21854
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 756272651828079.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 0.965 seconds
+User Time  : 0.080 seconds
+System Time: 0.140 seconds
+CPU Time   : 0.220 seconds
+CPU Util.  : 2.85%
+
+RESOURCE USAGE
+Mjr Faults : 14805
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 396635906192617.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.099 seconds
+User Time  : 0.103 seconds
+System Time: 0.305 seconds
+CPU Time   : 0.408 seconds
+CPU Util.  : 4.64%
+
+RESOURCE USAGE
+Mjr Faults : 26498
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 447997145455904.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 0.978 seconds
+User Time  : 0.094 seconds
+System Time: 0.289 seconds
+CPU Time   : 0.383 seconds
+CPU Util.  : 4.90%
+
+RESOURCE USAGE
+Mjr Faults : 25166
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 378083718671602.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.071 seconds
+User Time  : 0.145 seconds
+System Time: 0.348 seconds
+CPU Time   : 0.493 seconds
+CPU Util.  : 5.75%
+
+RESOURCE USAGE
+Mjr Faults : 27933
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 815243861722230.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.159 seconds
+User Time  : 0.127 seconds
+System Time: 0.337 seconds
+CPU Time   : 0.465 seconds
+CPU Util.  : 5.01%
+
+RESOURCE USAGE
+Mjr Faults : 29771
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 605294167152987.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.261 seconds
+User Time  : 0.131 seconds
+System Time: 0.358 seconds
+CPU Time   : 0.489 seconds
+CPU Util.  : 4.84%
+
+RESOURCE USAGE
+Mjr Faults : 33161
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 620098581247086.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:12
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.165 seconds
+User Time  : 0.133 seconds
+System Time: 0.352 seconds
+CPU Time   : 0.485 seconds
+CPU Util.  : 5.20%
+
+RESOURCE USAGE
+Mjr Faults : 32199
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 635140844593269.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.107 seconds
+User Time  : 0.143 seconds
+System Time: 0.333 seconds
+CPU Time   : 0.476 seconds
+CPU Util.  : 5.37%
+
+RESOURCE USAGE
+Mjr Faults : 29735
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 779772833497983.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:16
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.192 seconds
+User Time  : 0.144 seconds
+System Time: 0.367 seconds
+CPU Time   : 0.511 seconds
+CPU Util.  : 5.36%
+
+RESOURCE USAGE
+Mjr Faults : 31104
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 719625933598597.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.410 seconds
+User Time  : 0.137 seconds
+System Time: 0.391 seconds
+CPU Time   : 0.528 seconds
+CPU Util.  : 4.68%
+
+RESOURCE USAGE
+Mjr Faults : 37169
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 650182056057584.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:30:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.129 seconds
+User Time  : 0.118 seconds
+System Time: 0.329 seconds
+CPU Time   : 0.447 seconds
+CPU Util.  : 4.95%
+
+RESOURCE USAGE
+Mjr Faults : 30970
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 582674693270836.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=100
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.085 seconds
+User Time  : 0.084 seconds
+System Time: 0.115 seconds
+CPU Time   : 0.199 seconds
+CPU Util.  : 2.30%
+
+RESOURCE USAGE
+Mjr Faults : 21767
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 442243744178120.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:01
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 1.075 seconds
+User Time  : 0.077 seconds
+System Time: 0.139 seconds
+CPU Time   : 0.216 seconds
+CPU Util.  : 2.51%
+
+RESOURCE USAGE
+Mjr Faults : 17978
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 418535302162175.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.217 seconds
+User Time  : 0.092 seconds
+System Time: 0.185 seconds
+CPU Time   : 0.277 seconds
+CPU Util.  : 2.84%
+
+RESOURCE USAGE
+Mjr Faults : 21285
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 428876685712669.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.100 seconds
+User Time  : 0.080 seconds
+System Time: 0.148 seconds
+CPU Time   : 0.227 seconds
+CPU Util.  : 2.58%
+
+RESOURCE USAGE
+Mjr Faults : 17487
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 393274462095303.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.336 seconds
+User Time  : 0.096 seconds
+System Time: 0.184 seconds
+CPU Time   : 0.280 seconds
+CPU Util.  : 2.62%
+
+RESOURCE USAGE
+Mjr Faults : 27792
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 511551537948620.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.180 seconds
+User Time  : 0.090 seconds
+System Time: 0.153 seconds
+CPU Time   : 0.243 seconds
+CPU Util.  : 2.57%
+
+RESOURCE USAGE
+Mjr Faults : 20128
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 496679821174903.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.121 seconds
+User Time  : 0.072 seconds
+System Time: 0.158 seconds
+CPU Time   : 0.230 seconds
+CPU Util.  : 2.56%
+
+RESOURCE USAGE
+Mjr Faults : 17625
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 337619128144484.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.171 seconds
+User Time  : 0.071 seconds
+System Time: 0.146 seconds
+CPU Time   : 0.217 seconds
+CPU Util.  : 2.31%
+
+RESOURCE USAGE
+Mjr Faults : 20479
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 385085758319089.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:13
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 1.255 seconds
+User Time  : 0.132 seconds
+System Time: 0.176 seconds
+CPU Time   : 0.308 seconds
+CPU Util.  : 3.06%
+
+RESOURCE USAGE
+Mjr Faults : 24007
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 752480279455174.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.412 seconds
+User Time  : 0.106 seconds
+System Time: 0.226 seconds
+CPU Time   : 0.333 seconds
+CPU Util.  : 2.95%
+
+RESOURCE USAGE
+Mjr Faults : 25940
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 481688894571292.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:16
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.234 seconds
+User Time  : 0.112 seconds
+System Time: 0.355 seconds
+CPU Time   : 0.467 seconds
+CPU Util.  : 4.73%
+
+RESOURCE USAGE
+Mjr Faults : 34572
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 440418653177993.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:18
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.338 seconds
+User Time  : 0.135 seconds
+System Time: 0.377 seconds
+CPU Time   : 0.512 seconds
+CPU Util.  : 4.78%
+
+RESOURCE USAGE
+Mjr Faults : 36091
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 659899101149794.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:20
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4280.00 MB
+
+TIME
+Time       : 1.149 seconds
+User Time  : 0.116 seconds
+System Time: 0.317 seconds
+CPU Time   : 0.433 seconds
+CPU Util.  : 4.71%
+
+RESOURCE USAGE
+Mjr Faults : 27653
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 589381371879313.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.213 seconds
+User Time  : 0.130 seconds
+System Time: 0.350 seconds
+CPU Time   : 0.481 seconds
+CPU Util.  : 4.95%
+
+RESOURCE USAGE
+Mjr Faults : 31328
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 617394017744502.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.452 seconds
+User Time  : 0.127 seconds
+System Time: 0.392 seconds
+CPU Time   : 0.519 seconds
+CPU Util.  : 4.46%
+
+RESOURCE USAGE
+Mjr Faults : 37438
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 541271022382918.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:25
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.258 seconds
+User Time  : 0.122 seconds
+System Time: 0.355 seconds
+CPU Time   : 0.476 seconds
+CPU Util.  : 4.73%
+
+RESOURCE USAGE
+Mjr Faults : 32146
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 561383384163559.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.160 seconds
+User Time  : 0.114 seconds
+System Time: 0.327 seconds
+CPU Time   : 0.441 seconds
+CPU Util.  : 4.75%
+
+RESOURCE USAGE
+Mjr Faults : 27644
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 467768533478049.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.313 seconds
+User Time  : 0.115 seconds
+System Time: 0.357 seconds
+CPU Time   : 0.472 seconds
+CPU Util.  : 4.49%
+
+RESOURCE USAGE
+Mjr Faults : 37137
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 443092918391572.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:30
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.158 seconds
+User Time  : 0.120 seconds
+System Time: 0.336 seconds
+CPU Time   : 0.455 seconds
+CPU Util.  : 4.92%
+
+RESOURCE USAGE
+Mjr Faults : 27369
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 500407032787756.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:31:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.378 seconds
+User Time  : 0.119 seconds
+System Time: 0.378 seconds
+CPU Time   : 0.497 seconds
+CPU Util.  : 4.50%
+
+RESOURCE USAGE
+Mjr Faults : 35918
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 442225342533784.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=200
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 0.906 seconds
+User Time  : 0.052 seconds
+System Time: 0.065 seconds
+CPU Time   : 0.117 seconds
+CPU Util.  : 1.61%
+
+RESOURCE USAGE
+Mjr Faults : 17017
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 296062070055462.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.037 seconds
+User Time  : 0.074 seconds
+System Time: 0.080 seconds
+CPU Time   : 0.154 seconds
+CPU Util.  : 1.86%
+
+RESOURCE USAGE
+Mjr Faults : 25429
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 406418859568318.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 0.973 seconds
+User Time  : 0.057 seconds
+System Time: 0.075 seconds
+CPU Time   : 0.132 seconds
+CPU Util.  : 1.70%
+
+RESOURCE USAGE
+Mjr Faults : 20798
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 288901818903965.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:18
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.018 seconds
+User Time  : 0.082 seconds
+System Time: 0.077 seconds
+CPU Time   : 0.158 seconds
+CPU Util.  : 1.94%
+
+RESOURCE USAGE
+Mjr Faults : 26461
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 533580230910924.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:20
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 0.983 seconds
+User Time  : 0.070 seconds
+System Time: 0.078 seconds
+CPU Time   : 0.148 seconds
+CPU Util.  : 1.88%
+
+RESOURCE USAGE
+Mjr Faults : 21902
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 424503881101454.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.015 seconds
+User Time  : 0.074 seconds
+System Time: 0.077 seconds
+CPU Time   : 0.150 seconds
+CPU Util.  : 1.85%
+
+RESOURCE USAGE
+Mjr Faults : 23648
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 441928513563813.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 0.992 seconds
+User Time  : 0.075 seconds
+System Time: 0.069 seconds
+CPU Time   : 0.144 seconds
+CPU Util.  : 1.81%
+
+RESOURCE USAGE
+Mjr Faults : 22343
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 483825509844186.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.049 seconds
+User Time  : 0.092 seconds
+System Time: 0.078 seconds
+CPU Time   : 0.170 seconds
+CPU Util.  : 2.03%
+
+RESOURCE USAGE
+Mjr Faults : 30175
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 605561374908276.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:26
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 0.963 seconds
+User Time  : 0.059 seconds
+System Time: 0.069 seconds
+CPU Time   : 0.127 seconds
+CPU Util.  : 1.65%
+
+RESOURCE USAGE
+Mjr Faults : 18925
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 319110269565670.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.024 seconds
+User Time  : 0.083 seconds
+System Time: 0.070 seconds
+CPU Time   : 0.153 seconds
+CPU Util.  : 1.86%
+
+RESOURCE USAGE
+Mjr Faults : 23177
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 563185094864092.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.179 seconds
+User Time  : 0.093 seconds
+System Time: 0.310 seconds
+CPU Time   : 0.404 seconds
+CPU Util.  : 4.28%
+
+RESOURCE USAGE
+Mjr Faults : 30443
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 374587053913428.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:30
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 0.915 seconds
+User Time  : 0.069 seconds
+System Time: 0.234 seconds
+CPU Time   : 0.302 seconds
+CPU Util.  : 4.13%
+
+RESOURCE USAGE
+Mjr Faults : 20980
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 256916586673274.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.323 seconds
+User Time  : 0.106 seconds
+System Time: 0.329 seconds
+CPU Time   : 0.435 seconds
+CPU Util.  : 4.11%
+
+RESOURCE USAGE
+Mjr Faults : 31706
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 481748196305760.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:33
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 1.517 seconds
+User Time  : 0.126 seconds
+System Time: 0.405 seconds
+CPU Time   : 0.531 seconds
+CPU Util.  : 4.37%
+
+RESOURCE USAGE
+Mjr Faults : 43747
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 540504779597690.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.438 seconds
+User Time  : 0.104 seconds
+System Time: 0.373 seconds
+CPU Time   : 0.477 seconds
+CPU Util.  : 4.15%
+
+RESOURCE USAGE
+Mjr Faults : 38516
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 400370642342511.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.482 seconds
+User Time  : 0.125 seconds
+System Time: 0.382 seconds
+CPU Time   : 0.507 seconds
+CPU Util.  : 4.28%
+
+RESOURCE USAGE
+Mjr Faults : 35481
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 529823981557983.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.566 seconds
+User Time  : 0.133 seconds
+System Time: 0.441 seconds
+CPU Time   : 0.573 seconds
+CPU Util.  : 4.58%
+
+RESOURCE USAGE
+Mjr Faults : 40262
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 493424827064010.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:41
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.123 seconds
+User Time  : 0.088 seconds
+System Time: 0.314 seconds
+CPU Time   : 0.402 seconds
+CPU Util.  : 4.48%
+
+RESOURCE USAGE
+Mjr Faults : 28034
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 271539033534686.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 0.882 seconds
+User Time  : 0.064 seconds
+System Time: 0.243 seconds
+CPU Time   : 0.307 seconds
+CPU Util.  : 4.35%
+
+RESOURCE USAGE
+Mjr Faults : 18920
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 191712441337940.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:32:44
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 0.894 seconds
+User Time  : 0.074 seconds
+System Time: 0.263 seconds
+CPU Time   : 0.337 seconds
+CPU Util.  : 4.72%
+
+RESOURCE USAGE
+Mjr Faults : 19787
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 208464470976733.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=500
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:25
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 1.409 seconds
+User Time  : 0.075 seconds
+System Time: 0.149 seconds
+CPU Time   : 0.224 seconds
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 21686
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 326469407173835.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.345 seconds
+User Time  : 0.056 seconds
+System Time: 0.167 seconds
+CPU Time   : 0.223 seconds
+CPU Util.  : 2.07%
+
+RESOURCE USAGE
+Mjr Faults : 13484
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 174092498961129.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.538 seconds
+User Time  : 0.101 seconds
+System Time: 0.217 seconds
+CPU Time   : 0.319 seconds
+CPU Util.  : 2.59%
+
+RESOURCE USAGE
+Mjr Faults : 21565
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 421018234528326.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+
+TIME
+Time       : 1.462 seconds
+User Time  : 0.086 seconds
+System Time: 0.181 seconds
+CPU Time   : 0.267 seconds
+CPU Util.  : 2.28%
+
+RESOURCE USAGE
+Mjr Faults : 21000
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 351456250602032.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.421 seconds
+User Time  : 0.063 seconds
+System Time: 0.168 seconds
+CPU Time   : 0.231 seconds
+CPU Util.  : 2.03%
+
+RESOURCE USAGE
+Mjr Faults : 16849
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 241431691337460.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:34
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.452 seconds
+User Time  : 0.069 seconds
+System Time: 0.186 seconds
+CPU Time   : 0.256 seconds
+CPU Util.  : 2.20%
+
+RESOURCE USAGE
+Mjr Faults : 18534
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 246535312054296.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:36
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 1.300 seconds
+User Time  : 0.060 seconds
+System Time: 0.151 seconds
+CPU Time   : 0.211 seconds
+CPU Util.  : 2.03%
+
+RESOURCE USAGE
+Mjr Faults : 15134
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 240368644118043.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:38
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 1.478 seconds
+User Time  : 0.097 seconds
+System Time: 0.184 seconds
+CPU Time   : 0.281 seconds
+CPU Util.  : 2.38%
+
+RESOURCE USAGE
+Mjr Faults : 22821
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 428798911732855.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:40
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.348 seconds
+User Time  : 0.082 seconds
+System Time: 0.137 seconds
+CPU Time   : 0.218 seconds
+CPU Util.  : 2.03%
+
+RESOURCE USAGE
+Mjr Faults : 24202
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 355448207798647.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:42
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.279 seconds
+User Time  : 0.077 seconds
+System Time: 0.114 seconds
+CPU Time   : 0.191 seconds
+CPU Util.  : 1.87%
+
+RESOURCE USAGE
+Mjr Faults : 22465
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 426963967275301.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.641 seconds
+User Time  : 0.130 seconds
+System Time: 0.451 seconds
+CPU Time   : 0.581 seconds
+CPU Util.  : 4.43%
+
+RESOURCE USAGE
+Mjr Faults : 38187
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 450055750082287.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:45
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.357 seconds
+User Time  : 0.109 seconds
+System Time: 0.365 seconds
+CPU Time   : 0.474 seconds
+CPU Util.  : 4.37%
+
+RESOURCE USAGE
+Mjr Faults : 30645
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 358413293522433.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:47
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 1.383 seconds
+User Time  : 0.104 seconds
+System Time: 0.366 seconds
+CPU Time   : 0.470 seconds
+CPU Util.  : 4.24%
+
+RESOURCE USAGE
+Mjr Faults : 32606
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 318717940362505.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 1.425 seconds
+User Time  : 0.106 seconds
+System Time: 0.381 seconds
+CPU Time   : 0.487 seconds
+CPU Util.  : 4.27%
+
+RESOURCE USAGE
+Mjr Faults : 32446
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 359131629693425.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.284 seconds
+User Time  : 0.084 seconds
+System Time: 0.321 seconds
+CPU Time   : 0.405 seconds
+CPU Util.  : 3.94%
+
+RESOURCE USAGE
+Mjr Faults : 26233
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 255773137633030.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.465 seconds
+User Time  : 0.110 seconds
+System Time: 0.375 seconds
+CPU Time   : 0.485 seconds
+CPU Util.  : 4.14%
+
+RESOURCE USAGE
+Mjr Faults : 32958
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 384412209588445.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.422 seconds
+User Time  : 0.117 seconds
+System Time: 0.383 seconds
+CPU Time   : 0.500 seconds
+CPU Util.  : 4.40%
+
+RESOURCE USAGE
+Mjr Faults : 31197
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 406529380120639.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.240 seconds
+User Time  : 0.089 seconds
+System Time: 0.319 seconds
+CPU Time   : 0.407 seconds
+CPU Util.  : 4.11%
+
+RESOURCE USAGE
+Mjr Faults : 24892
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 275393056587668.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:33:58
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.346 seconds
+User Time  : 0.109 seconds
+System Time: 0.378 seconds
+CPU Time   : 0.488 seconds
+CPU Util.  : 4.53%
+
+RESOURCE USAGE
+Mjr Faults : 30851
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 363289080426422.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 1.527 seconds
+User Time  : 0.127 seconds
+System Time: 0.422 seconds
+CPU Time   : 0.548 seconds
+CPU Util.  : 4.49%
+
+RESOURCE USAGE
+Mjr Faults : 36283
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 470237460392885.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=1000
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:41
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+
+TIME
+Time       : 1.573 seconds
+User Time  : 0.088 seconds
+System Time: 0.199 seconds
+CPU Time   : 0.288 seconds
+CPU Util.  : 2.29%
+
+RESOURCE USAGE
+Mjr Faults : 22089
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 345366385781638.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 1.534 seconds
+User Time  : 0.081 seconds
+System Time: 0.177 seconds
+CPU Time   : 0.258 seconds
+CPU Util.  : 2.11%
+
+RESOURCE USAGE
+Mjr Faults : 22696
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 323445885911307.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:45
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.489 seconds
+User Time  : 0.066 seconds
+System Time: 0.172 seconds
+CPU Time   : 0.238 seconds
+CPU Util.  : 2.00%
+
+RESOURCE USAGE
+Mjr Faults : 17147
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 229829902019189.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:47
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.634 seconds
+User Time  : 0.092 seconds
+System Time: 0.214 seconds
+CPU Time   : 0.306 seconds
+CPU Util.  : 2.34%
+
+RESOURCE USAGE
+Mjr Faults : 24136
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 359932986247810.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:50
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4344.00 MB
+
+TIME
+Time       : 1.417 seconds
+User Time  : 0.071 seconds
+System Time: 0.170 seconds
+CPU Time   : 0.240 seconds
+CPU Util.  : 2.12%
+
+RESOURCE USAGE
+Mjr Faults : 18970
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 264367191029664.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.620 seconds
+User Time  : 0.083 seconds
+System Time: 0.230 seconds
+CPU Time   : 0.313 seconds
+CPU Util.  : 2.41%
+
+RESOURCE USAGE
+Mjr Faults : 20001
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 270264641578666.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:54
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.570 seconds
+User Time  : 0.079 seconds
+System Time: 0.207 seconds
+CPU Time   : 0.286 seconds
+CPU Util.  : 2.28%
+
+RESOURCE USAGE
+Mjr Faults : 21414
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 306980054947427.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.369 seconds
+User Time  : 0.051 seconds
+System Time: 0.159 seconds
+CPU Time   : 0.209 seconds
+CPU Util.  : 1.91%
+
+RESOURCE USAGE
+Mjr Faults : 12546
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 137941778012014.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:34:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.704 seconds
+User Time  : 0.102 seconds
+System Time: 0.238 seconds
+CPU Time   : 0.341 seconds
+CPU Util.  : 2.50%
+
+RESOURCE USAGE
+Mjr Faults : 26132
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 435152045468304.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.477 seconds
+User Time  : 0.068 seconds
+System Time: 0.190 seconds
+CPU Time   : 0.258 seconds
+CPU Util.  : 2.18%
+
+RESOURCE USAGE
+Mjr Faults : 18005
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 228153678951203.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:02
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.621 seconds
+User Time  : 0.113 seconds
+System Time: 0.398 seconds
+CPU Time   : 0.511 seconds
+CPU Util.  : 3.94%
+
+RESOURCE USAGE
+Mjr Faults : 36329
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 356428540828020.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.204 seconds
+User Time  : 0.080 seconds
+System Time: 0.293 seconds
+CPU Time   : 0.374 seconds
+CPU Util.  : 3.88%
+
+RESOURCE USAGE
+Mjr Faults : 21929
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 183019768527791.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:05
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.624 seconds
+User Time  : 0.121 seconds
+System Time: 0.432 seconds
+CPU Time   : 0.553 seconds
+CPU Util.  : 4.25%
+
+RESOURCE USAGE
+Mjr Faults : 38095
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 353676711207705.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:07
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.277 seconds
+User Time  : 0.083 seconds
+System Time: 0.301 seconds
+CPU Time   : 0.384 seconds
+CPU Util.  : 3.76%
+
+RESOURCE USAGE
+Mjr Faults : 24265
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 217719599812421.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.447 seconds
+User Time  : 0.099 seconds
+System Time: 0.361 seconds
+CPU Time   : 0.460 seconds
+CPU Util.  : 3.97%
+
+RESOURCE USAGE
+Mjr Faults : 29506
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 270536285907646.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.575 seconds
+User Time  : 0.119 seconds
+System Time: 0.421 seconds
+CPU Time   : 0.540 seconds
+CPU Util.  : 4.29%
+
+RESOURCE USAGE
+Mjr Faults : 35942
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 338364090615497.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:13
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 1.541 seconds
+User Time  : 0.113 seconds
+System Time: 0.403 seconds
+CPU Time   : 0.516 seconds
+CPU Util.  : 4.19%
+
+RESOURCE USAGE
+Mjr Faults : 33072
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 315492471409539.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.246 seconds
+User Time  : 0.082 seconds
+System Time: 0.308 seconds
+CPU Time   : 0.390 seconds
+CPU Util.  : 3.91%
+
+RESOURCE USAGE
+Mjr Faults : 23460
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 199224751817638.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 1.304 seconds
+User Time  : 0.092 seconds
+System Time: 0.332 seconds
+CPU Time   : 0.424 seconds
+CPU Util.  : 4.07%
+
+RESOURCE USAGE
+Mjr Faults : 25301
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 229981493144905.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.290 seconds
+User Time  : 0.085 seconds
+System Time: 0.312 seconds
+CPU Time   : 0.398 seconds
+CPU Util.  : 3.85%
+
+RESOURCE USAGE
+Mjr Faults : 23704
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 247482379257745.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=1000,PARAM_CACHE_SIZE=2000
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:35:59
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 1.644 seconds
+User Time  : 0.092 seconds
+System Time: 0.213 seconds
+CPU Time   : 0.304 seconds
+CPU Util.  : 2.31%
+
+RESOURCE USAGE
+Mjr Faults : 23211
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 327586333440515.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:02
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.562 seconds
+User Time  : 0.074 seconds
+System Time: 0.203 seconds
+CPU Time   : 0.276 seconds
+CPU Util.  : 2.21%
+
+RESOURCE USAGE
+Mjr Faults : 17143
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 226252361524621.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.527 seconds
+User Time  : 0.071 seconds
+System Time: 0.200 seconds
+CPU Time   : 0.271 seconds
+CPU Util.  : 2.22%
+
+RESOURCE USAGE
+Mjr Faults : 16347
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 212510829917186.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.418 seconds
+User Time  : 0.063 seconds
+System Time: 0.166 seconds
+CPU Time   : 0.229 seconds
+CPU Util.  : 2.02%
+
+RESOURCE USAGE
+Mjr Faults : 13732
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 153783927385156.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:07
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 1.537 seconds
+User Time  : 0.072 seconds
+System Time: 0.195 seconds
+CPU Time   : 0.267 seconds
+CPU Util.  : 2.17%
+
+RESOURCE USAGE
+Mjr Faults : 16217
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 206596613068050.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.530 seconds
+User Time  : 0.069 seconds
+System Time: 0.196 seconds
+CPU Time   : 0.265 seconds
+CPU Util.  : 2.17%
+
+RESOURCE USAGE
+Mjr Faults : 15384
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 188742515505772.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 1.656 seconds
+User Time  : 0.089 seconds
+System Time: 0.250 seconds
+CPU Time   : 0.339 seconds
+CPU Util.  : 2.56%
+
+RESOURCE USAGE
+Mjr Faults : 18640
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 238231971067729.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.479 seconds
+User Time  : 0.066 seconds
+System Time: 0.177 seconds
+CPU Time   : 0.243 seconds
+CPU Util.  : 2.05%
+
+RESOURCE USAGE
+Mjr Faults : 14913
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 183068534291778.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 1.556 seconds
+User Time  : 0.076 seconds
+System Time: 0.202 seconds
+CPU Time   : 0.278 seconds
+CPU Util.  : 2.23%
+
+RESOURCE USAGE
+Mjr Faults : 18393
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 248322744170631.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 1.727 seconds
+User Time  : 0.100 seconds
+System Time: 0.259 seconds
+CPU Time   : 0.360 seconds
+CPU Util.  : 2.60%
+
+RESOURCE USAGE
+Mjr Faults : 22637
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 290445048582693.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:20
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4272.00 MB
+
+TIME
+Time       : 1.433 seconds
+User Time  : 0.100 seconds
+System Time: 0.348 seconds
+CPU Time   : 0.447 seconds
+CPU Util.  : 3.90%
+
+RESOURCE USAGE
+Mjr Faults : 28456
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 242143161289573.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.336 seconds
+User Time  : 0.089 seconds
+System Time: 0.322 seconds
+CPU Time   : 0.411 seconds
+CPU Util.  : 3.85%
+
+RESOURCE USAGE
+Mjr Faults : 25741
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 209149466093890.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 1.610 seconds
+User Time  : 0.119 seconds
+System Time: 0.413 seconds
+CPU Time   : 0.533 seconds
+CPU Util.  : 4.13%
+
+RESOURCE USAGE
+Mjr Faults : 34373
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 312368979859811.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:26
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.300 seconds
+User Time  : 0.088 seconds
+System Time: 0.300 seconds
+CPU Time   : 0.388 seconds
+CPU Util.  : 3.73%
+
+RESOURCE USAGE
+Mjr Faults : 22887
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 183469012679887.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 1.228 seconds
+User Time  : 0.080 seconds
+System Time: 0.284 seconds
+CPU Time   : 0.365 seconds
+CPU Util.  : 3.72%
+
+RESOURCE USAGE
+Mjr Faults : 20262
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 151909294219812.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 1.287 seconds
+User Time  : 0.084 seconds
+System Time: 0.287 seconds
+CPU Time   : 0.371 seconds
+CPU Util.  : 3.60%
+
+RESOURCE USAGE
+Mjr Faults : 22025
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 185600994835762.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.583 seconds
+User Time  : 0.115 seconds
+System Time: 0.391 seconds
+CPU Time   : 0.506 seconds
+CPU Util.  : 4.00%
+
+RESOURCE USAGE
+Mjr Faults : 34101
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 314132241493563.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:33
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.662 seconds
+User Time  : 0.125 seconds
+System Time: 0.433 seconds
+CPU Time   : 0.558 seconds
+CPU Util.  : 4.20%
+
+RESOURCE USAGE
+Mjr Faults : 35926
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 320279368221102.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 1.384 seconds
+User Time  : 0.095 seconds
+System Time: 0.353 seconds
+CPU Time   : 0.448 seconds
+CPU Util.  : 4.05%
+
+RESOURCE USAGE
+Mjr Faults : 28174
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 211712496012637.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:36:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4280.00 MB
+
+TIME
+Time       : 1.659 seconds
+User Time  : 0.127 seconds
+System Time: 0.426 seconds
+CPU Time   : 0.553 seconds
+CPU Util.  : 4.17%
+
+RESOURCE USAGE
+Mjr Faults : 36210
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 378716352293282.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=50
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:18
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.698 seconds
+User Time  : 0.498 seconds
+System Time: 0.512 seconds
+CPU Time   : 1.010 seconds
+CPU Util.  : 3.41%
+
+RESOURCE USAGE
+Mjr Faults : 48643
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3089974190519953.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 3.806 seconds
+User Time  : 0.550 seconds
+System Time: 0.525 seconds
+CPU Time   : 1.074 seconds
+CPU Util.  : 3.53%
+
+RESOURCE USAGE
+Mjr Faults : 55134
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3621486989923982.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.724 seconds
+User Time  : 0.540 seconds
+System Time: 0.492 seconds
+CPU Time   : 1.032 seconds
+CPU Util.  : 3.46%
+
+RESOURCE USAGE
+Mjr Faults : 50086
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3553328078702654.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 3.750 seconds
+User Time  : 0.518 seconds
+System Time: 0.517 seconds
+CPU Time   : 1.036 seconds
+CPU Util.  : 3.45%
+
+RESOURCE USAGE
+Mjr Faults : 47899
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3257823551062193.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 3.472 seconds
+User Time  : 0.440 seconds
+System Time: 0.452 seconds
+CPU Time   : 0.893 seconds
+CPU Util.  : 3.21%
+
+RESOURCE USAGE
+Mjr Faults : 50932
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2631263374823793.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.551 seconds
+User Time  : 0.447 seconds
+System Time: 0.456 seconds
+CPU Time   : 0.902 seconds
+CPU Util.  : 3.18%
+
+RESOURCE USAGE
+Mjr Faults : 51407
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2648113275308432.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 3.694 seconds
+User Time  : 0.491 seconds
+System Time: 0.502 seconds
+CPU Time   : 0.993 seconds
+CPU Util.  : 3.36%
+
+RESOURCE USAGE
+Mjr Faults : 49487
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3077661692393010.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:47
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.499 seconds
+User Time  : 0.479 seconds
+System Time: 0.467 seconds
+CPU Time   : 0.946 seconds
+CPU Util.  : 3.38%
+
+RESOURCE USAGE
+Mjr Faults : 51910
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2954458650125123.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 3.913 seconds
+User Time  : 0.570 seconds
+System Time: 0.586 seconds
+CPU Time   : 1.155 seconds
+CPU Util.  : 3.69%
+
+RESOURCE USAGE
+Mjr Faults : 53176
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3676585818813901.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:37:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 3.582 seconds
+User Time  : 0.535 seconds
+System Time: 0.501 seconds
+CPU Time   : 1.036 seconds
+CPU Util.  : 3.62%
+
+RESOURCE USAGE
+Mjr Faults : 51706
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3440064691752667.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.009 seconds
+User Time  : 0.678 seconds
+System Time: 1.215 seconds
+CPU Time   : 1.893 seconds
+CPU Util.  : 7.86%
+
+RESOURCE USAGE
+Mjr Faults : 72256
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4216888655769501.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 2.841 seconds
+User Time  : 0.514 seconds
+System Time: 1.079 seconds
+CPU Time   : 1.594 seconds
+CPU Util.  : 7.01%
+
+RESOURCE USAGE
+Mjr Faults : 69108
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2797500145836687.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.079 seconds
+User Time  : 0.582 seconds
+System Time: 1.192 seconds
+CPU Time   : 1.774 seconds
+CPU Util.  : 7.20%
+
+RESOURCE USAGE
+Mjr Faults : 73093
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3440891848566245.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:10
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 3.179 seconds
+User Time  : 0.560 seconds
+System Time: 1.239 seconds
+CPU Time   : 1.799 seconds
+CPU Util.  : 7.07%
+
+RESOURCE USAGE
+Mjr Faults : 83322
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2926522424679993.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 3.200 seconds
+User Time  : 0.634 seconds
+System Time: 1.252 seconds
+CPU Time   : 1.887 seconds
+CPU Util.  : 7.37%
+
+RESOURCE USAGE
+Mjr Faults : 78071
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3678018566024553.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 3.048 seconds
+User Time  : 0.582 seconds
+System Time: 1.178 seconds
+CPU Time   : 1.760 seconds
+CPU Util.  : 7.22%
+
+RESOURCE USAGE
+Mjr Faults : 74351
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3405000791573613.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 2.933 seconds
+User Time  : 0.564 seconds
+System Time: 1.130 seconds
+CPU Time   : 1.695 seconds
+CPU Util.  : 7.22%
+
+RESOURCE USAGE
+Mjr Faults : 68789
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3176805232239054.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 3.424 seconds
+User Time  : 0.593 seconds
+System Time: 1.284 seconds
+CPU Time   : 1.877 seconds
+CPU Util.  : 6.85%
+
+RESOURCE USAGE
+Mjr Faults : 87813
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3298096775585742.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 2.667 seconds
+User Time  : 0.528 seconds
+System Time: 1.049 seconds
+CPU Time   : 1.577 seconds
+CPU Util.  : 7.39%
+
+RESOURCE USAGE
+Mjr Faults : 61729
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2941609687818953.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:38:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.189 seconds
+User Time  : 0.559 seconds
+System Time: 1.222 seconds
+CPU Time   : 1.780 seconds
+CPU Util.  : 6.98%
+
+RESOURCE USAGE
+Mjr Faults : 79811
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2997899624525732.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=100
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.509 seconds
+User Time  : 0.387 seconds
+System Time: 0.655 seconds
+CPU Time   : 1.042 seconds
+CPU Util.  : 2.89%
+
+RESOURCE USAGE
+Mjr Faults : 61605
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2034472931133642.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 4.519 seconds
+User Time  : 0.412 seconds
+System Time: 0.657 seconds
+CPU Time   : 1.069 seconds
+CPU Util.  : 2.96%
+
+RESOURCE USAGE
+Mjr Faults : 63320
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2056196423791926.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.447 seconds
+User Time  : 0.439 seconds
+System Time: 0.612 seconds
+CPU Time   : 1.050 seconds
+CPU Util.  : 2.95%
+
+RESOURCE USAGE
+Mjr Faults : 60736
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2405322748385995.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.297 seconds
+User Time  : 0.462 seconds
+System Time: 0.565 seconds
+CPU Time   : 1.026 seconds
+CPU Util.  : 2.99%
+
+RESOURCE USAGE
+Mjr Faults : 60576
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2641302728456107.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:34
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.355 seconds
+User Time  : 0.451 seconds
+System Time: 0.574 seconds
+CPU Time   : 1.026 seconds
+CPU Util.  : 2.94%
+
+RESOURCE USAGE
+Mjr Faults : 58616
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2698192544721731.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 4.142 seconds
+User Time  : 0.345 seconds
+System Time: 0.583 seconds
+CPU Time   : 0.928 seconds
+CPU Util.  : 2.80%
+
+RESOURCE USAGE
+Mjr Faults : 58649
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1796286995384387.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.894 seconds
+User Time  : 0.537 seconds
+System Time: 0.736 seconds
+CPU Time   : 1.273 seconds
+CPU Util.  : 3.25%
+
+RESOURCE USAGE
+Mjr Faults : 62082
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3030094704564213.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 4.335 seconds
+User Time  : 0.438 seconds
+System Time: 0.635 seconds
+CPU Time   : 1.073 seconds
+CPU Util.  : 3.09%
+
+RESOURCE USAGE
+Mjr Faults : 60676
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2410548273411695.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.220 seconds
+User Time  : 0.384 seconds
+System Time: 0.573 seconds
+CPU Time   : 0.956 seconds
+CPU Util.  : 2.83%
+
+RESOURCE USAGE
+Mjr Faults : 61103
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2111302345396784.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:39:58
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.578 seconds
+User Time  : 0.446 seconds
+System Time: 0.714 seconds
+CPU Time   : 1.160 seconds
+CPU Util.  : 3.17%
+
+RESOURCE USAGE
+Mjr Faults : 59972
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2276353191546337.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 3.096 seconds
+User Time  : 0.451 seconds
+System Time: 1.141 seconds
+CPU Time   : 1.593 seconds
+CPU Util.  : 6.43%
+
+RESOURCE USAGE
+Mjr Faults : 75678
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2017440275895832.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:07
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.960 seconds
+User Time  : 0.543 seconds
+System Time: 1.457 seconds
+CPU Time   : 2.000 seconds
+CPU Util.  : 6.31%
+
+RESOURCE USAGE
+Mjr Faults : 110253
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2469589963409881.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 3.117 seconds
+User Time  : 0.459 seconds
+System Time: 1.115 seconds
+CPU Time   : 1.574 seconds
+CPU Util.  : 6.31%
+
+RESOURCE USAGE
+Mjr Faults : 78751
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2146997622649365.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.446 seconds
+User Time  : 0.479 seconds
+System Time: 1.286 seconds
+CPU Time   : 1.765 seconds
+CPU Util.  : 6.40%
+
+RESOURCE USAGE
+Mjr Faults : 92140
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2084092096468201.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 3.777 seconds
+User Time  : 0.618 seconds
+System Time: 1.461 seconds
+CPU Time   : 2.079 seconds
+CPU Util.  : 6.88%
+
+RESOURCE USAGE
+Mjr Faults : 100395
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3219421568807225.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.154 seconds
+User Time  : 0.458 seconds
+System Time: 1.160 seconds
+CPU Time   : 1.618 seconds
+CPU Util.  : 6.41%
+
+RESOURCE USAGE
+Mjr Faults : 78685
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2064173393253196.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 3.333 seconds
+User Time  : 0.527 seconds
+System Time: 1.236 seconds
+CPU Time   : 1.763 seconds
+CPU Util.  : 6.61%
+
+RESOURCE USAGE
+Mjr Faults : 80154
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2564572844150751.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4280.00 MB
+
+TIME
+Time       : 3.482 seconds
+User Time  : 0.495 seconds
+System Time: 1.321 seconds
+CPU Time   : 1.816 seconds
+CPU Util.  : 6.52%
+
+RESOURCE USAGE
+Mjr Faults : 92697
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2130569121017929.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 3.499 seconds
+User Time  : 0.594 seconds
+System Time: 1.320 seconds
+CPU Time   : 1.914 seconds
+CPU Util.  : 6.84%
+
+RESOURCE USAGE
+Mjr Faults : 85630
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 3178933305650704.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:40:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.145 seconds
+User Time  : 0.453 seconds
+System Time: 1.168 seconds
+CPU Time   : 1.621 seconds
+CPU Util.  : 6.44%
+
+RESOURCE USAGE
+Mjr Faults : 80012
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2027920741849848.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=200
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 5.141 seconds
+User Time  : 0.393 seconds
+System Time: 0.693 seconds
+CPU Time   : 1.086 seconds
+CPU Util.  : 2.64%
+
+RESOURCE USAGE
+Mjr Faults : 68302
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1952486012660458.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+
+TIME
+Time       : 5.315 seconds
+User Time  : 0.418 seconds
+System Time: 0.779 seconds
+CPU Time   : 1.197 seconds
+CPU Util.  : 2.81%
+
+RESOURCE USAGE
+Mjr Faults : 65598
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2004076191355669.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:33
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 5.342 seconds
+User Time  : 0.400 seconds
+System Time: 0.785 seconds
+CPU Time   : 1.185 seconds
+CPU Util.  : 2.77%
+
+RESOURCE USAGE
+Mjr Faults : 67753
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1846557621611425.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.519 seconds
+User Time  : 0.470 seconds
+System Time: 0.801 seconds
+CPU Time   : 1.271 seconds
+CPU Util.  : 2.88%
+
+RESOURCE USAGE
+Mjr Faults : 71873
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2400625566915729.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:45
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 5.140 seconds
+User Time  : 0.434 seconds
+System Time: 0.701 seconds
+CPU Time   : 1.135 seconds
+CPU Util.  : 2.76%
+
+RESOURCE USAGE
+Mjr Faults : 63887
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2411300076057934.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:50
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.243 seconds
+User Time  : 0.400 seconds
+System Time: 0.807 seconds
+CPU Time   : 1.207 seconds
+CPU Util.  : 2.88%
+
+RESOURCE USAGE
+Mjr Faults : 65847
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1958527853082325.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:41:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.350 seconds
+User Time  : 0.432 seconds
+System Time: 0.799 seconds
+CPU Time   : 1.231 seconds
+CPU Util.  : 2.88%
+
+RESOURCE USAGE
+Mjr Faults : 71810
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2187620798663080.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:02
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.257 seconds
+User Time  : 0.365 seconds
+System Time: 0.801 seconds
+CPU Time   : 1.166 seconds
+CPU Util.  : 2.77%
+
+RESOURCE USAGE
+Mjr Faults : 65931
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1603101214845991.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 5.073 seconds
+User Time  : 0.318 seconds
+System Time: 0.777 seconds
+CPU Time   : 1.095 seconds
+CPU Util.  : 2.70%
+
+RESOURCE USAGE
+Mjr Faults : 57324
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1276227628789873.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:13
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 5.523 seconds
+User Time  : 0.431 seconds
+System Time: 0.848 seconds
+CPU Time   : 1.279 seconds
+CPU Util.  : 2.90%
+
+RESOURCE USAGE
+Mjr Faults : 75860
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2053514408301558.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 3.697 seconds
+User Time  : 0.415 seconds
+System Time: 1.315 seconds
+CPU Time   : 1.729 seconds
+CPU Util.  : 5.85%
+
+RESOURCE USAGE
+Mjr Faults : 98263
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1342934283484661.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.004 seconds
+User Time  : 0.518 seconds
+System Time: 1.574 seconds
+CPU Time   : 2.092 seconds
+CPU Util.  : 6.53%
+
+RESOURCE USAGE
+Mjr Faults : 104573
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1916758647965132.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 3.844 seconds
+User Time  : 0.556 seconds
+System Time: 1.587 seconds
+CPU Time   : 2.143 seconds
+CPU Util.  : 6.97%
+
+RESOURCE USAGE
+Mjr Faults : 97099
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2208791516621994.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:33
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 3.671 seconds
+User Time  : 0.503 seconds
+System Time: 1.517 seconds
+CPU Time   : 2.020 seconds
+CPU Util.  : 6.88%
+
+RESOURCE USAGE
+Mjr Faults : 87347
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1714048012887564.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 3.787 seconds
+User Time  : 0.526 seconds
+System Time: 1.516 seconds
+CPU Time   : 2.042 seconds
+CPU Util.  : 6.74%
+
+RESOURCE USAGE
+Mjr Faults : 97635
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2039130758859079.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:42
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 4.036 seconds
+User Time  : 0.572 seconds
+System Time: 1.607 seconds
+CPU Time   : 2.179 seconds
+CPU Util.  : 6.75%
+
+RESOURCE USAGE
+Mjr Faults : 103534
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2321997251681771.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:47
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 3.784 seconds
+User Time  : 0.514 seconds
+System Time: 1.510 seconds
+CPU Time   : 2.024 seconds
+CPU Util.  : 6.69%
+
+RESOURCE USAGE
+Mjr Faults : 95732
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1745024094214312.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.009 seconds
+User Time  : 0.501 seconds
+System Time: 1.557 seconds
+CPU Time   : 2.058 seconds
+CPU Util.  : 6.42%
+
+RESOURCE USAGE
+Mjr Faults : 104349
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1773877972582770.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:42:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 3.601 seconds
+User Time  : 0.451 seconds
+System Time: 1.412 seconds
+CPU Time   : 1.864 seconds
+CPU Util.  : 6.47%
+
+RESOURCE USAGE
+Mjr Faults : 93476
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1570101790433770.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:43:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 4.011 seconds
+User Time  : 0.520 seconds
+System Time: 1.548 seconds
+CPU Time   : 2.068 seconds
+CPU Util.  : 6.44%
+
+RESOURCE USAGE
+Mjr Faults : 106042
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1987257316659086.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=500
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:43:47
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 4.915 seconds
+User Time  : 0.324 seconds
+System Time: 0.452 seconds
+CPU Time   : 0.776 seconds
+CPU Util.  : 1.97%
+
+RESOURCE USAGE
+Mjr Faults : 73018
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1511022771144403.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:43:52
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.826 seconds
+User Time  : 0.317 seconds
+System Time: 0.418 seconds
+CPU Time   : 0.735 seconds
+CPU Util.  : 1.90%
+
+RESOURCE USAGE
+Mjr Faults : 71387
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1554050113667507.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:43:58
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.950 seconds
+User Time  : 0.338 seconds
+System Time: 0.485 seconds
+CPU Time   : 0.823 seconds
+CPU Util.  : 2.08%
+
+RESOURCE USAGE
+Mjr Faults : 77298
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1569652717758762.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 5.008 seconds
+User Time  : 0.342 seconds
+System Time: 0.480 seconds
+CPU Time   : 0.822 seconds
+CPU Util.  : 2.05%
+
+RESOURCE USAGE
+Mjr Faults : 77721
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1697384104820394.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 4.772 seconds
+User Time  : 0.305 seconds
+System Time: 0.452 seconds
+CPU Time   : 0.757 seconds
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 61755
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1469670569447457.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4360.00 MB
+
+TIME
+Time       : 4.929 seconds
+User Time  : 0.342 seconds
+System Time: 0.469 seconds
+CPU Time   : 0.811 seconds
+CPU Util.  : 2.06%
+
+RESOURCE USAGE
+Mjr Faults : 71700
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1616864240365511.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:20
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.881 seconds
+User Time  : 0.338 seconds
+System Time: 0.435 seconds
+CPU Time   : 0.773 seconds
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 72224
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1738972380615199.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:26
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 5.015 seconds
+User Time  : 0.385 seconds
+System Time: 0.466 seconds
+CPU Time   : 0.851 seconds
+CPU Util.  : 2.12%
+
+RESOURCE USAGE
+Mjr Faults : 79514
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1938684394184211.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.694 seconds
+User Time  : 0.299 seconds
+System Time: 0.401 seconds
+CPU Time   : 0.700 seconds
+CPU Util.  : 1.86%
+
+RESOURCE USAGE
+Mjr Faults : 65421
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1404189928092686.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 4.903 seconds
+User Time  : 0.333 seconds
+System Time: 0.422 seconds
+CPU Time   : 0.755 seconds
+CPU Util.  : 1.93%
+
+RESOURCE USAGE
+Mjr Faults : 76716
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1725315184791589.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:42
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 4.480 seconds
+User Time  : 0.638 seconds
+System Time: 1.833 seconds
+CPU Time   : 2.471 seconds
+CPU Util.  : 6.89%
+
+RESOURCE USAGE
+Mjr Faults : 113041
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1860957961201840.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:48
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+
+TIME
+Time       : 4.306 seconds
+User Time  : 0.553 seconds
+System Time: 1.781 seconds
+CPU Time   : 2.334 seconds
+CPU Util.  : 6.78%
+
+RESOURCE USAGE
+Mjr Faults : 105176
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1538182692081046.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4276.00 MB
+
+TIME
+Time       : 4.303 seconds
+User Time  : 0.560 seconds
+System Time: 1.739 seconds
+CPU Time   : 2.299 seconds
+CPU Util.  : 6.68%
+
+RESOURCE USAGE
+Mjr Faults : 103805
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1781472604010104.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:44:58
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.260 seconds
+User Time  : 0.556 seconds
+System Time: 1.769 seconds
+CPU Time   : 2.325 seconds
+CPU Util.  : 6.82%
+
+RESOURCE USAGE
+Mjr Faults : 107989
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1755790055655283.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.760 seconds
+User Time  : 0.629 seconds
+System Time: 2.044 seconds
+CPU Time   : 2.673 seconds
+CPU Util.  : 7.02%
+
+RESOURCE USAGE
+Mjr Faults : 124970
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2012258672920880.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.720 seconds
+User Time  : 0.626 seconds
+System Time: 2.001 seconds
+CPU Time   : 2.627 seconds
+CPU Util.  : 6.96%
+
+RESOURCE USAGE
+Mjr Faults : 124705
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 2032929203395483.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.606 seconds
+User Time  : 0.578 seconds
+System Time: 1.940 seconds
+CPU Time   : 2.518 seconds
+CPU Util.  : 6.83%
+
+RESOURCE USAGE
+Mjr Faults : 117976
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1723756205420128.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4280.00 MB
+
+TIME
+Time       : 4.748 seconds
+User Time  : 0.611 seconds
+System Time: 2.036 seconds
+CPU Time   : 2.647 seconds
+CPU Util.  : 6.97%
+
+RESOURCE USAGE
+Mjr Faults : 124942
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1918076702634736.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.145 seconds
+User Time  : 0.512 seconds
+System Time: 1.678 seconds
+CPU Time   : 2.189 seconds
+CPU Util.  : 6.60%
+
+RESOURCE USAGE
+Mjr Faults : 101861
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1357638339839389.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:45:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 4.538 seconds
+User Time  : 0.608 seconds
+System Time: 1.923 seconds
+CPU Time   : 2.530 seconds
+CPU Util.  : 6.97%
+
+RESOURCE USAGE
+Mjr Faults : 117750
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1943974998961445.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=1000
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:16
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.256 seconds
+User Time  : 0.329 seconds
+System Time: 0.504 seconds
+CPU Time   : 0.833 seconds
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 67234
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1309841427561666.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 5.315 seconds
+User Time  : 0.368 seconds
+System Time: 0.466 seconds
+CPU Time   : 0.834 seconds
+CPU Util.  : 1.96%
+
+RESOURCE USAGE
+Mjr Faults : 79855
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1820841379816254.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+
+TIME
+Time       : 5.372 seconds
+User Time  : 0.350 seconds
+System Time: 0.491 seconds
+CPU Time   : 0.841 seconds
+CPU Util.  : 1.96%
+
+RESOURCE USAGE
+Mjr Faults : 75842
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1524257724258596.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:34
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 5.492 seconds
+User Time  : 0.402 seconds
+System Time: 0.505 seconds
+CPU Time   : 0.907 seconds
+CPU Util.  : 2.06%
+
+RESOURCE USAGE
+Mjr Faults : 86549
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1883986050172674.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:40
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.149 seconds
+User Time  : 0.330 seconds
+System Time: 0.431 seconds
+CPU Time   : 0.760 seconds
+CPU Util.  : 1.85%
+
+RESOURCE USAGE
+Mjr Faults : 71453
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1472538099364692.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:46
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.174 seconds
+User Time  : 0.336 seconds
+System Time: 0.437 seconds
+CPU Time   : 0.773 seconds
+CPU Util.  : 1.87%
+
+RESOURCE USAGE
+Mjr Faults : 75763
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1501498687596023.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:52
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 5.180 seconds
+User Time  : 0.312 seconds
+System Time: 0.435 seconds
+CPU Time   : 0.747 seconds
+CPU Util.  : 1.80%
+
+RESOURCE USAGE
+Mjr Faults : 77910
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1273113006908383.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:46:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+
+TIME
+Time       : 5.252 seconds
+User Time  : 0.360 seconds
+System Time: 0.448 seconds
+CPU Time   : 0.809 seconds
+CPU Util.  : 1.92%
+
+RESOURCE USAGE
+Mjr Faults : 78451
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1727769799396990.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.195 seconds
+User Time  : 0.307 seconds
+System Time: 0.472 seconds
+CPU Time   : 0.780 seconds
+CPU Util.  : 1.88%
+
+RESOURCE USAGE
+Mjr Faults : 68562
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1165951342040085.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:09
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.163 seconds
+User Time  : 0.320 seconds
+System Time: 0.452 seconds
+CPU Time   : 0.772 seconds
+CPU Util.  : 1.87%
+
+RESOURCE USAGE
+Mjr Faults : 72078
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1350612940411604.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 5.281 seconds
+User Time  : 0.660 seconds
+System Time: 2.272 seconds
+CPU Time   : 2.932 seconds
+CPU Util.  : 6.94%
+
+RESOURCE USAGE
+Mjr Faults : 135053
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1804078851075588.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 4.795 seconds
+User Time  : 0.573 seconds
+System Time: 2.010 seconds
+CPU Time   : 2.583 seconds
+CPU Util.  : 6.73%
+
+RESOURCE USAGE
+Mjr Faults : 117606
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1342297517408517.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.677 seconds
+User Time  : 0.544 seconds
+System Time: 1.917 seconds
+CPU Time   : 2.461 seconds
+CPU Util.  : 6.58%
+
+RESOURCE USAGE
+Mjr Faults : 111209
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1209618432612114.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.926 seconds
+User Time  : 0.589 seconds
+System Time: 2.094 seconds
+CPU Time   : 2.684 seconds
+CPU Util.  : 6.81%
+
+RESOURCE USAGE
+Mjr Faults : 126737
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1453189037416060.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:38
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 4.861 seconds
+User Time  : 0.552 seconds
+System Time: 2.054 seconds
+CPU Time   : 2.606 seconds
+CPU Util.  : 6.70%
+
+RESOURCE USAGE
+Mjr Faults : 120356
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1361403428384253.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 5.121 seconds
+User Time  : 0.616 seconds
+System Time: 2.164 seconds
+CPU Time   : 2.780 seconds
+CPU Util.  : 6.79%
+
+RESOURCE USAGE
+Mjr Faults : 128835
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1560629045565070.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.921 seconds
+User Time  : 0.609 seconds
+System Time: 2.157 seconds
+CPU Time   : 2.767 seconds
+CPU Util.  : 7.03%
+
+RESOURCE USAGE
+Mjr Faults : 125437
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1440029762534884.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:47:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4288.00 MB
+
+TIME
+Time       : 4.532 seconds
+User Time  : 0.558 seconds
+System Time: 1.884 seconds
+CPU Time   : 2.441 seconds
+CPU Util.  : 6.73%
+
+RESOURCE USAGE
+Mjr Faults : 107139
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1350681723186229.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:48:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.856 seconds
+User Time  : 0.600 seconds
+System Time: 2.074 seconds
+CPU Time   : 2.674 seconds
+CPU Util.  : 6.88%
+
+RESOURCE USAGE
+Mjr Faults : 118804
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1454816715990083.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:48:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 4.608 seconds
+User Time  : 0.588 seconds
+System Time: 1.968 seconds
+CPU Time   : 2.556 seconds
+CPU Util.  : 6.93%
+
+RESOURCE USAGE
+Mjr Faults : 109902
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1527366186851256.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=5000,PARAM_CACHE_SIZE=2000
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:48:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 5.423 seconds
+User Time  : 0.326 seconds
+System Time: 0.496 seconds
+CPU Time   : 0.822 seconds
+CPU Util.  : 1.89%
+
+RESOURCE USAGE
+Mjr Faults : 68733
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1076626322296994.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:48:59
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.399 seconds
+User Time  : 0.318 seconds
+System Time: 0.466 seconds
+CPU Time   : 0.784 seconds
+CPU Util.  : 1.82%
+
+RESOURCE USAGE
+Mjr Faults : 68922
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 972434647101569.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:05
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 5.332 seconds
+User Time  : 0.319 seconds
+System Time: 0.452 seconds
+CPU Time   : 0.771 seconds
+CPU Util.  : 1.81%
+
+RESOURCE USAGE
+Mjr Faults : 69723
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1014615795009930.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.580 seconds
+User Time  : 0.373 seconds
+System Time: 0.512 seconds
+CPU Time   : 0.885 seconds
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 77271
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1416064572292085.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:18
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.524 seconds
+User Time  : 0.338 seconds
+System Time: 0.496 seconds
+CPU Time   : 0.833 seconds
+CPU Util.  : 1.89%
+
+RESOURCE USAGE
+Mjr Faults : 76652
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1139736583140727.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.563 seconds
+User Time  : 0.341 seconds
+System Time: 0.547 seconds
+CPU Time   : 0.888 seconds
+CPU Util.  : 2.00%
+
+RESOURCE USAGE
+Mjr Faults : 70934
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1108521470057325.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:30
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+
+TIME
+Time       : 5.786 seconds
+User Time  : 0.388 seconds
+System Time: 0.551 seconds
+CPU Time   : 0.940 seconds
+CPU Util.  : 2.03%
+
+RESOURCE USAGE
+Mjr Faults : 91742
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1444275116031173.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:36
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 5.432 seconds
+User Time  : 0.333 seconds
+System Time: 0.491 seconds
+CPU Time   : 0.824 seconds
+CPU Util.  : 1.90%
+
+RESOURCE USAGE
+Mjr Faults : 74128
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1181194702178774.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.439 seconds
+User Time  : 0.331 seconds
+System Time: 0.480 seconds
+CPU Time   : 0.811 seconds
+CPU Util.  : 1.86%
+
+RESOURCE USAGE
+Mjr Faults : 73687
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1119891181466138.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.315 seconds
+User Time  : 0.315 seconds
+System Time: 0.423 seconds
+CPU Time   : 0.738 seconds
+CPU Util.  : 1.73%
+
+RESOURCE USAGE
+Mjr Faults : 69753
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1064222686876119.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:49:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 5.268 seconds
+User Time  : 0.645 seconds
+System Time: 2.348 seconds
+CPU Time   : 2.993 seconds
+CPU Util.  : 7.10%
+
+RESOURCE USAGE
+Mjr Faults : 125252
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1203355996471442.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:01
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.418 seconds
+User Time  : 0.667 seconds
+System Time: 2.374 seconds
+CPU Time   : 3.041 seconds
+CPU Util.  : 7.02%
+
+RESOURCE USAGE
+Mjr Faults : 126356
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1399666255992433.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:07
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 5.685 seconds
+User Time  : 0.690 seconds
+System Time: 2.602 seconds
+CPU Time   : 3.292 seconds
+CPU Util.  : 7.24%
+
+RESOURCE USAGE
+Mjr Faults : 136596
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1398353050459069.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 4.622 seconds
+User Time  : 0.555 seconds
+System Time: 1.909 seconds
+CPU Time   : 2.463 seconds
+CPU Util.  : 6.66%
+
+RESOURCE USAGE
+Mjr Faults : 99174
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 923146747651047.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.065 seconds
+User Time  : 0.611 seconds
+System Time: 2.154 seconds
+CPU Time   : 2.764 seconds
+CPU Util.  : 6.82%
+
+RESOURCE USAGE
+Mjr Faults : 114286
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1157410585782977.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:25
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 5.008 seconds
+User Time  : 0.606 seconds
+System Time: 2.121 seconds
+CPU Time   : 2.727 seconds
+CPU Util.  : 6.81%
+
+RESOURCE USAGE
+Mjr Faults : 112063
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1094442860668306.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.450 seconds
+User Time  : 0.668 seconds
+System Time: 2.465 seconds
+CPU Time   : 3.132 seconds
+CPU Util.  : 7.18%
+
+RESOURCE USAGE
+Mjr Faults : 132048
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1289616166400063.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 5.258 seconds
+User Time  : 0.643 seconds
+System Time: 2.292 seconds
+CPU Time   : 2.934 seconds
+CPU Util.  : 6.98%
+
+RESOURCE USAGE
+Mjr Faults : 120985
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1261185568109031.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:43
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4280.00 MB
+
+TIME
+Time       : 5.062 seconds
+User Time  : 0.624 seconds
+System Time: 2.176 seconds
+CPU Time   : 2.800 seconds
+CPU Util.  : 6.91%
+
+RESOURCE USAGE
+Mjr Faults : 117359
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1191346575684406.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:50:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 5.151 seconds
+User Time  : 0.641 seconds
+System Time: 2.240 seconds
+CPU Time   : 2.881 seconds
+CPU Util.  : 6.99%
+
+RESOURCE USAGE
+Mjr Faults : 119943
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 1306617399871485.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=10000,PARAM_CACHE_SIZE=50
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:51:36
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.144 seconds
+User Time  : 0.841 seconds
+System Time: 0.509 seconds
+CPU Time   : 1.350 seconds
+CPU Util.  : 3.28%
+
+RESOURCE USAGE
+Mjr Faults : 68224
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6283019635778204.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:51:42
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.263 seconds
+User Time  : 0.907 seconds
+System Time: 0.525 seconds
+CPU Time   : 1.432 seconds
+CPU Util.  : 3.40%
+
+RESOURCE USAGE
+Mjr Faults : 79426
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6701174259124963.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:51:48
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.170 seconds
+User Time  : 0.791 seconds
+System Time: 0.496 seconds
+CPU Time   : 1.286 seconds
+CPU Util.  : 3.11%
+
+RESOURCE USAGE
+Mjr Faults : 75222
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5926790311815116.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:51:54
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.996 seconds
+User Time  : 0.803 seconds
+System Time: 0.466 seconds
+CPU Time   : 1.270 seconds
+CPU Util.  : 3.18%
+
+RESOURCE USAGE
+Mjr Faults : 66391
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5868640314972173.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+
+TIME
+Time       : 5.121 seconds
+User Time  : 0.845 seconds
+System Time: 0.487 seconds
+CPU Time   : 1.332 seconds
+CPU Util.  : 3.25%
+
+RESOURCE USAGE
+Mjr Faults : 78268
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6286229596864108.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4340.00 MB
+
+TIME
+Time       : 5.359 seconds
+User Time  : 0.931 seconds
+System Time: 0.504 seconds
+CPU Time   : 1.435 seconds
+CPU Util.  : 3.35%
+
+RESOURCE USAGE
+Mjr Faults : 82680
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 7387757378785198.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:12
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+
+TIME
+Time       : 4.917 seconds
+User Time  : 0.749 seconds
+System Time: 0.446 seconds
+CPU Time   : 1.195 seconds
+CPU Util.  : 3.04%
+
+RESOURCE USAGE
+Mjr Faults : 66147
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5484693956763875.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.307 seconds
+User Time  : 0.827 seconds
+System Time: 0.528 seconds
+CPU Time   : 1.355 seconds
+CPU Util.  : 3.19%
+
+RESOURCE USAGE
+Mjr Faults : 77856
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6035637360711074.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 4.875 seconds
+User Time  : 0.677 seconds
+System Time: 0.467 seconds
+CPU Time   : 1.144 seconds
+CPU Util.  : 2.93%
+
+RESOURCE USAGE
+Mjr Faults : 62635
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4919664310080345.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.074 seconds
+User Time  : 0.841 seconds
+System Time: 0.510 seconds
+CPU Time   : 1.350 seconds
+CPU Util.  : 3.33%
+
+RESOURCE USAGE
+Mjr Faults : 73506
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6315364287341746.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 5.002 seconds
+User Time  : 1.047 seconds
+System Time: 2.197 seconds
+CPU Time   : 3.243 seconds
+CPU Util.  : 8.10%
+
+RESOURCE USAGE
+Mjr Faults : 119433
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5658640291945192.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:40
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.133 seconds
+User Time  : 1.191 seconds
+System Time: 2.304 seconds
+CPU Time   : 3.495 seconds
+CPU Util.  : 8.51%
+
+RESOURCE USAGE
+Mjr Faults : 123074
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 7001123063701761.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:46
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+
+TIME
+Time       : 4.597 seconds
+User Time  : 1.143 seconds
+System Time: 2.081 seconds
+CPU Time   : 3.225 seconds
+CPU Util.  : 8.77%
+
+RESOURCE USAGE
+Mjr Faults : 101894
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6615190349629485.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:52
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.475 seconds
+User Time  : 1.094 seconds
+System Time: 2.032 seconds
+CPU Time   : 3.126 seconds
+CPU Util.  : 8.73%
+
+RESOURCE USAGE
+Mjr Faults : 102311
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6239397035810090.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:52:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4284.00 MB
+
+TIME
+Time       : 4.899 seconds
+User Time  : 1.205 seconds
+System Time: 2.204 seconds
+CPU Time   : 3.409 seconds
+CPU Util.  : 8.70%
+
+RESOURCE USAGE
+Mjr Faults : 111791
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 7098719820675583.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:53:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.740 seconds
+User Time  : 1.088 seconds
+System Time: 2.099 seconds
+CPU Time   : 3.187 seconds
+CPU Util.  : 8.41%
+
+RESOURCE USAGE
+Mjr Faults : 107467
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6072947680643120.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:53:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 4.370 seconds
+User Time  : 1.047 seconds
+System Time: 1.963 seconds
+CPU Time   : 3.010 seconds
+CPU Util.  : 8.61%
+
+RESOURCE USAGE
+Mjr Faults : 95154
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5950664153604783.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:53:13
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+
+TIME
+Time       : 4.884 seconds
+User Time  : 1.048 seconds
+System Time: 2.115 seconds
+CPU Time   : 3.163 seconds
+CPU Util.  : 8.10%
+
+RESOURCE USAGE
+Mjr Faults : 115589
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5538991708913992.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:53:19
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.435 seconds
+User Time  : 1.110 seconds
+System Time: 2.022 seconds
+CPU Time   : 3.132 seconds
+CPU Util.  : 8.83%
+
+RESOURCE USAGE
+Mjr Faults : 94684
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6370613507151216.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:53:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 4.938 seconds
+User Time  : 1.124 seconds
+System Time: 2.205 seconds
+CPU Time   : 3.329 seconds
+CPU Util.  : 8.43%
+
+RESOURCE USAGE
+Mjr Faults : 116328
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6124706848373180.000000
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+d1b7ed9601a3ab7a86411250cc1e49203ad3d08a
+PARAM_ALPHA=0.1,PARAM_EPOCH_THRESHOLD=0,PARAM_NUM_VERTICES=10000,PARAM_CACHE_SIZE=100
+NO_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.862 seconds
+User Time  : 0.645 seconds
+System Time: 0.516 seconds
+CPU Time   : 1.161 seconds
+CPU Util.  : 2.48%
+
+RESOURCE USAGE
+Mjr Faults : 83519
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4345322877144471.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:18
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 6.104 seconds
+User Time  : 0.726 seconds
+System Time: 0.603 seconds
+CPU Time   : 1.329 seconds
+CPU Util.  : 2.72%
+
+RESOURCE USAGE
+Mjr Faults : 88880
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4952442089060975.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+
+TIME
+Time       : 5.932 seconds
+User Time  : 0.685 seconds
+System Time: 0.595 seconds
+CPU Time   : 1.280 seconds
+CPU Util.  : 2.70%
+
+RESOURCE USAGE
+Mjr Faults : 86400
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4490287748556889.000000
+==========END LLAMA OUTPUT==========
+TRIAL 4
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:31
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4352.00 MB
+
+TIME
+Time       : 6.033 seconds
+User Time  : 0.699 seconds
+System Time: 0.605 seconds
+CPU Time   : 1.304 seconds
+CPU Util.  : 2.70%
+
+RESOURCE USAGE
+Mjr Faults : 91372
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4555195273649596.000000
+==========END LLAMA OUTPUT==========
+TRIAL 5
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:38
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+
+TIME
+Time       : 6.087 seconds
+User Time  : 0.722 seconds
+System Time: 0.613 seconds
+CPU Time   : 1.334 seconds
+CPU Util.  : 2.74%
+
+RESOURCE USAGE
+Mjr Faults : 89834
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4813036790442360.000000
+==========END LLAMA OUTPUT==========
+TRIAL 6
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:44
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.773 seconds
+User Time  : 0.649 seconds
+System Time: 0.547 seconds
+CPU Time   : 1.196 seconds
+CPU Util.  : 2.59%
+
+RESOURCE USAGE
+Mjr Faults : 83158
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4411572111355633.000000
+==========END LLAMA OUTPUT==========
+TRIAL 7
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+
+TIME
+Time       : 5.755 seconds
+User Time  : 0.674 seconds
+System Time: 0.532 seconds
+CPU Time   : 1.207 seconds
+CPU Util.  : 2.62%
+
+RESOURCE USAGE
+Mjr Faults : 83414
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4530084555520043.000000
+==========END LLAMA OUTPUT==========
+TRIAL 8
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:54:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.958 seconds
+User Time  : 0.672 seconds
+System Time: 0.545 seconds
+CPU Time   : 1.217 seconds
+CPU Util.  : 2.55%
+
+RESOURCE USAGE
+Mjr Faults : 85767
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4554413901968402.000000
+==========END LLAMA OUTPUT==========
+TRIAL 9
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:55:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.969 seconds
+User Time  : 0.702 seconds
+System Time: 0.562 seconds
+CPU Time   : 1.264 seconds
+CPU Util.  : 2.65%
+
+RESOURCE USAGE
+Mjr Faults : 94385
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4608037471022126.000000
+==========END LLAMA OUTPUT==========
+TRIAL 10
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:55:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+
+TIME
+Time       : 5.790 seconds
+User Time  : 0.696 seconds
+System Time: 0.513 seconds
+CPU Time   : 1.209 seconds
+CPU Util.  : 2.61%
+
+RESOURCE USAGE
+Mjr Faults : 91036
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4943825092414416.000000
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:55:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+
+TIME
+Time       : 5.518 seconds
+User Time  : 1.057 seconds
+System Time: 2.545 seconds
+CPU Time   : 3.602 seconds
+CPU Util.  : 8.16%
+
+RESOURCE USAGE
+Mjr Faults : 141959
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 5109579260326814.000000
+==========END LLAMA OUTPUT==========
+TRIAL 2
+==========LLAMA OUTPUT==========
+Benchmark  : Query simulator
+Start Time : 11/05/14 23:55:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+
+TIME
+Time       : 5.089 seconds
+User Time  : 0.933 seconds
+System Time: 2.228 seconds
+CPU Time   : 3.160 seconds
+CPU Util.  : 7.76%
+
+RESOURCE USAGE
+Mjr Faults : 125026
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 4406016095831986.000000
+==========END LLAMA OUTPUT==========
+TRIAL 3
+==========LLAMA OUTPUT==========
