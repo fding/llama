@@ -287,13 +287,6 @@ public:
 		    edge_t last = first + (*vtable)[add].level_length;
 		    if (last - first > 0) etable->advise(first, last);
 
-		    // TODO(fding): We should experiment moving this sequence of madvises
-		    // to a different #pragma omp section.
-		    // One thought: have two queues, one for each madvise thread.
-		    // In the query thread, enqueue node to both threads.
-		    // In one madvise thread, advise the node (so that its corresponding queue is emptied faster).
-		    // In other madvise thread, advise the friends of the node,
-		    // but only if the thread is not too far behind.
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
 			    if (!still_adding) break;
 			    if (nodes_to_advise.get_current_epoch() - epoch > PARAM_EPOCH_THRESHOLD) break;
