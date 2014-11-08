@@ -47,6 +47,8 @@
 #include <omp.h>
 #include <vector>
 #include <time.h>
+#include <iostream>
+#include <fstream>
 
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
@@ -55,11 +57,13 @@ using std::vector;
 using std::deque;
 using std::min;
 using std::max;
+using std::ifstream;
 
 #define PARAM_ALPHA 0.5
 #define PARAM_CACHE_SIZE 2000
 #define PARAM_NUM_VERTICES 10000
 #define PARAM_EPOCH_THRESHOLD 1
+#define PARAM_FILENAME "temp.txt"
 
 // templated class T, but really, only supports T=unsigned int
 // This class does not guarantee full consistency (some enqueues might get lost).
@@ -213,60 +217,6 @@ class syncqueue {
         }
 };
 
-
-
-template <class Graph>
-class request_generator {
-
-	Graph& graph;
-	deque<node_t> cache;
-	double alpha;
-	unsigned int cache_size;
-public:
-	request_generator(Graph& graph, double alpha=0.1, unsigned int cache_size=200)
-		: graph(graph), alpha(alpha), cache_size(cache_size) {
-		srand(time(NULL));
-	}
-
-	node_t generate() {
-		Graph& G = this->graph;
-		int rand_num = 0;
-		node_t retval;
-		if (!cache.empty()) {
-			// choose random number
-			rand_num = rand();
-		}
-
-		if (rand_num < RAND_MAX * alpha) {
-			// choose uniformly over all graph nodes
-			retval = G.pick_random_node();
-		} else {
-			int rand_cache = rand() % cache.size();
-			retval = cache[rand_cache];
-		}
-
-		unsigned int i = 0;
-		while (i++ < cache_size/5 && cache.size() > cache_size) {
-			cache.pop_back();
-		}
-
-		cache.push_front(retval);
-		ll_edge_iterator iterm;
-		G.out_iter_begin(iterm, retval);
-		unsigned int num_inserted = 0;
-		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-		    node_t next_node = iterm.last_node;
-		    int rand_insert = rand() % 4;
-		    if (rand_insert == 0) {
-			    num_inserted++;
-			    cache.push_front(next_node);
-		    }
-		    if (num_inserted > cache_size/5) break;
-		}
-		return retval;
-	}
-};
-
 /**
  * Count vertices in the given friends of friends traversal
  */
@@ -274,8 +224,7 @@ template <class Graph>
 class ll_b_query_simulator : public ll_benchmark<Graph> {
 
 	node_t root;
-	request_generator<Graph> generator;
-
+	node_t requests[PARAM_NUM_VERTICES];
 
 public:
 
@@ -286,9 +235,8 @@ public:
 	 * @param r the root
 	 */
 	ll_b_query_simulator(Graph& graph)
-		: ll_benchmark<Graph>(graph, "Query simulator"), generator(graph, PARAM_ALPHA, PARAM_CACHE_SIZE) {
+		: ll_benchmark<Graph>(graph, "Query simulator") {
 	}
-
 
 	/**
 	 * Destroy the benchmark
@@ -296,6 +244,12 @@ public:
 	virtual ~ll_b_query_simulator(void) {
 	}
 
+	virtual void initialize(void) {
+	    ifstream input_file;
+	    input_file.open(PARAM_FILENAME);
+	    for (int i = 0; i < PARAM_NUM_VERTICES; i++)
+                input_file >> requests[i];
+	}
 
 	/**
 	 * Run the benchmark
@@ -348,7 +302,7 @@ public:
 #endif
 	    // Query the graph
 	    for (int i = 0; i < PARAM_NUM_VERTICES; ++i) {
-                    node_t n = this->generator.generate();
+		    node_t n = requests[i];
                     ll_edge_iterator iterm;
                     G.out_iter_begin(iterm, n);
 #ifdef LL_BM_DO_MADVISE
