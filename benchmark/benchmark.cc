@@ -60,6 +60,7 @@
 #include "benchmarks/bfs.h"
 #include "benchmarks/friend_of_friends.h"
 #include "benchmarks/pagerank.h"
+#include "benchmarks/query_creator.h"
 #include "benchmarks/query_simulator.h"
 #include "benchmarks/sssp.h"
 #include "benchmarks/tarjan_scc.h"
@@ -355,6 +356,9 @@ static ll_runnable_thing g_runnable_things[] = {
 	{ "ll_b_query_simulator"      , "query_simulator"
 	                              , "Query simulator"
 	                              , false },
+	{ "ll_b_query_creator"        , "query_creator"
+                                      , "Query creator"
+			              , false},
 	{ NULL, NULL, NULL, false }
 };
 
@@ -1071,6 +1075,9 @@ int main(int argc, char** argv)
 #endif
 #if B < 0 || B == 23
 	LL_RT_COND_CREATE(run_task_class, 23, ll_b_query_simulator, G);
+#endif
+#if B < 0 || B == 24
+	LL_RT_COND_CREATE(run_task_class, 24, ll_b_query_creator, G);
 #endif
 #undef B
 
