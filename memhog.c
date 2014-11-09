@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
         printf("Usage: %s size(megabytes)\n", argv[0]);
         return 1;
     }
-    unsigned long size;
+    unsigned long long size;
     if (sscanf(argv[1], "%lu", &size) != 1) {
         printf("Expected integer size in megabytes\n");
         return 1;
@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
         else break;
     }
 
-    printf("Hogging %lu bytes (%lu mb)\n", size, size/(1024*1024));
+    printf("Hogging %llu bytes (%llu mb)\n", size, size/(1024*1024));
 
     // Touch an element of each page once per iteration, to keep page resident in memory.
     for (int i = 0; ; i = (i + PAGESIZE/sizeof(int)) % (size / sizeof(int)) ) {
