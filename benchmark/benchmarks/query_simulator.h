@@ -108,6 +108,64 @@ class circular_buffer {
         }
 };
 
+template <class T, int SIZE>
+class lru_queue {
+private:
+    struct node {
+        T value;
+        unsigned int epoch;
+        node* next;
+        node* prev;
+    };
+    unordered_map<T, node*> map;
+    unsigned int epoch;
+    node* head;
+    node* tail;
+public:
+    lru_queue(): epoch(0), head(NULL), tail(NULL) {
+
+    }
+
+    int enqueue(T x) {
+        unordered_map<T, node*>::iterator it;
+        if ((it = map.find(x)) != map.end()) {
+            node* pointer = it->second;
+            node* old_next = pointer->next;
+            pointer->next = head;
+            head->prev = pointer;
+            pointer->prev->next = old_next;
+            old_next->prev = pointer->prev;
+            pointer->prev = NULL;
+            pointer->epoch = epoch;
+            head = pointer;
+        }
+        else {
+            node* pointer = malloc(sizeof(node));
+            if (pointer == NULL) return 1;
+            pointer->value = x;
+            pointer->epoch = epoch;
+            pointer->next = head;
+            pointer->prev = NULL;
+            head = pointer;
+        }
+    }
+    void increment_epoch() {
+        epoch++;
+    }
+    unsigned int get_current_epoch() {
+        return epoch;
+    }
+    int dequeue(T* ret, unsigned int* epoch) {
+        if (head == NULL) return 1;
+        *ret = head->value;
+        *epoch = head->epoch;
+        node* newhead = head->next;
+        free(head);
+        head = newhead;
+        newhead->prev=NULL;
+    }
+};
+
 /* A queue implementation for producer-consumer problems.
  * All enqueues are assumed to happen in one thread,
  * and all dequeues in another.
