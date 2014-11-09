@@ -147,6 +147,7 @@ public:
             pointer->next = head;
             pointer->prev = NULL;
             head = pointer;
+            map[x] = pointer;
         }
     }
     void increment_epoch() {
