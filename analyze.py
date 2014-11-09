@@ -9,6 +9,10 @@ class Experiment(object):
         ])
         self.outputs = []
 
+class Results(dict):
+    def __init__(self, *args, **kwargs):
+        super(Results, self).__init__(*args, **kwargs)
+
 class LogReader(object):
     def __init__(self, fname):
         with open(fname, 'r') as f:
@@ -19,12 +23,12 @@ class LogReader(object):
         p = re.compile(pattern)
         n = len(self.lines)
         i = self.current_line
-        while i<n and not p.match(self.lines[i].strip()):
+        while i < n and not p.match(self.lines[i].strip()):
             i = i + 1
         return i
 
     def parse_trial(self, max_i):
-        output = {}
+        output = Results()
         n = len(self.lines)
         j = self.wait_for_line('(NO_MADVISE)|(WITH_MADVISE)')
         if j >= max_i:
@@ -32,7 +36,7 @@ class LogReader(object):
         else:
             self.current_line = j
 
-        if self.lines[self.current_line] == 'WITH_ADVISE':
+        if self.lines[self.current_line].strip() == 'WITH_MADVISE':
             output.with_madvise = True
         else:
             output.with_madvise = False
@@ -58,7 +62,7 @@ class LogReader(object):
 
         while self.current_line < n:
             self.current_line = self.wait_for_line('==========START EXPERIMENT==========')
-            if self.current_line > n:
+            if self.current_line >= n:
                 break
 
             a = Experiment(self.lines[self.current_line+1], 
@@ -72,6 +76,8 @@ class LogReader(object):
                 output = self.parse_trial(next_expt)
                 if output:
                     a.outputs.append(output)
+                else:
+                    break
 
             experiments.append(a)
 
@@ -98,16 +104,17 @@ def main():
                      ',no madvise time,madvise time\n')
         for e in experiments:
             nm_time = [floatify(k['Time']) for k in e.outputs
-                       if k.with_madvise]
+                       if not k.with_madvise]
             wm_time = [floatify(k['Time']) for k in e.outputs
                       if k.with_madvise]
+
             output.write('%s,%s,%s,%s,%s,%s\n' % (
                 e.params['PARAM_ALPHA'],
                 e.params['PARAM_CACHE_SIZE'],
                 e.params['PARAM_NUM_VERTICES'],
                 e.params['PARAM_EPOCH_THRESHOLD'],
-                sum(nm_time)/len(nm_time),
-                sum(wm_time)/len(wm_time))
+                sum(nm_time)/len(nm_time) if len(nm_time) > 0 else 0,
+                sum(wm_time)/len(wm_time) if len(wm_time) > 0 else 0)
             )
 
 if __name__=='__main__':
