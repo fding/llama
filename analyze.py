@@ -1,5 +1,5 @@
 import re
-f = open('output.log', 'r')
+import argparse
 
 class Experiment(object):
     def __init__(self, commit, params):
@@ -7,60 +7,108 @@ class Experiment(object):
         self.params = dict([
             tuple(kv.split('=')) for kv in params.split(',')
         ])
-        self.no_madvise_outputs = []
-        self.with_madvise_outputs = []
+        self.outputs = []
 
-lines = f.read().split('\n')
-i = 0
+class LogReader(object):
+    def __init__(self, fname):
+        with open(fname, 'r') as f:
+            self.lines = f.read().split('\n')
+            self.current_line = 0
 
-def wait_for_line(s, i):
-    p = re.compile(s)
-    while not p.match(lines[i].strip()):
-        i = i + 1
-    return i
+    def wait_for_line(self, pattern):
+        p = re.compile(pattern)
+        n = len(self.lines)
+        i = self.current_line
+        while i<n and not p.match(self.lines[i].strip()):
+            i = i + 1
+        return i
 
-experiments = []
-with_madvise = False
-
-while i < len(lines):
-    i = wait_for_line('==========START EXPERIMENT==========', i)
-    a = Experiment(lines[i+1], lines[i+2])
-    i = i + 3
-
-    for j in range(5):
-        i = wait_for_line('(NO_MADVISE)|(WITH_MADVISE)', i)
-        if lines[i] == 'WITH_ADVISE':
-            with_madvise = True
-        else:
-            with_madvise = False
-
-        i = wait_for_line('TRIAL \d+', i)
-        i = wait_for_line('==========LLAMA OUTPUT==========', i)
-        j = wait_for_line('==========END LLAMA OUTPUT==========', i)
+    def parse_trial(self, max_i):
         output = {}
-        for line in lines[i+1: j]:
+        n = len(self.lines)
+        j = self.wait_for_line('(NO_MADVISE)|(WITH_MADVISE)')
+        if j >= max_i:
+            return None
+        else:
+            self.current_line = j
+
+        if self.lines[self.current_line] == 'WITH_ADVISE':
+            output.with_madvise = True
+        else:
+            output.with_madvise = False
+
+        self.current_line = self.wait_for_line('TRIAL \d+')
+        if self.current_line >= n: return None
+        self.current_line = self.wait_for_line('==========LLAMA OUTPUT==========')
+        if self.current_line >= n: return None
+        j = self.wait_for_line('==========END LLAMA OUTPUT==========')
+        if j >= n: return None
+
+        for line in self.lines[self.current_line+1: j]:
             parts = line.split(':')
             if len(parts) == 2:
                 output[parts[0].strip()] = parts[1].strip()
-        i = j + 1
+        self.current_line = j + 1
 
-        if with_madvise:
-            a.with_madvise_outputs.append(output)
-        else:
-            a.no_madvise_outputs.append(output)
+        return output
 
-    experiments.append(a)
+    def parse(self):
+        experiments = []
+        n = len(self.lines)
+
+        while self.current_line < n:
+            self.current_line = self.wait_for_line('==========START EXPERIMENT==========')
+            if self.current_line > n:
+                break
+
+            a = Experiment(self.lines[self.current_line+1], 
+                           self.lines[self.current_line+2])
+            self.current_line += 3
+            next_expt = self.wait_for_line('==========START EXPERIMENT==========')
+
+            while True:
+                if self.current_line >= next_expt:
+                    break
+                output = self.parse_trial(next_expt)
+                if output:
+                    a.outputs.append(output)
+
+            experiments.append(a)
+
+        return experiments
 
 def floatify(s):
     return float(s.split()[0])
 
-newf = open('output.csv', 'w')
+def main():
+    parser = argparse.ArgumentParser(description='Analyze LLAMA benchmark log files')
+    parser.add_argument('logfile', type=str,
+                        help='Log file to analyze')
+    parser.add_argument('-o', '--output', type=str,
+                        default='output.csv',
+                        help='Output csv file')
 
-for e in experiments:
-    nm_time = [floatify(k['Time']) for k in e.no_madvise_outputs]
-    wm_time = [floatify(k['Time']) for k in e.with_madvise_outputs]
-    newf.write('%s,%s,%s,%s,%s,%s\n' % (
-        e.params['PARAM_ALPHA'], e.params['PARAM_CACHE_SIZE'], e.params['PARAM_NUM_VERTICES'], e.params['PARAM_EPOCH_THRESHOLD'],
-        sum(nm_time)/len(nm_time),
-        sum(wm_time)/len(wm_time))
-    )
+    args = parser.parse_args()
+
+    log_reader = LogReader(args.logfile)
+    experiments = log_reader.parse()
+
+    with open(args.output, 'w') as output:
+        output.write('Alpha,Cache size,Num queries,Epoch threshold'
+                     ',no madvise time,madvise time\n')
+        for e in experiments:
+            nm_time = [floatify(k['Time']) for k in e.outputs
+                       if k.with_madvise]
+            wm_time = [floatify(k['Time']) for k in e.outputs
+                      if k.with_madvise]
+            output.write('%s,%s,%s,%s,%s,%s\n' % (
+                e.params['PARAM_ALPHA'],
+                e.params['PARAM_CACHE_SIZE'],
+                e.params['PARAM_NUM_VERTICES'],
+                e.params['PARAM_EPOCH_THRESHOLD'],
+                sum(nm_time)/len(nm_time),
+                sum(wm_time)/len(wm_time))
+            )
+
+if __name__=='__main__':
+    main()
