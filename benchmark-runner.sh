@@ -39,19 +39,27 @@ function run() {
     do
         ./bin/benchmark-persistent --run query_creator -d bin/db/
 
-	echo "NO_MADVISE" >> output.log
-        echo "TRIAL $m" >> output.log
-        echo "==========LLAMA OUTPUT==========" >> output.log
-	sudo purge
-        ./bin/benchmark-persistent --run query_simulator -d bin/db/ >> output.log
-        echo "==========END LLAMA OUTPUT==========" >> output.log
+        echo "NO_MADVISE" >> output.log
+            echo "TRIAL $m" >> output.log
+            echo "==========BEFORE VM STAT==========" >> output.log
+        sudo purge
+            vm_stat >> output.log
+            echo "==========LLAMA OUTPUT==========" >> output.log
+            ./bin/benchmark-persistent --run query_simulator -d bin/db/ >> output.log
+            echo "==========AFTER VM STAT==========" >> output.log
+            vm_stat >> output.log
+            echo "==========END LLAMA OUTPUT==========" >> output.log
 
-	echo "WITH_MADVISE" >> output.log
-        echo "TRIAL $m" >> output.log
-        echo "==========LLAMA OUTPUT==========" >> output.log
-	sudo purge
-        ./bin/benchmark-persistent-madvise --run query_simulator -d bin/db/ >> output.log
-        echo "==========END LLAMA OUTPUT==========" >> output.log
+        echo "WITH_MADVISE" >> output.log
+            echo "TRIAL $m" >> output.log
+            echo "==========VM STAT==========" >> output.log
+        sudo purge
+            vm_stat >> output.log
+            echo "==========LLAMA OUTPUT==========" >> output.log
+            ./bin/benchmark-persistent-madvise --run query_simulator -d bin/db/ >> output.log
+            echo "==========AFTER VM STAT==========" >> output.log
+            vm_stat >> output.log
+            echo "==========END LLAMA OUTPUT==========" >> output.log
     done
 
     cp -f benchmark/benchmarks/query_creator_tmp.h benchmark/benchmarks/query_creator.h
