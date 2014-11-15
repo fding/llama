@@ -49,6 +49,7 @@
 #include <time.h>
 #include <iostream>
 #include <fstream>
+#include <unordered_map>
 
 #include "llama/ll_writable_graph.h"
 #include "benchmarks/benchmark.h"
@@ -58,10 +59,11 @@ using std::deque;
 using std::min;
 using std::max;
 using std::ifstream;
+using std::unordered_map;
 
 #define PARAM_ALPHA 0.5
 #define PARAM_CACHE_SIZE 2000
-#define PARAM_NUM_VERTICES 10000
+#define PARAM_NUM_VERTICES 20000
 #define PARAM_EPOCH_THRESHOLD 1
 #define PARAM_FILENAME "temp.txt"
 
@@ -108,7 +110,7 @@ class circular_buffer {
         }
 };
 
-template <class T, int SIZE>
+template <class T>
 class lru_queue {
 private:
     struct node {
@@ -121,49 +123,82 @@ private:
     unsigned int epoch;
     node* head;
     node* tail;
+    omp_lock_t queue_lock;
 public:
     lru_queue(): epoch(0), head(NULL), tail(NULL) {
-
+        omp_init_lock(&queue_lock);
     }
 
     int enqueue(T x) {
-        unordered_map<T, node*>::iterator it;
+	omp_set_lock(&queue_lock);
+        typename unordered_map<T, node*>::iterator it;
         if ((it = map.find(x)) != map.end()) {
             node* pointer = it->second;
             node* old_next = pointer->next;
-            pointer->next = head;
-            head->prev = pointer;
-            pointer->prev->next = old_next;
-            old_next->prev = pointer->prev;
-            pointer->prev = NULL;
-            pointer->epoch = epoch;
-            head = pointer;
-        }
-        else {
-            node* pointer = malloc(sizeof(node));
-            if (pointer == NULL) return 1;
+	    if (pointer != head) {
+		    pointer->next = head;
+		    head->prev = pointer;
+		    pointer->prev->next = old_next;
+		    if (old_next) {
+			    old_next->prev = pointer->prev;
+		    }
+		    pointer->prev = NULL;
+		    pointer->epoch = epoch;
+		    head = pointer;
+	    }
+        } else {
+            node* pointer = (node*)malloc(sizeof(node));
+            if (pointer == NULL) {
+		    omp_unset_lock(&queue_lock);
+		    return 1;
+	    }
             pointer->value = x;
             pointer->epoch = epoch;
             pointer->next = head;
+	    if (head) {
+		    head->prev = pointer;
+	    }
             pointer->prev = NULL;
             head = pointer;
             map[x] = pointer;
         }
+
+	omp_unset_lock(&queue_lock);
+	return 0;
     }
+
     void increment_epoch() {
         epoch++;
     }
+
     unsigned int get_current_epoch() {
         return epoch;
     }
-    int dequeue(T* ret, unsigned int* epoch) {
-        if (head == NULL) return 1;
+
+    int dequeue(T* ret, unsigned int* epoch_ret) {
+	omp_set_lock(&queue_lock);
+        if (head == NULL) {
+		omp_unset_lock(&queue_lock);
+		return 1;
+	}
+	if (epoch - head->epoch > 500) {
+		omp_unset_lock(&queue_lock);
+		return 1;
+	}
+
+        map.erase(head->value);
+	
         *ret = head->value;
-        *epoch = head->epoch;
+        *epoch_ret = head->epoch;
         node* newhead = head->next;
         free(head);
         head = newhead;
-        newhead->prev=NULL;
+	if (newhead) {
+		newhead->prev = NULL;
+	}
+
+	omp_unset_lock(&queue_lock);
+	return 0;
     }
 };
 
@@ -324,6 +359,9 @@ public:
 #ifdef LL_BM_DO_MADVISE
 	    // Page-size, minus malloc overhead.
 	    syncqueue<node_t> nodes_to_advise;
+#ifdef LL_BM_DO_MUNADVISE
+	    lru_queue<node_t> nodes_to_evict;
+#endif
 	    // circular_buffer<node_t> nodes_to_advise;
 	    bool still_adding = true;
 
@@ -340,11 +378,20 @@ public:
 		    ll_edge_iterator iteradd;
 		    G.out_iter_begin(iteradd, add);
 
+#ifdef LL_BM_DO_MUNADVISE
+		    nodes_to_evict.increment_epoch();
+#endif
+
 		    auto vtable = G.out().vertex_table(0);
 		    auto etable = G.out().edge_table(0);
 		    edge_t first = (*vtable)[add].adj_list_start;
 		    edge_t last = first + (*vtable)[add].level_length;
-		    if (last - first > 0) etable->advise(first, last);
+		    if (last - first > 0) {
+			    etable->advise(first, last);
+#ifdef LL_BM_DO_MUNADVISE
+			    nodes_to_evict.enqueue(add);
+#endif
+		    }
 
 		    FOREACH_OUTEDGE_ITER(v_idx, G, iteradd) {
 			    if (!still_adding) break;
@@ -352,10 +399,32 @@ public:
                             node_t next_node = iteradd.last_node;
                             edge_t first = (*vtable)[next_node].adj_list_start;
 			    edge_t last = first + (*vtable)[next_node].level_length;
-			    if (last - first > 0) etable->advise(first, last);
+			    if (last - first > 0) {
+				    etable->advise(first, last);
+#ifdef LL_BM_DO_MUNADVISE
+				    nodes_to_evict.enqueue(next_node);
+#endif
+			    }
 		    }
 	    }
     }  // end #pragma omp section
+#ifdef LL_BM_DO_MUNADVISE
+    #pragma omp section
+    {
+	    while (still_adding) {
+		    node_t remove;
+		    unsigned int epoch;
+                    if (nodes_to_evict.dequeue(&remove, &epoch)) continue;
+		    auto vtable = G.out().vertex_table(0);
+		    auto etable = G.out().edge_table(0);
+		    edge_t first = (*vtable)[remove].adj_list_start;
+		    edge_t last = first + (*vtable)[remove].level_length;
+		    if (last - first > 0) {
+			    etable->advise(first, last, LL_ADV_DONTNEED);
+		    }
+	    }
+    }  // end #pragma omp section
+#endif
     #pragma omp section
     {
 #endif

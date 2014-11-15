@@ -451,6 +451,9 @@ static void usage(const char* arg0) {
 #ifdef LL_PERSISTENCE
 	fprintf(stderr, "  -L, --load            Load the input files into the database\n");
 #endif
+#ifdef LL_PERSISTENCE
+	fprintf(stderr, " -m, --memory_limit M   Set maximum buffer cache usage\n");
+#endif
 #ifdef LL_STREAMING
 	fprintf(stderr, "  -M, --max-batches M   Set the maximum number of batches\n");
 #endif
@@ -1332,6 +1335,8 @@ int main(int argc, char** argv)
 	printf("# Levels   : %lu\n", (size_t) G.num_levels());
 
 	printf("Memory     : %0.2lf MB\n", (maxrss_loaded - maxrss_start) / 1024.0);
+	printf("rss start  : %0.2lf MB\n", maxrss_start / 1024.0);
+	printf("rss loaded : %0.2lf MB\n", maxrss_loaded / 1024.0);
 	//printf("Out Edges  : %0.2lf MB\n", mem_out_edges / 1024.0 / 1024.0);
 
 	if (load_count > 0) {
