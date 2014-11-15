@@ -43,8 +43,27 @@ class LogReader(object):
 
         self.current_line = self.wait_for_line('TRIAL \d+')
         if self.current_line >= n: return None
-        self.current_line = self.wait_for_line('==========LLAMA OUTPUT==========')
+
+        self.current_line = self.wait_for_line('==========BEFORE VM STAT==========')
         if self.current_line >= n: return None
+
+        j = self.wait_for_line('==========LLAMA OUTPUT==========')
+        if j >= n: return None
+
+        for line in self.lines[self.current_line+1: j]:
+            parts = line.split(':')
+            if len(parts) == 2:
+                output[parts[0].strip()] = parts[1].strip()
+
+        self.current_line = j
+        j = self.wait_for_line('==========AFTER VM STAT==========')
+        if j >= n: return None
+
+        for line in self.lines[self.current_line+1: j]:
+            parts = line.split(':')
+            if len(parts) == 2:
+                output[parts[0].strip()] = parts[1].strip()
+        self.current_line = j
         j = self.wait_for_line('==========END LLAMA OUTPUT==========')
         if j >= n: return None
 
@@ -52,7 +71,8 @@ class LogReader(object):
             parts = line.split(':')
             if len(parts) == 2:
                 output[parts[0].strip()] = parts[1].strip()
-        self.current_line = j + 1
+
+        self.current_line = j+1
 
         return output
 

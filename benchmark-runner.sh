@@ -52,7 +52,7 @@ function run() {
 
         echo "WITH_MADVISE" >> output.log
             echo "TRIAL $m" >> output.log
-            echo "==========VM STAT==========" >> output.log
+            echo "==========BEFORE VM STAT==========" >> output.log
         sudo purge
             vm_stat >> output.log
             echo "==========LLAMA OUTPUT==========" >> output.log
