@@ -120,8 +120,10 @@ def main():
     experiments = log_reader.parse()
 
     with open(args.output, 'w') as output:
-        output.write('Alpha,Cache size,Num queries,Epoch threshold'
-                     ',no madvise time,madvise time,buffer usage no madvise,buffer usage with madvise\n')
+        output.write('alpha,Cache size,Number of queries,Epoch threshold'
+                     ',Time (no madvise; s),Time (madvise; s),'
+                     'Buffer Cache Usage (no madvise; MB),Buffer Cache Usage (madvise; MB)\n'
+                    )
         for e in experiments:
             nm_time = [floatify(k['Time']) for k in e.outputs
                        if not k.with_madvise]
