@@ -181,10 +181,10 @@ struct ll_edge_iterator {
 	// for madvising buffer manager
 	bool madvising = false;
 	bool still_adding;
-	// unsigned int epoch;
+	unsigned int epoch;
 	pthread_t madvise_thread;
-	// deque<madvise_queue_item> madvise_queue;
-	syncqueue<node_t> madvise_queue;
+	deque<madvise_queue_item> madvise_queue;
+	// syncqueue<node_t> madvise_queue;
         pthread_mutex_t madvise_lock;
 
 	void* graph;
