@@ -45,7 +45,7 @@ def read_data(file_name):
 
 
 DEFAULT_PARAMS = {
-    'alpha': 0.1,
+    'alpha': 0.5,
     'Cache size': 1000,
     'Number of queries': 40000,
     'Epoch threshold': 4,
