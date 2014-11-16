@@ -53,7 +53,7 @@ class LogReader(object):
         for line in self.lines[self.current_line+1: j]:
             parts = line.split(':')
             if len(parts) == 2:
-                output[parts[0].strip()] = parts[1].strip()
+                output['before ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j
         j = self.wait_for_line('==========AFTER VM STAT==========')
@@ -70,7 +70,7 @@ class LogReader(object):
         for line in self.lines[self.current_line+1: j]:
             parts = line.split(':')
             if len(parts) == 2:
-                output[parts[0].strip()] = parts[1].strip()
+                output['after ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j+1
 
@@ -120,22 +120,30 @@ def main():
     experiments = log_reader.parse()
 
     with open(args.output, 'w') as output:
-        output.write('Alpha,Cache size,Num queries,Epoch threshold'
-                     ',no madvise time,madvise time\n')
+        output.write('alpha,Cache size,Number of queries,Epoch threshold'
+                     ',Time (no madvise; s),Time (madvise; s),'
+                     'Buffer Cache Usage (no madvise; MB),Buffer Cache Usage (madvise; MB)\n'
+                    )
         for e in experiments:
             nm_time = [floatify(k['Time']) for k in e.outputs
                        if not k.with_madvise]
             wm_time = [floatify(k['Time']) for k in e.outputs
                       if k.with_madvise]
+            nm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
+                        for k in e.outputs if not k.with_madvise]
+            wm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
+                        for k in e.outputs if k.with_madvise]
 
-            output.write('%s,%s,%s,%s,%s,%s\n' % (
+            output.write('%s,%s,%s,%s,%s,%s,%s,%s\n' % (
                 e.params['PARAM_ALPHA'],
                 e.params['PARAM_CACHE_SIZE'],
                 e.params['PARAM_NUM_VERTICES'],
                 e.params['PARAM_EPOCH_THRESHOLD'],
                 sum(nm_time)/len(nm_time) if len(nm_time) > 0 else 0,
-                sum(wm_time)/len(wm_time) if len(wm_time) > 0 else 0)
-            )
+                sum(wm_time)/len(wm_time) if len(wm_time) > 0 else 0,
+                sum(nm_pages)/len(wm_pages) * 4096/1024./1024. if len(wm_pages) > 0 else 0,
+                sum(wm_pages)/len(wm_pages) * 4096/1024./1024. if len(wm_pages) > 0 else 0,
+            ))
 
 if __name__=='__main__':
     main()
