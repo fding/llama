@@ -76,13 +76,13 @@ def graph_data(data, x, ys, restriction, title, output):
     counter = 0
 
     for y in ys:
-        if y == 'time':
+        if y == 'speedup':
             ydata = [100*(1-b/a) for a, b in zip(
                 filtered.dimension('Time (no madvise; s)'),
                 filtered.dimension('Time (madvise; s)')
             )]
-        elif y == 'memory':
-            ydata = [a/b for a, b in zip(
+        elif y == 'overhead':
+            ydata = [b/a for a, b in zip(
                 filtered.dimension('Buffer Cache Usage (no madvise; MB)'),
                 filtered.dimension('Buffer Cache Usage (madvise; MB)')
             )]
@@ -97,6 +97,8 @@ def graph_data(data, x, ys, restriction, title, output):
         
         if len(ys) > 1:
             pylab.plot(filtered.dimension(x), ydata, MARKERS[counter], label=LEGENDS[y])
+        else:
+            pylab.plot(filtered.dimension(x), ydata, MARKERS[counter])
         counter += 1
 
     # pylab.plot(*plots)
