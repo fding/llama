@@ -675,6 +675,13 @@ public:
 		return _out.degree(n, level);
 	}
 
+	void out_iter_do_madvise(ll_edge_iterator& iter) {
+		_out.iter_do_madvise(iter);
+	}
+
+	void out_iter_stop_madvise(ll_edge_iterator& iter) {
+		_out.iter_stop_madvise(iter);
+	}
 
 	/**
 	 * Create iterator over all outgoing edges

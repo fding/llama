@@ -61,7 +61,7 @@ using std::ofstream;
 
 #define ALPHA 0.5
 #define CACHE_SIZE 2000
-#define NUM_VERTICES 20000
+#define NUM_VERTICES 100000
 #define FILENAME "temp.txt"
 
 template <class Graph>

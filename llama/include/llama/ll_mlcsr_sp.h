@@ -47,7 +47,9 @@
 #include "llama/ll_mlcsr_iterator.h"
 #include "llama/ll_mlcsr_properties.h"
 
+#define PARAM_EPOCH_THRESHOLD 1
 
+void* madvise_thread_func(void* arg);
 
 //==========================================================================//
 // The base class: ll_csr_base                                              //
@@ -1538,6 +1540,24 @@ public:
 #endif
 	}
 
+	/**
+	  * Setup madvising for iterator
+	  */
+	void iter_do_madvise(ll_edge_iterator& iter) {
+		iter.still_adding = true;
+		iter.graph = (void*) this;
+		iter.madvising = true;
+		pthread_create(&iter.madvise_thread, NULL, madvise_thread_func, (void*)&iter);
+	}
+
+	void iter_stop_madvise(ll_edge_iterator& iter) {
+		if (iter.madvising) {
+			iter.still_adding = false;
+			printf("Trying to stop madvise...\n");
+			pthread_join(iter.madvise_thread, NULL);
+			printf("Stopped madvise...\n");
+		}
+	}
 
 	/**
 	 * Start the iterator for the given node
@@ -1590,11 +1610,19 @@ public:
 
 #ifdef LL_DELETIONS
 		if (this->is_edge_deleted(iter)) {
-        	node_t n = iter.last_node;
+			node_t n = iter.last_node;
 			iter_next(iter);
-        	iter.last_node = n;
+			iter.last_node = n;
 		}
 #endif
+		if (iter.madvising) {
+			// pthread_mutex_lock(&iter.madvise_lock);
+			// iter.madvise_queue.push_back({iter.last_node, iter.epoch});
+			// iter.epoch++;
+			// pthread_mutex_unlock(&iter.madvise_lock);
+			iter.madvise_queue.enqueue(n);
+			iter.madvise_queue.increment_epoch();
+		}
 
 		LL_D_NODE_PRINT(n, "[left=%ld"
 				IF_LL_PRECOMPUTED_DEGREE(", degree=%ld")
@@ -2283,4 +2311,50 @@ public:
 	}
 };
 
+void* madvise_thread_func(void* arg) {
+	ll_edge_iterator *iter = (ll_edge_iterator*)(arg);
+	ll_mlcsr_core *graph = (ll_mlcsr_core*)iter->graph;
+	while (iter->still_adding) {
+		node_t add;
+		/*pthread_mutex_lock(&iter->madvise_lock);
+		if (iter->madvise_queue.empty()) {
+			pthread_mutex_unlock(&iter->madvise_lock);
+			continue;
+		}
+		madvise_queue_item item = iter->madvise_queue.front();
+		iter->madvise_queue.pop_front();
+		pthread_mutex_unlock(&iter->madvise_lock);*/
+		unsigned int epoch;
+		if (iter->madvise_queue.dequeue(&add, &epoch)) continue;
+		unsigned int current_epoch = iter->madvise_queue.get_current_epoch();
+		if (current_epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+
+		// add = item.node;
+
+		auto vtable = graph->vertex_table(0);
+		auto etable = graph->edge_table(0);
+		edge_t first = (*vtable)[add].adj_list_start;
+		edge_t last = first + (*vtable)[add].level_length;
+		if (last - first > 0) {
+			etable->advise(first, last);
+		}
+		
+		ll_edge_iterator it;
+		graph->iter_begin(it, add, 0);
+		for (edge_t edge_var = graph->iter_next(it); edge_var != LL_NIL_EDGE; edge_var = graph->iter_next(it)) {
+			if (!iter->still_adding) break;
+			node_t next = it.last_node;
+			current_epoch = iter->madvise_queue.get_current_epoch();
+			if (current_epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+
+			edge_t next_first = (*vtable)[next].adj_list_start;
+			edge_t next_last = next_first + (*vtable)[next].level_length;
+			if (next_last - next_first > 0)
+				etable->advise(next_first, next_last);
+		}
+	}
+	return NULL;
+}
+
+#undef PARAM_EPOCH_THRESHOLD
 #endif

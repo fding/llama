@@ -38,7 +38,8 @@
 #define LL_MLCSR_ITERATOR_H_
 
 #include "llama/ll_common.h"
-
+#include <deque>
+#include <pthread.h>
 
 //==========================================================================//
 // Support: ll_edge_iterator                                                //
@@ -48,7 +49,122 @@
 #define LL_I_OWNER_RO_CSR		0
 #define LL_I_OWNER_WRITABLE		1
 
+using std::deque;
 struct ll_mlcsr_core__begin_t;
+
+/* A queue implementation for producer-consumer problems.
+ * All enqueues are assumed to happen in one thread,
+ * and all dequeues in another.
+ * Enqueues and dequeues can occur in different threads.
+ * Data structure does not need to acquire locks to guarantee
+ * synchronization in this situation. */
+template <class T, int BLOCKSIZE=16384-32>
+class syncqueue {
+    // Not particularly memory efficient, but make implementation really simple and easy to reason about
+    private:
+    struct node {
+        T value;
+        unsigned int epoch;
+        node* next;
+    };
+    node* head;
+    node* head_section;
+    int tail;
+    node* tail_section;
+    // To avoid race conditions when freeing after dequeue
+    node* tmp_head_section;
+    unsigned int current_epoch;
+
+    public:
+
+        // We set tail=BLOCKSIZE-1 to guarantee that in the first enqueue,
+        // tail_section is malloced.
+        syncqueue():
+            head(NULL), head_section(NULL), tail(BLOCKSIZE-1), tail_section(NULL),
+            tmp_head_section(NULL), current_epoch(0)
+        {}
+
+        ~syncqueue() {
+            // TODO(fding): This code is completely bogus.
+            // It actually doesn't free up all the memory. Fix! (we'd need to walk the linked list)
+            //
+            // TODO(fding): It would be helpful to add logging information here,
+            // to see how fast dequeuing occurs relative to enqueuing.
+            /* node* curr_node = head;
+            int count = 0;
+            unsigned int min_epoch = UINT_MAX;
+                unsigned int max_epoch = 0;
+            while (curr_node != NULL) {
+                count++;
+                min_epoch = min(min_epoch, curr_node->epoch);
+                max_epoch = max(max_epoch, curr_node->epoch);
+                curr_node = curr_node->next;
+            }
+
+            printf("count: %d\n", count);
+            printf("epoch difference: %u\n", max_epoch - min_epoch);
+            if (tmp_head_section) {
+                free(tmp_head_section);
+            }*/
+        }
+
+        // TODO(fding): this function keeps checking head,
+        // which is always changed by dequeue.
+        // I don't think this is good for the cache,
+        // as dequeue and enqueue probably runs on different cores.
+        int enqueue(T x) {
+            int i;
+            if (tail == BLOCKSIZE - 1) {
+                tail_section = (node*) malloc(BLOCKSIZE * sizeof(node));
+                if (!tail_section) return 1;
+                i = 0;
+            }
+            else i = tail + 1;
+            // We fully initialize the new node before linking it in.
+            tail_section[i].value = x;
+            tail_section[i].epoch = current_epoch;
+            tail_section[i].next = NULL;
+            node* old = &tail_section[tail];
+            tail = i;
+            if (old) old->next = &tail_section[tail];
+            if (head == NULL) {
+                head_section = tail_section;
+                head = &tail_section[tail];
+            }
+            return 0;
+        }
+
+        void increment_epoch() {
+            current_epoch++;
+        }
+
+        unsigned int get_current_epoch() {
+            return current_epoch;
+        }
+
+        int dequeue(T* ret, unsigned int * epoch) {
+            if (head == NULL) return 1;
+            *ret = head->value;
+            *epoch = head->epoch;
+            if (tmp_head_section) {
+                free(tmp_head_section);
+                tmp_head_section = NULL;
+            }
+            // Instead of freeing head_section (which could equal tail_section),
+            // we record that we need to free it.
+            if (head-head_section == BLOCKSIZE - 1) {
+                tmp_head_section = head_section;
+                head_section = head->next;
+            }
+            head = head->next;
+            return 0;
+        }
+};
+
+struct madvise_queue_item {
+	node_t node;
+	unsigned int epoch;
+};
 
 struct ll_edge_iterator {
 
@@ -61,13 +177,22 @@ struct ll_edge_iterator {
 	const void* ptr;
 
 	node_t last_node;
-	
+
+	// for madvising buffer manager
+	bool madvising = false;
+	bool still_adding;
+	// unsigned int epoch;
+	pthread_t madvise_thread;
+	// deque<madvise_queue_item> madvise_queue;
+	syncqueue<node_t> madvise_queue;
+        pthread_mutex_t madvise_lock;
+
+	void* graph;
+
 #ifdef LL_DELETIONS
 	size_t max_level;
 #endif
 };
-
-
 
 //==========================================================================//
 // Additional APIs                                                          //
