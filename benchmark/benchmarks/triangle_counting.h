@@ -90,6 +90,9 @@ public:
 		int64_t T = 0 ;
 		int64_t num_k_processed = 0 ;
 		this->progress_init(G.max_nodes());
+#ifdef LL_BM_DO_MADVISE
+        ll_advisor<Graph> advisor(&G);
+#endif
 
 #pragma omp parallel
 		{
@@ -99,6 +102,9 @@ public:
 			for (node_t u = 0; u < G.max_nodes(); u ++) 
 			{
 				ll_edge_iterator iter;
+#ifdef LL_BM_DO_MADVISE
+                advisor.advise(u);
+#endif
 				G.out_iter_begin(iter, u);
 				for (edge_t v_idx = G.out_iter_next(iter);
 						v_idx != LL_NIL_EDGE;
@@ -132,6 +138,9 @@ public:
 		}
 
 		this->progress_clear();
+#ifdef LL_BM_DO_MADVISE
+        advisor.stop();
+#endif
 		_num_triangles = T;
 		return T; 
 	}

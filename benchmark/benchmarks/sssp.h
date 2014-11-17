@@ -48,6 +48,7 @@
 
 #include "llama/ll_bfs_template.h"
 #include "llama/ll_writable_graph.h"
+#include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
 
@@ -128,6 +129,10 @@ public:
 
 		fin = false ;
 
+#ifdef LL_BM_DO_MADVISE
+        ll_advisor<Graph> advisor(&G);
+#endif
+
 #pragma omp parallel for
 		for (node_t t0 = 0; t0 < G.max_nodes(); t0 ++) 
 		{
@@ -151,6 +156,9 @@ public:
 				if (G_updated[n])
 				{
 					ll_edge_iterator iter;
+#ifdef LL_BM_DO_MADVISE
+                    advisor.advise(n);
+#endif
 					G.out_iter_begin(iter, n);
 					for (edge_t s_idx = G.out_iter_next(iter);
 							s_idx != LL_NIL_EDGE;
@@ -194,6 +202,10 @@ public:
 			}
 			fin =  !__E8 ;
 		}
+
+#ifdef LL_BM_DO_MADVISE
+        advisor.stop();
+#endif
 
 		free(G_dist_nxt);
 		return 0;
@@ -393,6 +405,9 @@ public:
 			= (int32_t*) malloc(sizeof(int32_t) * G.max_nodes());
 
 		fin = false ;
+#ifdef LL_BM_DO_MADVISE
+        ll_advisor<Graph> advisor(&G);
+#endif
 
 #pragma omp parallel for
 		for (node_t t0 = 0; t0 < G.max_nodes(); t0 ++) 
@@ -415,6 +430,9 @@ public:
 				if (G_updated[n])
 				{
 					ll_edge_iterator iter;
+#ifdef LL_BM_DO_MADVISE
+                    advisor.advise(n);
+#endif
 					G.out_iter_begin(iter, n);
 					for (edge_t s_idx = G.out_iter_next(iter);
 							s_idx != LL_NIL_EDGE;
@@ -452,6 +470,10 @@ public:
 			}
 			fin =  !__E8 ;
 		}
+
+#ifdef LL_BM_DO_MADVISE
+        advisor.stop();
+#endif
 
 		free(G_dist_nxt);
 		return 0;
