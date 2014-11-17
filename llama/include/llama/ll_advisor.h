@@ -44,7 +44,7 @@
 #include "llama/ll_mlcsr_sp.h"
 #include "llama/ll_mlcsr_properties.h"
 
-#define SYNC_COMPLETE
+#define ASYNC_COMPLETE
 
 template <class Graph>
 class ll_advisor {
