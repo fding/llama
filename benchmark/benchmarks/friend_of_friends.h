@@ -47,11 +47,18 @@
 #include <omp.h>
 #include <vector>
 #include <time.h>
+#include <iostream>
+#include <fstream>
 
 #include "llama/ll_writable_graph.h"
+#include "llama/ll_mlcsr_graph.h"
 #include "benchmarks/benchmark.h"
 
+#define PARAM_N 50
+#define PARAM_FILENAME "temp.txt"
+
 using std::vector;
+using std::ifstream;
 
 /**
  * Count vertices in the given friends of friends traversal
@@ -60,7 +67,7 @@ template <class Graph>
 class ll_b_friend_of_friends : public ll_benchmark<Graph> {
 
 	node_t root;
-
+	node_t requests[PARAM_N];
 
 public:
 
@@ -82,6 +89,12 @@ public:
 	virtual ~ll_b_friend_of_friends(void) {
 	}
 
+	virtual void initialize(void) {
+	    ifstream input_file;
+	    input_file.open(PARAM_FILENAME);
+	    for (int i = 0; i < PARAM_N; i++)
+                input_file >> requests[i];
+	}
 
 	/**
 	 * Run the benchmark
@@ -92,48 +105,23 @@ public:
 
 	    Graph& G = this->_graph;
 	    float avg = 0;
-	    int num_vertices = 50;
 
-	    for (int i = 0; i < num_vertices; ++i) {
-		node_t n = G.pick_random_node();
 #ifdef LL_BM_DO_MADVISE
-		int done = 0;
-#pragma omp parallel sections
-{
-    #pragma omp section
-    {
-		ll_edge_iterator iterm;
-		G.out_iter_begin(iterm, n);
-		auto vtable = G.out().vertex_table(0);
-		auto etable = G.out().edge_table(0);
-		int j = 0;
-		FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
-		    if (j <= done) {
-			j++;
-			continue;
-		    }
-		    node_t next_node = iterm.last_node;
-		    edge_t first = (*vtable)[next_node].adj_list_start;
-		    edge_t last = first + (*vtable)[next_node].level_length;
-		    if (last - first > 0)
-                        etable->advise(first, last);
-		    j++;
-		}
-    }
-    #pragma omp section
-    { // Friend of friends iteration
+	    ll_advisor<Graph> advisor(&G);
 #endif
+	    for (int i = 0; i < PARAM_N; ++i) {
+		node_t n = requests[i];
 		ll_edge_iterator iter;
 		vector<node_t> results;
 		G.out_iter_begin(iter, n);
+#ifdef LL_BM_DO_MADVISE
+		advisor.advise(n);
+#endif
 		FOREACH_OUTEDGE_ITER(v_idx, G, iter) {
 			node_t n2 = LL_ITER_OUT_NEXT_NODE(G, iter, v_idx);
 			
 			ll_edge_iterator iter2;
 			G.out_iter_begin(iter2, n2);
-#ifdef LL_BM_DO_MADVISE
-			done++;
-#endif
 			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
 				node_t n3 = LL_ITER_OUT_NEXT_NODE(G, iter2, v2_idx);
 				results.push_back(n3);
@@ -141,13 +129,12 @@ public:
 		}
 		avg += results.size();
 		results.clear();
-#ifdef LL_BM_DO_MADVISE
-    } // END friend of friends section
-} // #pragma omp sections
-#endif
 	    }
+#ifdef LL_BM_DO_MADVISE
+	    advisor.stop();
+#endif
 
-	    return avg / num_vertices; 
+	    return avg / PARAM_N; 
 	}
 };
 

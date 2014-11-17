@@ -59,9 +59,9 @@ using std::min;
 using std::max;
 using std::ofstream;
 
-#define ALPHA 0.5
+#define ALPHA 1
 #define CACHE_SIZE 2000
-#define NUM_VERTICES 100000
+#define NUM_VERTICES 50
 #define FILENAME "temp.txt"
 
 template <class Graph>

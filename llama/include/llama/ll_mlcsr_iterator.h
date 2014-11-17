@@ -178,17 +178,6 @@ struct ll_edge_iterator {
 
 	node_t last_node;
 
-	// for madvising buffer manager
-	bool madvising = false;
-	bool still_adding;
-	unsigned int epoch;
-	pthread_t madvise_thread;
-	deque<madvise_queue_item> madvise_queue;
-	// syncqueue<node_t> madvise_queue;
-        pthread_mutex_t madvise_lock;
-
-	void* graph;
-
 #ifdef LL_DELETIONS
 	size_t max_level;
 #endif

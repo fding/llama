@@ -76,16 +76,19 @@
 #include <set>
 #include <unordered_set>
 #include <unordered_map>
+#include "llama/ll_mlcsr_graph.h"
 
 
 template<class Graph, typename level_t, bool use_multithread, bool has_navigator,
 	bool use_reverse_edge, bool save_child>
 class ll_bfs_template
 {
+	private:
+		ll_advisor<Graph> advisor;
 
   public:
     ll_bfs_template(Graph& _G) :
-            G(_G) {
+            advisor(&_G), G(_G) {
         visited_bitmap = NULL; // bitmap
         visited_level = NULL;
         thread_local_next_level = NULL;
@@ -98,6 +101,7 @@ class ll_bfs_template
     }
 
     virtual ~ll_bfs_template() {
+	advisor.stop();
         delete [] visited_bitmap;
         delete [] visited_level;
         delete [] thread_local_next_level;
@@ -450,6 +454,7 @@ class ll_bfs_template
 			G.in_iter_begin_fast(iter, v);
         } else {
 			G.out_iter_begin(iter, v);
+			advisor.advise(v);
         }
     }
 

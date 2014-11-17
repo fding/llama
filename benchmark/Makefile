@@ -8,7 +8,7 @@
 #
 
 CC         := g++
-CFLAGS     := -Wall -fopenmp -std=c++0x -I. -I../llama/include
+CFLAGS     := -Wall -pthread -fopenmp -std=c++0x -I. -I../llama/include
 LFLAGS     := 
 
 
@@ -99,7 +99,7 @@ ifdef FLAT_VT
 	T_BASE  := ${T_BASE}-flatvt
 endif
 
-CORE_TARGETS   := ${T_BASE}-memory ${T_BASE}-memory-wd ${T_BASE}-persistent \
+CORE_TARGETS   := ${T_BASE}-memory ${T_BASE}-memory-wd ${T_BASE}-persistent ${T_BASE}-persistent-madvise \
                   ${T_BASE}-persistent-wd ${T_BASE}-slcsr ${T_BASE}-streaming
 DEBUG_TARGETS  := $(patsubst %,%_debug,${CORE_TARGETS})
 COMMON_TARGETS := ${CORE_TARGETS}
@@ -140,7 +140,7 @@ ${T_BASE}-persistent: benchmark.cc ${COMMON_DEPENDENCIES}
 ${T_BASE}-persistent-madvise: benchmark.cc ${COMMON_DEPENDENCIES}
 	@echo CC $@ >&2
 	@mkdir -p ${T_DIR}
-	@${CC} -DLL_PERSISTENCE -DLL_BM_DO_MADVISE ${CFLAGS} $< ${LFLAGS} -o $@
+	@${CC} -DLL_PERSISTENCE -DLL_BM_DO_MADVISE ${CFLAGS} $< ${LFLAGS} -g -o $@
 
 ${T_BASE}-persistent-munadvise: benchmark.cc ${COMMON_DEPENDENCIES}
 	@echo CC $@ >&2

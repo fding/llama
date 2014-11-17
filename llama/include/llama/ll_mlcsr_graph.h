@@ -44,8 +44,90 @@
 #include "llama/ll_mlcsr_sp.h"
 #include "llama/ll_mlcsr_properties.h"
 
+#define PARAM_EPOCH_THRESHOLD 1
+
 class ll_database;
 
+template <class Graph>
+class ll_advisor {
+
+private:
+	struct madvise_queue_item {
+		node_t node;
+		unsigned int epoch;
+	};
+
+	bool still_adding = true;
+	unsigned int epoch = 0;
+	Graph *graph;
+	pthread_t madvise_thread;
+	deque<madvise_queue_item> madvise_queue;
+	pthread_mutex_t madvise_lock;
+
+	static void* madvise_thread_func(void* arg) {
+		ll_advisor<Graph> *advisor = (ll_advisor<Graph> *)(arg);
+		while (advisor->still_adding) {
+			node_t add;
+			unsigned int epoch;
+			pthread_mutex_lock(&advisor->madvise_lock);
+			if (advisor->madvise_queue.empty()) {
+				pthread_mutex_unlock(&advisor->madvise_lock);
+				continue;
+			}
+			madvise_queue_item item = advisor->madvise_queue.front();
+			add = item.node;
+			epoch = item.epoch;
+			advisor->madvise_queue.pop_front();
+			pthread_mutex_unlock(&advisor->madvise_lock);
+
+			if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+
+			auto vtable = advisor->graph->out().vertex_table(0);
+			auto etable = advisor->graph->out().edge_table(0);
+			edge_t first = (*vtable)[add].adj_list_start;
+			edge_t last = first + (*vtable)[add].level_length;
+			if (last - first > 0) {
+				etable->advise(first, last);
+			}
+			ll_edge_iterator it;
+			advisor->graph->out_iter_begin(it, add, 0);
+
+			FOREACH_OUTEDGE_ITER(v_idx, *advisor->graph, it) {
+				if (!advisor->still_adding) break;
+				node_t next = it.last_node;
+				if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+
+				edge_t next_first = (*vtable)[next].adj_list_start;
+				edge_t next_last = next_first + (*vtable)[next].level_length;
+				if (next_last - next_first > 0)
+					etable->advise(next_first, next_last);
+			}
+		}
+		return NULL;
+	}
+
+public:
+	ll_advisor(Graph *_graph) {
+		graph = _graph;
+		pthread_mutex_init(&madvise_lock, NULL);
+		pthread_create(&madvise_thread, NULL,
+			       &ll_advisor<Graph>::madvise_thread_func, (void*)this);
+	}
+
+	void advise(node_t node) {
+		pthread_mutex_lock(&madvise_lock);
+		madvise_queue.push_back({node, epoch});
+		epoch++;
+		pthread_mutex_unlock(&madvise_lock);
+	}
+
+	void stop() {
+		still_adding = false;
+		pthread_join(madvise_thread, NULL);
+		printf("Stopped.\n");
+		pthread_mutex_destroy(&madvise_lock);
+	}
+};
 
 
 //==========================================================================//
@@ -160,7 +242,6 @@ class ll_mlcsr_ro_graph {
 
 	/// The persistent storage
 	IF_LL_PERSISTENCE(ll_persistent_storage* _storage);
-
 
 public:
 
@@ -673,14 +754,6 @@ public:
 	 */
 	size_t out_degree(node_t n, int level) {
 		return _out.degree(n, level);
-	}
-
-	void out_iter_do_madvise(ll_edge_iterator& iter) {
-		_out.iter_do_madvise(iter);
-	}
-
-	void out_iter_stop_madvise(ll_edge_iterator& iter) {
-		_out.iter_stop_madvise(iter);
 	}
 
 	/**

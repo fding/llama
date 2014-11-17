@@ -52,6 +52,7 @@
 #include <unordered_map>
 
 #include "llama/ll_writable_graph.h"
+#include "llama/ll_mlcsr_graph.h"
 #include "benchmarks/benchmark.h"
 
 using std::vector;
@@ -204,21 +205,26 @@ public:
 	    // float avg = 0;
 	    node_t sum = 0; // We don't want compiler to optimize away loops
 
-	    ll_edge_iterator iterm;
 #ifdef LL_BM_DO_MADVISE
-	    G.out_iter_do_madvise(iterm);
+	    ll_advisor<Graph> advisor(&G);
 #endif
 	    // Query the graph
 	    for (int i = 0; i < PARAM_NUM_VERTICES; ++i) {
 		    node_t n = requests[i];
+		    ll_edge_iterator iterm;
                     G.out_iter_begin(iterm, n);
+#ifdef LL_BM_DO_MADVISE
+//		    advisor.advise(n);
+#endif
                     FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
                            node_t next_node = iterm.last_node;
                            sum += next_node; // Don't optimize this out
 	            }
             }
 
-	    G.out_iter_stop_madvise(iterm);
+#ifdef LL_BM_DO_MADVISE
+	    advisor.stop();
+#endif
             
             return sum; 
     }
