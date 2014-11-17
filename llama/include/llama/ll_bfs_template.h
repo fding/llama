@@ -77,6 +77,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include "llama/ll_mlcsr_graph.h"
+#include "llama/ll_advisor.h"
 
 
 template<class Graph, typename level_t, bool use_multithread, bool has_navigator,
@@ -176,6 +177,7 @@ class ll_bfs_template
                 case ST_SMALL: {
                     for (node_t i = 0; i < curr_count; i++) {
                         node_t t = global_vector[global_curr_level_begin + i];
+			advisor.advise(t);
                         iterate_neighbor_small(t);
                         visit_fw(t);            // visit after iteration. in that way, one can check  down-neighbors quite easily
                     }
@@ -191,6 +193,7 @@ class ll_bfs_template
                             #pragma omp for nowait 
                             for (node_t i = 0; i < curr_count; i++) {
                                 node_t t = global_vector[global_curr_level_begin + i];
+				advisor.advise(t);
                                 iterate_neighbor_que(t, tid);
                                 visit_fw(t);
                             }
@@ -202,6 +205,7 @@ class ll_bfs_template
                             for (node_t i = 0; i < curr_count; i++) {
                                 //node_t t = global_curr_level[i];
                                 node_t t = global_vector[global_curr_level_begin + i];
+				advisor.advise(t);
                                 iterate_neighbor_que(t, tid);
                                 visit_fw(t);
                             }
@@ -218,6 +222,7 @@ class ll_bfs_template
                             #pragma omp for nowait 
                             for (node_t i = 0; i < curr_count; i++) {
                                 node_t t = global_vector[global_curr_level_begin + i];
+				advisor.advise(t);
                                 iterate_neighbor_rd(t, local_cnt);
                                 visit_fw(t);
                             }
@@ -228,6 +233,7 @@ class ll_bfs_template
                             for (node_t i = 0; i < curr_count; i++) {
                                 //node_t t = global_curr_level[i];
                                 node_t t = global_vector[global_curr_level_begin + i];
+				advisor.advise(t);
                                 iterate_neighbor_rd(t, local_cnt);
                                 visit_fw(t);
                             }
@@ -244,6 +250,7 @@ class ll_bfs_template
                             #pragma omp for nowait schedule(dynamic,128)
                             for (node_t t = 0; t < G.max_nodes(); t++) {
                                 if (visited_level[t] == curr_level) {
+				    advisor.advise(t);
                                     iterate_neighbor_rd(t, local_cnt);
                                     visit_fw(t);
                                 }
@@ -254,6 +261,7 @@ class ll_bfs_template
                             node_t local_cnt = 0;
                             for (node_t t = 0; t < G.max_nodes(); t++) {
                                 if (visited_level[t] == curr_level) {
+				    advisor.advise(t);
                                     iterate_neighbor_rd(t, local_cnt);
                                     visit_fw(t);
                                 }
@@ -270,6 +278,7 @@ class ll_bfs_template
                             #pragma omp for nowait schedule(dynamic,128)
                             for (node_t t = 0; t < G.max_nodes(); t++) {
                                 if (visited_level[t] == curr_level) {
+				    advisor.advise(t);
                                     iterate_neighbor_que(t, tid);
                                     visit_fw(t);
                                 }
@@ -280,6 +289,7 @@ class ll_bfs_template
                             int tid = 0;
                             for (node_t t = 0; t < G.max_nodes(); t++) {
                                 if (visited_level[t] == curr_level) {
+				    advisor.advise(t);
                                     iterate_neighbor_que(t, tid);
                                     visit_fw(t);
                                 }
@@ -449,16 +459,15 @@ class ll_bfs_template
         }
     }
 
-	void iter_begin(ll_edge_iterator& iter, node_t v) {
+    void iter_begin(ll_edge_iterator& iter, node_t v) {
         if (use_reverse_edge) {
-			G.in_iter_begin_fast(iter, v);
+		G.in_iter_begin_fast(iter, v);
         } else {
-			G.out_iter_begin(iter, v);
-			advisor.advise(v);
+		G.out_iter_begin(iter, v);
         }
     }
 
-	edge_t iter_next(ll_edge_iterator& iter) {
+    edge_t iter_next(ll_edge_iterator& iter) {
         if (use_reverse_edge) {
             return G.in_iter_next_fast(iter);
         } else {
@@ -467,7 +476,7 @@ class ll_bfs_template
     }
 
     node_t get_node(ll_edge_iterator& iter) {
-		return iter.last_node;
+	    return iter.last_node;
     }
 
     void iterate_neighbor_small(node_t t) {

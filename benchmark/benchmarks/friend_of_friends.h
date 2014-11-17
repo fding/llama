@@ -52,6 +52,7 @@
 
 #include "llama/ll_writable_graph.h"
 #include "llama/ll_mlcsr_graph.h"
+#include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
 #define PARAM_N 50

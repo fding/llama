@@ -53,6 +53,7 @@
 
 #include "llama/ll_writable_graph.h"
 #include "llama/ll_mlcsr_graph.h"
+#include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
 using std::vector;
@@ -64,7 +65,7 @@ using std::unordered_map;
 
 #define PARAM_ALPHA 0.5
 #define PARAM_CACHE_SIZE 2000
-#define PARAM_NUM_VERTICES 100000
+#define PARAM_NUM_VERTICES 20000
 #define PARAM_EPOCH_THRESHOLD 1
 #define PARAM_FILENAME "temp.txt"
 
@@ -214,7 +215,7 @@ public:
 		    ll_edge_iterator iterm;
                     G.out_iter_begin(iterm, n);
 #ifdef LL_BM_DO_MADVISE
-//		    advisor.advise(n);
+		    advisor.advise(n);
 #endif
                     FOREACH_OUTEDGE_ITER(v_idx, G, iterm) {
                            node_t next_node = iterm.last_node;

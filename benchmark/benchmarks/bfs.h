@@ -54,11 +54,11 @@
 // BFS/DFS definitions for the procedure
 template <class Graph>
 class bfs_bfs : public ll_bfs_template
-    <Graph, short, true, false, false, false>
+    <Graph, short, false, false, false, false>
 {
 public:
     bfs_bfs(Graph& _G, node_t& _root, int32_t& _count)
-    : ll_bfs_template<Graph, short, true, false, false, false>(_G),
+    : ll_bfs_template<Graph, short, false, false, false, false>(_G),
     G(_G), root(_root), count(_count){}
 
 private:  // list of varaibles
