@@ -1,0 +1,4992 @@
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=50
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1285998.
+Pages active:                            316072.
+Pages inactive:                           26308.
+Pages speculative:                         6127.
+Pages throttled:                              0.
+Pages wired down:                        250808.
+Pages purgeable:                          61609.
+"Translation faults":                 923608698.
+Pages copy-on-write:                    6524765.
+Pages zero filled:                    689134966.
+Pages reactivated:                     29990122.
+Pages purged:                           7958379.
+File-backed pages:                        10482.
+Anonymous pages:                         338025.
+Pages stored in compressor:              484223.
+Pages occupied by compressor:            209820.
+Decompressions:                         4254337.
+Compressions:                           6860985.
+Pageins:                              429761842.
+Pageouts:                                 73979.
+Swapins:                                  53483.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 00:28:41
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 960.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 44.631 seconds
+User Time  : 3.132 seconds
+System Time: 8.795 seconds
+CPU Time   : 11.927 seconds
+CPU Util.  : 3.34%
+
+RESOURCE USAGE
+Mjr Faults : 388330
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 6972161.500000
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              432381.
+Pages active:                            662283.
+Pages inactive:                           79166.
+Pages speculative:                       465516.
+Pages throttled:                              0.
+Pages wired down:                        246100.
+Pages purgeable:                          65811.
+"Translation faults":                 925229412.
+Pages copy-on-write:                    6524993.
+Pages zero filled:                    690358293.
+Pages reactivated:                     29990122.
+Pages purged:                           7958379.
+File-backed pages:                       865416.
+Anonymous pages:                         341549.
+Pages stored in compressor:              483683.
+Pages occupied by compressor:            209763.
+Decompressions:                         4254877.
+Compressions:                           6860985.
+Pageins:                              430156389.
+Pageouts:                                 73979.
+Swapins:                                  53483.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1289443.
+Pages active:                            312451.
+Pages inactive:                           28168.
+Pages speculative:                         3908.
+Pages throttled:                              0.
+Pages wired down:                        250738.
+Pages purgeable:                          61609.
+"Translation faults":                 925232751.
+Pages copy-on-write:                    6525330.
+Pages zero filled:                    690358940.
+Pages reactivated:                     29990122.
+Pages purged:                           7958379.
+File-backed pages:                         7265.
+Anonymous pages:                         337262.
+Pages stored in compressor:              483681.
+Pages occupied by compressor:            209763.
+Decompressions:                         4254879.
+Compressions:                           6860985.
+Pageins:                              430158043.
+Pageouts:                                 73979.
+Swapins:                                  53483.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=50
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=50
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1239814.
+Pages active:                            375313.
+Pages inactive:                           28213.
+Pages speculative:                         2876.
+Pages throttled:                              0.
+Pages wired down:                        262312.
+Pages purgeable:                          71207.
+"Translation faults":                 926368937.
+Pages copy-on-write:                    6551415.
+Pages zero filled:                    691360808.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         6132.
+Anonymous pages:                         400270.
+Pages stored in compressor:              416893.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317193.
+Compressions:                           6860985.
+Pageins:                              430217589.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:35
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 2.351 seconds
+User Time  : 0.153 seconds
+System Time: 0.418 seconds
+CPU Time   : 0.571 seconds
+CPU Util.  : 3.04%
+
+RESOURCE USAGE
+Mjr Faults : 30107
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 305796.093750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1166893.
+Pages active:                            424197.
+Pages inactive:                           37021.
+Pages speculative:                        40835.
+Pages throttled:                              0.
+Pages wired down:                        238926.
+Pages purgeable:                          86048.
+"Translation faults":                 926457863.
+Pages copy-on-write:                    6551635.
+Pages zero filled:                    691414660.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        78428.
+Anonymous pages:                         423625.
+Pages stored in compressor:              416893.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317193.
+Compressions:                           6860985.
+Pageins:                              430251435.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235695.
+Pages active:                            376075.
+Pages inactive:                           28249.
+Pages speculative:                         5350.
+Pages throttled:                              0.
+Pages wired down:                        262339.
+Pages purgeable:                          71207.
+"Translation faults":                 926461495.
+Pages copy-on-write:                    6551974.
+Pages zero filled:                    691414894.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9597.
+Anonymous pages:                         400077.
+Pages stored in compressor:              416893.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317193.
+Compressions:                           6860985.
+Pageins:                              430253726.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:38
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 1.278 seconds
+User Time  : 0.146 seconds
+System Time: 0.228 seconds
+CPU Time   : 0.374 seconds
+CPU Util.  : 3.66%
+
+RESOURCE USAGE
+Mjr Faults : 30110
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 305796.093750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1182780.
+Pages active:                            423722.
+Pages inactive:                           37033.
+Pages speculative:                        25029.
+Pages throttled:                              0.
+Pages wired down:                        238900.
+Pages purgeable:                          86048.
+"Translation faults":                 926548973.
+Pages copy-on-write:                    6552189.
+Pages zero filled:                    691468767.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        62271.
+Anonymous pages:                         423513.
+Pages stored in compressor:              416892.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317194.
+Compressions:                           6860985.
+Pageins:                              430286256.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235320.
+Pages active:                            375964.
+Pages inactive:                           28240.
+Pages speculative:                         5470.
+Pages throttled:                              0.
+Pages wired down:                        262402.
+Pages purgeable:                          71207.
+"Translation faults":                 926554266.
+Pages copy-on-write:                    6552650.
+Pages zero filled:                    691470143.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9676.
+Anonymous pages:                         399998.
+Pages stored in compressor:              416892.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317194.
+Compressions:                           6860985.
+Pageins:                              430288700.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 960.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 9.121 seconds
+User Time  : 0.276 seconds
+System Time: 1.608 seconds
+CPU Time   : 1.884 seconds
+CPU Util.  : 2.58%
+
+RESOURCE USAGE
+Mjr Faults : 58180
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 424253.906250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1023304.
+Pages active:                            431815.
+Pages inactive:                           58342.
+Pages speculative:                       154651.
+Pages throttled:                              0.
+Pages wired down:                        239007.
+Pages purgeable:                          86403.
+"Translation faults":                 926670266.
+Pages copy-on-write:                    6552866.
+Pages zero filled:                    691521324.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       222119.
+Anonymous pages:                         422689.
+Pages stored in compressor:              416890.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317195.
+Compressions:                           6860985.
+Pageins:                              430351353.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237698.
+Pages active:                            375060.
+Pages inactive:                           28210.
+Pages speculative:                         4253.
+Pages throttled:                              0.
+Pages wired down:                        262696.
+Pages purgeable:                          71207.
+"Translation faults":                 926673642.
+Pages copy-on-write:                    6553201.
+Pages zero filled:                    691521909.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8149.
+Anonymous pages:                         399374.
+Pages stored in compressor:              416890.
+Pages occupied by compressor:            187399.
+Decompressions:                         4317195.
+Compressions:                           6860985.
+Pageins:                              430353236.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+rss start  : 960.00 MB
+rss loaded : 5276.00 MB
+
+TIME
+Time       : 3.134 seconds
+User Time  : 0.226 seconds
+System Time: 0.443 seconds
+CPU Time   : 0.669 seconds
+CPU Util.  : 2.67%
+
+RESOURCE USAGE
+Mjr Faults : 58183
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 424253.906250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1105736.
+Pages active:                            432510.
+Pages inactive:                           57995.
+Pages speculative:                        72757.
+Pages throttled:                              0.
+Pages wired down:                        239130.
+Pages purgeable:                          86053.
+"Translation faults":                 926790430.
+Pages copy-on-write:                    6553672.
+Pages zero filled:                    691572803.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       140689.
+Anonymous pages:                         422573.
+Pages stored in compressor:              416662.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317424.
+Compressions:                           6860985.
+Pageins:                              430416677.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1236341.
+Pages active:                            375385.
+Pages inactive:                           28181.
+Pages speculative:                         5458.
+Pages throttled:                              0.
+Pages wired down:                        262338.
+Pages purgeable:                          71212.
+"Translation faults":                 926795502.
+Pages copy-on-write:                    6554125.
+Pages zero filled:                    691574149.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9627.
+Anonymous pages:                         399397.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430418774.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 1.430 seconds
+User Time  : 0.039 seconds
+System Time: 0.233 seconds
+CPU Time   : 0.272 seconds
+CPU Util.  : 2.38%
+
+RESOURCE USAGE
+Mjr Faults : 8596
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 63774.820312
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1193661.
+Pages active:                            407174.
+Pages inactive:                           32484.
+Pages speculative:                        35751.
+Pages throttled:                              0.
+Pages wired down:                        238900.
+Pages purgeable:                          86053.
+"Translation faults":                 926818130.
+Pages copy-on-write:                    6554345.
+Pages zero filled:                    691583475.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        52577.
+Anonymous pages:                         422832.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430430857.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237140.
+Pages active:                            375235.
+Pages inactive:                           28211.
+Pages speculative:                         4789.
+Pages throttled:                              0.
+Pages wired down:                        262338.
+Pages purgeable:                          71212.
+"Translation faults":                 926821368.
+Pages copy-on-write:                    6554678.
+Pages zero filled:                    691583703.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8824.
+Anonymous pages:                         399411.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430432888.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 0.574 seconds
+User Time  : 0.029 seconds
+System Time: 0.071 seconds
+CPU Time   : 0.100 seconds
+CPU Util.  : 2.18%
+
+RESOURCE USAGE
+Mjr Faults : 8598
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 63774.820312
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1209190.
+Pages active:                            382386.
+Pages inactive:                           32409.
+Pages speculative:                        20862.
+Pages throttled:                              0.
+Pages wired down:                        262398.
+Pages purgeable:                          71212.
+"Translation faults":                 926842352.
+Pages copy-on-write:                    6554893.
+Pages zero filled:                    691592936.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        36323.
+Anonymous pages:                         399334.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430443841.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234305.
+Pages active:                            375847.
+Pages inactive:                           28212.
+Pages speculative:                         6960.
+Pages throttled:                              0.
+Pages wired down:                        262335.
+Pages purgeable:                          71212.
+"Translation faults":                 926848730.
+Pages copy-on-write:                    6555340.
+Pages zero filled:                    691594292.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        11599.
+Anonymous pages:                         399420.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430446990.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 960.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 1.396 seconds
+User Time  : 0.168 seconds
+System Time: 0.268 seconds
+CPU Time   : 0.436 seconds
+CPU Util.  : 3.90%
+
+RESOURCE USAGE
+Mjr Faults : 25339
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 433460.906250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1187426.
+Pages active:                            398935.
+Pages inactive:                           48259.
+Pages speculative:                        26822.
+Pages throttled:                              0.
+Pages wired down:                        247264.
+Pages purgeable:                          80901.
+"Translation faults":                 926909266.
+Pages copy-on-write:                    6555565.
+Pages zero filled:                    691628361.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        60066.
+Anonymous pages:                         413950.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430475078.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234213.
+Pages active:                            372492.
+Pages inactive:                           28221.
+Pages speculative:                         6977.
+Pages throttled:                              0.
+Pages wired down:                        265462.
+Pages purgeable:                          68092.
+"Translation faults":                 926913705.
+Pages copy-on-write:                    6555896.
+Pages zero filled:                    691628967.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        11613.
+Anonymous pages:                         396077.
+Pages stored in compressor:              416661.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317425.
+Compressions:                           6860985.
+Pageins:                              430477709.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:42:58
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 0.919 seconds
+User Time  : 0.172 seconds
+System Time: 0.192 seconds
+CPU Time   : 0.364 seconds
+CPU Util.  : 4.95%
+
+RESOURCE USAGE
+Mjr Faults : 25342
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 433460.906250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1194705.
+Pages active:                            383450.
+Pages inactive:                           48244.
+Pages speculative:                        18264.
+Pages throttled:                              0.
+Pages wired down:                        262407.
+Pages purgeable:                          71212.
+"Translation faults":                 926969175.
+Pages copy-on-write:                    6556111.
+Pages zero filled:                    691655989.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        50810.
+Anonymous pages:                         399148.
+Pages stored in compressor:              416659.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317427.
+Compressions:                           6860985.
+Pageins:                              430505161.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1236195.
+Pages active:                            375021.
+Pages inactive:                           28217.
+Pages speculative:                         6410.
+Pages throttled:                              0.
+Pages wired down:                        262805.
+Pages purgeable:                          70840.
+"Translation faults":                 926975066.
+Pages copy-on-write:                    6556579.
+Pages zero filled:                    691657351.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        10871.
+Anonymous pages:                         398777.
+Pages stored in compressor:              416659.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317427.
+Compressions:                           6860985.
+Pageins:                              430508007.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 2.577 seconds
+User Time  : 0.263 seconds
+System Time: 0.583 seconds
+CPU Time   : 0.846 seconds
+CPU Util.  : 4.11%
+
+RESOURCE USAGE
+Mjr Faults : 43868
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 477021.125000
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1155658.
+Pages active:                            414859.
+Pages inactive:                           60053.
+Pages speculative:                        38563.
+Pages throttled:                              0.
+Pages wired down:                        238943.
+Pages purgeable:                          86053.
+"Translation faults":                 927124942.
+Pages copy-on-write:                    6556794.
+Pages zero filled:                    691758353.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        90781.
+Anonymous pages:                         422694.
+Pages stored in compressor:              416659.
+Pages occupied by compressor:            187335.
+Decompressions:                         4317427.
+Compressions:                           6860985.
+Pageins:                              430555283.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237229.
+Pages active:                            374927.
+Pages inactive:                           28201.
+Pages speculative:                         4293.
+Pages throttled:                              0.
+Pages wired down:                        262409.
+Pages purgeable:                          71212.
+"Translation faults":                 927128176.
+Pages copy-on-write:                    6557134.
+Pages zero filled:                    691758578.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8176.
+Anonymous pages:                         399245.
+Pages stored in compressor:              416658.
+Pages occupied by compressor:            187332.
+Decompressions:                         4317428.
+Compressions:                           6860985.
+Pageins:                              430557193.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 960.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 1.587 seconds
+User Time  : 0.251 seconds
+System Time: 0.363 seconds
+CPU Time   : 0.614 seconds
+CPU Util.  : 4.84%
+
+RESOURCE USAGE
+Mjr Faults : 43870
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 477021.125000
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1170962.
+Pages active:                            414158.
+Pages inactive:                           59777.
+Pages speculative:                        23708.
+Pages throttled:                              0.
+Pages wired down:                        238911.
+Pages purgeable:                          86053.
+"Translation faults":                 927276947.
+Pages copy-on-write:                    6557351.
+Pages zero filled:                    691859408.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        74921.
+Anonymous pages:                         422722.
+Pages stored in compressor:              416658.
+Pages occupied by compressor:            187332.
+Decompressions:                         4317428.
+Compressions:                           6860985.
+Pageins:                              430603952.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=100
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235505.
+Pages active:                            377112.
+Pages inactive:                           28208.
+Pages speculative:                         5019.
+Pages throttled:                              0.
+Pages wired down:                        262481.
+Pages purgeable:                          71212.
+"Translation faults":                 927696654.
+Pages copy-on-write:                    6562113.
+Pages zero filled:                    692249767.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9170.
+Anonymous pages:                         401169.
+Pages stored in compressor:              416611.
+Pages occupied by compressor:            187330.
+Decompressions:                         4317476.
+Compressions:                           6860985.
+Pageins:                              430616210.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:46
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4340.00 MB
+rss start  : 960.00 MB
+rss loaded : 5300.00 MB
+
+TIME
+Time       : 2.130 seconds
+User Time  : 0.154 seconds
+System Time: 0.409 seconds
+CPU Time   : 0.563 seconds
+CPU Util.  : 3.30%
+
+RESOURCE USAGE
+Mjr Faults : 20004
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 174138.921875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1176475.
+Pages active:                            411381.
+Pages inactive:                           40769.
+Pages speculative:                        40470.
+Pages throttled:                              0.
+Pages wired down:                        239062.
+Pages purgeable:                          86053.
+"Translation faults":                 927748322.
+Pages copy-on-write:                    6562344.
+Pages zero filled:                    692276662.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        68009.
+Anonymous pages:                         424611.
+Pages stored in compressor:              416610.
+Pages occupied by compressor:            187330.
+Decompressions:                         4317477.
+Compressions:                           6860985.
+Pageins:                              430639134.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1233684.
+Pages active:                            377689.
+Pages inactive:                           28222.
+Pages speculative:                         5453.
+Pages throttled:                              0.
+Pages wired down:                        262398.
+Pages purgeable:                          71212.
+"Translation faults":                 927752677.
+Pages copy-on-write:                    6562682.
+Pages zero filled:                    692276993.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        10022.
+Anonymous pages:                         401342.
+Pages stored in compressor:              416610.
+Pages occupied by compressor:            187330.
+Decompressions:                         4317477.
+Compressions:                           6860985.
+Pageins:                              430641912.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+rss start  : 960.00 MB
+rss loaded : 5264.00 MB
+
+TIME
+Time       : 1.002 seconds
+User Time  : 0.125 seconds
+System Time: 0.161 seconds
+CPU Time   : 0.286 seconds
+CPU Util.  : 3.57%
+
+RESOURCE USAGE
+Mjr Faults : 20007
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 174138.921875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1192561.
+Pages active:                            410714.
+Pages inactive:                           40899.
+Pages speculative:                        23920.
+Pages throttled:                              0.
+Pages wired down:                        239539.
+Pages purgeable:                          85486.
+"Translation faults":                 927803093.
+Pages copy-on-write:                    6562912.
+Pages zero filled:                    692303834.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        51338.
+Anonymous pages:                         424195.
+Pages stored in compressor:              416609.
+Pages occupied by compressor:            187330.
+Decompressions:                         4317478.
+Compressions:                           6860985.
+Pageins:                              430664297.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1233940.
+Pages active:                            377377.
+Pages inactive:                           28214.
+Pages speculative:                         5534.
+Pages throttled:                              0.
+Pages wired down:                        262477.
+Pages purgeable:                          71212.
+"Translation faults":                 927808862.
+Pages copy-on-write:                    6563378.
+Pages zero filled:                    692305219.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9837.
+Anonymous pages:                         401288.
+Pages stored in compressor:              416609.
+Pages occupied by compressor:            187330.
+Decompressions:                         4317478.
+Compressions:                           6860985.
+Pageins:                              430667106.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:51
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+rss start  : 960.00 MB
+rss loaded : 5280.00 MB
+
+TIME
+Time       : 3.560 seconds
+User Time  : 0.200 seconds
+System Time: 0.581 seconds
+CPU Time   : 0.781 seconds
+CPU Util.  : 2.74%
+
+RESOURCE USAGE
+Mjr Faults : 38866
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 235966.312500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1129499.
+Pages active:                            418611.
+Pages inactive:                           54322.
+Pages speculative:                        66230.
+Pages throttled:                              0.
+Pages wired down:                        239018.
+Pages purgeable:                          86062.
+"Translation faults":                 927872128.
+Pages copy-on-write:                    6563601.
+Pages zero filled:                    692322775.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       114354.
+Anonymous pages:                         424809.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430710337.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234887.
+Pages active:                            377254.
+Pages inactive:                           28196.
+Pages speculative:                         4700.
+Pages throttled:                              0.
+Pages wired down:                        262417.
+Pages purgeable:                          71221.
+"Translation faults":                 927875577.
+Pages copy-on-write:                    6563935.
+Pages zero filled:                    692323067.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8678.
+Anonymous pages:                         401472.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430712317.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:55
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+rss start  : 960.00 MB
+rss loaded : 5276.00 MB
+
+TIME
+Time       : 1.714 seconds
+User Time  : 0.195 seconds
+System Time: 0.266 seconds
+CPU Time   : 0.462 seconds
+CPU Util.  : 3.37%
+
+RESOURCE USAGE
+Mjr Faults : 38868
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 235966.312500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1161790.
+Pages active:                            417194.
+Pages inactive:                           54252.
+Pages speculative:                        35898.
+Pages throttled:                              0.
+Pages wired down:                        238988.
+Pages purgeable:                          86062.
+"Translation faults":                 927936035.
+Pages copy-on-write:                    6564162.
+Pages zero filled:                    692340614.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        82279.
+Anonymous pages:                         425065.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430754251.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1231646.
+Pages active:                            378457.
+Pages inactive:                           28218.
+Pages speculative:                         6818.
+Pages throttled:                              0.
+Pages wired down:                        262418.
+Pages purgeable:                          71221.
+"Translation faults":                 927942512.
+Pages copy-on-write:                    6564621.
+Pages zero filled:                    692342310.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        11537.
+Anonymous pages:                         401956.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430757403.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:43:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+rss start  : 960.00 MB
+rss loaded : 5276.00 MB
+
+TIME
+Time       : 5.131 seconds
+User Time  : 0.176 seconds
+System Time: 0.890 seconds
+CPU Time   : 1.067 seconds
+CPU Util.  : 2.60%
+
+RESOURCE USAGE
+Mjr Faults : 29253
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 184436.921875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1108173.
+Pages active:                            419252.
+Pages inactive:                           43682.
+Pages speculative:                        96942.
+Pages throttled:                              0.
+Pages wired down:                        239416.
+Pages purgeable:                          86045.
+"Translation faults":                 927993726.
+Pages copy-on-write:                    6564844.
+Pages zero filled:                    692357894.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       135195.
+Anonymous pages:                         424681.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430790480.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235498.
+Pages active:                            377344.
+Pages inactive:                           28192.
+Pages speculative:                         4388.
+Pages throttled:                              0.
+Pages wired down:                        262838.
+Pages purgeable:                          71221.
+"Translation faults":                 927997101.
+Pages copy-on-write:                    6565178.
+Pages zero filled:                    692358475.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8301.
+Anonymous pages:                         401623.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430792368.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:44:03
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 1.859 seconds
+User Time  : 0.132 seconds
+System Time: 0.233 seconds
+CPU Time   : 0.365 seconds
+CPU Util.  : 2.45%
+
+RESOURCE USAGE
+Mjr Faults : 29256
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 184436.921875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1156523.
+Pages active:                            418795.
+Pages inactive:                           43734.
+Pages speculative:                        50062.
+Pages throttled:                              0.
+Pages wired down:                        238992.
+Pages purgeable:                          86062.
+"Translation faults":                 928046260.
+Pages copy-on-write:                    6565407.
+Pages zero filled:                    692373818.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        87133.
+Anonymous pages:                         425458.
+Pages stored in compressor:              416607.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317480.
+Compressions:                           6860985.
+Pageins:                              430824941.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234152.
+Pages active:                            377966.
+Pages inactive:                           28240.
+Pages speculative:                         5147.
+Pages throttled:                              0.
+Pages wired down:                        262479.
+Pages purgeable:                          71221.
+"Translation faults":                 928051525.
+Pages copy-on-write:                    6565858.
+Pages zero filled:                    692375161.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9378.
+Anonymous pages:                         401975.
+Pages stored in compressor:              416606.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317481.
+Compressions:                           6860985.
+Pageins:                              430827436.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:44:06
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+rss start  : 960.00 MB
+rss loaded : 5276.00 MB
+
+TIME
+Time       : 4.830 seconds
+User Time  : 0.192 seconds
+System Time: 0.857 seconds
+CPU Time   : 1.049 seconds
+CPU Util.  : 2.71%
+
+RESOURCE USAGE
+Mjr Faults : 41116
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 174137.359375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1107485.
+Pages active:                            422061.
+Pages inactive:                           52582.
+Pages speculative:                        85410.
+Pages throttled:                              0.
+Pages wired down:                        239276.
+Pages purgeable:                          86062.
+"Translation faults":                 928114410.
+Pages copy-on-write:                    6566085.
+Pages zero filled:                    692391367.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       134990.
+Anonymous pages:                         425063.
+Pages stored in compressor:              416606.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317481.
+Compressions:                           6860985.
+Pageins:                              430872339.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234489.
+Pages active:                            377600.
+Pages inactive:                           28196.
+Pages speculative:                         4285.
+Pages throttled:                              0.
+Pages wired down:                        262420.
+Pages purgeable:                          71221.
+"Translation faults":                 928117512.
+Pages copy-on-write:                    6566432.
+Pages zero filled:                    692391585.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8151.
+Anonymous pages:                         401930.
+Pages stored in compressor:              416606.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317481.
+Compressions:                           6860985.
+Pageins:                              430874232.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:44:11
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 2.004 seconds
+User Time  : 0.166 seconds
+System Time: 0.280 seconds
+CPU Time   : 0.446 seconds
+CPU Util.  : 2.78%
+
+RESOURCE USAGE
+Mjr Faults : 41119
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 174137.359375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1149464.
+Pages active:                            421352.
+Pages inactive:                           52259.
+Pages speculative:                        45426.
+Pages throttled:                              0.
+Pages wired down:                        238996.
+Pages purgeable:                          86062.
+"Translation faults":                 928178237.
+Pages copy-on-write:                    6566655.
+Pages zero filled:                    692407494.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        93715.
+Anonymous pages:                         425322.
+Pages stored in compressor:              416606.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317481.
+Compressions:                           6860985.
+Pageins:                              430918141.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1230690.
+Pages active:                            378476.
+Pages inactive:                           28324.
+Pages speculative:                         7745.
+Pages throttled:                              0.
+Pages wired down:                        262879.
+Pages purgeable:                          65474.
+"Translation faults":                 928185915.
+Pages copy-on-write:                    6567120.
+Pages zero filled:                    692408933.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        13057.
+Anonymous pages:                         401488.
+Pages stored in compressor:              416605.
+Pages occupied by compressor:            187315.
+Decompressions:                         4317482.
+Compressions:                           6860985.
+Pageins:                              430922046.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:44:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 2.807 seconds
+User Time  : 0.188 seconds
+System Time: 0.492 seconds
+CPU Time   : 0.680 seconds
+CPU Util.  : 3.03%
+
+RESOURCE USAGE
+Mjr Faults : 28968
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 230324.296875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1151185.
+Pages active:                            418213.
+Pages inactive:                           45096.
+Pages speculative:                        54581.
+Pages throttled:                              0.
+Pages wired down:                        239018.
+Pages purgeable:                          86062.
+"Translation faults":                 928253344.
+Pages copy-on-write:                    6567357.
+Pages zero filled:                    692444870.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        92661.
+Anonymous pages:                         425229.
+Pages stored in compressor:              416599.
+Pages occupied by compressor:            187314.
+Decompressions:                         4317488.
+Compressions:                           6860985.
+Pageins:                              430954227.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1233807.
+Pages active:                            377813.
+Pages inactive:                           28193.
+Pages speculative:                         5388.
+Pages throttled:                              0.
+Pages wired down:                        262421.
+Pages purgeable:                          71221.
+"Translation faults":                 928256829.
+Pages copy-on-write:                    6567709.
+Pages zero filled:                    692445102.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9551.
+Anonymous pages:                         401843.
+Pages stored in compressor:              416599.
+Pages occupied by compressor:            187314.
+Decompressions:                         4317488.
+Compressions:                           6860985.
+Pageins:                              430956372.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:44:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 1.368 seconds
+User Time  : 0.169 seconds
+System Time: 0.208 seconds
+CPU Time   : 0.378 seconds
+CPU Util.  : 3.45%
+
+RESOURCE USAGE
+Mjr Faults : 28971
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 230324.296875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1177368.
+Pages active:                            416448.
+Pages inactive:                           44881.
+Pages speculative:                        30463.
+Pages throttled:                              0.
+Pages wired down:                        238984.
+Pages purgeable:                          86062.
+"Translation faults":                 928315804.
+Pages copy-on-write:                    6567931.
+Pages zero filled:                    692471660.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        66521.
+Anonymous pages:                         425271.
+Pages stored in compressor:              416599.
+Pages occupied by compressor:            187314.
+Decompressions:                         4317488.
+Compressions:                           6860985.
+Pageins:                              430987784.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=200
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235335.
+Pages active:                            376598.
+Pages inactive:                           28213.
+Pages speculative:                         5200.
+Pages throttled:                              0.
+Pages wired down:                        262845.
+Pages purgeable:                          70849.
+"Translation faults":                 928738572.
+Pages copy-on-write:                    6572545.
+Pages zero filled:                    692866995.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9430.
+Anonymous pages:                         400581.
+Pages stored in compressor:              416437.
+Pages occupied by compressor:            187274.
+Decompressions:                         4317650.
+Compressions:                           6860985.
+Pageins:                              430999341.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 4.102 seconds
+User Time  : 0.255 seconds
+System Time: 0.787 seconds
+CPU Time   : 1.042 seconds
+CPU Util.  : 3.18%
+
+RESOURCE USAGE
+Mjr Faults : 38205
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 131757.859375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1130486.
+Pages active:                            416514.
+Pages inactive:                           53676.
+Pages speculative:                        68630.
+Pages throttled:                              0.
+Pages wired down:                        238984.
+Pages purgeable:                          86062.
+"Translation faults":                 928808671.
+Pages copy-on-write:                    6572773.
+Pages zero filled:                    692894591.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       114355.
+Anonymous pages:                         424465.
+Pages stored in compressor:              416434.
+Pages occupied by compressor:            187274.
+Decompressions:                         4317653.
+Compressions:                           6860985.
+Pageins:                              431040360.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235043.
+Pages active:                            376813.
+Pages inactive:                           28299.
+Pages speculative:                         4804.
+Pages throttled:                              0.
+Pages wired down:                        262445.
+Pages purgeable:                          71221.
+"Translation faults":                 928812078.
+Pages copy-on-write:                    6573130.
+Pages zero filled:                    692894816.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8899.
+Anonymous pages:                         401017.
+Pages stored in compressor:              416434.
+Pages occupied by compressor:            187274.
+Decompressions:                         4317653.
+Compressions:                           6860985.
+Pageins:                              431042487.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:05
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 1.828 seconds
+User Time  : 0.207 seconds
+System Time: 0.271 seconds
+CPU Time   : 0.478 seconds
+CPU Util.  : 3.27%
+
+RESOURCE USAGE
+Mjr Faults : 38208
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 131757.859375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1160139.
+Pages active:                            416422.
+Pages inactive:                           53719.
+Pages speculative:                        38572.
+Pages throttled:                              0.
+Pages wired down:                        238959.
+Pages purgeable:                          86062.
+"Translation faults":                 928881800.
+Pages copy-on-write:                    6573356.
+Pages zero filled:                    692922320.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        84237.
+Anonymous pages:                         424476.
+Pages stored in compressor:              416434.
+Pages occupied by compressor:            187274.
+Decompressions:                         4317653.
+Compressions:                           6860985.
+Pageins:                              431083594.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235020.
+Pages active:                            377139.
+Pages inactive:                           28211.
+Pages speculative:                         5435.
+Pages throttled:                              0.
+Pages wired down:                        262445.
+Pages purgeable:                          71221.
+"Translation faults":                 928887604.
+Pages copy-on-write:                    6573821.
+Pages zero filled:                    692923678.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9788.
+Anonymous pages:                         400997.
+Pages stored in compressor:              416434.
+Pages occupied by compressor:            187274.
+Decompressions:                         4317653.
+Compressions:                           6860985.
+Pageins:                              431086560.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+rss start  : 960.00 MB
+rss loaded : 5280.00 MB
+
+TIME
+Time       : 4.126 seconds
+User Time  : 0.222 seconds
+System Time: 0.772 seconds
+CPU Time   : 0.993 seconds
+CPU Util.  : 3.01%
+
+RESOURCE USAGE
+Mjr Faults : 30757
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 125414.679688
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1131341.
+Pages active:                            414334.
+Pages inactive:                           48632.
+Pages speculative:                        74615.
+Pages throttled:                              0.
+Pages wired down:                        239048.
+Pages purgeable:                          86062.
+"Translation faults":                 928938731.
+Pages copy-on-write:                    6574037.
+Pages zero filled:                    692939443.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       113177.
+Anonymous pages:                         424404.
+Pages stored in compressor:              416425.
+Pages occupied by compressor:            187270.
+Decompressions:                         4317662.
+Compressions:                           6860985.
+Pageins:                              431120325.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1234861.
+Pages active:                            377075.
+Pages inactive:                           28188.
+Pages speculative:                         5256.
+Pages throttled:                              0.
+Pages wired down:                        262384.
+Pages purgeable:                          71221.
+"Translation faults":                 928942172.
+Pages copy-on-write:                    6574387.
+Pages zero filled:                    692939657.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9429.
+Anonymous pages:                         401090.
+Pages stored in compressor:              416425.
+Pages occupied by compressor:            187270.
+Decompressions:                         4317662.
+Compressions:                           6860985.
+Pageins:                              431122518.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:12
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 1.727 seconds
+User Time  : 0.179 seconds
+System Time: 0.247 seconds
+CPU Time   : 0.426 seconds
+CPU Util.  : 3.08%
+
+RESOURCE USAGE
+Mjr Faults : 30760
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 125414.679688
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1164604.
+Pages active:                            414003.
+Pages inactive:                           48703.
+Pages speculative:                        40776.
+Pages throttled:                              0.
+Pages wired down:                        239355.
+Pages purgeable:                          85690.
+"Translation faults":                 928993456.
+Pages copy-on-write:                    6574622.
+Pages zero filled:                    692955384.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        79342.
+Anonymous pages:                         424140.
+Pages stored in compressor:              416425.
+Pages occupied by compressor:            187270.
+Decompressions:                         4317662.
+Compressions:                           6860985.
+Pageins:                              431156346.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235361.
+Pages active:                            376489.
+Pages inactive:                           28325.
+Pages speculative:                         4916.
+Pages throttled:                              0.
+Pages wired down:                        262971.
+Pages purgeable:                          70849.
+"Translation faults":                 928999001.
+Pages copy-on-write:                    6575081.
+Pages zero filled:                    692956745.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9220.
+Anonymous pages:                         400510.
+Pages stored in compressor:              416425.
+Pages occupied by compressor:            187270.
+Decompressions:                         4317662.
+Compressions:                           6860985.
+Pageins:                              431159107.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 7.860 seconds
+User Time  : 0.445 seconds
+System Time: 1.508 seconds
+CPU Time   : 1.953 seconds
+CPU Util.  : 3.11%
+
+RESOURCE USAGE
+Mjr Faults : 78113
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 219882.515625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1040979.
+Pages active:                            454245.
+Pages inactive:                           57960.
+Pages speculative:                       116239.
+Pages throttled:                              0.
+Pages wired down:                        238984.
+Pages purgeable:                          86417.
+"Translation faults":                 929193869.
+Pages copy-on-write:                    6575311.
+Pages zero filled:                    693065708.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       204268.
+Anonymous pages:                         424176.
+Pages stored in compressor:              416421.
+Pages occupied by compressor:            187264.
+Decompressions:                         4317666.
+Compressions:                           6860985.
+Pageins:                              431242329.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235206.
+Pages active:                            375686.
+Pages inactive:                           28189.
+Pages speculative:                         5477.
+Pages throttled:                              0.
+Pages wired down:                        262742.
+Pages purgeable:                          71221.
+"Translation faults":                 929197719.
+Pages copy-on-write:                    6575661.
+Pages zero filled:                    693066295.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9695.
+Anonymous pages:                         399657.
+Pages stored in compressor:              416421.
+Pages occupied by compressor:            187264.
+Decompressions:                         4317666.
+Compressions:                           6860985.
+Pageins:                              431244638.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:23
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+rss start  : 960.00 MB
+rss loaded : 5252.00 MB
+
+TIME
+Time       : 3.566 seconds
+User Time  : 0.410 seconds
+System Time: 0.614 seconds
+CPU Time   : 1.024 seconds
+CPU Util.  : 3.59%
+
+RESOURCE USAGE
+Mjr Faults : 78116
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 219882.515625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1097640.
+Pages active:                            450791.
+Pages inactive:                           58070.
+Pages speculative:                        62631.
+Pages throttled:                              0.
+Pages wired down:                        238861.
+Pages purgeable:                          86062.
+"Translation faults":                 929389443.
+Pages copy-on-write:                    6575891.
+Pages zero filled:                    693175197.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       148827.
+Anonymous pages:                         422665.
+Pages stored in compressor:              416420.
+Pages occupied by compressor:            187264.
+Decompressions:                         4317667.
+Compressions:                           6860985.
+Pageins:                              431325958.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237339.
+Pages active:                            375253.
+Pages inactive:                           28219.
+Pages speculative:                         5221.
+Pages throttled:                              0.
+Pages wired down:                        262517.
+Pages purgeable:                          71221.
+"Translation faults":                 929395869.
+Pages copy-on-write:                    6576348.
+Pages zero filled:                    693176700.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9524.
+Anonymous pages:                         399169.
+Pages stored in compressor:              416418.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317669.
+Compressions:                           6860985.
+Pageins:                              431329032.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 5.790 seconds
+User Time  : 0.281 seconds
+System Time: 0.992 seconds
+CPU Time   : 1.272 seconds
+CPU Util.  : 2.75%
+
+RESOURCE USAGE
+Mjr Faults : 41590
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 155491.843750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1092066.
+Pages active:                            424333.
+Pages inactive:                           48808.
+Pages speculative:                       102759.
+Pages throttled:                              0.
+Pages wired down:                        238863.
+Pages purgeable:                          86417.
+"Translation faults":                 929476970.
+Pages copy-on-write:                    6576576.
+Pages zero filled:                    693212511.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       153542.
+Anonymous pages:                         422358.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431374910.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237367.
+Pages active:                            374687.
+Pages inactive:                           28183.
+Pages speculative:                         4328.
+Pages throttled:                              0.
+Pages wired down:                        262616.
+Pages purgeable:                          71221.
+"Translation faults":                 929480354.
+Pages copy-on-write:                    6576926.
+Pages zero filled:                    693213096.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8227.
+Anonymous pages:                         398971.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431376818.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:34
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 2.355 seconds
+User Time  : 0.242 seconds
+System Time: 0.332 seconds
+CPU Time   : 0.574 seconds
+CPU Util.  : 3.05%
+
+RESOURCE USAGE
+Mjr Faults : 41592
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 155491.843750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1143395.
+Pages active:                            423223.
+Pages inactive:                           48741.
+Pages speculative:                        53139.
+Pages throttled:                              0.
+Pages wired down:                        238845.
+Pages purgeable:                          86062.
+"Translation faults":                 929554597.
+Pages copy-on-write:                    6577156.
+Pages zero filled:                    693241321.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       102377.
+Anonymous pages:                         422726.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431421579.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1236802.
+Pages active:                            375096.
+Pages inactive:                           28211.
+Pages speculative:                         5350.
+Pages throttled:                              0.
+Pages wired down:                        262518.
+Pages purgeable:                          71221.
+"Translation faults":                 929560487.
+Pages copy-on-write:                    6577620.
+Pages zero filled:                    693242707.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9683.
+Anonymous pages:                         398974.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431424556.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 960.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 4.051 seconds
+User Time  : 0.295 seconds
+System Time: 0.718 seconds
+CPU Time   : 1.013 seconds
+CPU Util.  : 3.13%
+
+RESOURCE USAGE
+Mjr Faults : 37612
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 180770.515625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1131035.
+Pages active:                            416515.
+Pages inactive:                           51680.
+Pages speculative:                        70709.
+Pages throttled:                              0.
+Pages wired down:                        238925.
+Pages purgeable:                          86062.
+"Translation faults":                 929629680.
+Pages copy-on-write:                    6577843.
+Pages zero filled:                    693269365.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       116298.
+Anonymous pages:                         422606.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431465381.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237623.
+Pages active:                            375114.
+Pages inactive:                           28176.
+Pages speculative:                         4821.
+Pages throttled:                              0.
+Pages wired down:                        262261.
+Pages purgeable:                          71221.
+"Translation faults":                 929632911.
+Pages copy-on-write:                    6578189.
+Pages zero filled:                    693269580.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8828.
+Anonymous pages:                         399283.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431467409.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:45:42
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+rss start  : 960.00 MB
+rss loaded : 5268.00 MB
+
+TIME
+Time       : 1.916 seconds
+User Time  : 0.255 seconds
+System Time: 0.294 seconds
+CPU Time   : 0.548 seconds
+CPU Util.  : 3.58%
+
+RESOURCE USAGE
+Mjr Faults : 37614
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 180770.515625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1163189.
+Pages active:                            415657.
+Pages inactive:                           51728.
+Pages speculative:                        38438.
+Pages throttled:                              0.
+Pages wired down:                        238922.
+Pages purgeable:                          86062.
+"Translation faults":                 929700609.
+Pages copy-on-write:                    6578424.
+Pages zero filled:                    693296007.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        83195.
+Anonymous pages:                         422628.
+Pages stored in compressor:              416415.
+Pages occupied by compressor:            187261.
+Decompressions:                         4317672.
+Compressions:                           6860985.
+Pageins:                              431507611.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=500
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237669.
+Pages active:                            375406.
+Pages inactive:                           28183.
+Pages speculative:                         4221.
+Pages throttled:                              0.
+Pages wired down:                        262508.
+Pages purgeable:                          71221.
+"Translation faults":                 930114377.
+Pages copy-on-write:                    6583229.
+Pages zero filled:                    693681303.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8092.
+Anonymous pages:                         399718.
+Pages stored in compressor:              416381.
+Pages occupied by compressor:            187260.
+Decompressions:                         4317706.
+Compressions:                           6860985.
+Pageins:                              431519800.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:46:26
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 960.00 MB
+rss loaded : 5260.00 MB
+
+TIME
+Time       : 21.179 seconds
+User Time  : 0.985 seconds
+System Time: 3.586 seconds
+CPU Time   : 4.571 seconds
+CPU Util.  : 2.70%
+
+RESOURCE USAGE
+Mjr Faults : 139517
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 245863.218750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              771092.
+Pages active:                            499083.
+Pages inactive:                           63957.
+Pages speculative:                       325829.
+Pages throttled:                              0.
+Pages wired down:                        248357.
+Pages purgeable:                          81265.
+"Translation faults":                 930358365.
+Pages copy-on-write:                    6583461.
+Pages zero filled:                    693779613.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       475362.
+Anonymous pages:                         413507.
+Pages stored in compressor:              416368.
+Pages occupied by compressor:            187216.
+Decompressions:                         4317718.
+Compressions:                           6860985.
+Pageins:                              431664767.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1235601.
+Pages active:                            375727.
+Pages inactive:                           28230.
+Pages speculative:                         4981.
+Pages throttled:                              0.
+Pages wired down:                        262581.
+Pages purgeable:                          71221.
+"Translation faults":                 930362166.
+Pages copy-on-write:                    6583801.
+Pages zero filled:                    693780350.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9135.
+Anonymous pages:                         399803.
+Pages stored in compressor:              416368.
+Pages occupied by compressor:            187216.
+Decompressions:                         4317718.
+Compressions:                           6860985.
+Pageins:                              431666865.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:46:48
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+rss start  : 960.00 MB
+rss loaded : 5280.00 MB
+
+TIME
+Time       : 7.354 seconds
+User Time  : 0.862 seconds
+System Time: 1.095 seconds
+CPU Time   : 1.957 seconds
+CPU Util.  : 3.33%
+
+RESOURCE USAGE
+Mjr Faults : 139520
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 245863.218750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              966341.
+Pages active:                            507101.
+Pages inactive:                           64148.
+Pages speculative:                       131222.
+Pages throttled:                              0.
+Pages wired down:                        239174.
+Pages purgeable:                          86417.
+"Translation faults":                 930596976.
+Pages copy-on-write:                    6584026.
+Pages zero filled:                    693869709.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       279552.
+Anonymous pages:                         422919.
+Pages stored in compressor:              416204.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317719.
+Compressions:                           6860985.
+Pageins:                              431810537.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237613.
+Pages active:                            375431.
+Pages inactive:                           28177.
+Pages speculative:                         4272.
+Pages throttled:                              0.
+Pages wired down:                        262733.
+Pages purgeable:                          71221.
+"Translation faults":                 930603352.
+Pages copy-on-write:                    6584489.
+Pages zero filled:                    693871426.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8154.
+Anonymous pages:                         399726.
+Pages stored in compressor:              416204.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317719.
+Compressions:                           6860985.
+Pageins:                              431813779.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:46:56
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4316.00 MB
+rss start  : 960.00 MB
+rss loaded : 5276.00 MB
+
+TIME
+Time       : 16.980 seconds
+User Time  : 0.920 seconds
+System Time: 3.104 seconds
+CPU Time   : 4.024 seconds
+CPU Util.  : 2.96%
+
+RESOURCE USAGE
+Mjr Faults : 145934
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 194875.140625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              857609.
+Pages active:                            498567.
+Pages inactive:                           68341.
+Pages speculative:                       235105.
+Pages throttled:                              0.
+Pages wired down:                        248691.
+Pages purgeable:                          80893.
+"Translation faults":                 930894335.
+Pages copy-on-write:                    6584720.
+Pages zero filled:                    694010847.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       391121.
+Anonymous pages:                         410892.
+Pages stored in compressor:              416199.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317724.
+Compressions:                           6860985.
+Pageins:                              431965225.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1237643.
+Pages active:                            373520.
+Pages inactive:                           28231.
+Pages speculative:                         6212.
+Pages throttled:                              0.
+Pages wired down:                        262995.
+Pages purgeable:                          70849.
+"Translation faults":                 930899448.
+Pages copy-on-write:                    6585057.
+Pages zero filled:                    694011937.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        10609.
+Anonymous pages:                         397354.
+Pages stored in compressor:              416198.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317725.
+Compressions:                           6860985.
+Pageins:                              431967985.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:47:14
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 6.612 seconds
+User Time  : 0.821 seconds
+System Time: 1.053 seconds
+CPU Time   : 1.874 seconds
+CPU Util.  : 3.54%
+
+RESOURCE USAGE
+Mjr Faults : 145937
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 194875.140625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              983576.
+Pages active:                            507367.
+Pages inactive:                           68357.
+Pages speculative:                       109489.
+Pages throttled:                              0.
+Pages wired down:                        238854.
+Pages purgeable:                          86417.
+"Translation faults":                 931183003.
+Pages copy-on-write:                    6585287.
+Pages zero filled:                    694143983.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       264030.
+Anonymous pages:                         421183.
+Pages stored in compressor:              416197.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317726.
+Compressions:                           6860985.
+Pageins:                              432117511.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1238898.
+Pages active:                            373442.
+Pages inactive:                           28190.
+Pages speculative:                         4330.
+Pages throttled:                              0.
+Pages wired down:                        262670.
+Pages purgeable:                          71221.
+"Translation faults":                 931189273.
+Pages copy-on-write:                    6585745.
+Pages zero filled:                    694145702.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8232.
+Anonymous pages:                         397730.
+Pages stored in compressor:              416197.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317726.
+Compressions:                           6860985.
+Pageins:                              432120773.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:47:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+rss start  : 960.00 MB
+rss loaded : 5296.00 MB
+
+TIME
+Time       : 30.559 seconds
+User Time  : 1.466 seconds
+System Time: 5.355 seconds
+CPU Time   : 6.821 seconds
+CPU Util.  : 2.79%
+
+RESOURCE USAGE
+Mjr Faults : 236870
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 332802.437500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              594142.
+Pages active:                            590420.
+Pages inactive:                           70675.
+Pages speculative:                       403285.
+Pages throttled:                              0.
+Pages wired down:                        248519.
+Pages purgeable:                          81265.
+"Translation faults":                 931734645.
+Pages copy-on-write:                    6586396.
+Pages zero filled:                    694444650.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       652569.
+Anonymous pages:                         411811.
+Pages stored in compressor:              416195.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317730.
+Compressions:                           6860985.
+Pageins:                              432365077.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1236212.
+Pages active:                            374680.
+Pages inactive:                           28201.
+Pages speculative:                         5784.
+Pages throttled:                              0.
+Pages wired down:                        262635.
+Pages purgeable:                          71221.
+"Translation faults":                 931738781.
+Pages copy-on-write:                    6586733.
+Pages zero filled:                    694445400.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                        10437.
+Anonymous pages:                         398228.
+Pages stored in compressor:              416195.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317730.
+Compressions:                           6860985.
+Pageins:                              432367371.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:47:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 9.858 seconds
+User Time  : 1.327 seconds
+System Time: 1.735 seconds
+CPU Time   : 3.062 seconds
+CPU Util.  : 3.88%
+
+RESOURCE USAGE
+Mjr Faults : 236873
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 332802.437500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              855494.
+Pages active:                            596385.
+Pages inactive:                           69899.
+Pages speculative:                       146968.
+Pages throttled:                              0.
+Pages wired down:                        239284.
+Pages purgeable:                          86045.
+"Translation faults":                 932269057.
+Pages copy-on-write:                    6586956.
+Pages zero filled:                    694734084.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       392114.
+Anonymous pages:                         421138.
+Pages stored in compressor:              416194.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317731.
+Compressions:                           6860985.
+Pageins:                              432607256.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1238124.
+Pages active:                            374470.
+Pages inactive:                           28179.
+Pages speculative:                         5050.
+Pages throttled:                              0.
+Pages wired down:                        262284.
+Pages purgeable:                          71221.
+"Translation faults":                 932275674.
+Pages copy-on-write:                    6587414.
+Pages zero filled:                    694735831.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         9191.
+Anonymous pages:                         398508.
+Pages stored in compressor:              416194.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317731.
+Compressions:                           6860985.
+Pageins:                              432610738.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:48:04
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+rss start  : 960.00 MB
+rss loaded : 5252.00 MB
+
+TIME
+Time       : 10.926 seconds
+User Time  : 0.556 seconds
+System Time: 1.887 seconds
+CPU Time   : 2.443 seconds
+CPU Util.  : 2.79%
+
+RESOURCE USAGE
+Mjr Faults : 75605
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 139026.140625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              977853.
+Pages active:                            445261.
+Pages inactive:                           61519.
+Pages speculative:                       183481.
+Pages throttled:                              0.
+Pages wired down:                        240499.
+Pages purgeable:                          86045.
+"Translation faults":                 932391483.
+Pages copy-on-write:                    6587629.
+Pages zero filled:                    694766151.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       270198.
+Anonymous pages:                         420063.
+Pages stored in compressor:              416188.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317737.
+Compressions:                           6860985.
+Pageins:                              432692652.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1240918.
+Pages active:                            373366.
+Pages inactive:                           28169.
+Pages speculative:                         2702.
+Pages throttled:                              0.
+Pages wired down:                        262624.
+Pages purgeable:                          71221.
+"Translation faults":                 932394154.
+Pages copy-on-write:                    6587962.
+Pages zero filled:                    694766755.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         5912.
+Anonymous pages:                         398325.
+Pages stored in compressor:              416188.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317737.
+Compressions:                           6860985.
+Pageins:                              432693867.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:48:16
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 4.291 seconds
+User Time  : 0.453 seconds
+System Time: 0.612 seconds
+CPU Time   : 1.066 seconds
+CPU Util.  : 3.10%
+
+RESOURCE USAGE
+Mjr Faults : 75608
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 139026.140625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1077056.
+Pages active:                            445579.
+Pages inactive:                           61104.
+Pages speculative:                        85229.
+Pages throttled:                              0.
+Pages wired down:                        238886.
+Pages purgeable:                          86062.
+"Translation faults":                 932507167.
+Pages copy-on-write:                    6588190.
+Pages zero filled:                    694796562.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       169835.
+Anonymous pages:                         422077.
+Pages stored in compressor:              416185.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317740.
+Compressions:                           6860985.
+Pageins:                              432774672.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1238452.
+Pages active:                            374425.
+Pages inactive:                           28191.
+Pages speculative:                         4335.
+Pages throttled:                              0.
+Pages wired down:                        262285.
+Pages purgeable:                          71221.
+"Translation faults":                 932513292.
+Pages copy-on-write:                    6588655.
+Pages zero filled:                    694797956.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8246.
+Anonymous pages:                         398705.
+Pages stored in compressor:              416185.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317740.
+Compressions:                           6860985.
+Pageins:                              432777948.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:48:21
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+rss start  : 960.00 MB
+rss loaded : 5296.00 MB
+
+TIME
+Time       : 17.079 seconds
+User Time  : 1.025 seconds
+System Time: 3.103 seconds
+CPU Time   : 4.127 seconds
+CPU Util.  : 3.02%
+
+RESOURCE USAGE
+Mjr Faults : 137706
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 234152.234375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              863948.
+Pages active:                            491396.
+Pages inactive:                           68161.
+Pages speculative:                       236112.
+Pages throttled:                              0.
+Pages wired down:                        248327.
+Pages purgeable:                          81265.
+"Translation faults":                 932784269.
+Pages copy-on-write:                    6588887.
+Pages zero filled:                    694925829.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       383471.
+Anonymous pages:                         412198.
+Pages stored in compressor:              416182.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317743.
+Compressions:                           6860985.
+Pageins:                              432920729.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1238507.
+Pages active:                            373831.
+Pages inactive:                           28193.
+Pages speculative:                         4102.
+Pages throttled:                              0.
+Pages wired down:                        262551.
+Pages purgeable:                          71221.
+"Translation faults":                 932787389.
+Pages copy-on-write:                    6589227.
+Pages zero filled:                    694926442.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         7753.
+Anonymous pages:                         398373.
+Pages stored in compressor:              416182.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317743.
+Compressions:                           6860985.
+Pageins:                              432922373.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:48:39
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 6.534 seconds
+User Time  : 0.886 seconds
+System Time: 1.040 seconds
+CPU Time   : 1.926 seconds
+CPU Util.  : 3.68%
+
+RESOURCE USAGE
+Mjr Faults : 137709
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 234152.234375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              994442.
+Pages active:                            499580.
+Pages inactive:                           67725.
+Pages speculative:                       107166.
+Pages throttled:                              0.
+Pages wired down:                        238950.
+Pages purgeable:                          86417.
+"Translation faults":                 933050640.
+Pages copy-on-write:                    6589457.
+Pages zero filled:                    695046440.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       252830.
+Anonymous pages:                         421641.
+Pages stored in compressor:              416180.
+Pages occupied by compressor:            187101.
+Decompressions:                         4317745.
+Compressions:                           6860985.
+Pageins:                              433063865.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=1000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1236641.
+Pages active:                            376212.
+Pages inactive:                           28176.
+Pages speculative:                         4757.
+Pages throttled:                              0.
+Pages wired down:                        262350.
+Pages purgeable:                          71221.
+"Translation faults":                 933469441.
+Pages copy-on-write:                    6594263.
+Pages zero filled:                    695434798.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         8753.
+Anonymous pages:                         400392.
+Pages stored in compressor:              416118.
+Pages occupied by compressor:            187071.
+Decompressions:                         4317932.
+Compressions:                           6860985.
+Pageins:                              433077565.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:49:28
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4340.00 MB
+rss start  : 960.00 MB
+rss loaded : 5300.00 MB
+
+TIME
+Time       : 21.051 seconds
+User Time  : 1.317 seconds
+System Time: 3.591 seconds
+CPU Time   : 4.908 seconds
+CPU Util.  : 2.91%
+
+RESOURCE USAGE
+Mjr Faults : 144609
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 178044.062500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              782612.
+Pages active:                            493998.
+Pages inactive:                           72827.
+Pages speculative:                       310202.
+Pages throttled:                              0.
+Pages wired down:                        248332.
+Pages purgeable:                          81265.
+"Translation faults":                 933679164.
+Pages copy-on-write:                    6594498.
+Pages zero filled:                    695494997.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       464325.
+Anonymous pages:                         412702.
+Pages stored in compressor:              416116.
+Pages occupied by compressor:            187071.
+Decompressions:                         4317934.
+Compressions:                           6860985.
+Pageins:                              433227006.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1239956.
+Pages active:                            374123.
+Pages inactive:                           28174.
+Pages speculative:                         3111.
+Pages throttled:                              0.
+Pages wired down:                        262555.
+Pages purgeable:                          71221.
+"Translation faults":                 933682037.
+Pages copy-on-write:                    6594821.
+Pages zero filled:                    695495719.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                         6432.
+Anonymous pages:                         398976.
+Pages stored in compressor:              416116.
+Pages occupied by compressor:            187071.
+Decompressions:                         4317934.
+Compressions:                           6860985.
+Pageins:                              433228290.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:49:50
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4296.00 MB
+rss start  : 960.00 MB
+rss loaded : 5256.00 MB
+
+TIME
+Time       : 7.797 seconds
+User Time  : 1.131 seconds
+System Time: 1.232 seconds
+CPU Time   : 2.363 seconds
+CPU Util.  : 3.79%
+
+RESOURCE USAGE
+Mjr Faults : 144612
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 178044.062500
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              978698.
+Pages active:                            445085.
+Pages inactive:                           74651.
+Pages speculative:                       137971.
+Pages throttled:                              0.
+Pages wired down:                        271553.
+Pages purgeable:                          28784.
+"Translation faults":                 933969709.
+Pages copy-on-write:                    6601319.
+Pages zero filled:                    695611814.
+Pages reactivated:                     29990459.
+Pages purged:                           7972689.
+File-backed pages:                       306688.
+Anonymous pages:                         351019.
+Pages stored in compressor:              415943.
+Pages occupied by compressor:            187019.
+Decompressions:                         4318094.
+Compressions:                           6860985.
+Pageins:                              433394831.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1249658.
+Pages active:                            330073.
+Pages inactive:                           29773.
+Pages speculative:                        13176.
+Pages throttled:                              0.
+Pages wired down:                        285768.
+Pages purgeable:                          33342.
+"Translation faults":                 934009102.
+Pages copy-on-write:                    6601777.
+Pages zero filled:                    695640181.
+Pages reactivated:                     29991319.
+Pages purged:                           7972689.
+File-backed pages:                        23060.
+Anonymous pages:                         349962.
+Pages stored in compressor:              415873.
+Pages occupied by compressor:            187009.
+Decompressions:                         4318164.
+Compressions:                           6860985.
+Pageins:                              433407686.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:49:59
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4308.00 MB
+rss start  : 960.00 MB
+rss loaded : 5268.00 MB
+
+TIME
+Time       : 15.002 seconds
+User Time  : 1.279 seconds
+System Time: 1.777 seconds
+CPU Time   : 3.056 seconds
+CPU Util.  : 2.55%
+
+RESOURCE USAGE
+Mjr Faults : 129186
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 185118.234375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              681155.
+Pages active:                            524694.
+Pages inactive:                           81475.
+Pages speculative:                       327545.
+Pages throttled:                              0.
+Pages wired down:                        293502.
+Pages purgeable:                          44606.
+"Translation faults":                 934333438.
+Pages copy-on-write:                    6604871.
+Pages zero filled:                    695816127.
+Pages reactivated:                     29991319.
+Pages purged:                           7972689.
+File-backed pages:                       495067.
+Anonymous pages:                         438647.
+Pages stored in compressor:              414264.
+Pages occupied by compressor:            186453.
+Decompressions:                         4319776.
+Compressions:                           6860985.
+Pageins:                              433563996.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1151456.
+Pages active:                            414491.
+Pages inactive:                           33715.
+Pages speculative:                        12460.
+Pages throttled:                              0.
+Pages wired down:                        296729.
+Pages purgeable:                          44578.
+"Translation faults":                 934350195.
+Pages copy-on-write:                    6605207.
+Pages zero filled:                    695816357.
+Pages reactivated:                     29995895.
+Pages purged:                           7972689.
+File-backed pages:                        25247.
+Anonymous pages:                         435419.
+Pages stored in compressor:              414264.
+Pages occupied by compressor:            186453.
+Decompressions:                         4319776.
+Compressions:                           6860985.
+Pageins:                              433574201.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:50:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 7.461 seconds
+User Time  : 1.252 seconds
+System Time: 1.206 seconds
+CPU Time   : 2.458 seconds
+CPU Util.  : 4.12%
+
+RESOURCE USAGE
+Mjr Faults : 129189
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 185118.234375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              904140.
+Pages active:                            509149.
+Pages inactive:                           77747.
+Pages speculative:                       124986.
+Pages throttled:                              0.
+Pages wired down:                        292984.
+Pages purgeable:                          41738.
+"Translation faults":                 934521070.
+Pages copy-on-write:                    6605435.
+Pages zero filled:                    695852359.
+Pages reactivated:                     29995895.
+Pages purged:                           7972689.
+File-backed pages:                       272117.
+Anonymous pages:                         439765.
+Pages stored in compressor:              414248.
+Pages occupied by compressor:            186453.
+Decompressions:                         4319793.
+Compressions:                           6860985.
+Pageins:                              433707539.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1152523.
+Pages active:                            414462.
+Pages inactive:                           33733.
+Pages speculative:                        11551.
+Pages throttled:                              0.
+Pages wired down:                        296781.
+Pages purgeable:                          44578.
+"Translation faults":                 934544234.
+Pages copy-on-write:                    6605906.
+Pages zero filled:                    695857157.
+Pages reactivated:                     29998763.
+Pages purged:                           7972689.
+File-backed pages:                        23791.
+Anonymous pages:                         435955.
+Pages stored in compressor:              414247.
+Pages occupied by compressor:            186453.
+Decompressions:                         4319794.
+Compressions:                           6860985.
+Pageins:                              433720507.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:50:24
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 23.231 seconds
+User Time  : 1.671 seconds
+System Time: 2.731 seconds
+CPU Time   : 4.402 seconds
+CPU Util.  : 2.37%
+
+RESOURCE USAGE
+Mjr Faults : 204780
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 205580.031250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              499894.
+Pages active:                            621137.
+Pages inactive:                           73349.
+Pages speculative:                       427554.
+Pages throttled:                              0.
+Pages wired down:                        286299.
+Pages purgeable:                          67764.
+"Translation faults":                 934925829.
+Pages copy-on-write:                    6610520.
+Pages zero filled:                    696043645.
+Pages reactivated:                     29998763.
+Pages purged:                           7972689.
+File-backed pages:                       656354.
+Anonymous pages:                         465686.
+Pages stored in compressor:              412440.
+Pages occupied by compressor:            186135.
+Decompressions:                         4320305.
+Compressions:                           6860985.
+Pageins:                              433934764.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1131186.
+Pages active:                            436234.
+Pages inactive:                           30731.
+Pages speculative:                        12878.
+Pages throttled:                              0.
+Pages wired down:                        297964.
+Pages purgeable:                          67420.
+"Translation faults":                 934944268.
+Pages copy-on-write:                    6610854.
+Pages zero filled:                    696043936.
+Pages reactivated:                     30002166.
+Pages purged:                           7972689.
+File-backed pages:                        25764.
+Anonymous pages:                         454079.
+Pages stored in compressor:              412439.
+Pages occupied by compressor:            186135.
+Decompressions:                         4320307.
+Compressions:                           6860985.
+Pageins:                              433945209.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:50:48
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4336.00 MB
+rss start  : 960.00 MB
+rss loaded : 5296.00 MB
+
+TIME
+Time       : 9.830 seconds
+User Time  : 1.512 seconds
+System Time: 1.655 seconds
+CPU Time   : 3.167 seconds
+CPU Util.  : 4.03%
+
+RESOURCE USAGE
+Mjr Faults : 204783
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 205580.031250
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              782313.
+Pages active:                            605851.
+Pages inactive:                           71867.
+Pages speculative:                       154948.
+Pages throttled:                              0.
+Pages wired down:                        293665.
+Pages purgeable:                          63229.
+"Translation faults":                 935304472.
+Pages copy-on-write:                    6611072.
+Pages zero filled:                    696191764.
+Pages reactivated:                     30002166.
+Pages purged:                           7972689.
+File-backed pages:                       379574.
+Anonymous pages:                         453092.
+Pages stored in compressor:              412429.
+Pages occupied by compressor:            186135.
+Decompressions:                         4320322.
+Compressions:                           6860985.
+Pageins:                              434155825.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1130238.
+Pages active:                            426419.
+Pages inactive:                           30755.
+Pages speculative:                        11713.
+Pages throttled:                              0.
+Pages wired down:                        309535.
+Pages purgeable:                          64705.
+"Translation faults":                 935334215.
+Pages copy-on-write:                    6611724.
+Pages zero filled:                    696211112.
+Pages reactivated:                     30005329.
+Pages purged:                           7972689.
+File-backed pages:                        23323.
+Anonymous pages:                         445564.
+Pages stored in compressor:              412180.
+Pages occupied by compressor:            186035.
+Decompressions:                         4320526.
+Compressions:                           6860985.
+Pageins:                              434167930.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:51:00
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 21.325 seconds
+User Time  : 1.529 seconds
+System Time: 2.548 seconds
+CPU Time   : 4.077 seconds
+CPU Util.  : 2.39%
+
+RESOURCE USAGE
+Mjr Faults : 185627
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 189101.296875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              542784.
+Pages active:                            588642.
+Pages inactive:                           80247.
+Pages speculative:                       405078.
+Pages throttled:                              0.
+Pages wired down:                        292114.
+Pages purgeable:                          72757.
+"Translation faults":                 935635996.
+Pages copy-on-write:                    6612017.
+Pages zero filled:                    696319626.
+Pages reactivated:                     30005329.
+Pages purged:                           7972689.
+File-backed pages:                       613971.
+Anonymous pages:                         459996.
+Pages stored in compressor:              412041.
+Pages occupied by compressor:            186034.
+Decompressions:                         4320683.
+Compressions:                           6860985.
+Pageins:                              434363212.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1134468.
+Pages active:                            436697.
+Pages inactive:                           31578.
+Pages speculative:                        10766.
+Pages throttled:                              0.
+Pages wired down:                        295616.
+Pages purgeable:                          69317.
+"Translation faults":                 935653040.
+Pages copy-on-write:                    6612361.
+Pages zero filled:                    696319898.
+Pages reactivated:                     30008167.
+Pages purged:                           7972689.
+File-backed pages:                        22483.
+Anonymous pages:                         456558.
+Pages stored in compressor:              412040.
+Pages occupied by compressor:            186034.
+Decompressions:                         4320685.
+Compressions:                           6860985.
+Pageins:                              434372738.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:51:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4352.00 MB
+rss start  : 960.00 MB
+rss loaded : 5312.00 MB
+
+TIME
+Time       : 9.136 seconds
+User Time  : 1.367 seconds
+System Time: 1.476 seconds
+CPU Time   : 2.842 seconds
+CPU Util.  : 3.89%
+
+RESOURCE USAGE
+Mjr Faults : 185630
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 189101.296875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              805893.
+Pages active:                            588418.
+Pages inactive:                           80171.
+Pages speculative:                       146538.
+Pages throttled:                              0.
+Pages wired down:                        287969.
+Pages purgeable:                          67582.
+"Translation faults":                 935957062.
+Pages copy-on-write:                    6612821.
+Pages zero filled:                    696442365.
+Pages reactivated:                     30008167.
+Pages purged:                           7972689.
+File-backed pages:                       351926.
+Anonymous pages:                         463201.
+Pages stored in compressor:              412012.
+Pages occupied by compressor:            186033.
+Decompressions:                         4320724.
+Compressions:                           6860985.
+Pageins:                              434564996.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1136357.
+Pages active:                            439297.
+Pages inactive:                           31332.
+Pages speculative:                        10452.
+Pages throttled:                              0.
+Pages wired down:                        291647.
+Pages purgeable:                          72757.
+"Translation faults":                 935977768.
+Pages copy-on-write:                    6613281.
+Pages zero filled:                    696444219.
+Pages reactivated:                     30011480.
+Pages purged:                           7972689.
+File-backed pages:                        21668.
+Anonymous pages:                         459413.
+Pages stored in compressor:              412011.
+Pages occupied by compressor:            186033.
+Decompressions:                         4320727.
+Compressions:                           6860985.
+Pageins:                              434576615.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:51:32
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 28.149 seconds
+User Time  : 1.765 seconds
+System Time: 3.239 seconds
+CPU Time   : 5.004 seconds
+CPU Util.  : 2.22%
+
+RESOURCE USAGE
+Mjr Faults : 238352
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 213373.984375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              373563.
+Pages active:                            637380.
+Pages inactive:                           83291.
+Pages speculative:                       524594.
+Pages throttled:                              0.
+Pages wired down:                        290626.
+Pages purgeable:                          67948.
+"Translation faults":                 936408717.
+Pages copy-on-write:                    6613510.
+Pages zero filled:                    696625253.
+Pages reactivated:                     30011480.
+Pages purged:                           7972689.
+File-backed pages:                       785141.
+Anonymous pages:                         460124.
+Pages stored in compressor:              411827.
+Pages occupied by compressor:            185987.
+Decompressions:                         4320933.
+Compressions:                           6860985.
+Pageins:                              434824554.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1132422.
+Pages active:                            437160.
+Pages inactive:                           34100.
+Pages speculative:                        11769.
+Pages throttled:                              0.
+Pages wired down:                        293779.
+Pages purgeable:                          71739.
+"Translation faults":                 936428117.
+Pages copy-on-write:                    6613832.
+Pages zero filled:                    696626812.
+Pages reactivated:                     30014777.
+Pages purged:                           7972689.
+File-backed pages:                        24816.
+Anonymous pages:                         458213.
+Pages stored in compressor:              411827.
+Pages occupied by compressor:            185987.
+Decompressions:                         4320933.
+Compressions:                           6860985.
+Pageins:                              434835629.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:52:02
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 960.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 10.944 seconds
+User Time  : 1.571 seconds
+System Time: 1.864 seconds
+CPU Time   : 3.435 seconds
+CPU Util.  : 3.92%
+
+RESOURCE USAGE
+Mjr Faults : 238355
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 213373.984375
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              734443.
+Pages active:                            649826.
+Pages inactive:                           82570.
+Pages speculative:                       166081.
+Pages throttled:                              0.
+Pages wired down:                        276291.
+Pages purgeable:                          72291.
+"Translation faults":                 936847077.
+Pages copy-on-write:                    6614050.
+Pages zero filled:                    696795780.
+Pages reactivated:                     30014777.
+Pages purged:                           7972689.
+File-backed pages:                       425420.
+Anonymous pages:                         473057.
+Pages stored in compressor:              411811.
+Pages occupied by compressor:            185986.
+Decompressions:                         4320957.
+Compressions:                           6860985.
+Pageins:                              435080925.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+bc6238e49dbbb9e9dbe5510c110ddc1993b7f240
+PARAM_N=2000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1141807.
+Pages active:                            446913.
+Pages inactive:                           28248.
+Pages speculative:                         9150.
+Pages throttled:                              0.
+Pages wired down:                        282648.
+Pages purgeable:                          71691.
+"Translation faults":                 937275437.
+Pages copy-on-write:                    6619412.
+Pages zero filled:                    697186303.
+Pages reactivated:                     30015866.
+Pages purged:                           7972689.
+File-backed pages:                        14862.
+Anonymous pages:                         469449.
+Pages stored in compressor:              411722.
+Pages occupied by compressor:            185936.
+Decompressions:                         4321083.
+Compressions:                           6860985.
+Pageins:                              435095696.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:52:57
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4340.00 MB
+rss start  : 960.00 MB
+rss loaded : 5300.00 MB
+
+TIME
+Time       : 38.477 seconds
+User Time  : 3.338 seconds
+System Time: 5.338 seconds
+CPU Time   : 8.676 seconds
+CPU Util.  : 2.82%
+
+RESOURCE USAGE
+Mjr Faults : 323276
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 227098.125000
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              197813.
+Pages active:                            730841.
+Pages inactive:                           86914.
+Pages speculative:                       609534.
+Pages throttled:                              0.
+Pages wired down:                        284239.
+Pages purgeable:                          65728.
+"Translation faults":                 938128682.
+Pages copy-on-write:                    6620283.
+Pages zero filled:                    697692244.
+Pages reactivated:                     30015866.
+Pages purged:                           7972689.
+File-backed pages:                       956583.
+Anonymous pages:                         470706.
+Pages stored in compressor:              410965.
+Pages occupied by compressor:            185348.
+Decompressions:                         4321841.
+Compressions:                           6860985.
+Pageins:                              435436024.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1132979.
+Pages active:                            453307.
+Pages inactive:                           28426.
+Pages speculative:                        12584.
+Pages throttled:                              0.
+Pages wired down:                        282403.
+Pages purgeable:                          65832.
+"Translation faults":                 938138763.
+Pages copy-on-write:                    6620640.
+Pages zero filled:                    697693414.
+Pages reactivated:                     30016714.
+Pages purged:                           7972689.
+File-backed pages:                        20954.
+Anonymous pages:                         473363.
+Pages stored in compressor:              410965.
+Pages occupied by compressor:            185348.
+Decompressions:                         4321841.
+Compressions:                           6860985.
+Pageins:                              435442201.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:53:36
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4300.00 MB
+rss start  : 972.00 MB
+rss loaded : 5272.00 MB
+
+TIME
+Time       : 14.996 seconds
+User Time  : 3.100 seconds
+System Time: 3.079 seconds
+CPU Time   : 6.179 seconds
+CPU Util.  : 5.15%
+
+RESOURCE USAGE
+Mjr Faults : 323279
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 227098.125000
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              640977.
+Pages active:                            705370.
+Pages inactive:                           87988.
+Pages speculative:                       182089.
+Pages throttled:                              0.
+Pages wired down:                        293983.
+Pages purgeable:                          62800.
+"Translation faults":                 939051742.
+Pages copy-on-write:                    6625344.
+Pages zero filled:                    698306597.
+Pages reactivated:                     30016714.
+Pages purged:                           7972689.
+File-backed pages:                       535234.
+Anonymous pages:                         440213.
+Pages stored in compressor:              409443.
+Pages occupied by compressor:            184884.
+Decompressions:                         4323365.
+Compressions:                           6860985.
+Pageins:                              435790287.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1141963.
+Pages active:                            440606.
+Pages inactive:                           28971.
+Pages speculative:                        13893.
+Pages throttled:                              0.
+Pages wired down:                        285097.
+Pages purgeable:                          74683.
+"Translation faults":                 939097221.
+Pages copy-on-write:                    6626064.
+Pages zero filled:                    698338276.
+Pages reactivated:                     30018387.
+Pages purged:                           7972689.
+File-backed pages:                        24390.
+Anonymous pages:                         459080.
+Pages stored in compressor:              409108.
+Pages occupied by compressor:            184564.
+Decompressions:                         4323487.
+Compressions:                           6860985.
+Pageins:                              435804721.
+Pageouts:                                 73979.
+Swapins:                                  53739.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:53:53
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+rss start  : 960.00 MB
+rss loaded : 5280.00 MB
+
+TIME
+Time       : 39.347 seconds
+User Time  : 2.756 seconds
+System Time: 5.049 seconds
+CPU Time   : 7.805 seconds
+CPU Util.  : 2.48%
+
+RESOURCE USAGE
+Mjr Faults : 316699
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 187521.265625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                               45728.
+Pages active:                            756122.
+Pages inactive:                          139595.
+Pages speculative:                       680693.
+Pages throttled:                              0.
+Pages wired down:                        289499.
+Pages purgeable:                          98130.
+"Translation faults":                 939868233.
+Pages copy-on-write:                    6628547.
+Pages zero filled:                    698857700.
+Pages reactivated:                     30018387.
+Pages purged:                           7995424.
+File-backed pages:                      1036625.
+Anonymous pages:                         539785.
+Pages stored in compressor:              406855.
+Pages occupied by compressor:            183890.
+Decompressions:                         4325741.
+Compressions:                           6860985.
+Pageins:                              436149154.
+Pageouts:                                 73979.
+Swapins:                                  53803.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1055429.
+Pages active:                            477469.
+Pages inactive:                           80062.
+Pages speculative:                        14906.
+Pages throttled:                              0.
+Pages wired down:                        283418.
+Pages purgeable:                         104617.
+"Translation faults":                 939881300.
+Pages copy-on-write:                    6628879.
+Pages zero filled:                    698865357.
+Pages reactivated:                     30022087.
+Pages purged:                           7995424.
+File-backed pages:                        25898.
+Anonymous pages:                         546539.
+Pages stored in compressor:              406854.
+Pages occupied by compressor:            183890.
+Decompressions:                         4325742.
+Compressions:                           6860985.
+Pageins:                              436157326.
+Pageouts:                                 73979.
+Swapins:                                  53803.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:54:34
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4304.00 MB
+rss start  : 984.00 MB
+rss loaded : 5288.00 MB
+
+TIME
+Time       : 18.580 seconds
+User Time  : 3.208 seconds
+System Time: 3.192 seconds
+CPU Time   : 6.399 seconds
+CPU Util.  : 4.31%
+
+RESOURCE USAGE
+Mjr Faults : 316702
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 187521.265625
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              538815.
+Pages active:                            793431.
+Pages inactive:                          124491.
+Pages speculative:                       171620.
+Pages throttled:                              0.
+Pages wired down:                        282749.
+Pages purgeable:                         110364.
+"Translation faults":                 940493827.
+Pages copy-on-write:                    6629323.
+Pages zero filled:                    699158648.
+Pages reactivated:                     30022087.
+Pages purged:                           7995424.
+File-backed pages:                       517122.
+Anonymous pages:                         572420.
+Pages stored in compressor:              406554.
+Pages occupied by compressor:            183983.
+Decompressions:                         4326043.
+Compressions:                           6860985.
+Pageins:                              436491186.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1032889.
+Pages active:                            511960.
+Pages inactive:                           69745.
+Pages speculative:                        11670.
+Pages throttled:                              0.
+Pages wired down:                        285389.
+Pages purgeable:                         110164.
+"Translation faults":                 940518388.
+Pages copy-on-write:                    6629771.
+Pages zero filled:                    699160306.
+Pages reactivated:                     30025607.
+Pages purged:                           7995424.
+File-backed pages:                        23326.
+Anonymous pages:                         570049.
+Pages stored in compressor:              406553.
+Pages occupied by compressor:            183983.
+Decompressions:                         4326044.
+Compressions:                           6860985.
+Pageins:                              436504278.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:54:54
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4312.00 MB
+rss start  : 972.00 MB
+rss loaded : 5284.00 MB
+
+TIME
+Time       : 32.965 seconds
+User Time  : 3.871 seconds
+System Time: 4.539 seconds
+CPU Time   : 8.410 seconds
+CPU Util.  : 3.19%
+
+RESOURCE USAGE
+Mjr Faults : 285511
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 229988.593750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              200411.
+Pages active:                            776362.
+Pages inactive:                          121318.
+Pages speculative:                       532749.
+Pages throttled:                              0.
+Pages wired down:                        280888.
+Pages purgeable:                         110713.
+"Translation faults":                 941177179.
+Pages copy-on-write:                    6630004.
+Pages zero filled:                    699518127.
+Pages reactivated:                     30025607.
+Pages purged:                           7995424.
+File-backed pages:                       845791.
+Anonymous pages:                         584638.
+Pages stored in compressor:              406458.
+Pages occupied by compressor:            183954.
+Decompressions:                         4326139.
+Compressions:                           6860985.
+Pageins:                              436802654.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1027915.
+Pages active:                            527464.
+Pages inactive:                           63776.
+Pages speculative:                         9889.
+Pages throttled:                              0.
+Pages wired down:                        281273.
+Pages purgeable:                         109945.
+"Translation faults":                 941184889.
+Pages copy-on-write:                    6630342.
+Pages zero filled:                    699518391.
+Pages reactivated:                     30029239.
+Pages purged:                           7995424.
+File-backed pages:                        16884.
+Anonymous pages:                         584245.
+Pages stored in compressor:              406458.
+Pages occupied by compressor:            183954.
+Decompressions:                         4326139.
+Compressions:                           6860985.
+Pageins:                              436807543.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:55:29
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4292.00 MB
+rss start  : 960.00 MB
+rss loaded : 5252.00 MB
+
+TIME
+Time       : 14.768 seconds
+User Time  : 3.484 seconds
+System Time: 2.951 seconds
+CPU Time   : 6.435 seconds
+CPU Util.  : 5.45%
+
+RESOURCE USAGE
+Mjr Faults : 285514
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 229988.593750
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              577633.
+Pages active:                            761460.
+Pages inactive:                          115856.
+Pages speculative:                       175377.
+Pages throttled:                              0.
+Pages wired down:                        280630.
+Pages purgeable:                         110201.
+"Translation faults":                 941814250.
+Pages copy-on-write:                    6630568.
+Pages zero filled:                    699849354.
+Pages reactivated:                     30029239.
+Pages purged:                           7995424.
+File-backed pages:                       477505.
+Anonymous pages:                         575188.
+Pages stored in compressor:              406406.
+Pages occupied by compressor:            183947.
+Decompressions:                         4326191.
+Compressions:                           6860985.
+Pageins:                              437100352.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1037349.
+Pages active:                            518050.
+Pages inactive:                           62730.
+Pages speculative:                        10583.
+Pages throttled:                              0.
+Pages wired down:                        282393.
+Pages purgeable:                         110001.
+"Translation faults":                 941829214.
+Pages copy-on-write:                    6631027.
+Pages zero filled:                    699850955.
+Pages reactivated:                     30029239.
+Pages purged:                           7995424.
+File-backed pages:                        17746.
+Anonymous pages:                         573617.
+Pages stored in compressor:              406405.
+Pages occupied by compressor:            183947.
+Decompressions:                         4326192.
+Compressions:                           6860985.
+Pageins:                              437110235.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:55:45
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4332.00 MB
+rss start  : 960.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 35.124 seconds
+User Time  : 3.939 seconds
+System Time: 4.535 seconds
+CPU Time   : 8.474 seconds
+CPU Util.  : 3.02%
+
+RESOURCE USAGE
+Mjr Faults : 311385
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 242713.421875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              155704.
+Pages active:                            778972.
+Pages inactive:                          119949.
+Pages speculative:                       574209.
+Pages throttled:                              0.
+Pages wired down:                        282681.
+Pages purgeable:                         106504.
+"Translation faults":                 942437106.
+Pages copy-on-write:                    6631248.
+Pages zero filled:                    700146096.
+Pages reactivated:                     30029239.
+Pages purged:                           7995424.
+File-backed pages:                       904930.
+Anonymous pages:                         568200.
+Pages stored in compressor:              406397.
+Pages occupied by compressor:            183946.
+Decompressions:                         4326200.
+Compressions:                           6860985.
+Pageins:                              437430878.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1044100.
+Pages active:                            513775.
+Pages inactive:                           60905.
+Pages speculative:                         9480.
+Pages throttled:                              0.
+Pages wired down:                        282820.
+Pages purgeable:                         106504.
+"Translation faults":                 942444195.
+Pages copy-on-write:                    6631586.
+Pages zero filled:                    700149763.
+Pages reactivated:                     30029399.
+Pages purged:                           7995424.
+File-backed pages:                        16042.
+Anonymous pages:                         568118.
+Pages stored in compressor:              406397.
+Pages occupied by compressor:            183946.
+Decompressions:                         4326200.
+Compressions:                           6860985.
+Pageins:                              437435479.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:56:22
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4328.00 MB
+rss start  : 960.00 MB
+rss loaded : 5288.00 MB
+
+TIME
+Time       : 15.660 seconds
+User Time  : 3.800 seconds
+System Time: 3.123 seconds
+CPU Time   : 6.923 seconds
+CPU Util.  : 5.53%
+
+RESOURCE USAGE
+Mjr Faults : 311388
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 242713.421875
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              566829.
+Pages active:                            776756.
+Pages inactive:                          116664.
+Pages speculative:                       172208.
+Pages throttled:                              0.
+Pages wired down:                        279519.
+Pages purgeable:                         104825.
+"Translation faults":                 943034577.
+Pages copy-on-write:                    6631812.
+Pages zero filled:                    700427926.
+Pages reactivated:                     30029399.
+Pages purged:                           7995424.
+File-backed pages:                       496638.
+Anonymous pages:                         568990.
+Pages stored in compressor:              406392.
+Pages occupied by compressor:            183945.
+Decompressions:                         4326205.
+Compressions:                           6860985.
+Pageins:                              437752721.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1042713.
+Pages active:                            513830.
+Pages inactive:                           60426.
+Pages speculative:                        12844.
+Pages throttled:                              0.
+Pages wired down:                        281313.
+Pages purgeable:                         110256.
+"Translation faults":                 943049235.
+Pages copy-on-write:                    6632269.
+Pages zero filled:                    700429345.
+Pages reactivated:                     30029415.
+Pages purged:                           7995424.
+File-backed pages:                        19825.
+Anonymous pages:                         567275.
+Pages stored in compressor:              406392.
+Pages occupied by compressor:            183945.
+Decompressions:                         4326205.
+Compressions:                           6860985.
+Pageins:                              437762416.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:56:40
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4324.00 MB
+rss start  : 968.00 MB
+rss loaded : 5292.00 MB
+
+TIME
+Time       : 34.560 seconds
+User Time  : 3.561 seconds
+System Time: 4.132 seconds
+CPU Time   : 7.694 seconds
+CPU Util.  : 2.78%
+
+RESOURCE USAGE
+Mjr Faults : 296405
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 215416.828125
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              203392.
+Pages active:                            769243.
+Pages inactive:                          123450.
+Pages speculative:                       533410.
+Pages throttled:                              0.
+Pages wired down:                        281131.
+Pages purgeable:                         113215.
+"Translation faults":                 943656740.
+Pages copy-on-write:                    6632776.
+Pages zero filled:                    700716894.
+Pages reactivated:                     30029415.
+Pages purged:                           7995424.
+File-backed pages:                       853759.
+Anonymous pages:                         572344.
+Pages stored in compressor:              406334.
+Pages occupied by compressor:            183926.
+Decompressions:                         4326264.
+Compressions:                           6860985.
+Pageins:                              438075050.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                             1040244.
+Pages active:                            516638.
+Pages inactive:                           60778.
+Pages speculative:                        10211.
+Pages throttled:                              0.
+Pages wired down:                        282969.
+Pages purgeable:                         113249.
+"Translation faults":                 943664610.
+Pages copy-on-write:                    6633121.
+Pages zero filled:                    700717175.
+Pages reactivated:                     30031495.
+Pages purged:                           7995424.
+File-backed pages:                        17074.
+Anonymous pages:                         570553.
+Pages stored in compressor:              406334.
+Pages occupied by compressor:            183926.
+Decompressions:                         4326264.
+Compressions:                           6860985.
+Pageins:                              438079323.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 11/17/14 01:57:15
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 4320.00 MB
+rss start  : 976.00 MB
+rss loaded : 5296.00 MB
+
+TIME
+Time       : 13.888 seconds
+User Time  : 2.778 seconds
+System Time: 2.671 seconds
+CPU Time   : 5.450 seconds
+CPU Util.  : 4.91%
+
+RESOURCE USAGE
+Mjr Faults : 296408
+In Blocks  : 0
+Out Blocks : 0
+
+Return value: 215416.828125
+==========AFTER VM STAT==========
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              560456.
+Pages active:                            807391.
+Pages inactive:                          126834.
+Pages speculative:                       179631.
+Pages throttled:                              0.
+Pages wired down:                        236466.
+Pages purgeable:                         117147.
+"Translation faults":                 944425886.
+Pages copy-on-write:                    6640697.
+Pages zero filled:                    701148596.
+Pages reactivated:                     30031495.
+Pages purged:                           7995424.
+File-backed pages:                       510423.
+Anonymous pages:                         603433.
+Pages stored in compressor:              406092.
+Pages occupied by compressor:            183727.
+Decompressions:                         4326487.
+Compressions:                           6860985.
+Pageins:                              438405412.
+Pageouts:                                 73979.
+Swapins:                                  53929.
+Swapouts:                                107455.
+==========END LLAMA OUTPUT==========
