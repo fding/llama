@@ -406,7 +406,7 @@ public:
 
 		fin = false ;
 #ifdef LL_BM_DO_MADVISE
-        ll_advisor<Graph> advisor(&G);
+		ll_advisor<Graph, true, LL_ADVISOR_NODE> advisor(&G);
 #endif
 
 #pragma omp parallel for
@@ -431,7 +431,7 @@ public:
 				{
 					ll_edge_iterator iter;
 #ifdef LL_BM_DO_MADVISE
-                    advisor.advise(n);
+					advisor.advise(n);
 #endif
 					G.out_iter_begin(iter, n);
 					for (edge_t s_idx = G.out_iter_next(iter);

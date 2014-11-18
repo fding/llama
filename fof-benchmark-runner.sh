@@ -1,4 +1,4 @@
-NVERT_VALUES=(50 100 200 500 1000 2000)
+NVERT_VALUES=(50 100 200 500 1000)
 
 function run() {
     echo "==========START EXPERIMENT==========" >> output_fof.log
