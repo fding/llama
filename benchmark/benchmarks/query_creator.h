@@ -149,8 +149,6 @@ public:
 	 * @return the numerical result, if applicable
 	 */
 	virtual double run(void) {
-
-	    Graph& G = this->_graph;
 	    ofstream output_file;
 	    output_file.open(FILENAME);
 	    // Query the graph

@@ -314,7 +314,7 @@ static ll_runnable_thing g_runnable_things[] = {
 	{ "ll_b_triangle_counting_LI" , "tc_i"
 	                              , "Triangle counting for graph loaded with -I"
 	                              , true  },
-	{ "ll_b_triangle_counting_LOD", "tc_od"
+	{ "ll_b_triangle_counting_LOD_org", "tc_od"
 	                              , "Triangle counting for graph loaded with -OD"
 	                              , false },
 	{ "ll_b_triangle_counting_LU" , "tc_u"
@@ -1033,7 +1033,7 @@ int main(int argc, char** argv)
 	LL_RT_COND_CREATE(run_task_class,  9, ll_b_triangle_counting_LI, G);
 #endif
 #if B < 0 || B == 10
-	LL_RT_COND_CREATE(run_task_class, 10, ll_b_triangle_counting_LOD, G);
+	LL_RT_COND_CREATE(run_task_class, 10, ll_b_triangle_counting_LOD_org, G);
 #endif
 #if B < 0 || B == 11
 	LL_RT_COND_CREATE(run_task_class, 11, ll_b_triangle_counting_LU, G);
