@@ -51,6 +51,10 @@ class LogReader(object):
         j = self.wait_for_line('==========LLAMA OUTPUT==========')
         if j >= n: return None
 
+        for line in self.lines[self.current_line+1: j]:
+            parts = line.split(':')
+            if len(parts) == 2:
+                output['before ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j
         j = self.wait_for_line('==========AFTER VM STAT==========')
@@ -64,6 +68,10 @@ class LogReader(object):
         j = self.wait_for_line('==========END LLAMA OUTPUT==========')
         if j >= n: return None
 
+        for line in self.lines[self.current_line+1: j]:
+            parts = line.split(':')
+            if len(parts) == 2:
+                output['after ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j+1
 
@@ -132,16 +140,20 @@ def main():
                        if not k.with_madvise]
             wm_time = [floatify(k['Time']) for k in e.outputs
                       if k.with_madvise]
+            nm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
+                        for k in e.outputs if not k.with_madvise]
+            wm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
+                        for k in e.outputs if k.with_madvise]
 
-            output.write('%s,%s,%s,%s,%s \pm %s,%s \pm %s\n' % (
+            output.write('%s,%s,%s,%s,%s,%s,%s,%s\n' % (
                 e.params['PARAM_ALPHA'],
                 e.params['PARAM_CACHE_SIZE'],
                 e.params['PARAM_NUM_VERTICES'],
                 e.params['PARAM_EPOCH_THRESHOLD'],
                 mean(nm_time),
-                stddev(nm_time),
                 mean(wm_time),
-                stddev(wm_time),
+                mean(nm_pages),
+                mean(wm_pages),
             ))
 
 if __name__=='__main__':

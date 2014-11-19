@@ -71,10 +71,12 @@ class request_generator {
 	deque<node_t> cache;
 	double alpha;
 	unsigned int cache_size;
+    ofstream friends_file;
 public:
 	request_generator(Graph& graph, double alpha=0.1, unsigned int cache_size=200)
 		: graph(graph), alpha(alpha), cache_size(cache_size) {
 		srand(time(NULL));
+        friends_file.open("friends_list.txt");
 	}
 
 	node_t generate() {
@@ -108,10 +110,12 @@ public:
 		    int rand_insert = rand() % 4;
 		    if (rand_insert == 0) {
 			    num_inserted++;
+                friends_file <<  next_node << " ";
 			    cache.push_front(next_node);
 		    }
 		    if (num_inserted > cache_size/5) break;
 		}
+        friends_file << "\n";
 		return retval;
 	}
 };
@@ -155,7 +159,7 @@ public:
 	    for (int i = 0; i < NUM_VERTICES; ++i) {
                     node_t n = this->generator.generate();
 		    output_file << n << "\n"; 
-            }
+        }
 
             return 0;    
 	}
