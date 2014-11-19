@@ -1,5 +1,6 @@
-import re
 import argparse
+import math
+import re
 
 class Experiment(object):
     def __init__(self, commit, params):
@@ -50,10 +51,6 @@ class LogReader(object):
         j = self.wait_for_line('==========LLAMA OUTPUT==========')
         if j >= n: return None
 
-        for line in self.lines[self.current_line+1: j]:
-            parts = line.split(':')
-            if len(parts) == 2:
-                output['before ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j
         j = self.wait_for_line('==========AFTER VM STAT==========')
@@ -67,10 +64,6 @@ class LogReader(object):
         j = self.wait_for_line('==========END LLAMA OUTPUT==========')
         if j >= n: return None
 
-        for line in self.lines[self.current_line+1: j]:
-            parts = line.split(':')
-            if len(parts) == 2:
-                output['after ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j+1
 
@@ -106,6 +99,16 @@ class LogReader(object):
 def floatify(s):
     return float(s.split()[0])
 
+def mean(ls):
+    if ls:
+        return sum(ls)/len(ls)
+    return 0
+
+def stddev(ls):
+    if ls:
+        return math.sqrt(mean([l**2 for l in ls])-mean(ls)**2)
+    return 0
+
 def main():
     parser = argparse.ArgumentParser(description='Analyze LLAMA benchmark log files')
     parser.add_argument('logfile', type=str,
@@ -129,20 +132,16 @@ def main():
                        if not k.with_madvise]
             wm_time = [floatify(k['Time']) for k in e.outputs
                       if k.with_madvise]
-            nm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
-                        for k in e.outputs if not k.with_madvise]
-            wm_pages = [floatify(k['after File-backed pages']) - floatify(k['before File-backed pages'])
-                        for k in e.outputs if k.with_madvise]
 
-            output.write('%s,%s,%s,%s,%s,%s,%s,%s\n' % (
+            output.write('%s,%s,%s,%s,%s \pm %s,%s \pm %s\n' % (
                 e.params['PARAM_ALPHA'],
                 e.params['PARAM_CACHE_SIZE'],
                 e.params['PARAM_NUM_VERTICES'],
                 e.params['PARAM_EPOCH_THRESHOLD'],
-                sum(nm_time)/len(nm_time) if len(nm_time) > 0 else 0,
-                sum(wm_time)/len(wm_time) if len(wm_time) > 0 else 0,
-                sum(nm_pages)/len(wm_pages) * 4096/1024./1024. if len(wm_pages) > 0 else 0,
-                sum(wm_pages)/len(wm_pages) * 4096/1024./1024. if len(wm_pages) > 0 else 0,
+                mean(nm_time),
+                stddev(nm_time),
+                mean(wm_time),
+                stddev(wm_time),
             ))
 
 if __name__=='__main__':

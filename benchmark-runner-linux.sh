@@ -42,23 +42,19 @@ function run() {
         echo "NO_MADVISE" >> output.log
             echo "TRIAL $m" >> output.log
             echo "==========BEFORE VM STAT==========" >> output.log
-        sudo purge
-            vm_stat >> output.log
+        sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
             echo "==========LLAMA OUTPUT==========" >> output.log
             ./bin/benchmark-persistent --run query_simulator -d bin/db/ >> output.log
             echo "==========AFTER VM STAT==========" >> output.log
-            vm_stat >> output.log
             echo "==========END LLAMA OUTPUT==========" >> output.log
 
         echo "WITH_MADVISE" >> output.log
             echo "TRIAL $m" >> output.log
             echo "==========BEFORE VM STAT==========" >> output.log
-        sudo purge
-            vm_stat >> output.log
+        sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
             echo "==========LLAMA OUTPUT==========" >> output.log
             ./bin/benchmark-persistent-madvise --run query_simulator -d bin/db/ >> output.log
             echo "==========AFTER VM STAT==========" >> output.log
-            vm_stat >> output.log
             echo "==========END LLAMA OUTPUT==========" >> output.log
     done
 
