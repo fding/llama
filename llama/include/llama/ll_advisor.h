@@ -95,18 +95,16 @@ private:
 			if (flag == LL_ADVISOR_COMPLETE) {
 				ll_edge_iterator it;
 				advisor->graph->out_iter_begin(it, add, 0);
-				unsigned index = 0;
 
 				FOREACH_OUTEDGE_ITER(v_idx, *advisor->graph, it) {
-					index++;
 					if (!advisor->still_adding) break;
 					node_t next = it.last_node;
 					// if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
 					epoch_diff = advisor->epoch - epoch;
-					if (epoch_diff < index) {
+					if (epoch_diff < 4) {
 						lag = 0;
 					} else {
-						lag = (epoch_diff - index) * 1024 * 1024 / sizeof(edge_t);
+						lag = (epoch_diff - 3) * 1024 * 1024 / sizeof(edge_t);
 					}
 
 					edge_t next_first = (*vtable)[next].adj_list_start;
