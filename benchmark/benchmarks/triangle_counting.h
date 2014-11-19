@@ -180,6 +180,7 @@ public:
 
 		// TODO Enforce that the adjacency lists are sorted
 
+	        printf("graph levels %zu\n", graph.num_levels());
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -371,6 +372,7 @@ public:
 
 		// TODO Enforce that the adjacency lists are sorted
 
+	        printf("graph levels %zu\n", graph.num_levels());
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -604,6 +606,7 @@ public:
 
 		// TODO Enforce that the adjacency lists are sorted
 
+	        printf("graph levels %zu\n", graph.num_levels());
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -712,6 +715,7 @@ public:
 	ll_b_triangle_counting_LOD(Graph& graph)
 		: ll_benchmark<Graph>(graph, "Triangle Counting") {
 
+	        printf("graph levels %zu\n", graph.num_levels());
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
