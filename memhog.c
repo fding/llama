@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
         return 1;
     }
     int * top;
-    size = size * 1024;
+    size = size * 1024 * 1024;
 
     // Hog as much as we can.
     while (size != 0) {
@@ -28,13 +28,13 @@ int main(int argc, char** argv) {
     unsigned long long cycles = 0;
 
     // Touch an element of each page once per iteration, to keep page resident in memory.
-    for (int i = 0; ; i = (i + PAGESIZE/sizeof(int)) % (size / sizeof(int)) );
-//        top[i]++;
-/*	if (i == 0) {
+    for (int i = 0; ; i = (i + PAGESIZE/sizeof(int)) % (size / sizeof(int)) ) {
+        top[i]++;
+	if (i == 0) {
 		cycles++;
-//		if (cycles % 100 == 0) printf("Cycled %d times\n", cycles*100);
-	}*/
- //   }
+		if (cycles % 100 == 0) printf("Cycled %d times\n", cycles*100);
+	}
+    }
     free(top);
     return 0;
 }
