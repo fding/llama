@@ -80,15 +80,17 @@ private:
 			advisor->madvise_queue.pop_front();
 			pthread_mutex_unlock(&advisor->madvise_lock);
 
-			if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+			// if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+			unsigned epoch_diff = advisor->epoch - epoch;
 
 			auto vtable = advisor->graph->out().vertex_table(0);
 			auto etable = advisor->graph->out().edge_table(0);
 			edge_t first = (*vtable)[add].adj_list_start;
 			edge_t last = first + (*vtable)[add].level_length;
-			if (last - first > 0) {
-				etable->advise(first, last);
-			}
+			edge_t lag = epoch_diff * 1024 * 1024 / sizeof(edge_t);
+
+			if (first + lag >= last) continue;
+			etable->advise(first + lag, last);
 
 			if (flag == LL_ADVISOR_COMPLETE) {
 				ll_edge_iterator it;
@@ -97,12 +99,18 @@ private:
 				FOREACH_OUTEDGE_ITER(v_idx, *advisor->graph, it) {
 					if (!advisor->still_adding) break;
 					node_t next = it.last_node;
-					if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+					// if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
+					epoch_diff = advisor->epoch - epoch;
+					if (epoch_diff < 4) {
+						lag = 0;
+					} else {
+						lag = (epoch_diff - 3) * 1024 * 1024 / sizeof(edge_t);
+					}
 
 					edge_t next_first = (*vtable)[next].adj_list_start;
 					edge_t next_last = next_first + (*vtable)[next].level_length;
-					if (next_last - next_first > 0)
-						etable->advise(next_first, next_last);
+					if (next_first + lag >= next_last) continue;
+					etable->advise(next_first + lag, next_last);
 				}
 			}
 		}
