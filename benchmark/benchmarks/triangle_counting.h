@@ -68,6 +68,7 @@ public:
 	 */
 	ll_b_triangle_counting_org(Graph& graph)
 		: ll_benchmark<Graph>(graph, "Triangle Counting") {
+      printf("doing org\n");
 	}
 
 
@@ -180,6 +181,7 @@ public:
 
 		// TODO Enforce that the adjacency lists are sorted
 
+    printf("doing LI\n");
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -370,7 +372,7 @@ public:
 		: ll_benchmark<Graph>(graph, "Triangle Counting") {
 
 		// TODO Enforce that the adjacency lists are sorted
-
+    printf("doing LU\n");
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -604,6 +606,7 @@ public:
 
 		// TODO Enforce that the adjacency lists are sorted
 
+    printf("doing LOD org\n");
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
@@ -630,6 +633,9 @@ public:
 		int64_t T = 0 ;
 		int64_t num_k_processed = 0 ;
 		this->progress_init(G.max_nodes());
+#ifdef LL_BM_DO_MADVISE
+    ll_advisor<Graph> advisor(&G);
+#endif
 
 #pragma omp parallel
 		{
@@ -640,6 +646,9 @@ public:
 				ll_edge_iterator iter;
 				ll_edge_iterator iter2;
 				iter2.ptr = NULL;
+#ifdef LL_BM_DO_MADVISE
+        advisor.advise(u);
+#endif
 
 				G.out_iter_begin(iter, u);
 				size_t u_num = iter.left;
@@ -666,6 +675,9 @@ public:
 		}
 
 		this->progress_clear();
+#ifdef LL_BM_DO_MADVISE
+    advisor.stop();
+#endif
 		_num_triangles = T;
 		return T; 
 	}
@@ -712,6 +724,7 @@ public:
 	ll_b_triangle_counting_LOD(Graph& graph)
 		: ll_benchmark<Graph>(graph, "Triangle Counting") {
 
+    printf("doing LOD\n");
 		if (graph.num_levels() != 1) {
 			fprintf(stderr, "The graph must have exactly 1 level\n");
 			abort();
