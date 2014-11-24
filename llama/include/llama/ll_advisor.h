@@ -132,6 +132,7 @@ private:
 
 public:
 	ll_advisor(Graph *_graph) {
+		printf("Starting advisor\n");
 		graph = _graph;
 		if (async) {
 			pthread_mutex_init(&madvise_lock, NULL);

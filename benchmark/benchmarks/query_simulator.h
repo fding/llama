@@ -65,7 +65,7 @@ using std::unordered_map;
 
 #define PARAM_ALPHA 0.5
 #define PARAM_CACHE_SIZE 2000
-#define PARAM_NUM_VERTICES 100000
+#define PARAM_NUM_VERTICES 20000
 #define PARAM_EPOCH_THRESHOLD 1
 #define PARAM_FILENAME "temp.txt"
 
