@@ -51,6 +51,8 @@
 #include <fstream>
 #include <unordered_map>
 
+#include <sched.h>
+
 #include "llama/ll_writable_graph.h"
 #include "llama/ll_mlcsr_graph.h"
 #include "llama/ll_advisor.h"
@@ -65,7 +67,7 @@ using std::unordered_map;
 
 #define PARAM_ALPHA 0.5
 #define PARAM_CACHE_SIZE 2000
-#define PARAM_NUM_VERTICES 20000
+#define PARAM_NUM_VERTICES 100000
 #define PARAM_EPOCH_THRESHOLD 1
 #define PARAM_FILENAME "temp.txt"
 
@@ -189,10 +191,16 @@ public:
 	}
 
 	virtual void initialize(void) {
+	    /*cpu_set_t cpus;
+	    CPU_ZERO(&cpus);
+	    CPU_SET(1, &cpus);
+	    sched_setaffinity(getpid(), 1, cpus);*/
 	    ifstream input_file;
 	    input_file.open(PARAM_FILENAME);
 	    for (int i = 0; i < PARAM_NUM_VERTICES; i++)
                 input_file >> requests[i];
+
+	    // this->_graph.out().edge_table(0)->advise(0, this->_graph.out().edge_table_length(0), MADV_RANDOM);
 	}
 
 	/**
