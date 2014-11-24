@@ -59,6 +59,7 @@
 #include "benchmarks/bc_random.h"
 #include "benchmarks/bfs.h"
 #include "benchmarks/friend_of_friends.h"
+#include "benchmarks/shortest_path.h"
 #include "benchmarks/pagerank.h"
 #include "benchmarks/query_creator.h"
 #include "benchmarks/query_simulator.h"
@@ -352,6 +353,9 @@ static ll_runnable_thing g_runnable_things[] = {
 	                              , false },
 	{ "ll_b_friend_of_friends"    , "friend_of_friends"
 	                              , "Friend of friends - count number"
+	                              , false },
+	{ "ll_b_shortest_path"    , "shortest_path"
+	                              , "Shortest path between two vertices"
 	                              , false },
 	{ "ll_b_query_simulator"      , "query_simulator"
 	                              , "Query simulator"
@@ -1081,6 +1085,9 @@ int main(int argc, char** argv)
 #endif
 #if B < 0 || B == 24
 	LL_RT_COND_CREATE(run_task_class, 24, ll_b_query_creator, G);
+#endif
+#if B < 0 || B == 25
+	LL_RT_COND_CREATE(run_task_class, 25, ll_b_shortest_path, G);
 #endif
 #undef B
 
