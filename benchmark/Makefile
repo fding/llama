@@ -100,7 +100,7 @@ ifdef FLAT_VT
 endif
 
 CORE_TARGETS   := ${T_BASE}-memory ${T_BASE}-memory-wd ${T_BASE}-persistent ${T_BASE}-persistent-madvise \
-                  ${T_BASE}-persistent-wd ${T_BASE}-slcsr ${T_BASE}-streaming
+                  ${T_BASE}-query-creator ${T_BASE}-persistent-wd ${T_BASE}-slcsr ${T_BASE}-streaming
 DEBUG_TARGETS  := $(patsubst %,%_debug,${CORE_TARGETS})
 COMMON_TARGETS := ${CORE_TARGETS}
 
@@ -142,6 +142,11 @@ ${T_BASE}-persistent-madvise: benchmark.cc ${COMMON_DEPENDENCIES}
 	@mkdir -p ${T_DIR}
 	@${CC} -DLL_PERSISTENCE -DLL_BM_DO_MADVISE ${CFLAGS} $< ${LFLAGS} -g -o $@
 
+${T_BASE}-query-creator: query_creator.cc ${COMMON_DEPENDENCIES}
+	@echo CC $@ >&2
+	@mkdir -p ${T_DIR}
+	@${CC} -DLL_PERSISTENCE ${CFLAGS} $< ${LFLAGS} -g -o $@
+
 ${T_BASE}-persistent-munadvise: benchmark.cc ${COMMON_DEPENDENCIES}
 	@echo CC $@ >&2
 	@mkdir -p ${T_DIR}
@@ -166,6 +171,7 @@ ${T_BASE}-persistent-wd: benchmark.cc ${COMMON_DEPENDENCIES}
 	@echo CC $@ >&2
 	@mkdir -p ${T_DIR}
 	@${CC} -DLL_PERSISTENCE -DLL_DELETIONS ${CFLAGS} $< ${LFLAGS} -o $@
+
 
 
 
