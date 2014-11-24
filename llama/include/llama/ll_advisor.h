@@ -100,8 +100,6 @@ private:
 					node_t next = it.last_node;
 					if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
 
-					unsigned degree = (*vtable)[next].level_length;
-					if (degree < 200000) continue;
 					edge_t next_first = (*vtable)[next].adj_list_start;
 					edge_t next_last = next_first + degree;
 					if (next_first < next_last) {
