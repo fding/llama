@@ -30,10 +30,6 @@ int main(int argc, char** argv) {
     // Touch an element of each page once per iteration, to keep page resident in memory.
     for (int i = 0; ; i = (i + PAGESIZE/sizeof(int)) % (size / sizeof(int)) ) {
         top[i]++;
-	if (i == 0) {
-		cycles++;
-		if (cycles % 100 == 0) printf("Cycled %d times\n", cycles*100);
-	}
     }
     free(top);
     return 0;

@@ -55,7 +55,7 @@
 #include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
-#define PARAM_N 50
+#define PARAM_N 1000000
 #define PARAM_FILENAME "temp.txt"
 
 using std::vector;
@@ -69,6 +69,7 @@ class ll_b_friend_of_friends : public ll_benchmark<Graph> {
 
 	node_t root;
 	node_t requests[PARAM_N];
+	size_t num_vertices;
 
 public:
 
@@ -91,10 +92,50 @@ public:
 	}
 
 	virtual void initialize(void) {
+	    Graph& G = this->_graph;
+
 	    ifstream input_file;
 	    input_file.open(PARAM_FILENAME);
-	    for (int i = 0; i < PARAM_N; i++)
-                input_file >> requests[i];
+		while (input_file >> requests[num_vertices++]);
+		num_vertices --;
+		size_t warmup_n = num_vertices > 200000 ? 200000 : num_vertices;
+
+		struct rusage r_start, r_end;
+		getrusage(RUSAGE_SELF, &r_start);
+		double t_start = ll_get_time_ms();
+
+#ifdef LL_BM_DO_MADVISE
+	    ll_advisor<Graph> advisor(&G);
+#endif
+	    for (int i = 0; i < warmup_n; ++i) {
+		node_t n = requests[i];
+		ll_edge_iterator iter;
+		vector<node_t> results;
+		G.out_iter_begin(iter, n);
+#ifdef LL_BM_DO_MADVISE
+		advisor.advise(n);
+#endif
+		FOREACH_OUTEDGE_ITER(v_idx, G, iter) {
+			node_t n2 = LL_ITER_OUT_NEXT_NODE(G, iter, v_idx);
+			
+			ll_edge_iterator iter2;
+			G.out_iter_begin(iter2, n2);
+			FOREACH_OUTEDGE_ITER(v2_idx, G, iter2) {
+				node_t n3 = LL_ITER_OUT_NEXT_NODE(G, iter2, v2_idx);
+				results.push_back(n3);
+			}
+		}
+		results.clear();
+	    }
+#ifdef LL_BM_DO_MADVISE
+	    advisor.stop();
+#endif
+		double t_end = ll_get_time_ms();
+		getrusage(RUSAGE_SELF, &r_end);
+		printf("Warmup Time      : %.3f\n", t_end-t_start);
+		printf("Warmup User Time : %.3f\n", ll_timeval_to_ms(r_end.ru_utime) - ll_timeval_to_ms(r_start.ru_utime));
+		printf("Warmup System Time : %.3f\n", ll_timeval_to_ms(r_end.ru_stime) - ll_timeval_to_ms(r_start.ru_stime));
+		printf("Warmup Cpu Time : %.3f\n", ll_timeval_to_ms(r_end.ru_stime) + ll_timeval_to_ms(r_end.ru_utime) - ll_timeval_to_ms(r_start.ru_stime) - ll_timeval_to_ms(r_start.ru_utime));
 	}
 
 	/**
@@ -106,11 +147,12 @@ public:
 
 	    Graph& G = this->_graph;
 	    float avg = 0;
+		size_t warmup_n = num_vertices > 200000 ? 200000 : num_vertices;
 
 #ifdef LL_BM_DO_MADVISE
 	    ll_advisor<Graph> advisor(&G);
 #endif
-	    for (int i = 0; i < PARAM_N; ++i) {
+	    for (int i = warmup_n; i < num_vertices; ++i) {
 		node_t n = requests[i];
 		ll_edge_iterator iter;
 		vector<node_t> results;
