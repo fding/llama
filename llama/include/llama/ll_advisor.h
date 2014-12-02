@@ -46,6 +46,7 @@
 
 #define LL_ADVISOR_NODE 0
 #define LL_ADVISOR_COMPLETE 1
+#define LL_ADVISOR_SEQUENTIAL 2
 
 template <class Graph, bool async=true, int flag=LL_ADVISOR_COMPLETE>
 class ll_advisor {
@@ -66,6 +67,12 @@ private:
 
 	static void* madvise_thread_func(void* arg) {
 		ll_advisor<Graph, async, flag> *advisor = (ll_advisor<Graph, async, flag> *)(arg);
+		auto vtable = advisor->graph->out().vertex_table(0);
+		auto etable = advisor->graph->out().edge_table(0);
+		int skip_count = 0;
+		int node_count = 0;
+		int advise_count = 0;
+		int second_skip_count = 0;
 		while (advisor->still_adding) {
 			node_t add;
 			unsigned int epoch;
@@ -79,35 +86,45 @@ private:
 			epoch = item.epoch;
 			advisor->madvise_queue.pop_front();
 			pthread_mutex_unlock(&advisor->madvise_lock);
+			node_count++;
 
-			if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
-
-			auto vtable = advisor->graph->out().vertex_table(0);
-			auto etable = advisor->graph->out().edge_table(0);
 			edge_t first = (*vtable)[add].adj_list_start;
 			edge_t last = first + (*vtable)[add].level_length;
 
-			if (first < last) {
-				etable->advise(first, last);
+			if (flag == LL_ADVISOR_SEQUENTIAL) {
+				/*if (advisor->epoch - epoch > 0) {skip_count++; continue;}
+				node_t lag = 1024 * 1024 / sizeof(node_t);*/
+				etable->advise(last + 3<<20/sizeof(edge_t), last + 4<<20/sizeof(edge_t));
+				advise_count++;
+				continue;
 			}
 
+			if (advisor->epoch - epoch > 4) {skip_count++; continue;}
 			if (flag == LL_ADVISOR_COMPLETE) {
-				ll_edge_iterator it;
-				advisor->graph->out_iter_begin(it, add, 0);
+				//#pragma omp parallel num_threads(8)
+				{
+					//#pragma omp for
+					for (edge_t edge_var = first; edge_var <  last; edge_var++) {
+						node_t* next_ptr = etable->edge_ptr(add, LL_EDGE_INDEX(edge_var));
+						if (next_ptr == NULL) continue;
+						node_t next = *next_ptr;
+						if (advisor->epoch - epoch > 5) {
+							second_skip_count++;
+							break;
+						}
+						if (!advisor->still_adding) continue;
 
-				FOREACH_OUTEDGE_ITER(v_idx, *advisor->graph, it) {
-					if (!advisor->still_adding) break;
-					node_t next = it.last_node;
-					if (advisor->epoch - epoch > PARAM_EPOCH_THRESHOLD) continue;
-
-					edge_t next_first = (*vtable)[next].adj_list_start;
-					edge_t next_last = next_first + degree;
-					if (next_first < next_last) {
+						edge_t next_first = (*vtable)[next].adj_list_start;
+						edge_t next_last = next_first + (*vtable)[next].level_length;
+						if (next_last - next_first < 500) continue;
 						etable->advise(next_first, next_last);
+						advise_count ++;
 					}
 				}
 			}
 		}
+		printf("Encountered %d nodes, advised %d nodes, skipped %d nodes, %d second time\n",
+				node_count, advise_count, skip_count, second_skip_count);
 		return NULL;
 	}
 
@@ -125,8 +142,7 @@ public:
 	void advise(node_t node) {
 		if (async) {
 			pthread_mutex_lock(&madvise_lock);
-			madvise_queue.push_back({node, epoch});
-			epoch++;
+			madvise_queue.push_back({node, ++epoch});
 			pthread_mutex_unlock(&madvise_lock);
 		} else {
 			auto vtable = graph->out().vertex_table(0);
