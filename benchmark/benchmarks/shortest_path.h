@@ -70,7 +70,7 @@ class ll_b_shortest_path : public ll_benchmark<Graph> {
   node_t requests[PARAM_SHORTEST_N];
   int* dist[2];
 
-  public:
+public:
 
   /**
    * Create the benchmark

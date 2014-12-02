@@ -117,7 +117,7 @@ COMMON_TARGETS := ${CORE_TARGETS}
 all: ${COMMON_TARGETS}
 
 clean:
-	@rm -rf ${T_DIR}
+	@rm -f ${T_DIR}
 
 debug: ${DEBUG_TARGETS}
 

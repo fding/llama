@@ -51,6 +51,8 @@
 #include <fstream>
 #include <unordered_map>
 
+#include <sched.h>
+
 #include "llama/ll_writable_graph.h"
 #include "llama/ll_mlcsr_graph.h"
 #include "llama/ll_advisor.h"

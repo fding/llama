@@ -315,7 +315,7 @@ static ll_runnable_thing g_runnable_things[] = {
 	{ "ll_b_triangle_counting_LI" , "tc_i"
 	                              , "Triangle counting for graph loaded with -I"
 	                              , true  },
-	{ "ll_b_triangle_counting_LOD_org", "tc_od"
+	{ "ll_b_triangle_counting_LOD_madvise", "tc_od"
 	                              , "Triangle counting for graph loaded with -OD"
 	                              , false },
 	{ "ll_b_triangle_counting_LU" , "tc_u"

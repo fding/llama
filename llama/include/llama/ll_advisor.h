@@ -105,10 +105,7 @@ class ll_advisor {
         last = first + (*vtable)[add].level_length;
 
         if (flag == LL_ADVISOR_SEQUENTIAL) {
-          if (advisor->epoch - epoch > 0) {skip_count++; continue;}
-          node_t lag = 1024 * 1024 / sizeof(node_t);
-          if (first + lag >= last) continue;
-          etable->advise(first + lag, last);
+          etable->advise(last + (3<<20)/sizeof(edge_t), last + (4<<20)/sizeof(edge_t));
           advise_count++;
           continue;
         }
@@ -137,7 +134,7 @@ class ll_advisor {
               next_last = next_first + (*vtable)[next].level_length;
 
               if (next_last - next_first < 512) continue;
-              if (next_last - next_first > 1024*512/sizeof(node_t))
+              if (next_last - next_first > (unsigned)(1024*512/sizeof(node_t)))
                 next_last = next_first + 1024*512/sizeof(node_t);
               etable->advise(next_first, next_last);
               advise_count ++;
