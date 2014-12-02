@@ -968,7 +968,7 @@ class ll_b_triangle_counting_LOD_madvise : public ll_benchmark<Graph> {
 
             //node_t last = LL_NIL_NODE;
 #ifdef LL_BM_DO_MADVISE
-            ll_advisor<Graph, flag=LL_ADVISOR_SEQUENTIAL> advisor(&G);
+            ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
 #endif
             for (size_t i = 0; i < eb_size; i++) {
                 node_t v = eb[i << 1];

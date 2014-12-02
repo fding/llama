@@ -481,7 +481,7 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
         do
         {
 #ifdef LL_BM_DO_MADVISE
-            ll_advisor<Graph, flag=LL_ADVISOR_SEQUENTIAL> advisor(&G);
+            ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
 #endif
             for (node_t t = 0; t < G.max_nodes(); t ++) 
             {

@@ -94,7 +94,7 @@ private:
 			if (flag == LL_ADVISOR_SEQUENTIAL) {
 				/*if (advisor->epoch - epoch > 0) {skip_count++; continue;}
 				node_t lag = 1024 * 1024 / sizeof(node_t);*/
-				etable->advise(last + 3<<20/sizeof(edge_t), last + 4<<20/sizeof(edge_t));
+				etable->advise(last + (3<<20)/sizeof(edge_t), last + (4<<20)/sizeof(edge_t));
 				advise_count++;
 				continue;
 			}
