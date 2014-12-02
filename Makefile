@@ -7,7 +7,7 @@ TARGETS := benchmark examples tools utils
 BENCHMARK_CORE_TARGETS := benchmark-memory benchmark-memory-wd \
 	benchmark-persistent benchmark-persistent-madvise benchmark-persistent-munadvise \
 	benchmark-persistent-wd benchmark-slcsr \
-	benchmark-streaming
+	benchmark-streaming benchmark-query-creator
 BENCHMARK_CORE_DEBUG_TARGETS := $(patsubst %,%_debug,${BENCHMARK_CORE_TARGETS})
 BENCHMARK_OTHER_TARGETS := benchmark-w-memory
 BENCHMARK_OTHER_DEBUG_TARGETS := $(patsubst %,%_debug,${BENCHMARK_OTHER_TARGETS})

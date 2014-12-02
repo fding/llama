@@ -55,142 +55,132 @@
 #include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
-#define PARAM_SHORTEST_N 1000
+#define PARAM_SHORTEST_N 4
 #define PARAM_FILENAME "temp.txt"
 
 using std::vector;
 using std::ifstream;
 
 /**
- */
+*/
 template <class Graph>
 class ll_b_shortest_path : public ll_benchmark<Graph> {
 
-	node_t root;
-	node_t requests[PARAM_SHORTEST_N];
+  node_t root;
+  node_t requests[PARAM_SHORTEST_N];
   int* dist[2];
 
 public:
 
-	/**
-	 * Create the benchmark
-	 *
-	 * @param graph the graph
-	 * @param r the root
-	 */
-	ll_b_shortest_path(Graph& graph)
-		: ll_benchmark<Graph>(graph, "Shortest path") {
-		srand(time(NULL));
-		dist[0] = (int*) malloc(graph.max_nodes()*sizeof(int));
-		dist[1] = (int*) malloc(graph.max_nodes()*sizeof(int));
-	}
+  /**
+   * Create the benchmark
+   *
+   * @param graph the graph
+   * @param r the root
+   */
+  ll_b_shortest_path(Graph& graph)
+    : ll_benchmark<Graph>(graph, "Shortest path") {
+      srand(time(NULL));
+      dist[0] = (int*) malloc(graph.max_nodes()*sizeof(int));
+      dist[1] = (int*) malloc(graph.max_nodes()*sizeof(int));
+    }
 
 
-	/**
-	 * Destroy the benchmark
-	 */
-	virtual ~ll_b_shortest_path(void) {
-	}
+  /**
+   * Destroy the benchmark
+   */
+  virtual ~ll_b_shortest_path(void) {
+  }
 
-	virtual void initialize(void) {
-	    ifstream input_file;
-	    input_file.open(PARAM_FILENAME);
-	    for (int i = 0; i < PARAM_SHORTEST_N; i++)
-                input_file >> requests[i];
-	}
+  virtual void initialize(void) {
+    ifstream input_file;
+    input_file.open(PARAM_FILENAME);
+    for (int i = 0; i < PARAM_SHORTEST_N; i++)
+      input_file >> requests[i];
+  }
 
-	/**
-	 * Run the benchmark
-	 *
-	 * @return the numerical result, if applicable
-	 */
-	virtual double run(void) {
+  /**
+   * Run the benchmark
+   *
+   * @return the numerical result, if applicable
+   */
+  virtual double run(void) {
 
-	    Graph& G = this->_graph;
-	    float avg = 0;
+    Graph& G = this->_graph;
+    float avg = 0;
 
 #ifdef LL_BM_DO_MADVISE
-	    ll_advisor<Graph> advisor(&G);
+    ll_advisor<Graph> advisor(&G);
 #endif
-	    for (int i = 0; i < PARAM_SHORTEST_N-1; i += 2) {
-		    node_t first;
-		    node_t second;
-		    first = requests[i];
-		    second = requests[i+1];
+    for (int i = 0; i < PARAM_SHORTEST_N-1; i += 2) {
+      node_t first;
+      node_t second;
+      first = requests[i];
+      second = requests[i+1];
 #pragma omp parallel for
-		    for (node_t t0 = 0; t0 < G.max_nodes(); t0++) {
-			    dist[0][t0] = -1;
-			    dist[1][t0] = -1;
-		    }
+      for (node_t t0 = 0; t0 < G.max_nodes(); t0++) {
+        dist[0][t0] = -1;
+        dist[1][t0] = -1;
+      }
 
-		    deque<node_t> queues[2];
-		    dist[0][first] = 0;
-		    dist[1][second] = 0;
-		    queues[0].push_back(first);
-		    queues[1].push_back(second);
-		    bool found = false;
-		    unsigned int distance = UINT_MAX;
+      deque<node_t> queues[2];
+      dist[0][first] = 0;
+      dist[1][second] = 0;
+      queues[0].push_back(first);
+      queues[1].push_back(second);
+      bool found = false;
+      unsigned int distance = UINT_MAX;
 
 #pragma omp parallel for
-		    for (int j = 0; j < 2; j++) {
-			    while (!queues[j].empty() && !found) {
-				    node_t node = queues[j].front();
-				    queues[j].pop_front();
-				    ll_edge_iterator it;
-				    edge_t e;
-				    if (j == 0) {
-					    G.out_iter_begin(it, node);
-					    e = G.out_iter_next(it);
+      for (int j = 0; j < 2; j++) {
+        while (!queues[j].empty() && !found) {
+          node_t node = queues[j].front();
+          queues[j].pop_front();
+          ll_edge_iterator it;
+          edge_t e;
+          if (j == 0) {
+            G.out_iter_begin(it, node);
 #ifdef LL_BM_DO_MADVISE
-					    advisor.advise(node);
+            advisor.advise(node, false);
 #endif
-				    }
-				    else {
-					    G.in_iter_begin(it, node);
-					    e = G.in_iter_next(it);
-				    }
-
-				    for (; e != LL_NIL_EDGE; ) {
-					    if (found) break;
-					    node_t next = it.last_node;
-					    if (dist[j][next] != -1) {
-						    if (j == 0) {
-							    e = G.out_iter_next(it);
-						    }
-						    else {
-							    e = G.in_iter_next(it);
-						    }
-						    continue;
-					    }
+          }
+          else {
+            G.in_iter_begin_fast(it, node);
+#ifdef LL_BM_DO_MADVISE
+            advisor.advise(node, true);
+#endif
+          }
+          for (e = j ? G.in_iter_next_fast(it) : G.out_iter_next(it);
+              e != LL_NIL_EDGE && !found; 
+              e = j ? G.in_iter_next_fast(it) : G.out_iter_next(it)
+              ) {
+            node_t next = it.last_node;
+            if (dist[j][next] != -1) {
+              continue;
+            }
 #pragma omp critical
-					    {
-						    if (dist[1-j][next] != -1) {
-							    if (!found) {
-								    found = true;
-								    distance = dist[1-j][next] + dist[j][next];
-							    }
-						    }
-						    dist[j][next] = dist[j][node]+1;
-					    }
-					    queues[j].push_back(next);
-					    if (j == 0) {
-						    e = G.out_iter_next(it);
-					    }
-					    else {
-						    e = G.in_iter_next(it);
-					    }
-				    }
-			    }
-		    }
-		    avg += distance;
-	    }
+            {
+              if (dist[1-j][next] != -1) {
+                if (!found) {
+                  found = true;
+                  distance = dist[1-j][next] + dist[j][next];
+                }
+              }
+              dist[j][next] = dist[j][node]+1;
+            }
+            queues[j].push_back(next);
+          }
+        }
+      }
+      avg += distance;
+    }
 
 #ifdef LL_BM_DO_MADVISE
-	    advisor.stop();
+    advisor.stop();
 #endif
 
-	    return avg / PARAM_SHORTEST_N; 
-	}
+    return avg / PARAM_SHORTEST_N; 
+  }
 };
 
 #endif // #ifndef LL_SHORTEST_PATH_H
