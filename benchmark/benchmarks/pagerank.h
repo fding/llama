@@ -478,11 +478,11 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
 
         this->progress_init(max);
 
+#ifdef LL_BM_DO_MADVISE
+        ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
+#endif
         do
         {
-#ifdef LL_BM_DO_MADVISE
-            ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
-#endif
             for (node_t t = 0; t < G.max_nodes(); t ++) 
             {
 #ifdef LL_BM_DO_MADVISE
@@ -511,6 +511,9 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
             this->progress_update(cnt);
         }
         while (cnt < max);
+#ifdef LL_BM_DO_MADVISE
+        advisor.stop();
+#endif
         this->progress_clear();
 
         return 0;

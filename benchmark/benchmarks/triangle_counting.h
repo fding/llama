@@ -922,6 +922,9 @@ class ll_b_triangle_counting_LOD_madvise : public ll_benchmark<Graph> {
         size_t eb_size = 0;
         node_t* eb = (node_t*) malloc(sizeof(node_t) * eb_capacity * 2);
 
+#ifdef LL_BM_DO_MADVISE
+        ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
+#endif
         for (node_t u_start = 0; u_start < G.max_nodes(); u_start += u_step) {
             node_t u_end = std::min<node_t>(G.max_nodes(), u_start + u_step);
 
@@ -967,9 +970,6 @@ class ll_b_triangle_counting_LOD_madvise : public ll_benchmark<Graph> {
             std::sort(np, np + eb_size, node_pair_comparator);
 
             //node_t last = LL_NIL_NODE;
-#ifdef LL_BM_DO_MADVISE
-            ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
-#endif
             for (size_t i = 0; i < eb_size; i++) {
                 node_t v = eb[i << 1];
                 node_t u = eb[(i << 1) + 1];
@@ -997,6 +997,10 @@ class ll_b_triangle_counting_LOD_madvise : public ll_benchmark<Graph> {
                 if ((u_start >> 10)%10 == 0) this->progress_update(u_start);
             }
         }
+
+#ifdef LL_BM_DO_MADVISE
+        advisor.stop();
+#endif
 
         ATOMIC_ADD<int64_t>(&T, T_prv);
 

@@ -105,7 +105,7 @@ class ll_advisor {
         last = first + (*vtable)[add].level_length;
 
         if (flag == LL_ADVISOR_SEQUENTIAL) {
-          etable->advise(last + (3<<20)/sizeof(edge_t), last + (4<<20)/sizeof(edge_t));
+          etable->advise(first + (3<<20)/sizeof(edge_t), first + (4<<20)/sizeof(edge_t));
           advise_count++;
           continue;
         }
