@@ -70,8 +70,8 @@ class ll_advisor {
       ll_advisor<Graph, async, flag> *advisor = (ll_advisor<Graph, async, flag> *)(arg);
       auto outvtable = advisor->graph->out().vertex_table(0);
       auto outetable = advisor->graph->out().edge_table(0);
-      auto invtable = advisor->graph->in().vertex_table(0);
-      auto inetable = advisor->graph->in().edge_table(0);
+      //auto invtable = advisor->graph->in().vertex_table(0);
+      //auto inetable = advisor->graph->in().edge_table(0);
       int skip_count = 0;
       int node_count = 0;
       int advise_count = 0;
@@ -87,7 +87,7 @@ class ll_advisor {
         madvise_queue_item item = advisor->madvise_queue.front();
         add = item.node;
         epoch = item.epoch;
-        bool in_edge = item.in_edge;
+        //bool in_edge = item.in_edge;
         advisor->madvise_queue.pop_front();
         pthread_mutex_unlock(&advisor->madvise_lock);
         node_count++;
@@ -96,16 +96,23 @@ class ll_advisor {
         edge_t first, last;
         auto etable = outetable;
         auto vtable = outvtable;
-        if (in_edge) {
+        /*if (in_edge) {
           etable = inetable;
           vtable = invtable;
-        }
+        }*/
 
         first = (*vtable)[add].adj_list_start;
         last = first + (*vtable)[add].level_length;
 
         if (flag == LL_ADVISOR_SEQUENTIAL) {
-          etable->advise(first + (3<<20)/sizeof(edge_t), first + (4<<20)/sizeof(edge_t));
+          edge_t start = first + (3<<20);
+          edge_t end = first + (4<<20);
+          node_t last_node = advisor->graph->max_nodes() - 1;
+          edge_t last_edge = (*vtable)[last_node].adj_list_start + (*vtable)[last_node].level_length;
+          if (start > last_edge) {
+            continue;
+          }
+          etable->advise(start, ((end < last_node) ? end : last_edge));
           advise_count++;
           continue;
         }
