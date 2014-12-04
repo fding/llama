@@ -98,6 +98,7 @@ class ll_advisor {
 
     volatile bool still_adding = true;
     unsigned int epoch = 0;
+    edge_t last_seq = 0;
     worker_queue madvise_queue;
     pthread_t madvise_thread;
 
@@ -141,10 +142,12 @@ class ll_advisor {
         if (flag == LL_ADVISOR_SEQUENTIAL) {
           edge_t start = first;
           edge_t end = first + (1<<14);
-          if (start > last_edge) {
+          if (start > last_edge || end < advisor->last_seq) {
             continue;
           }
-          etable->advise(start, ((end < last_node) ? end : last_edge));
+          etable->advise((start < advisor->last_seq) ? advisor->last_seq : start,
+                         ((end < last_node) ? end : last_edge));
+          advisor->last_seq = (end < last_node) ? end : last_edge;
           advise_count++;
           continue;
         }
