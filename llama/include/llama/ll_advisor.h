@@ -142,7 +142,7 @@ class ll_advisor {
         if (flag == LL_ADVISOR_SEQUENTIAL) {
           edge_t start = first;
           edge_t end = first + (1<<14);
-          if (start > last_edge || end < advisor->last_seq) {
+          if (start > last_edge || last_edge < advisor->last_seq || end < advisor->last_seq) {
             continue;
           }
           etable->advise((start < advisor->last_seq) ? advisor->last_seq : start,
