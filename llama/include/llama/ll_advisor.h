@@ -48,23 +48,58 @@
 #define LL_ADVISOR_COMPLETE 1
 #define LL_ADVISOR_SEQUENTIAL 2
 
+struct madvise_queue_item {
+  node_t node;
+  unsigned int epoch;
+  bool in_edge;
+  bool valid;
+};
+
+class worker_queue {
+  private:
+    madvise_queue_item items[1024];
+    int head=0;
+    int tail=0;
+    pthread_mutex_t madvise_lock;
+  public:
+    worker_queue() {
+        pthread_mutex_init(&madvise_lock, NULL);
+        for (int i=0; i<1024; i++) items[i].valid = false;
+    }
+    ~worker_queue() {
+        pthread_mutex_destroy(&madvise_lock);
+    }
+    void enqueue(madvise_queue_item item) {
+      // pthread_mutex_lock(&madvise_lock);
+      items[tail] = item;
+      tail = (tail + 1) % 1024;
+      // pthread_mutex_unlock(&madvise_lock);
+    }
+    bool dequeue(madvise_queue_item* item) {
+      // pthread_mutex_lock(&madvise_lock);
+      if (items[head].valid) {
+        *item = items[head];
+        items[head].valid = false;
+        head = (head + 1) % 1024;
+        // pthread_mutex_unlock(&madvise_lock);
+        return true;
+      }
+      // pthread_mutex_unlock(&madvise_lock);
+      return false;
+    }
+};
+
 template <class Graph, bool async=true, int flag=LL_ADVISOR_COMPLETE>
 class ll_advisor {
 
   private:
     Graph *graph;
 
-    struct madvise_queue_item {
-      node_t node;
-      unsigned int epoch;
-      bool in_edge;
-    };
 
-    bool still_adding = true;
+    volatile bool still_adding = true;
     unsigned int epoch = 0;
-    deque<madvise_queue_item> madvise_queue;
+    worker_queue madvise_queue;
     pthread_t madvise_thread;
-    pthread_mutex_t madvise_lock;
 
     static void* madvise_thread_func(void* arg) {
       ll_advisor<Graph, async, flag> *advisor = (ll_advisor<Graph, async, flag> *)(arg);
@@ -76,20 +111,19 @@ class ll_advisor {
       int node_count = 0;
       int advise_count = 0;
       int second_skip_count = 0;
-      while (advisor->still_adding) {
+      node_t last_node = advisor->graph->max_nodes() - 1;
+      edge_t last_edge = (*outvtable)[last_node].adj_list_start + (*outvtable)[last_node].level_length;
+      while (true) {
+        if (!advisor->still_adding) break;
         node_t add;
         unsigned int epoch;
-        pthread_mutex_lock(&advisor->madvise_lock);
-        if (advisor->madvise_queue.empty()) {
-          pthread_mutex_unlock(&advisor->madvise_lock);
+        madvise_queue_item item;
+        if (!advisor->madvise_queue.dequeue(&item)) {
           continue;
         }
-        madvise_queue_item item = advisor->madvise_queue.front();
         add = item.node;
         epoch = item.epoch;
         //bool in_edge = item.in_edge;
-        advisor->madvise_queue.pop_front();
-        pthread_mutex_unlock(&advisor->madvise_lock);
         node_count++;
 
 
@@ -105,10 +139,8 @@ class ll_advisor {
         last = first + (*vtable)[add].level_length;
 
         if (flag == LL_ADVISOR_SEQUENTIAL) {
-          edge_t start = first + (3<<20);
-          edge_t end = first + (4<<20);
-          node_t last_node = advisor->graph->max_nodes() - 1;
-          edge_t last_edge = (*vtable)[last_node].adj_list_start + (*vtable)[last_node].level_length;
+          edge_t start = first;
+          edge_t end = first + (1<<14);
           if (start > last_edge) {
             continue;
           }
@@ -117,8 +149,8 @@ class ll_advisor {
           continue;
         }
 
-        if (advisor->epoch - epoch > 4) {skip_count++; continue;}
         if (flag == LL_ADVISOR_COMPLETE) {
+          if (advisor->epoch - epoch > 4) {skip_count++; continue;}
           //#pragma omp parallel num_threads(8)
           {
             //#pragma omp for
@@ -159,7 +191,6 @@ class ll_advisor {
       printf("Starting advisor\n");
       graph = _graph;
       if (async) {
-        pthread_mutex_init(&madvise_lock, NULL);
         pthread_create(&madvise_thread, NULL,
             &ll_advisor<Graph, async, flag>::madvise_thread_func, (void*)this);
       }
@@ -167,9 +198,7 @@ class ll_advisor {
 
     void advise(node_t node, bool in_edge=false) {
       if (async) {
-        pthread_mutex_lock(&madvise_lock);
-        madvise_queue.push_back({node, ++epoch, in_edge});
-        pthread_mutex_unlock(&madvise_lock);
+        madvise_queue.enqueue({node, ++epoch, in_edge, true});
       } else {
         auto vtable = graph->out().vertex_table(0);
         auto etable = graph->out().edge_table(0);
@@ -198,7 +227,6 @@ class ll_advisor {
       if (async) {
         still_adding = false;
         pthread_join(madvise_thread, NULL);
-        pthread_mutex_destroy(&madvise_lock);
       }
     }
 };

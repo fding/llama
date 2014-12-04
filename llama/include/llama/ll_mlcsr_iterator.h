@@ -161,11 +161,6 @@ class syncqueue {
         }
 };
 
-struct madvise_queue_item {
-	node_t node;
-	unsigned int epoch;
-};
-
 struct ll_edge_iterator {
 
 	edge_t edge;
