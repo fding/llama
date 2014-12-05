@@ -60,14 +60,13 @@ class worker_queue {
     madvise_queue_item items[1024];
     int head=0;
     int tail=0;
-    pthread_mutex_t madvise_lock;
   public:
     worker_queue() {
-        pthread_mutex_init(&madvise_lock, NULL);
+        // pthread_mutex_init(&madvise_lock, NULL);
         for (int i=0; i<1024; i++) items[i].valid = false;
     }
     ~worker_queue() {
-        pthread_mutex_destroy(&madvise_lock);
+        // pthread_mutex_destroy(&madvise_lock);
     }
     void enqueue(madvise_queue_item item) {
       // pthread_mutex_lock(&madvise_lock);
@@ -142,12 +141,15 @@ class ll_advisor {
         if (flag == LL_ADVISOR_SEQUENTIAL) {
           edge_t start = first;
           edge_t end = first + (1<<14);
-          if (start > last_edge || last_edge < advisor->last_seq || end < advisor->last_seq) {
+          edge_t target = (end < last_edge) ? end : last_edge;
+          if (start > target) { // || last_edge < advisor->last_seq || end < advisor->last_seq) {
             continue;
           }
+          if (target < advisor->last_seq)
+            advisor->last_seq = 0;
           etable->advise((start < advisor->last_seq) ? advisor->last_seq : start,
-                         ((end < last_node) ? end : last_edge));
-          advisor->last_seq = (end < last_node) ? end : last_edge;
+                         target);
+          advisor->last_seq = target;
           advise_count++;
           continue;
         }
