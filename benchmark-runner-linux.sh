@@ -9,42 +9,18 @@ function run() {
     # Output git commit number
     git rev-parse HEAD >> output.log
 
-    # Replace parameters in h file
-    cp -f benchmark/benchmarks/query_creator.h benchmark/benchmarks/query_creator_tmp.h
-    for param in ALPHA NUM_VERTICES CACHE_SIZE
-    do
-        sed -i "s/^#define $param .*$//g" benchmark/benchmarks/query_creator.h
-    done
-
-    cp -f benchmark/benchmarks/query_simulator.h benchmark/benchmarks/query_simulator_tmp.h
-    for param in PARAM_ALPHA PARAM_EPOCH_THRESHOLD PARAM_NUM_VERTICES PARAM_CACHE_SIZE
-    do
-        sed -i "s/^#define $param .*$//g" benchmark/benchmarks/query_simulator.h
-    done
-
-    sed -i "s/ALPHA/$1/g" benchmark/benchmarks/query_creator.h
-    sed -i "s/NUM_VERTICES/$3/g" benchmark/benchmarks/query_creator.h
-    sed -i "s/CACHE_SIZE/$4/g" benchmark/benchmarks/query_creator.h
-
-    sed -i "s/PARAM_ALPHA/$1/g" benchmark/benchmarks/query_simulator.h
-    sed -i "s/PARAM_EPOCH_THRESHOLD/$2/g" benchmark/benchmarks/query_simulator.h
-    sed -i "s/PARAM_NUM_VERTICES/$3/g" benchmark/benchmarks/query_simulator.h
-    sed -i "s/PARAM_CACHE_SIZE/$4/g" benchmark/benchmarks/query_simulator.h
-
-    make benchmark-persistent benchmark-persistent-madvise
-
     echo "PARAM_ALPHA=$1,PARAM_EPOCH_THRESHOLD=$2,PARAM_NUM_VERTICES=$3,PARAM_CACHE_SIZE=$4" >> output.log
 
     for m in {1..5}
     do
-        ./bin/benchmark-persistent --run query_creator -d bin/db/
+        ./bin/benchmark-query-creator query_creator -a $1 -n $3 -d db_twitter/
 
         echo "NO_MADVISE" >> output.log
             echo "TRIAL $m" >> output.log
             echo "==========BEFORE VM STAT==========" >> output.log
         sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
             echo "==========LLAMA OUTPUT==========" >> output.log
-            ./bin/benchmark-persistent --run query_simulator -d bin/db/ >> output.log
+            ./bin/benchmark-persistent --run query_simulator -d db_twitter/ >> output.log
             echo "==========AFTER VM STAT==========" >> output.log
             echo "==========END LLAMA OUTPUT==========" >> output.log
 
@@ -53,19 +29,15 @@ function run() {
             echo "==========BEFORE VM STAT==========" >> output.log
         sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
             echo "==========LLAMA OUTPUT==========" >> output.log
-            ./bin/benchmark-persistent-madvise --run query_simulator -d bin/db/ >> output.log
+            ./bin/benchmark-persistent-madvise --run query_simulator -d db_twitter/ >> output.log
             echo "==========AFTER VM STAT==========" >> output.log
             echo "==========END LLAMA OUTPUT==========" >> output.log
     done
 
-    cp -f benchmark/benchmarks/query_creator_tmp.h benchmark/benchmarks/query_creator.h
-    rm -f benchmark/benchmarks/query_creator_tmp.h
-
-    cp -f benchmark/benchmarks/query_simulator_tmp.h benchmark/benchmarks/query_simulator.h
-    rm -f benchmark/benchmarks/query_simulator_tmp.h
-
     rm temp.txt
 }
+
+make benchmark-persistent benchmark-persistent-madvise benchmark-query-creator
 
 for i in ${ALPHA_VALUES[@]}
 do
