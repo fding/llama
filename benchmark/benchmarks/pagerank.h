@@ -477,6 +477,11 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
         }
 
         this->progress_init(max);
+        auto etable = G.out().edge_table(0);
+        auto vtable = G.out().vertex_table(0);
+        node_t last_node = G.max_nodes() - 1;
+        edge_t last_edge = (*vtable)[last_node].adj_list_start + (*vtable)[last_node].level_length;
+        etable->advise(0, last_edge, MADV_RANDOM);
 
 #ifdef LL_BM_DO_MADVISE
         ll_advisor<Graph, true, LL_ADVISOR_SEQUENTIAL> advisor(&G);
@@ -486,7 +491,8 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
             for (node_t t = 0; t < G.max_nodes(); t ++) 
             {
 #ifdef LL_BM_DO_MADVISE
-                advisor.advise(t);
+                // A bit of a hack
+                if (t % 4 == 0) advisor.advise(t);
 #endif
                 int t_degree = G.out_degree(t);
                 if (t_degree == 0) continue;
