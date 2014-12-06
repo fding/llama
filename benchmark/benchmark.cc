@@ -1037,7 +1037,7 @@ int main(int argc, char** argv)
 	LL_RT_COND_CREATE(run_task_class,  9, ll_b_triangle_counting_LI, G);
 #endif
 #if B < 0 || B == 10
-	LL_RT_COND_CREATE(run_task_class, 10, ll_b_triangle_counting_LOD_org, G);
+	LL_RT_COND_CREATE(run_task_class, 10, ll_b_triangle_counting_LOD_madvise, G);
 #endif
 #if B < 0 || B == 11
 	LL_RT_COND_CREATE(run_task_class, 11, ll_b_triangle_counting_LU, G);

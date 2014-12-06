@@ -98,7 +98,7 @@ public:
 	    input_file.open(PARAM_FILENAME);
 		while (input_file >> requests[num_vertices++]);
 		num_vertices --;
-		size_t warmup_n = num_vertices > 200000 ? 200000 : num_vertices;
+		size_t warmup_n = num_vertices > 20000 ? 20000 : num_vertices;
 
 		struct rusage r_start, r_end;
 		getrusage(RUSAGE_SELF, &r_start);

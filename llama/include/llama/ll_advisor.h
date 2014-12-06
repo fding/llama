@@ -57,33 +57,27 @@ struct madvise_queue_item {
 
 class worker_queue {
   private:
-    madvise_queue_item items[1024];
-    int head=0;
-    int tail=0;
+    volatile madvise_queue_item items[1024];
+    volatile int head=0;
+    volatile int tail=0;
   public:
     worker_queue() {
-        // pthread_mutex_init(&madvise_lock, NULL);
         for (int i=0; i<1024; i++) items[i].valid = false;
     }
-    ~worker_queue() {
-        // pthread_mutex_destroy(&madvise_lock);
-    }
     void enqueue(madvise_queue_item item) {
-      // pthread_mutex_lock(&madvise_lock);
-      items[tail] = item;
+      items[tail].node = item.node;
+      items[tail].in_edge = item.in_edge;
+      items[tail].epoch = item.epoch;
+      items[tail].valid = true;
       tail = (tail + 1) % 1024;
-      // pthread_mutex_unlock(&madvise_lock);
     }
     bool dequeue(madvise_queue_item* item) {
-      // pthread_mutex_lock(&madvise_lock);
       if (items[head].valid) {
-        *item = items[head];
+        *item = *(const_cast<madvise_queue_item *>(items) + head);
         items[head].valid = false;
         head = (head + 1) % 1024;
-        // pthread_mutex_unlock(&madvise_lock);
         return true;
       }
-      // pthread_mutex_unlock(&madvise_lock);
       return false;
     }
 };
@@ -93,7 +87,6 @@ class ll_advisor {
 
   private:
     Graph *graph;
-
 
     volatile bool still_adding = true;
     unsigned int epoch = 0;
