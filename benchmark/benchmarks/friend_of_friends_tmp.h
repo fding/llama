@@ -147,7 +147,7 @@ public:
 
 	    Graph& G = this->_graph;
 	    float avg = 0;
-		size_t warmup_n = num_vertices > 20000 ? 20000 : num_vertices;
+		size_t warmup_n = num_vertices > 200000 ? 200000 : num_vertices;
 
 #ifdef LL_BM_DO_MADVISE
 	    ll_advisor<Graph> advisor(&G);
