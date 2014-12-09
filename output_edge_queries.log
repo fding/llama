@@ -7080,51 +7080,6 @@ Out Bytes  : 0 (0.00 GB)
 Return value: 78654234007415088.000000
 ==========AFTER VM STAT==========
 ==========END LLAMA OUTPUT==========
-WITH_MADVISE
-TRIAL 4
-==========BEFORE VM STAT==========
-==========LLAMA OUTPUT==========
-Benchmark  : Query simulator
-Start Time : 12/06/14 15:22:48
-Count      : 1
-Starting advisor
-Encountered 163116 nodes, advised 71830143 nodes, skipped 138794 nodes, 0 second time
-Warmup Time      : 69091.786
-Warmup User Time : 36335.756
-Warmup System Time : 27174.594
-Warmup Cpu Time : 63510.350
-Starting advisor
-Encountered 299995 nodes, advised 311522731 nodes, skipped 164494 nodes, 0 second time
-
-Node type  : 64-bit
-Edge type  : 64-bit
-Deletions  : no
-Levels     : 0--1
-Type       : persistence_cont
-
-# Nodes    : 61578415
-# Levels   : 2
-Memory     : 6.58 MB
-rss start  : 2.44 MB
-rss loaded : 9.02 MB
-
-TIME
-Time       : 195.921 seconds (3.27 min)
-User Time  : 62.026 seconds (1.03 min)
-System Time: 126.260 seconds (2.10 min)
-CPU Time   : 188.286 seconds (3.14 min)
-CPU Util.  : 8.01%
-
-RESOURCE USAGE
-Mjr Faults : 410148
-In Blocks  : 109101136
-Out Blocks : 0
-In Bytes   : 55859781632 (52.02 GB)
-Out Bytes  : 0 (0.00 GB)
-
-Return value: 78654234007415088.000000
-==========AFTER VM STAT==========
-==========END LLAMA OUTPUT==========
 NO_MADVISE
 TRIAL 5
 ==========BEFORE VM STAT==========
@@ -7594,51 +7549,6 @@ Mjr Faults : 2045457
 In Blocks  : 18879520
 Out Blocks : 0
 In Bytes   : 9666314240 (9.00 GB)
-Out Bytes  : 0 (0.00 GB)
-
-Return value: 198021657521318944.000000
-==========AFTER VM STAT==========
-==========END LLAMA OUTPUT==========
-WITH_MADVISE
-TRIAL 5
-==========BEFORE VM STAT==========
-==========LLAMA OUTPUT==========
-Benchmark  : Query simulator
-Start Time : 12/06/14 19:34:28
-Count      : 1
-Starting advisor
-Encountered 130289 nodes, advised 40621281 nodes, skipped 117188 nodes, 0 second time
-Warmup Time      : 71929.719
-Warmup User Time : 35379.331
-Warmup System Time : 20993.723
-Warmup Cpu Time : 56373.054
-Starting advisor
-Encountered 730145 nodes, advised 741071160 nodes, skipped 405703 nodes, 0 second time
-
-Node type  : 64-bit
-Edge type  : 64-bit
-Deletions  : no
-Levels     : 0--1
-Type       : persistence_cont
-
-# Nodes    : 61578415
-# Levels   : 2
-Memory     : 6.57 MB
-rss start  : 2.44 MB
-rss loaded : 9.01 MB
-
-TIME
-Time       : 459.511 seconds (7.66 min)
-User Time  : 144.707 seconds (2.41 min)
-System Time: 306.304 seconds (5.11 min)
-CPU Time   : 451.011 seconds (7.52 min)
-CPU Util.  : 8.18%
-
-RESOURCE USAGE
-Mjr Faults : 1047670
-In Blocks  : 252371568
-Out Blocks : 0
-In Bytes   : 129214242816 (120.34 GB)
 Out Bytes  : 0 (0.00 GB)
 
 Return value: 198021657521318944.000000
