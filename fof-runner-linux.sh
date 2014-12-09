@@ -9,7 +9,7 @@ function run() {
 
     for m in {1..5}
     do
-        ./bin/benchmark-query-creator query_creator -a 1 -n $1 -d db_twitter/
+        ./bin/benchmark-query-creator -a 1 -n $1 -d db_twitter/
 
         echo "NO_MADVISE" >> output_fof.log
             echo "TRIAL $m" >> output_fof.log

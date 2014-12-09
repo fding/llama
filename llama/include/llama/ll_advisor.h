@@ -65,11 +65,12 @@ class worker_queue {
         for (int i=0; i<1024; i++) items[i].valid = false;
     }
     void enqueue(madvise_queue_item item) {
-      items[tail].node = item.node;
-      items[tail].in_edge = item.in_edge;
-      items[tail].epoch = item.epoch;
-      items[tail].valid = true;
+      int oldtail = tail;
       tail = (tail + 1) % 1024;
+      items[oldtail].node = item.node;
+      items[oldtail].in_edge = item.in_edge;
+      items[oldtail].epoch = item.epoch;
+      items[oldtail].valid = true;
     }
     bool dequeue(madvise_queue_item* item) {
       if (items[head].valid) {
@@ -97,8 +98,8 @@ class ll_advisor {
       ll_advisor<Graph, async, flag> *advisor = (ll_advisor<Graph, async, flag> *)(arg);
       auto outvtable = advisor->graph->out().vertex_table(0);
       auto outetable = advisor->graph->out().edge_table(0);
-      //auto invtable = advisor->graph->in().vertex_table(0);
-      //auto inetable = advisor->graph->in().edge_table(0);
+      auto invtable = advisor->graph->in().vertex_table(0);
+      auto inetable = advisor->graph->in().edge_table(0);
       int skip_count = 0;
       int node_count = 0;
       int advise_count = 0;
@@ -106,6 +107,10 @@ class ll_advisor {
       edge_t last_seq = 0;
       node_t last_node = advisor->graph->max_nodes() - 1;
       edge_t last_edge = (*outvtable)[last_node].adj_list_start + (*outvtable)[last_node].level_length;
+      // printf("last_node=%lu, start=%lu, length=%lu\n", last_node, (*outvtable)[last_node].adj_list_start , (*outvtable)[last_node].level_length);
+
+      // outetable->advise(0, last_edge, MADV_RANDOM);
+
       while (true) {
         if (!advisor->still_adding) break;
         node_t add;
@@ -116,28 +121,34 @@ class ll_advisor {
         }
         add = item.node;
         epoch = item.epoch;
-        //bool in_edge = item.in_edge;
+        bool in_edge = item.in_edge;
         node_count++;
 
 
         edge_t first, last;
         auto etable = outetable;
         auto vtable = outvtable;
-        /*if (in_edge) {
+        if (in_edge) {
           etable = inetable;
           vtable = invtable;
-        }*/
+        }
 
         first = (*vtable)[add].adj_list_start;
         last = first + (*vtable)[add].level_length;
 
         if (flag == LL_ADVISOR_SEQUENTIAL) {
           edge_t end = first + (1<<14);
-          edge_t target = (end < last_edge) ? end : last_edge;
+          edge_t target = end;
+          /*
+          if (end <= last_edge) target = end;
+          else target = last_edge;
+          */
+
           if (target < last_seq)
             last_seq = 0;
           edge_t start = (first < last_seq) ? last_seq : first;
           if (start > target - (1<<11)) { // || last_edge < advisor->last_seq || end < advisor->last_seq) {
+            //printf("Here: start=%lu, target=%lu, end=%lu, last_seq=%lu, last_edge=%lu\n", start, target, end, last_seq, last_edge);
             continue;
           }
           etable->advise(start, target);

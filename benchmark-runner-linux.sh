@@ -1,4 +1,4 @@
-ALPHA_VALUES=(0.1 0.5 1)
+ALPHA_VALUES=(0.5 1)
 EPOCH_VALUES=(4)
 NVERT_VALUES=(1000 5000 10000 20000 50000 100000 200000 500000 1000000)
 CACHE_VALUES=(1000)
@@ -13,7 +13,7 @@ function run() {
 
     for m in {1..5}
     do
-        ./bin/benchmark-query-creator query_creator -a $1 -n $3 -d db_twitter/
+        ./bin/benchmark-query-creator -a $1 -n $3 -d db_twitter/
 
         echo "NO_MADVISE" >> output.log
             echo "TRIAL $m" >> output.log

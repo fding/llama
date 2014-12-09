@@ -1,0 +1,2996 @@
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=1000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:20:57
+Count      : 1
+Warmup Time      : 49810.099
+Warmup User Time : 6478.934
+Warmup System Time : 6454.073
+Warmup Cpu Time : 12933.007
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:21:47
+Count      : 1
+Starting advisor
+Encountered 1000 nodes, advised 12768 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 37808.807
+Warmup User Time : 37606.668
+Warmup System Time : 6387.272
+Warmup Cpu Time : 43993.940
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 10.85%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:22:26
+Count      : 1
+Warmup Time      : 30826.404
+Warmup User Time : 4471.826
+Warmup System Time : 4184.483
+Warmup Cpu Time : 8656.309
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:22:57
+Count      : 1
+Starting advisor
+Encountered 1000 nodes, advised 6111 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 25134.785
+Warmup User Time : 25352.541
+Warmup System Time : 3971.762
+Warmup Cpu Time : 29324.303
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.11%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:23:23
+Count      : 1
+Warmup Time      : 25018.869
+Warmup User Time : 3710.962
+Warmup System Time : 3408.086
+Warmup Cpu Time : 7119.048
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:23:48
+Count      : 1
+Starting advisor
+Encountered 1000 nodes, advised 4966 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 20687.993
+Warmup User Time : 20357.276
+Warmup System Time : 3929.117
+Warmup Cpu Time : 24286.393
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 10.19%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:24:09
+Count      : 1
+Warmup Time      : 32471.535
+Warmup User Time : 4351.935
+Warmup System Time : 4532.043
+Warmup Cpu Time : 8883.978
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:24:42
+Count      : 1
+Starting advisor
+Encountered 1000 nodes, advised 7086 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 27089.368
+Warmup User Time : 26779.731
+Warmup System Time : 4280.580
+Warmup Cpu Time : 31060.311
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.29%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:25:10
+Count      : 1
+Warmup Time      : 41275.431
+Warmup User Time : 5180.912
+Warmup System Time : 5523.088
+Warmup Cpu Time : 10704.000
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:25:51
+Count      : 1
+Starting advisor
+Encountered 1000 nodes, advised 10585 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 31197.791
+Warmup User Time : 30386.778
+Warmup System Time : 5623.950
+Warmup Cpu Time : 36010.728
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 8.99%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=2000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:26:24
+Count      : 1
+Warmup Time      : 47817.686
+Warmup User Time : 7058.942
+Warmup System Time : 7002.028
+Warmup Cpu Time : 14060.970
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:27:12
+Count      : 1
+Starting advisor
+Encountered 2000 nodes, advised 10591 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 39089.529
+Warmup User Time : 38999.547
+Warmup System Time : 6905.085
+Warmup Cpu Time : 45904.632
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 8.97%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:27:52
+Count      : 1
+Warmup Time      : 75123.308
+Warmup User Time : 10056.100
+Warmup System Time : 9853.709
+Warmup Cpu Time : 19909.809
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:29:08
+Count      : 1
+Starting advisor
+Encountered 2000 nodes, advised 23427 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 56920.098
+Warmup User Time : 56923.417
+Warmup System Time : 8864.683
+Warmup Cpu Time : 65788.100
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : -0.000 seconds
+CPU Util.  : -0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:30:06
+Count      : 1
+Warmup Time      : 71612.753
+Warmup User Time : 10637.370
+Warmup System Time : 9906.020
+Warmup Cpu Time : 20543.390
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:31:18
+Count      : 1
+Starting advisor
+Encountered 2000 nodes, advised 22866 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 51486.819
+Warmup User Time : 52165.815
+Warmup System Time : 8853.545
+Warmup Cpu Time : 61019.360
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : -0.000 seconds
+CPU Util.  : -0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:32:11
+Count      : 1
+Warmup Time      : 66824.839
+Warmup User Time : 8539.262
+Warmup System Time : 8682.701
+Warmup Cpu Time : 17221.963
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : -0.000 seconds
+CPU Util.  : -0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:33:18
+Count      : 1
+Starting advisor
+Encountered 2000 nodes, advised 18926 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 52525.446
+Warmup User Time : 51341.360
+Warmup System Time : 8172.489
+Warmup Cpu Time : 59513.849
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.96%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:34:12
+Count      : 1
+Warmup Time      : 73016.445
+Warmup User Time : 10802.181
+Warmup System Time : 10049.867
+Warmup Cpu Time : 20852.048
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:35:26
+Count      : 1
+Starting advisor
+Encountered 2000 nodes, advised 20888 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 55617.572
+Warmup User Time : 56692.320
+Warmup System Time : 8930.331
+Warmup Cpu Time : 65622.651
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.13%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=5000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:36:24
+Count      : 1
+Warmup Time      : 153269.341
+Warmup User Time : 22501.032
+Warmup System Time : 21435.226
+Warmup Cpu Time : 43936.258
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 8.53%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:38:58
+Count      : 1
+Starting advisor
+Encountered 5000 nodes, advised 60112 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 127733.235
+Warmup User Time : 129506.016
+Warmup System Time : 21948.741
+Warmup Cpu Time : 151454.757
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.30%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:41:11
+Count      : 1
+Warmup Time      : 136154.087
+Warmup User Time : 22787.251
+Warmup System Time : 19639.543
+Warmup Cpu Time : 42426.794
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:43:27
+Count      : 1
+Starting advisor
+Encountered 5000 nodes, advised 47066 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 106034.300
+Warmup User Time : 110264.765
+Warmup System Time : 18808.125
+Warmup Cpu Time : 129072.890
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.03%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:45:16
+Count      : 1
+Warmup Time      : 151258.393
+Warmup User Time : 23943.681
+Warmup System Time : 22131.679
+Warmup Cpu Time : 46075.360
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:47:48
+Count      : 1
+Starting advisor
+Encountered 5000 nodes, advised 56519 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 118543.785
+Warmup User Time : 122514.893
+Warmup System Time : 20199.435
+Warmup Cpu Time : 142714.328
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.09%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:49:49
+Count      : 1
+Warmup Time      : 151392.323
+Warmup User Time : 23169.707
+Warmup System Time : 20482.088
+Warmup Cpu Time : 43651.795
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 8.53%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:52:21
+Count      : 1
+Starting advisor
+Encountered 5000 nodes, advised 55981 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 118494.113
+Warmup User Time : 120735.175
+Warmup System Time : 19553.930
+Warmup Cpu Time : 140289.105
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.10%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:54:23
+Count      : 1
+Warmup Time      : 132109.849
+Warmup User Time : 21124.367
+Warmup System Time : 19058.661
+Warmup Cpu Time : 40183.028
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : inf%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:56:35
+Count      : 1
+Starting advisor
+Encountered 5000 nodes, advised 43572 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 106515.475
+Warmup User Time : 109743.332
+Warmup System Time : 18365.951
+Warmup Cpu Time : 128109.283
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.20%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=10000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 21:58:27
+Count      : 1
+Warmup Time      : 259378.092
+Warmup User Time : 47951.982
+Warmup System Time : 39603.106
+Warmup Cpu Time : 87555.088
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:02:47
+Count      : 1
+Starting advisor
+Encountered 10000 nodes, advised 140795 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 203098.698
+Warmup User Time : 221146.970
+Warmup System Time : 37620.598
+Warmup Cpu Time : 258767.568
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 10.57%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:06:15
+Count      : 1
+Warmup Time      : 235411.832
+Warmup User Time : 42654.069
+Warmup System Time : 35912.146
+Warmup Cpu Time : 78566.215
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:10:11
+Count      : 1
+Starting advisor
+Encountered 10000 nodes, advised 109259 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 186106.568
+Warmup User Time : 200412.139
+Warmup System Time : 34299.965
+Warmup Cpu Time : 234712.104
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.11%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:13:22
+Count      : 1
+Warmup Time      : 237826.964
+Warmup User Time : 42815.363
+Warmup System Time : 35837.324
+Warmup Cpu Time : 78652.687
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:17:20
+Count      : 1
+Starting advisor
+Encountered 10000 nodes, advised 110130 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 185932.815
+Warmup User Time : 199744.916
+Warmup System Time : 33105.412
+Warmup Cpu Time : 232850.328
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.31%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:20:31
+Count      : 1
+Warmup Time      : 235549.652
+Warmup User Time : 41742.183
+Warmup System Time : 34867.683
+Warmup Cpu Time : 76609.866
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:24:27
+Count      : 1
+Starting advisor
+Encountered 10000 nodes, advised 101337 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 187704.312
+Warmup User Time : 199997.388
+Warmup System Time : 34883.843
+Warmup Cpu Time : 234881.231
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.22%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:27:40
+Count      : 1
+Warmup Time      : 231582.959
+Warmup User Time : 41102.078
+Warmup System Time : 34284.430
+Warmup Cpu Time : 75386.508
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:31:32
+Count      : 1
+Starting advisor
+Encountered 10000 nodes, advised 90983 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 186218.658
+Warmup User Time : 198881.708
+Warmup System Time : 32757.560
+Warmup Cpu Time : 231639.268
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.10%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=20000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:34:47
+Count      : 1
+Warmup Time      : 464060.845
+Warmup User Time : 86466.257
+Warmup System Time : 73001.977
+Warmup Cpu Time : 159468.234
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:42:32
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 227514 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 385781.690
+Warmup User Time : 428296.125
+Warmup System Time : 71169.184
+Warmup Cpu Time : 499465.309
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 8.83%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:49:09
+Count      : 1
+Warmup Time      : 360158.074
+Warmup User Time : 82095.616
+Warmup System Time : 61053.995
+Warmup Cpu Time : 143149.611
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 22:55:11
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 185859 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 294650.640
+Warmup User Time : 338173.865
+Warmup System Time : 60213.995
+Warmup Cpu Time : 398387.860
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.71%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:00:13
+Count      : 1
+Warmup Time      : 401516.580
+Warmup User Time : 85370.645
+Warmup System Time : 67267.659
+Warmup Cpu Time : 152638.304
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:06:56
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 244005 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 336917.013
+Warmup User Time : 381730.815
+Warmup System Time : 68240.928
+Warmup Cpu Time : 449971.743
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : -0.000 seconds
+CPU Util.  : -0.00%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:12:45
+Count      : 1
+Warmup Time      : 405937.775
+Warmup User Time : 83705.440
+Warmup System Time : 67156.688
+Warmup Cpu Time : 150862.128
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 25.60%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:19:32
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 212561 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 338255.213
+Warmup User Time : 379736.686
+Warmup System Time : 65258.721
+Warmup Cpu Time : 444995.407
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 10.35%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:25:24
+Count      : 1
+Warmup Time      : 389010.124
+Warmup User Time : 85219.834
+Warmup System Time : 66621.323
+Warmup Cpu Time : 151841.157
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 17.07%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:31:55
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 209134 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 324929.259
+Warmup User Time : 368856.014
+Warmup System Time : 66594.699
+Warmup Cpu Time : 435450.713
+Starting advisor
+Encountered 0 nodes, advised 0 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 0.000 seconds
+User Time  : 0.000 seconds
+System Time: 0.000 seconds
+CPU Time   : 0.000 seconds
+CPU Util.  : 9.08%
+
+RESOURCE USAGE
+Mjr Faults : 0
+In Blocks  : 0
+Out Blocks : 0
+In Bytes   : 0 (0.00 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=50000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:37:47
+Count      : 1
+Warmup Time      : 485974.985
+Warmup User Time : 95757.606
+Warmup System Time : 77205.836
+Warmup Cpu Time : 172963.442
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 360.523 seconds (6.01 min)
+User Time  : 110.775 seconds (1.85 min)
+System Time: 79.321 seconds (1.32 min)
+CPU Time   : 190.096 seconds (3.17 min)
+CPU Util.  : 4.39%
+
+RESOURCE USAGE
+Mjr Faults : 1565549
+In Blocks  : 12524392
+Out Blocks : 8
+In Bytes   : 6412488704 (5.97 GB)
+Out Bytes  : 4096 (0.00 GB)
+
+Return value: 27070.156250
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/07/14 23:51:55
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 328116 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 404584.779
+Warmup User Time : 444699.635
+Warmup System Time : 81788.912
+Warmup Cpu Time : 526488.547
+Starting advisor
+Encountered 30000 nodes, advised 345244 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.56 MB
+rss start  : 2.46 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 332.836 seconds (5.55 min)
+User Time  : 417.551 seconds (6.96 min)
+System Time: 85.438 seconds (1.42 min)
+CPU Time   : 502.990 seconds (8.38 min)
+CPU Util.  : 12.59%
+
+RESOURCE USAGE
+Mjr Faults : 1415609
+In Blocks  : 14386032
+Out Blocks : 8
+In Bytes   : 7365648384 (6.86 GB)
+Out Bytes  : 4096 (0.00 GB)
+
+Return value: 27070.156250
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 00:04:39
+Count      : 1
+Warmup Time      : 401999.100
+Warmup User Time : 88747.330
+Warmup System Time : 66680.235
+Warmup Cpu Time : 155427.565
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.57 MB
+rss start  : 2.46 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 425.410 seconds (7.09 min)
+User Time  : 115.323 seconds (1.92 min)
+System Time: 89.846 seconds (1.50 min)
+CPU Time   : 205.169 seconds (3.42 min)
+CPU Util.  : 4.02%
+
+RESOURCE USAGE
+Mjr Faults : 2111547
+In Blocks  : 16897424
+Out Blocks : 8
+In Bytes   : 8651481088 (8.06 GB)
+Out Bytes  : 4096 (0.00 GB)
+
+Return value: 27257.179688
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 00:18:28
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 242977 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 334767.992
+Warmup User Time : 384015.091
+Warmup System Time : 69588.025
+Warmup Cpu Time : 453603.116
+Starting advisor
+Encountered 30000 nodes, advised 352437 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 6.96 MB
+rss start  : 2.06 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 379.249 seconds (6.32 min)
+User Time  : 462.009 seconds (7.70 min)
+System Time: 92.818 seconds (1.55 min)
+CPU Time   : 554.827 seconds (9.25 min)
+CPU Util.  : 12.19%
+
+RESOURCE USAGE
+Mjr Faults : 1749228
+In Blocks  : 17796208
+Out Blocks : 0
+In Bytes   : 9111752704 (8.49 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 27257.179688
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 00:30:40
+Count      : 1
+Warmup Time      : 378702.610
+Warmup User Time : 81635.857
+Warmup System Time : 62267.743
+Warmup Cpu Time : 143903.600
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.70 MB
+rss start  : 1.33 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 743.733 seconds (12.40 min)
+User Time  : 126.602 seconds (2.11 min)
+System Time: 118.790 seconds (1.98 min)
+CPU Time   : 245.392 seconds (4.09 min)
+CPU Util.  : 2.75%
+
+RESOURCE USAGE
+Mjr Faults : 4722059
+In Blocks  : 37782632
+Out Blocks : 0
+In Bytes   : 19345432576 (18.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 27498.738281
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 00:49:24
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 198699 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 313327.192
+Warmup User Time : 355923.043
+Warmup System Time : 64166.122
+Warmup Cpu Time : 420089.165
+Starting advisor
+Encountered 30000 nodes, advised 373193 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 678.841 seconds (11.31 min)
+User Time  : 754.199 seconds (12.57 min)
+System Time: 117.858 seconds (1.96 min)
+CPU Time   : 872.057 seconds (14.53 min)
+CPU Util.  : 10.71%
+
+RESOURCE USAGE
+Mjr Faults : 4318072
+In Blocks  : 40565864
+Out Blocks : 0
+In Bytes   : 20769722368 (19.34 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 27498.738281
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 01:06:21
+Count      : 1
+Warmup Time      : 424427.996
+Warmup User Time : 87582.402
+Warmup System Time : 71320.293
+Warmup Cpu Time : 158902.695
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.92 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 744.912 seconds (12.42 min)
+User Time  : 121.704 seconds (2.03 min)
+System Time: 115.445 seconds (1.92 min)
+CPU Time   : 237.149 seconds (3.95 min)
+CPU Util.  : 2.65%
+
+RESOURCE USAGE
+Mjr Faults : 4728283
+In Blocks  : 37826288
+Out Blocks : 0
+In Bytes   : 19367059456 (18.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 26638.269531
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 01:25:52
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 259717 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 346304.737
+Warmup User Time : 392807.114
+Warmup System Time : 69042.483
+Warmup Cpu Time : 461849.597
+Starting advisor
+Encountered 30000 nodes, advised 327571 nodes, skipped 1 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 697.243 seconds (11.62 min)
+User Time  : 768.234 seconds (12.80 min)
+System Time: 113.653 seconds (1.89 min)
+CPU Time   : 881.887 seconds (14.70 min)
+CPU Util.  : 10.54%
+
+RESOURCE USAGE
+Mjr Faults : 4536244
+In Blocks  : 41497952
+Out Blocks : 0
+In Bytes   : 21246951424 (19.79 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 26638.269531
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 01:43:40
+Count      : 1
+Warmup Time      : 369521.245
+Warmup User Time : 74536.238
+Warmup System Time : 58738.469
+Warmup Cpu Time : 133274.707
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 359.584 seconds (5.99 min)
+User Time  : 106.391 seconds (1.77 min)
+System Time: 79.334 seconds (1.32 min)
+CPU Time   : 185.726 seconds (3.10 min)
+CPU Util.  : 4.30%
+
+RESOURCE USAGE
+Mjr Faults : 1625029
+In Blocks  : 13008872
+Out Blocks : 0
+In Bytes   : 6660542464 (6.20 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 25609.500000
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 01:55:50
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 172764 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 304883.174
+Warmup User Time : 338237.953
+Warmup System Time : 57910.504
+Warmup Cpu Time : 396148.457
+Starting advisor
+Encountered 30000 nodes, advised 292382 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 325.752 seconds (5.43 min)
+User Time  : 406.240 seconds (6.77 min)
+System Time: 84.424 seconds (1.41 min)
+CPU Time   : 490.664 seconds (8.18 min)
+CPU Util.  : 12.55%
+
+RESOURCE USAGE
+Mjr Faults : 1438978
+In Blocks  : 14791656
+Out Blocks : 0
+In Bytes   : 7573327872 (7.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 25609.500000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+==========START EXPERIMENT==========
+f7ffd8ddc5d85cec118afa3034cda112b4172fc7
+PARAM_NUM_VERTICES=100000
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 02:07:12
+Count      : 1
+Warmup Time      : 495636.373
+Warmup User Time : 91615.674
+Warmup System Time : 78765.371
+Warmup Cpu Time : 170381.045
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1283.941 seconds (21.40 min)
+User Time  : 295.888 seconds (4.93 min)
+System Time: 240.374 seconds (4.01 min)
+CPU Time   : 536.262 seconds (8.94 min)
+CPU Util.  : 3.48%
+
+RESOURCE USAGE
+Mjr Faults : 6991035
+In Blocks  : 55928928
+Out Blocks : 0
+In Bytes   : 28636319744 (26.67 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 68922.148438
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 02:36:53
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 285419 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 415349.407
+Warmup User Time : 450257.358
+Warmup System Time : 79097.519
+Warmup Cpu Time : 529354.877
+Starting advisor
+Encountered 80000 nodes, advised 771544 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1197.125 seconds (19.95 min)
+User Time  : 1403.672 seconds (23.39 min)
+System Time: 249.648 seconds (4.16 min)
+CPU Time   : 1653.320 seconds (27.56 min)
+CPU Util.  : 11.51%
+
+RESOURCE USAGE
+Mjr Faults : 6627085
+In Blocks  : 63515400
+Out Blocks : 8
+In Bytes   : 32519884800 (30.29 GB)
+Out Bytes  : 4096 (0.00 GB)
+
+Return value: 68922.148438
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 03:04:34
+Count      : 1
+Warmup Time      : 384470.107
+Warmup User Time : 82024.205
+Warmup System Time : 63415.154
+Warmup Cpu Time : 145439.359
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1069.734 seconds (17.83 min)
+User Time  : 298.984 seconds (4.98 min)
+System Time: 225.604 seconds (3.76 min)
+CPU Time   : 524.588 seconds (8.74 min)
+CPU Util.  : 4.09%
+
+RESOURCE USAGE
+Mjr Faults : 5175748
+In Blocks  : 41408560
+Out Blocks : 0
+In Bytes   : 21201903616 (19.75 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 71263.937500
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 03:28:49
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 205803 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 311444.557
+Warmup User Time : 352783.863
+Warmup System Time : 61596.720
+Warmup Cpu Time : 414380.583
+Starting advisor
+Encountered 80000 nodes, advised 856595 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 978.140 seconds (16.30 min)
+User Time  : 1188.367 seconds (19.81 min)
+System Time: 240.906 seconds (4.02 min)
+CPU Time   : 1429.273 seconds (23.82 min)
+CPU Util.  : 12.18%
+
+RESOURCE USAGE
+Mjr Faults : 4677945
+In Blocks  : 47750480
+Out Blocks : 0
+In Bytes   : 24448245760 (22.77 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 71263.937500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 03:51:12
+Count      : 1
+Warmup Time      : 552193.658
+Warmup User Time : 89397.234
+Warmup System Time : 85019.084
+Warmup Cpu Time : 174416.318
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.92 MB
+rss start  : 1.11 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 1278.302 seconds (21.31 min)
+User Time  : 306.860 seconds (5.11 min)
+System Time: 244.700 seconds (4.08 min)
+CPU Time   : 551.560 seconds (9.19 min)
+CPU Util.  : 3.60%
+
+RESOURCE USAGE
+Mjr Faults : 6714423
+In Blocks  : 53718408
+Out Blocks : 0
+In Bytes   : 27503947776 (25.62 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 71201.257812
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 04:21:45
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 206233 nodes, skipped 157 nodes, 0 second time
+Warmup Time      : 470894.835
+Warmup User Time : 500789.344
+Warmup System Time : 100270.097
+Warmup Cpu Time : 601059.441
+Starting advisor
+Encountered 80000 nodes, advised 877567 nodes, skipped 5 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1329.167 seconds (22.15 min)
+User Time  : 1537.925 seconds (25.63 min)
+System Time: 287.397 seconds (4.79 min)
+CPU Time   : 1825.322 seconds (30.42 min)
+CPU Util.  : 11.44%
+
+RESOURCE USAGE
+Mjr Faults : 5869481
+In Blocks  : 167256008
+Out Blocks : 8
+In Bytes   : 85635108864 (79.75 GB)
+Out Bytes  : 4096 (0.00 GB)
+
+Return value: 71201.257812
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 04:52:31
+Count      : 1
+Warmup Time      : 392517.221
+Warmup User Time : 84206.937
+Warmup System Time : 66411.509
+Warmup Cpu Time : 150618.446
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1035.692 seconds (17.26 min)
+User Time  : 296.632 seconds (4.94 min)
+System Time: 222.716 seconds (3.71 min)
+CPU Time   : 519.348 seconds (8.66 min)
+CPU Util.  : 4.18%
+
+RESOURCE USAGE
+Mjr Faults : 4759070
+In Blocks  : 38073160
+Out Blocks : 0
+In Bytes   : 19494215680 (18.16 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 70765.390625
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 05:16:21
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 213017 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 326810.745
+Warmup User Time : 369007.093
+Warmup System Time : 67206.134
+Warmup Cpu Time : 436213.227
+Starting advisor
+Encountered 80000 nodes, advised 850563 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 973.763 seconds (16.23 min)
+User Time  : 1195.018 seconds (19.92 min)
+System Time: 239.929 seconds (4.00 min)
+CPU Time   : 1434.946 seconds (23.92 min)
+CPU Util.  : 12.28%
+
+RESOURCE USAGE
+Mjr Faults : 4539671
+In Blocks  : 46035872
+Out Blocks : 0
+In Bytes   : 23570366464 (21.95 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 70765.390625
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 05:38:51
+Count      : 1
+Warmup Time      : 402597.481
+Warmup User Time : 85445.177
+Warmup System Time : 68048.587
+Warmup Cpu Time : 153493.764
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.92 MB
+rss start  : 1.11 MB
+rss loaded : 9.03 MB
+
+TIME
+Time       : 1517.990 seconds (25.30 min)
+User Time  : 313.617 seconds (5.23 min)
+System Time: 265.777 seconds (4.43 min)
+CPU Time   : 579.394 seconds (9.66 min)
+CPU Util.  : 3.18%
+
+RESOURCE USAGE
+Mjr Faults : 8640937
+In Blocks  : 69128928
+Out Blocks : 0
+In Bytes   : 35394748416 (32.96 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 71317.640625
+==========AFTER VM STAT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Friend of friends
+Start Time : 12/08/14 06:10:53
+Count      : 1
+Starting advisor
+Encountered 20000 nodes, advised 231954 nodes, skipped 0 nodes, 0 second time
+Warmup Time      : 333853.509
+Warmup User Time : 375287.047
+Warmup System Time : 68149.801
+Warmup Cpu Time : 443436.848
+Starting advisor
+Encountered 80000 nodes, advised 831848 nodes, skipped 4 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--1
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 2
+Memory     : 7.91 MB
+rss start  : 1.11 MB
+rss loaded : 9.02 MB
+
+TIME
+Time       : 1438.704 seconds (23.98 min)
+User Time  : 1651.350 seconds (27.52 min)
+System Time: 271.740 seconds (4.53 min)
+CPU Time   : 1923.091 seconds (32.05 min)
+CPU Util.  : 11.14%
+
+RESOURCE USAGE
+Mjr Faults : 8333377
+In Blocks  : 78762208
+Out Blocks : 88
+In Bytes   : 40326475776 (37.56 GB)
+Out Bytes  : 45056 (0.00 GB)
+
+Return value: 71317.640625
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========

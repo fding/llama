@@ -11,7 +11,7 @@ do
   echo "==========BEFORE VM STAT==========" >> output_tc.log
   sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
   echo "==========LLAMA OUTPUT==========" >> output_tc.log
-  ./bin/benchmark-persistent --run pagerank_push -d db_twitter_reordered/ >> output_tc.log
+  ./bin/benchmark-persistent --run tc_od -d bin/db/ >> output_tc.log
   echo "==========AFTER VM STAT==========" >> output_tc.log
   echo "==========END LLAMA OUTPUT==========" >> output_tc.log
 
@@ -20,7 +20,7 @@ do
   echo "==========BEFORE VM STAT==========" >> output_tc.log
   sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'
   echo "==========LLAMA OUTPUT==========" >> output_tc.log
-  ./bin/benchmark-persistent-madvise --run pagerank_push -d db_twitter_reordered/ >> output_tc.log
+  ./bin/benchmark-persistent-madvise --run tc_od -d bin/db/ >> output_tc.log
   echo "==========AFTER VM STAT==========" >> output_tc.log
   echo "==========END LLAMA OUTPUT==========" >> output_tc.log
 done

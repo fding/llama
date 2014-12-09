@@ -55,7 +55,7 @@
 #include "llama/ll_advisor.h"
 #include "benchmarks/benchmark.h"
 
-#define PARAM_SHORTEST_N 4
+#define PARAM_SHORTEST_N 10000
 #define PARAM_FILENAME "temp.txt"
 
 using std::vector;
@@ -69,6 +69,7 @@ class ll_b_shortest_path : public ll_benchmark<Graph> {
   node_t root;
   node_t requests[PARAM_SHORTEST_N];
   int* dist[2];
+  size_t num_vertices = 0;
 
 public:
 
@@ -93,10 +94,11 @@ public:
   }
 
   virtual void initialize(void) {
-    ifstream input_file;
-    input_file.open(PARAM_FILENAME);
-    for (int i = 0; i < PARAM_SHORTEST_N; i++)
-      input_file >> requests[i];
+	    ifstream input_file;
+	    input_file.open(PARAM_FILENAME);
+      while (input_file >> requests[num_vertices++]);
+      num_vertices--;
+      printf("Done with initialize\n");
   }
 
   /**
@@ -112,7 +114,7 @@ public:
 #ifdef LL_BM_DO_MADVISE
     ll_advisor<Graph> advisor(&G);
 #endif
-    for (int i = 0; i < PARAM_SHORTEST_N-1; i += 2) {
+    for (int i = 0; i < num_vertices - 1; i += 2) {
       node_t first;
       node_t second;
       first = requests[i];
