@@ -52,9 +52,12 @@ DEFAULT_PARAMS = {
 }
 
 Y_LABELS = {
-    'speedup': '% speedup',
-    'time-madvise': 'Time (s)',
-    'time-nomadvise': 'Time (s)',
+    'speedup': '% speedup, warm-cache',
+    'warm_speedup': '% speedup, cold-cache',
+    'time-madvise': 'Time (s), warm-cache',
+    'time-nomadvise': 'Time (s), warm-cache',
+    'time-madvise-warmup': 'Time (s), cold-cache',
+    'time-nomadvise-warmup': 'Time (s), cold-cache',
     'memory-madvise': 'Buffer cache usage (MB)',
     'memory-nomadvise': 'Buffer cache usage (MB)',
     'overhead': 'Buffer cache usage with madvise/Buffer cache usage without madvise',
@@ -65,6 +68,8 @@ LEGENDS = {
     'memory-nomadvise': 'without madvise',
     'time-madvise': 'with madvise',
     'time-nomadvise': 'without madvise',
+    'time-madvise-warmup': 'with madvise',
+    'time-nomadvise-warmup': 'without madvise',
 }
 
 MARKERS = ['bo-', 'r^-', 'g+-']
@@ -81,6 +86,11 @@ def graph_data(data, x, ys, restriction, title, output):
                 filtered.dimension('Time (no madvise; s)'),
                 filtered.dimension('Time (madvise; s)')
             )]
+        elif y == 'warm_speedup':
+            ydata = [100*(1-b/a) for a, b in zip(
+                filtered.dimension('Warmup Time (no madvise; s)'),
+                filtered.dimension('Warmup Time (madvise; s)')
+            )]
         elif y == 'overhead':
             ydata = [b/a for a, b in zip(
                 filtered.dimension('Buffer Cache Usage (no madvise; MB)'),
@@ -90,6 +100,10 @@ def graph_data(data, x, ys, restriction, title, output):
             ydata = filtered.dimension('Time (no madvise; s)')
         elif y == 'time-madvise':
             ydata = filtered.dimension('Time (madvise; s)')
+        elif y == 'time-nomadvise-warmup':
+            ydata = filtered.dimension('Warmup Time (no madvise; s)')
+        elif y == 'time-madvise-warmup':
+            ydata = filtered.dimension('Warmup Time (madvise; s)')
         elif y == 'memory-nomadvise':
             ydata = filtered.dimension('Buffer Cache Usage (no madvise; MB)')
         elif y == 'memory-madvise':

@@ -1,13 +1,12 @@
 import argparse
 import math
 import re
+import numpy as np
+import matplotlib.pyplot as plt
 
 class Experiment(object):
     def __init__(self, commit, params):
         self.commit = commit
-        self.params = dict([
-            tuple(kv.split('=')) for kv in params.split(',')
-        ])
         self.outputs = []
 
 class Results(dict):
@@ -64,14 +63,6 @@ class LogReader(object):
             parts = line.split(':')
             if len(parts) == 2:
                 output[parts[0].strip()] = parts[1].strip()
-        self.current_line = j
-        j = self.wait_for_line('==========END LLAMA OUTPUT==========')
-        if j >= n: return None
-
-        for line in self.lines[self.current_line+1: j]:
-            parts = line.split(':')
-            if len(parts) == 2:
-                output['after ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j+1
 
@@ -86,9 +77,8 @@ class LogReader(object):
             if self.current_line >= n:
                 break
 
-            a = Experiment(self.lines[self.current_line+1], 
-                           self.lines[self.current_line+2])
-            self.current_line += 3
+            a = Experiment(self.lines[self.current_line+1], '')
+            self.current_line += 2 
             next_expt = self.wait_for_line('==========START EXPERIMENT==========')
 
             while True:
@@ -131,30 +121,36 @@ def main():
     experiments = log_reader.parse()
 
     with open(args.output, 'w') as output:
-        output.write('alpha,Cache size,Number of queries,Epoch threshold'
-                     ',Time (no madvise; s),Time (madvise; s),'
-                     'Warmup Time (no madvise; s),Warmup Time (madvise; s)\n'
-                    )
+        output.write('Time (no madvise; s),Time (madvise; s),\n')
         for e in experiments:
-            nm_time = [floatify(k['Time']) for k in e.outputs
-                       if not k.with_madvise]
-            wm_time = [floatify(k['Time']) for k in e.outputs
-                      if k.with_madvise]
-            nm_warmup = [floatify(k['Warmup Time']) for k in e.outputs
-                         if not k.with_madvise]
-            wm_warmup = [floatify(k['Warmup Time']) for k in e.outputs
-                         if k.with_madvise]
+            nm_time = np.array([floatify(k['Time']) for k in e.outputs
+                                 if not k.with_madvise]);
+            wm_time = np.array([floatify(k['Time']) for k in e.outputs
+                                 if k.with_madvise]);
 
-            output.write('%s,%s,%s,%s,%s,%s,%s,%s\n' % (
-                e.params['PARAM_ALPHA'],
-                e.params['PARAM_CACHE_SIZE'],
-                e.params['PARAM_NUM_VERTICES'],
-                e.params['PARAM_EPOCH_THRESHOLD'],
-                mean(nm_time),
-                mean(wm_time),
-                mean(nm_warmup) / 1000.,
-                mean(wm_warmup) / 1000.,
-            ))
+            for i in range(len(nm_time)):
+                output.write('%s,%s\n' % (
+                    nm_time[i],
+                    wm_time[i],
+                ))
+
+            nm_time_filtered = np.array([time for time in nm_time if time > 1])
+            wm_time_filtered = np.array([time for time in wm_time if time > 1])
+            print "number of trials:", len(nm_time_filtered), len(wm_time_filtered)
+
+            percentages = 100 * np.divide(nm_time_filtered - wm_time_filtered,
+                                          nm_time_filtered)
+
+            print percentages
+            print "percentages (mean):", np.mean(percentages)
+            print "% (stdev):", np.std(percentages)
+
+            plt.plot([0, 500], [0, 500], 'k-', ls='--', lw=2)
+            plt.scatter(nm_time, wm_time)
+            plt.axis([0, 500, 0, 500])
+            plt.xlabel('No madvise time (s)')
+            plt.ylabel('Madvise time (s)')
+            plt.show()
 
 if __name__=='__main__':
     main()

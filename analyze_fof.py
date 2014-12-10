@@ -64,14 +64,6 @@ class LogReader(object):
             parts = line.split(':')
             if len(parts) == 2:
                 output[parts[0].strip()] = parts[1].strip()
-        self.current_line = j
-        j = self.wait_for_line('==========END LLAMA OUTPUT==========')
-        if j >= n: return None
-
-        for line in self.lines[self.current_line+1: j]:
-            parts = line.split(':')
-            if len(parts) == 2:
-                output['after ' + parts[0].strip()] = parts[1].strip()
 
         self.current_line = j+1
 
@@ -131,7 +123,7 @@ def main():
     experiments = log_reader.parse()
 
     with open(args.output, 'w') as output:
-        output.write('alpha,Cache size,Number of queries,Epoch threshold'
+        output.write('Number of queries'
                      ',Time (no madvise; s),Time (madvise; s),'
                      'Warmup Time (no madvise; s),Warmup Time (madvise; s)\n'
                     )
@@ -145,11 +137,8 @@ def main():
             wm_warmup = [floatify(k['Warmup Time']) for k in e.outputs
                          if k.with_madvise]
 
-            output.write('%s,%s,%s,%s,%s,%s,%s,%s\n' % (
-                e.params['PARAM_ALPHA'],
-                e.params['PARAM_CACHE_SIZE'],
+            output.write('%s,%s,%s,%s,%s\n' % (
                 e.params['PARAM_NUM_VERTICES'],
-                e.params['PARAM_EPOCH_THRESHOLD'],
                 mean(nm_time),
                 mean(wm_time),
                 mean(nm_warmup) / 1000.,
