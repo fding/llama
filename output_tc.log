@@ -1,0 +1,397 @@
+==========START EXPERIMENT==========
+b40ac65da659e1b4c33ef24cb3a3f2bf4e1c245e
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/09/14 21:03:49
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.37 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2907.441 seconds (48.46 min)
+User Time  : 2669.715 seconds (44.50 min)
+System Time: 14.734 seconds
+CPU Time   : 2684.449 seconds (44.74 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 1856187
+In Blocks  : 20090912
+Out Blocks : 0
+In Bytes   : 10286546944 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/09/14 21:52:18
+Count      : 1
+Starting advisor
+Hi
+Encountered 1202513045 nodes, advised 719119026 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2897.588 seconds (48.29 min)
+User Time  : 5301.946 seconds (88.37 min)
+System Time: 267.581 seconds (4.46 min)
+CPU Time   : 5569.528 seconds (92.83 min)
+CPU Util.  : 16.02%
+
+RESOURCE USAGE
+Mjr Faults : 1856032
+In Blocks  : 20090976
+Out Blocks : 0
+In Bytes   : 10286579712 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/09/14 22:40:37
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2909.345 seconds (48.49 min)
+User Time  : 2670.217 seconds (44.50 min)
+System Time: 14.662 seconds
+CPU Time   : 2684.880 seconds (44.75 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 1856187
+In Blocks  : 20090888
+Out Blocks : 0
+In Bytes   : 10286534656 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/09/14 23:29:07
+Count      : 1
+Starting advisor
+Hi
+Encountered 1202513045 nodes, advised 719119026 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.45 MB
+
+TIME
+Time       : 2899.004 seconds (48.32 min)
+User Time  : 5305.038 seconds (88.42 min)
+System Time: 267.682 seconds (4.46 min)
+CPU Time   : 5572.720 seconds (92.88 min)
+CPU Util.  : 16.02%
+
+RESOURCE USAGE
+Mjr Faults : 1856032
+In Blocks  : 20090976
+Out Blocks : 0
+In Bytes   : 10286579712 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 00:17:27
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2909.640 seconds (48.49 min)
+User Time  : 2670.307 seconds (44.51 min)
+System Time: 14.552 seconds
+CPU Time   : 2684.859 seconds (44.75 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 1856187
+In Blocks  : 20090888
+Out Blocks : 0
+In Bytes   : 10286534656 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 01:05:58
+Count      : 1
+Starting advisor
+Hi
+Encountered 1202513045 nodes, advised 719119026 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2897.344 seconds (48.29 min)
+User Time  : 5303.163 seconds (88.39 min)
+System Time: 266.670 seconds (4.44 min)
+CPU Time   : 5569.833 seconds (92.83 min)
+CPU Util.  : 16.02%
+
+RESOURCE USAGE
+Mjr Faults : 1856032
+In Blocks  : 20090976
+Out Blocks : 0
+In Bytes   : 10286579712 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 01:54:17
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2908.267 seconds (48.47 min)
+User Time  : 2670.316 seconds (44.51 min)
+System Time: 14.237 seconds
+CPU Time   : 2684.553 seconds (44.74 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 1856187
+In Blocks  : 20090904
+Out Blocks : 0
+In Bytes   : 10286542848 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 02:42:46
+Count      : 1
+Starting advisor
+Hi
+Encountered 1202513046 nodes, advised 719119026 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.45 MB
+
+TIME
+Time       : 2900.761 seconds (48.35 min)
+User Time  : 5308.941 seconds (88.48 min)
+System Time: 267.965 seconds (4.47 min)
+CPU Time   : 5576.906 seconds (92.95 min)
+CPU Util.  : 16.02%
+
+RESOURCE USAGE
+Mjr Faults : 1856032
+In Blocks  : 20090976
+Out Blocks : 0
+In Bytes   : 10286579712 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 03:31:08
+Count      : 1
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.46 MB
+
+TIME
+Time       : 2908.543 seconds (48.48 min)
+User Time  : 2670.278 seconds (44.50 min)
+System Time: 14.425 seconds
+CPU Time   : 2684.703 seconds (44.75 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 1856187
+In Blocks  : 20090912
+Out Blocks : 0
+In Bytes   : 10286546944 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+doing LOD with madvise
+Benchmark  : Triangle Counting
+Start Time : 12/10/14 04:19:38
+Count      : 1
+Starting advisor
+Hi
+Encountered 1202513046 nodes, advised 719119026 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 41652230
+# Levels   : 1
+Memory     : 2.36 MB
+rss start  : 2.09 MB
+rss loaded : 4.45 MB
+
+TIME
+Time       : 2902.023 seconds (48.37 min)
+User Time  : 5309.650 seconds (88.49 min)
+System Time: 269.165 seconds (4.49 min)
+CPU Time   : 5578.815 seconds (92.98 min)
+CPU Util.  : 16.02%
+
+RESOURCE USAGE
+Mjr Faults : 1856032
+In Blocks  : 20091000
+Out Blocks : 0
+In Bytes   : 10286592000 (9.58 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 34824916864.000000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
