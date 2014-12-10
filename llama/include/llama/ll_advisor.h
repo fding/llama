@@ -110,6 +110,7 @@ class ll_advisor {
       // printf("last_node=%lu, start=%lu, length=%lu\n", last_node, (*outvtable)[last_node].adj_list_start , (*outvtable)[last_node].level_length);
 
       // outetable->advise(0, last_edge, MADV_RANDOM);
+      printf("Hi\n");
 
       while (true) {
         if (!advisor->still_adding) break;

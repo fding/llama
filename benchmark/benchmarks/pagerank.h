@@ -494,7 +494,7 @@ class ll_b_pagerank_push_ext_madvise : public ll_benchmark<Graph> {
             {
 #ifdef LL_BM_DO_MADVISE
                 // A bit of a hack
-                if (t % 4 == 0) advisor.advise(t);
+                if (t % 12 == 0) advisor.advise(t);
 #endif
                 int t_degree = G.out_degree(t);
                 if (t_degree == 0) continue;
