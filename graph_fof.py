@@ -44,14 +44,6 @@ def read_data(file_name):
 
     return DataSet(header, lines)
 
-
-DEFAULT_PARAMS = {
-    'alpha': 0.5,
-    'Cache size': 1000,
-    'Number of queries': 40000,
-    'Epoch threshold': 4,
-}
-
 Y_LABELS = {
     'speedup': '% speedup, warm-cache',
     'warm_speedup': '% speedup, cold-cache',
@@ -75,9 +67,8 @@ LEGENDS = {
 
 MARKERS = ['bo-', 'r^-', 'g+-']
 
-def graph_data(data, x, ys, restriction, title, output):
-    filtered = data.filter({k: restriction[k] for k in restriction
-                            if k != x})
+def graph_data(data, x, ys, title, output):
+    filtered = data
 
     counter = 0
 
@@ -139,19 +130,6 @@ def main():
                         help='a list of y-axis to plot')
 
     # Filtering arguments
-    parser.add_argument('--alpha', type=float,
-                        default=DEFAULT_PARAMS['alpha'],
-                        help='Alpha value to restrict to')
-    parser.add_argument('--cache', type=float,
-                        default=DEFAULT_PARAMS['Cache size'],
-                        help='Cache size to restrict to')
-    parser.add_argument('--num_queries', type=float,
-                        default=DEFAULT_PARAMS['Number of queries'],
-                        help='Number of queries to restrict to')
-    parser.add_argument('--epoch', type=float,
-                        default=DEFAULT_PARAMS['Epoch threshold'],
-                        help='epoch threshold to restrict to')
-
     parser.add_argument('--title', type=str,
                         default='Untitled graph',
                         help='Title of graph')
@@ -161,12 +139,7 @@ def main():
                         help='Output file of the graph')
 
     args = parser.parse_args()
-    restriction = {'alpha': args.alpha,
-                   'Cache size': args.cache,
-                   'Number of queries': args.num_queries,
-                   'Epoch threshold': args.epoch
-                  }
-    graph_data(read_data(args.csvfile), args.x, args.y, restriction, args.title, args.output)
+    graph_data(read_data(args.csvfile), args.x, args.y, args.title, args.output)
 
 if __name__ == '__main__':
     main()
