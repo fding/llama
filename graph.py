@@ -1,6 +1,7 @@
 import pylab
 from collections import OrderedDict
 import argparse
+import numpy as np
 
 class DataSet(object):
     def __init__(self, headers, ls):
@@ -29,7 +30,7 @@ class DataSet(object):
         return a
 
     def dimension(self, dim):
-        return [h[self.headers[dim]] for h in self.ls]
+        return np.array([h[self.headers[dim]] for h in self.ls])
 
 
 def read_data(file_name):
@@ -97,9 +98,10 @@ def graph_data(data, x, ys, restriction, title, output):
                 filtered.dimension('Buffer Cache Usage (madvise; MB)')
             )]
         elif y == 'time-nomadvise':
-            ydata = filtered.dimension('Time (no madvise; s)')
+            ydata = filtered.dimension('Time (no madvise; s)') + filtered.dimension('Warmup Time (no madvise; s)')
         elif y == 'time-madvise':
-            ydata = filtered.dimension('Time (madvise; s)')
+            ydata = filtered.dimension('Time (madvise; s)') +
+                    filtered.dimension('Warmup Time (madvise; s)')
         elif y == 'time-nomadvise-warmup':
             ydata = filtered.dimension('Warmup Time (no madvise; s)')
         elif y == 'time-madvise-warmup':
