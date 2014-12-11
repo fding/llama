@@ -1,0 +1,5533 @@
+==========START EXPERIMENT==========
+097699d1d90abe74e8d17eaa12cafe355d4a3c07
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:23:10
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 232.351 seconds (3.87 min)
+User Time  : 44.877 seconds
+System Time: 18.900 seconds
+CPU Time   : 63.777 seconds (1.06 min)
+CPU Util.  : 2.29%
+
+RESOURCE USAGE
+Mjr Faults : 1509287
+In Blocks  : 26820728
+Out Blocks : 0
+In Bytes   : 13732212736 (12.79 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:27:04
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34767392 nodes, advised 82714838 nodes, skipped 19130834 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 125.298 seconds (2.09 min)
+User Time  : 72.401 seconds (1.21 min)
+System Time: 49.199 seconds (0.82 min)
+CPU Time   : 121.600 seconds (2.03 min)
+CPU Util.  : 8.09%
+
+RESOURCE USAGE
+Mjr Faults : 263860
+In Blocks  : 40233680
+Out Blocks : 0
+In Bytes   : 20599644160 (19.18 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:29:10
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 532.080 seconds (8.87 min)
+User Time  : 88.559 seconds (1.48 min)
+System Time: 42.112 seconds
+CPU Time   : 130.671 seconds (2.18 min)
+CPU Util.  : 2.05%
+
+RESOURCE USAGE
+Mjr Faults : 4314888
+In Blocks  : 34950016
+Out Blocks : 0
+In Bytes   : 17894408192 (16.67 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:38:04
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 69301174 nodes, advised 131061095 nodes, skipped 39799561 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 189.505 seconds (3.16 min)
+User Time  : 129.878 seconds (2.16 min)
+System Time: 79.143 seconds (1.32 min)
+CPU Time   : 209.021 seconds (3.48 min)
+CPU Util.  : 9.19%
+
+RESOURCE USAGE
+Mjr Faults : 351297
+In Blocks  : 64108232
+Out Blocks : 0
+In Bytes   : 32823414784 (30.57 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:41:15
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.358 seconds
+User Time  : 3.331 seconds
+System Time: 0.406 seconds
+CPU Time   : 3.738 seconds
+CPU Util.  : 87.09%
+
+RESOURCE USAGE
+Mjr Faults : 75
+In Blocks  : 20808
+Out Blocks : 0
+In Bytes   : 10653696 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:41:15
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 3 nodes, advised 132 nodes, skipped 1 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.364 seconds
+User Time  : 3.408 seconds
+System Time: 0.465 seconds
+CPU Time   : 3.873 seconds
+CPU Util.  : 88.69%
+
+RESOURCE USAGE
+Mjr Faults : 889
+In Blocks  : 47096
+Out Blocks : 0
+In Bytes   : 24113152 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:41:16
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.384 seconds
+User Time  : 3.475 seconds
+System Time: 0.416 seconds
+CPU Time   : 3.891 seconds
+CPU Util.  : 84.52%
+
+RESOURCE USAGE
+Mjr Faults : 131
+In Blocks  : 36480
+Out Blocks : 0
+In Bytes   : 18677760 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:41:16
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 38 nodes, advised 346 nodes, skipped 33 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.407 seconds
+User Time  : 3.460 seconds
+System Time: 0.396 seconds
+CPU Time   : 3.856 seconds
+CPU Util.  : 78.99%
+
+RESOURCE USAGE
+Mjr Faults : 550
+In Blocks  : 145072
+Out Blocks : 0
+In Bytes   : 74276864 (0.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:41:16
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 1056.809 seconds (17.61 min)
+User Time  : 133.788 seconds (2.23 min)
+System Time: 87.544 seconds (1.46 min)
+CPU Time   : 221.332 seconds (3.69 min)
+CPU Util.  : 1.75%
+
+RESOURCE USAGE
+Mjr Faults : 6836656
+In Blocks  : 152784848
+Out Blocks : 0
+In Bytes   : 78225842176 (72.85 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 13:58:55
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 109660537 nodes, advised 391471857 nodes, skipped 64083323 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.61 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 1799.321 seconds (29.99 min)
+User Time  : 294.982 seconds (4.92 min)
+System Time: 513.697 seconds (8.56 min)
+CPU Time   : 808.679 seconds (13.48 min)
+CPU Util.  : 3.75%
+
+RESOURCE USAGE
+Mjr Faults : 3806236
+In Blocks  : 899700824
+Out Blocks : 0
+In Bytes   : 460646821888 (429.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 6
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 14:28:56
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 664.868 seconds (11.08 min)
+User Time  : 89.563 seconds (1.49 min)
+System Time: 51.723 seconds (0.86 min)
+CPU Time   : 141.286 seconds (2.35 min)
+CPU Util.  : 1.77%
+
+RESOURCE USAGE
+Mjr Faults : 4007816
+In Blocks  : 85484320
+Out Blocks : 0
+In Bytes   : 43767971840 (40.76 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 6
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 14:40:03
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 74519500 nodes, advised 363528541 nodes, skipped 43074367 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 2333.191 seconds (38.89 min)
+User Time  : 248.890 seconds (4.15 min)
+System Time: 632.298 seconds (10.54 min)
+CPU Time   : 881.187 seconds (14.69 min)
+CPU Util.  : 3.15%
+
+RESOURCE USAGE
+Mjr Faults : 4955038
+In Blocks  : 1253661296
+Out Blocks : 0
+In Bytes   : 641874583552 (597.79 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 7
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:18:58
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 349.112 seconds (5.82 min)
+User Time  : 47.951 seconds (0.80 min)
+System Time: 26.492 seconds
+CPU Time   : 74.443 seconds (1.24 min)
+CPU Util.  : 1.78%
+
+RESOURCE USAGE
+Mjr Faults : 2555955
+In Blocks  : 26462736
+Out Blocks : 0
+In Bytes   : 13548920832 (12.62 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 7
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:24:48
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34630159 nodes, advised 82401677 nodes, skipped 19770579 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 131.165 seconds (2.19 min)
+User Time  : 70.672 seconds (1.18 min)
+System Time: 51.265 seconds (0.85 min)
+CPU Time   : 121.937 seconds (2.03 min)
+CPU Util.  : 7.75%
+
+RESOURCE USAGE
+Mjr Faults : 310156
+In Blocks  : 41405080
+Out Blocks : 0
+In Bytes   : 21199400960 (19.74 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 8
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:27:00
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 261.421 seconds (4.36 min)
+User Time  : 46.555 seconds (0.78 min)
+System Time: 20.148 seconds
+CPU Time   : 66.703 seconds (1.11 min)
+CPU Util.  : 2.13%
+
+RESOURCE USAGE
+Mjr Faults : 1701100
+In Blocks  : 26614656
+Out Blocks : 0
+In Bytes   : 13626703872 (12.69 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 8
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:31:23
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34771490 nodes, advised 80587787 nodes, skipped 19404057 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 118.934 seconds (1.98 min)
+User Time  : 70.957 seconds (1.18 min)
+System Time: 46.738 seconds (0.78 min)
+CPU Time   : 117.695 seconds (1.96 min)
+CPU Util.  : 8.25%
+
+RESOURCE USAGE
+Mjr Faults : 217686
+In Blocks  : 39902160
+Out Blocks : 0
+In Bytes   : 20429905920 (19.03 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 9
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:23
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.382 seconds
+User Time  : 3.474 seconds
+System Time: 0.382 seconds
+CPU Time   : 3.856 seconds
+CPU Util.  : 84.13%
+
+RESOURCE USAGE
+Mjr Faults : 133
+In Blocks  : 34488
+Out Blocks : 0
+In Bytes   : 17657856 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 9
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:24
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 13 nodes, advised 51 nodes, skipped 10 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.375 seconds
+User Time  : 3.579 seconds
+System Time: 0.373 seconds
+CPU Time   : 3.952 seconds
+CPU Util.  : 87.83%
+
+RESOURCE USAGE
+Mjr Faults : 386
+In Blocks  : 51880
+Out Blocks : 0
+In Bytes   : 26562560 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 10
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:24
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.382 seconds
+User Time  : 3.477 seconds
+System Time: 0.351 seconds
+CPU Time   : 3.828 seconds
+CPU Util.  : 83.54%
+
+RESOURCE USAGE
+Mjr Faults : 125
+In Blocks  : 33416
+Out Blocks : 0
+In Bytes   : 17108992 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 10
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:25
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 4 nodes, advised 115 nodes, skipped 2 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.402 seconds
+User Time  : 3.491 seconds
+System Time: 0.467 seconds
+CPU Time   : 3.958 seconds
+CPU Util.  : 82.14%
+
+RESOURCE USAGE
+Mjr Faults : 344
+In Blocks  : 103528
+Out Blocks : 0
+In Bytes   : 53006336 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 11
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:26
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.382 seconds
+User Time  : 3.485 seconds
+System Time: 0.431 seconds
+CPU Time   : 3.917 seconds
+CPU Util.  : 85.54%
+
+RESOURCE USAGE
+Mjr Faults : 131
+In Blocks  : 36488
+Out Blocks : 0
+In Bytes   : 18681856 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 11
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:26
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 8 nodes, advised 349 nodes, skipped 4 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.408 seconds
+User Time  : 3.524 seconds
+System Time: 0.363 seconds
+CPU Time   : 3.887 seconds
+CPU Util.  : 79.36%
+
+RESOURCE USAGE
+Mjr Faults : 568
+In Blocks  : 159752
+Out Blocks : 0
+In Bytes   : 81793024 (0.08 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 12
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:26
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.380 seconds
+User Time  : 3.382 seconds
+System Time: 0.368 seconds
+CPU Time   : 3.750 seconds
+CPU Util.  : 82.24%
+
+RESOURCE USAGE
+Mjr Faults : 119
+In Blocks  : 30800
+Out Blocks : 0
+In Bytes   : 15769600 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 12
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:27
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 4 nodes, advised 129 nodes, skipped 1 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.380 seconds
+User Time  : 3.453 seconds
+System Time: 0.358 seconds
+CPU Time   : 3.811 seconds
+CPU Util.  : 83.61%
+
+RESOURCE USAGE
+Mjr Faults : 369
+In Blocks  : 64976
+Out Blocks : 0
+In Bytes   : 33267712 (0.03 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 13
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:33:27
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 545.771 seconds (9.10 min)
+User Time  : 88.910 seconds (1.48 min)
+System Time: 42.113 seconds
+CPU Time   : 131.023 seconds (2.18 min)
+CPU Util.  : 2.00%
+
+RESOURCE USAGE
+Mjr Faults : 4448063
+In Blocks  : 36182696
+Out Blocks : 0
+In Bytes   : 18525540352 (17.25 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 13
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:42:34
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 69410748 nodes, advised 133249620 nodes, skipped 39430858 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 183.200 seconds (3.05 min)
+User Time  : 129.285 seconds (2.15 min)
+System Time: 77.653 seconds (1.29 min)
+CPU Time   : 206.938 seconds (3.45 min)
+CPU Util.  : 9.41%
+
+RESOURCE USAGE
+Mjr Faults : 281244
+In Blocks  : 64066784
+Out Blocks : 0
+In Bytes   : 32802193408 (30.55 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 14
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:39
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.382 seconds
+User Time  : 3.437 seconds
+System Time: 0.448 seconds
+CPU Time   : 3.885 seconds
+CPU Util.  : 84.71%
+
+RESOURCE USAGE
+Mjr Faults : 123
+In Blocks  : 31320
+Out Blocks : 0
+In Bytes   : 16035840 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 14
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:40
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 3 nodes, advised 137 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.373 seconds
+User Time  : 3.417 seconds
+System Time: 0.444 seconds
+CPU Time   : 3.860 seconds
+CPU Util.  : 86.25%
+
+RESOURCE USAGE
+Mjr Faults : 641
+In Blocks  : 75928
+Out Blocks : 0
+In Bytes   : 38875136 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 15
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:40
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.393 seconds
+User Time  : 3.399 seconds
+System Time: 0.354 seconds
+CPU Time   : 3.753 seconds
+CPU Util.  : 79.65%
+
+RESOURCE USAGE
+Mjr Faults : 173
+In Blocks  : 43936
+Out Blocks : 0
+In Bytes   : 22495232 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000800
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 15
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:40
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 1 nodes, advised 142 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.417 seconds
+User Time  : 3.442 seconds
+System Time: 0.361 seconds
+CPU Time   : 3.803 seconds
+CPU Util.  : 76.03%
+
+RESOURCE USAGE
+Mjr Faults : 322
+In Blocks  : 81424
+Out Blocks : 0
+In Bytes   : 41689088 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000800
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 16
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:41
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.400 seconds
+User Time  : 3.373 seconds
+System Time: 0.391 seconds
+CPU Time   : 3.764 seconds
+CPU Util.  : 78.34%
+
+RESOURCE USAGE
+Mjr Faults : 182
+In Blocks  : 48600
+Out Blocks : 0
+In Bytes   : 24883200 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 16
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:42
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 31 nodes, advised 72 nodes, skipped 25 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.402 seconds
+User Time  : 3.530 seconds
+System Time: 0.391 seconds
+CPU Time   : 3.921 seconds
+CPU Util.  : 81.28%
+
+RESOURCE USAGE
+Mjr Faults : 417
+In Blocks  : 76600
+Out Blocks : 0
+In Bytes   : 39219200 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 17
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:45:42
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 103.876 seconds (1.73 min)
+User Time  : 40.763 seconds
+System Time: 9.037 seconds
+CPU Time   : 49.800 seconds (0.83 min)
+CPU Util.  : 4.00%
+
+RESOURCE USAGE
+Mjr Faults : 175461
+In Blocks  : 29732624
+Out Blocks : 0
+In Bytes   : 15223103488 (14.18 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 17
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:47:27
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34753165 nodes, advised 88222791 nodes, skipped 18780225 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 131.990 seconds (2.20 min)
+User Time  : 72.119 seconds (1.20 min)
+System Time: 51.122 seconds (0.85 min)
+CPU Time   : 123.241 seconds (2.05 min)
+CPU Util.  : 7.78%
+
+RESOURCE USAGE
+Mjr Faults : 229526
+In Blocks  : 41629696
+Out Blocks : 0
+In Bytes   : 21314404352 (19.85 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 18
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 15:49:41
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 644.622 seconds (10.74 min)
+User Time  : 90.339 seconds (1.51 min)
+System Time: 54.315 seconds (0.91 min)
+CPU Time   : 144.655 seconds (2.41 min)
+CPU Util.  : 1.87%
+
+RESOURCE USAGE
+Mjr Faults : 4241270
+In Blocks  : 76204080
+Out Blocks : 0
+In Bytes   : 39016488960 (36.34 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 18
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:00:27
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 74767004 nodes, advised 345196384 nodes, skipped 43548223 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 1607.539 seconds (26.79 min)
+User Time  : 229.181 seconds (3.82 min)
+System Time: 459.489 seconds (7.66 min)
+CPU Time   : 688.670 seconds (11.48 min)
+CPU Util.  : 3.57%
+
+RESOURCE USAGE
+Mjr Faults : 3339636
+In Blocks  : 782031368
+Out Blocks : 0
+In Bytes   : 400400060416 (372.90 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 19
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:27:16
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 110.274 seconds (1.84 min)
+User Time  : 40.467 seconds
+System Time: 8.858 seconds
+CPU Time   : 49.325 seconds (0.82 min)
+CPU Util.  : 3.73%
+
+RESOURCE USAGE
+Mjr Faults : 194957
+In Blocks  : 28408648
+Out Blocks : 0
+In Bytes   : 14545227776 (13.55 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 19
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:29:08
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34586412 nodes, advised 85430394 nodes, skipped 20381640 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 123.623 seconds (2.06 min)
+User Time  : 70.251 seconds (1.17 min)
+System Time: 50.089 seconds (0.83 min)
+CPU Time   : 120.339 seconds (2.01 min)
+CPU Util.  : 8.11%
+
+RESOURCE USAGE
+Mjr Faults : 197650
+In Blocks  : 40091512
+Out Blocks : 0
+In Bytes   : 20526854144 (19.12 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 20
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:31:13
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.360 seconds
+User Time  : 3.462 seconds
+System Time: 0.402 seconds
+CPU Time   : 3.864 seconds
+CPU Util.  : 89.36%
+
+RESOURCE USAGE
+Mjr Faults : 71
+In Blocks  : 19608
+Out Blocks : 0
+In Bytes   : 10039296 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 20
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:31:13
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 8 nodes, advised 903 nodes, skipped 4 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.376 seconds
+User Time  : 3.429 seconds
+System Time: 0.464 seconds
+CPU Time   : 3.892 seconds
+CPU Util.  : 86.24%
+
+RESOURCE USAGE
+Mjr Faults : 376
+In Blocks  : 137104
+Out Blocks : 0
+In Bytes   : 70197248 (0.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 21
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:31:14
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.45 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 527.237 seconds (8.79 min)
+User Time  : 88.287 seconds (1.47 min)
+System Time: 45.745 seconds (0.76 min)
+CPU Time   : 134.033 seconds (2.23 min)
+CPU Util.  : 2.12%
+
+RESOURCE USAGE
+Mjr Faults : 4125442
+In Blocks  : 33692888
+Out Blocks : 0
+In Bytes   : 17250758656 (16.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 21
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:40:02
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 68301875 nodes, advised 146953637 nodes, skipped 41078008 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 185.761 seconds (3.10 min)
+User Time  : 130.585 seconds (2.18 min)
+System Time: 85.287 seconds (1.42 min)
+CPU Time   : 215.872 seconds (3.60 min)
+CPU Util.  : 9.68%
+
+RESOURCE USAGE
+Mjr Faults : 292790
+In Blocks  : 63897952
+Out Blocks : 0
+In Bytes   : 32715751424 (30.47 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 22
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:43:09
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 104.503 seconds (1.74 min)
+User Time  : 40.198 seconds
+System Time: 9.724 seconds
+CPU Time   : 49.923 seconds (0.83 min)
+CPU Util.  : 3.98%
+
+RESOURCE USAGE
+Mjr Faults : 198956
+In Blocks  : 28965456
+Out Blocks : 0
+In Bytes   : 14830313472 (13.81 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 22
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:44:55
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34718225 nodes, advised 78571130 nodes, skipped 19662198 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 135.197 seconds (2.25 min)
+User Time  : 70.763 seconds (1.18 min)
+System Time: 51.709 seconds (0.86 min)
+CPU Time   : 122.472 seconds (2.04 min)
+CPU Util.  : 7.55%
+
+RESOURCE USAGE
+Mjr Faults : 316071
+In Blocks  : 40897128
+Out Blocks : 0
+In Bytes   : 20939329536 (19.50 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 23
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:47:12
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.376 seconds
+User Time  : 3.385 seconds
+System Time: 0.438 seconds
+CPU Time   : 3.823 seconds
+CPU Util.  : 84.69%
+
+RESOURCE USAGE
+Mjr Faults : 125
+In Blocks  : 32464
+Out Blocks : 0
+In Bytes   : 16621568 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 23
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:47:12
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 3 nodes, advised 509 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.05 MB
+
+TIME
+Time       : 0.413 seconds
+User Time  : 3.505 seconds
+System Time: 0.464 seconds
+CPU Time   : 3.969 seconds
+CPU Util.  : 80.05%
+
+RESOURCE USAGE
+Mjr Faults : 540
+In Blocks  : 157952
+Out Blocks : 0
+In Bytes   : 80871424 (0.08 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 24
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:47:12
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 124.341 seconds (2.07 min)
+User Time  : 41.139 seconds
+System Time: 11.452 seconds
+CPU Time   : 52.591 seconds (0.88 min)
+CPU Util.  : 3.52%
+
+RESOURCE USAGE
+Mjr Faults : 478243
+In Blocks  : 27226328
+Out Blocks : 0
+In Bytes   : 13939879936 (12.98 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 24
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:49:18
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34767413 nodes, advised 84016498 nodes, skipped 19738915 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 124.210 seconds (2.07 min)
+User Time  : 70.609 seconds (1.18 min)
+System Time: 49.681 seconds (0.83 min)
+CPU Time   : 120.291 seconds (2.00 min)
+CPU Util.  : 8.07%
+
+RESOURCE USAGE
+Mjr Faults : 205558
+In Blocks  : 40171600
+Out Blocks : 0
+In Bytes   : 20567859200 (19.16 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 25
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:51:23
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 469.946 seconds (7.83 min)
+User Time  : 85.806 seconds (1.43 min)
+System Time: 38.720 seconds
+CPU Time   : 124.525 seconds (2.08 min)
+CPU Util.  : 2.21%
+
+RESOURCE USAGE
+Mjr Faults : 3130864
+In Blocks  : 36578688
+Out Blocks : 0
+In Bytes   : 18728288256 (17.44 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 25
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 16:59:15
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 69353403 nodes, advised 134688941 nodes, skipped 39847357 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 199.184 seconds (3.32 min)
+User Time  : 130.418 seconds (2.17 min)
+System Time: 82.794 seconds (1.38 min)
+CPU Time   : 213.212 seconds (3.55 min)
+CPU Util.  : 8.92%
+
+RESOURCE USAGE
+Mjr Faults : 424487
+In Blocks  : 63876504
+Out Blocks : 0
+In Bytes   : 32704770048 (30.46 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 26
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:02:35
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.22 MB
+rss start  : 1.84 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 152.594 seconds (2.54 min)
+User Time  : 39.930 seconds
+System Time: 14.823 seconds
+CPU Time   : 54.752 seconds (0.91 min)
+CPU Util.  : 2.99%
+
+RESOURCE USAGE
+Mjr Faults : 338172
+In Blocks  : 41691648
+Out Blocks : 0
+In Bytes   : 21346123776 (19.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 26
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:05:09
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 39818728 nodes, advised 110211079 nodes, skipped 29548802 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.22 MB
+rss start  : 1.84 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 346.312 seconds (5.77 min)
+User Time  : 84.619 seconds (1.41 min)
+System Time: 118.626 seconds (1.98 min)
+CPU Time   : 203.245 seconds (3.39 min)
+CPU Util.  : 4.89%
+
+RESOURCE USAGE
+Mjr Faults : 920449
+In Blocks  : 120643240
+Out Blocks : 0
+In Bytes   : 61769338880 (57.53 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 27
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:10:57
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.84 MB
+rss loaded : 8.05 MB
+
+TIME
+Time       : 0.393 seconds
+User Time  : 3.363 seconds
+System Time: 0.453 seconds
+CPU Time   : 3.816 seconds
+CPU Util.  : 80.99%
+
+RESOURCE USAGE
+Mjr Faults : 159
+In Blocks  : 41600
+Out Blocks : 0
+In Bytes   : 21299200 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 27
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:10:58
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34 nodes, advised 250 nodes, skipped 30 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.84 MB
+rss loaded : 8.05 MB
+
+TIME
+Time       : 0.402 seconds
+User Time  : 3.518 seconds
+System Time: 0.404 seconds
+CPU Time   : 3.922 seconds
+CPU Util.  : 81.32%
+
+RESOURCE USAGE
+Mjr Faults : 495
+In Blocks  : 117904
+Out Blocks : 0
+In Bytes   : 60366848 (0.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 28
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:10:58
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 105.762 seconds (1.76 min)
+User Time  : 40.812 seconds
+System Time: 9.171 seconds
+CPU Time   : 49.983 seconds (0.83 min)
+CPU Util.  : 3.94%
+
+RESOURCE USAGE
+Mjr Faults : 190203
+In Blocks  : 29150144
+Out Blocks : 0
+In Bytes   : 14924873728 (13.90 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 28
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:12:45
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34673166 nodes, advised 81814032 nodes, skipped 20024285 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 121.618 seconds (2.03 min)
+User Time  : 69.833 seconds (1.16 min)
+System Time: 49.696 seconds (0.83 min)
+CPU Time   : 119.529 seconds (1.99 min)
+CPU Util.  : 8.19%
+
+RESOURCE USAGE
+Mjr Faults : 215574
+In Blocks  : 39932344
+Out Blocks : 0
+In Bytes   : 20445360128 (19.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 29
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:14:48
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.406 seconds
+User Time  : 3.355 seconds
+System Time: 0.353 seconds
+CPU Time   : 3.708 seconds
+CPU Util.  : 76.19%
+
+RESOURCE USAGE
+Mjr Faults : 174
+In Blocks  : 44792
+Out Blocks : 0
+In Bytes   : 22933504 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 29
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:14:49
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 855 nodes, advised 116 nodes, skipped 850 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.381 seconds
+User Time  : 3.407 seconds
+System Time: 0.472 seconds
+CPU Time   : 3.879 seconds
+CPU Util.  : 84.77%
+
+RESOURCE USAGE
+Mjr Faults : 486
+In Blocks  : 70352
+Out Blocks : 0
+In Bytes   : 36020224 (0.03 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 30
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:14:49
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 368.783 seconds (6.15 min)
+User Time  : 49.281 seconds (0.82 min)
+System Time: 33.474 seconds
+CPU Time   : 82.756 seconds (1.38 min)
+CPU Util.  : 1.87%
+
+RESOURCE USAGE
+Mjr Faults : 2911455
+In Blocks  : 25084288
+Out Blocks : 0
+In Bytes   : 12843155456 (11.96 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 30
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:20:59
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34703937 nodes, advised 88080788 nodes, skipped 19781951 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.21 MB
+rss start  : 1.85 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 118.321 seconds (1.97 min)
+User Time  : 70.291 seconds (1.17 min)
+System Time: 50.455 seconds (0.84 min)
+CPU Time   : 120.747 seconds (2.01 min)
+CPU Util.  : 8.50%
+
+RESOURCE USAGE
+Mjr Faults : 187415
+In Blocks  : 39541752
+Out Blocks : 0
+In Bytes   : 20245377024 (18.85 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 31
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:22:59
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.384 seconds
+User Time  : 3.367 seconds
+System Time: 0.353 seconds
+CPU Time   : 3.720 seconds
+CPU Util.  : 80.77%
+
+RESOURCE USAGE
+Mjr Faults : 135
+In Blocks  : 35448
+Out Blocks : 0
+In Bytes   : 18149376 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 31
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:22:59
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 7 nodes, advised 478 nodes, skipped 3 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.415 seconds
+User Time  : 3.406 seconds
+System Time: 0.434 seconds
+CPU Time   : 3.840 seconds
+CPU Util.  : 77.04%
+
+RESOURCE USAGE
+Mjr Faults : 525
+In Blocks  : 159144
+Out Blocks : 0
+In Bytes   : 81481728 (0.08 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 32
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:23:00
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.361 seconds
+User Time  : 3.446 seconds
+System Time: 0.331 seconds
+CPU Time   : 3.777 seconds
+CPU Util.  : 87.08%
+
+RESOURCE USAGE
+Mjr Faults : 78
+In Blocks  : 20448
+Out Blocks : 0
+In Bytes   : 10469376 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 32
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:23:00
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 49 nodes, advised 127 nodes, skipped 39 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.383 seconds
+User Time  : 3.437 seconds
+System Time: 0.454 seconds
+CPU Time   : 3.891 seconds
+CPU Util.  : 84.61%
+
+RESOURCE USAGE
+Mjr Faults : 562
+In Blocks  : 70584
+Out Blocks : 0
+In Bytes   : 36139008 (0.03 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 33
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:23:01
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.413 seconds
+User Time  : 3.323 seconds
+System Time: 0.406 seconds
+CPU Time   : 3.728 seconds
+CPU Util.  : 75.26%
+
+RESOURCE USAGE
+Mjr Faults : 218
+In Blocks  : 56024
+Out Blocks : 0
+In Bytes   : 28684288 (0.03 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 33
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:23:01
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 105 nodes, advised 415 nodes, skipped 89 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.426 seconds
+User Time  : 3.404 seconds
+System Time: 0.452 seconds
+CPU Time   : 3.856 seconds
+CPU Util.  : 75.48%
+
+RESOURCE USAGE
+Mjr Faults : 757
+In Blocks  : 111880
+Out Blocks : 0
+In Bytes   : 57282560 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 34
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:23:02
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.26 MB
+rss start  : 1.80 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 199.970 seconds (3.33 min)
+User Time  : 78.072 seconds (1.30 min)
+System Time: 16.390 seconds
+CPU Time   : 94.461 seconds (1.57 min)
+CPU Util.  : 3.94%
+
+RESOURCE USAGE
+Mjr Faults : 589954
+In Blocks  : 39978504
+Out Blocks : 0
+In Bytes   : 20468994048 (19.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 34
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:26:23
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 68913171 nodes, advised 130495177 nodes, skipped 40119994 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.31 MB
+rss start  : 1.75 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 197.362 seconds (3.29 min)
+User Time  : 130.939 seconds (2.18 min)
+System Time: 80.223 seconds (1.34 min)
+CPU Time   : 211.162 seconds (3.52 min)
+CPU Util.  : 8.92%
+
+RESOURCE USAGE
+Mjr Faults : 301526
+In Blocks  : 69298400
+Out Blocks : 0
+In Bytes   : 35480780800 (33.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 35
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:29:42
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 274.530 seconds (4.58 min)
+User Time  : 46.160 seconds (0.77 min)
+System Time: 24.715 seconds
+CPU Time   : 70.875 seconds (1.18 min)
+CPU Util.  : 2.15%
+
+RESOURCE USAGE
+Mjr Faults : 1756723
+In Blocks  : 27004416
+Out Blocks : 0
+In Bytes   : 13826260992 (12.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 35
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:34:17
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34657505 nodes, advised 82848779 nodes, skipped 20084989 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 127.597 seconds (2.13 min)
+User Time  : 70.843 seconds (1.18 min)
+System Time: 51.907 seconds (0.87 min)
+CPU Time   : 122.749 seconds (2.05 min)
+CPU Util.  : 8.02%
+
+RESOURCE USAGE
+Mjr Faults : 276936
+In Blocks  : 41265656
+Out Blocks : 0
+In Bytes   : 21128015872 (19.68 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 36
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:36:26
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 383.213 seconds (6.39 min)
+User Time  : 48.678 seconds (0.81 min)
+System Time: 34.220 seconds
+CPU Time   : 82.898 seconds (1.38 min)
+CPU Util.  : 1.80%
+
+RESOURCE USAGE
+Mjr Faults : 3083273
+In Blocks  : 24914832
+Out Blocks : 0
+In Bytes   : 12756393984 (11.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 36
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:42:51
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34770440 nodes, advised 80960665 nodes, skipped 19176867 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 129.693 seconds (2.16 min)
+User Time  : 71.133 seconds (1.19 min)
+System Time: 50.706 seconds (0.85 min)
+CPU Time   : 121.839 seconds (2.03 min)
+CPU Util.  : 7.83%
+
+RESOURCE USAGE
+Mjr Faults : 304197
+In Blocks  : 41034440
+Out Blocks : 0
+In Bytes   : 21009633280 (19.57 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 37
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:45:02
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 114.434 seconds (1.91 min)
+User Time  : 40.499 seconds
+System Time: 9.364 seconds
+CPU Time   : 49.863 seconds (0.83 min)
+CPU Util.  : 3.63%
+
+RESOURCE USAGE
+Mjr Faults : 177688
+In Blocks  : 29665928
+Out Blocks : 0
+In Bytes   : 15188955136 (14.15 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 37
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:46:57
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34601459 nodes, advised 81405015 nodes, skipped 20300614 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 117.834 seconds (1.96 min)
+User Time  : 70.399 seconds (1.17 min)
+System Time: 49.169 seconds (0.82 min)
+CPU Time   : 119.568 seconds (1.99 min)
+CPU Util.  : 8.46%
+
+RESOURCE USAGE
+Mjr Faults : 181343
+In Blocks  : 40572872
+Out Blocks : 0
+In Bytes   : 20773310464 (19.35 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 38
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:48:56
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.363 seconds
+User Time  : 3.326 seconds
+System Time: 0.394 seconds
+CPU Time   : 3.719 seconds
+CPU Util.  : 85.33%
+
+RESOURCE USAGE
+Mjr Faults : 87
+In Blocks  : 22648
+Out Blocks : 0
+In Bytes   : 11595776 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 38
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:48:57
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 10 nodes, advised 46 nodes, skipped 8 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.372 seconds
+User Time  : 3.460 seconds
+System Time: 0.340 seconds
+CPU Time   : 3.800 seconds
+CPU Util.  : 85.05%
+
+RESOURCE USAGE
+Mjr Faults : 236
+In Blocks  : 49064
+Out Blocks : 0
+In Bytes   : 25120768 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 39
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:48:57
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.46 MB
+rss start  : 1.60 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 364.208 seconds (6.07 min)
+User Time  : 82.192 seconds (1.37 min)
+System Time: 31.780 seconds
+CPU Time   : 113.972 seconds (1.90 min)
+CPU Util.  : 2.61%
+
+RESOURCE USAGE
+Mjr Faults : 1991306
+In Blocks  : 38504928
+Out Blocks : 0
+In Bytes   : 19714523136 (18.36 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 39
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:55:03
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 68788197 nodes, advised 135461857 nodes, skipped 40142783 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.50 MB
+rss start  : 1.57 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 182.390 seconds (3.04 min)
+User Time  : 131.354 seconds (2.19 min)
+System Time: 81.219 seconds (1.35 min)
+CPU Time   : 212.573 seconds (3.54 min)
+CPU Util.  : 9.71%
+
+RESOURCE USAGE
+Mjr Faults : 280617
+In Blocks  : 63085256
+Out Blocks : 0
+In Bytes   : 32299651072 (30.08 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 40
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 17:58:07
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.59 MB
+rss start  : 1.48 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 176.748 seconds (2.95 min)
+User Time  : 75.546 seconds (1.26 min)
+System Time: 14.142 seconds
+CPU Time   : 89.688 seconds (1.49 min)
+CPU Util.  : 4.23%
+
+RESOURCE USAGE
+Mjr Faults : 318112
+In Blocks  : 40552920
+Out Blocks : 0
+In Bytes   : 20763095040 (19.34 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 40
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:01:05
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 68594713 nodes, advised 142048799 nodes, skipped 39563770 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 213.482 seconds (3.56 min)
+User Time  : 131.036 seconds (2.18 min)
+System Time: 84.931 seconds (1.42 min)
+CPU Time   : 215.967 seconds (3.60 min)
+CPU Util.  : 8.43%
+
+RESOURCE USAGE
+Mjr Faults : 301322
+In Blocks  : 65128368
+Out Blocks : 0
+In Bytes   : 33345724416 (31.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 41
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:04:39
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 195.314 seconds (3.26 min)
+User Time  : 77.304 seconds (1.29 min)
+System Time: 15.904 seconds
+CPU Time   : 93.208 seconds (1.55 min)
+CPU Util.  : 3.98%
+
+RESOURCE USAGE
+Mjr Faults : 602293
+In Blocks  : 41506624
+Out Blocks : 0
+In Bytes   : 21251391488 (19.79 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 41
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:07:56
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 67275796 nodes, advised 144754450 nodes, skipped 41263524 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 184.765 seconds (3.08 min)
+User Time  : 129.873 seconds (2.16 min)
+System Time: 82.927 seconds (1.38 min)
+CPU Time   : 212.800 seconds (3.55 min)
+CPU Util.  : 9.60%
+
+RESOURCE USAGE
+Mjr Faults : 225837
+In Blocks  : 65050200
+Out Blocks : 0
+In Bytes   : 33305702400 (31.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 42
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:02
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.69 MB
+rss start  : 1.37 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.375 seconds
+User Time  : 3.403 seconds
+System Time: 0.417 seconds
+CPU Time   : 3.820 seconds
+CPU Util.  : 84.89%
+
+RESOURCE USAGE
+Mjr Faults : 98
+In Blocks  : 27264
+Out Blocks : 0
+In Bytes   : 13959168 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 42
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:02
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 10 nodes, advised 257 nodes, skipped 6 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.396 seconds
+User Time  : 3.459 seconds
+System Time: 0.402 seconds
+CPU Time   : 3.861 seconds
+CPU Util.  : 81.25%
+
+RESOURCE USAGE
+Mjr Faults : 408
+In Blocks  : 122856
+Out Blocks : 0
+In Bytes   : 62902272 (0.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 43
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:03
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.396 seconds
+User Time  : 3.391 seconds
+System Time: 0.496 seconds
+CPU Time   : 3.887 seconds
+CPU Util.  : 81.78%
+
+RESOURCE USAGE
+Mjr Faults : 175
+In Blocks  : 45664
+Out Blocks : 0
+In Bytes   : 23379968 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 43
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:03
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 12 nodes, advised 180 nodes, skipped 9 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.69 MB
+rss start  : 1.37 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.414 seconds
+User Time  : 3.582 seconds
+System Time: 0.378 seconds
+CPU Time   : 3.961 seconds
+CPU Util.  : 79.66%
+
+RESOURCE USAGE
+Mjr Faults : 384
+In Blocks  : 121400
+Out Blocks : 0
+In Bytes   : 62156800 (0.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 44
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:04
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.393 seconds
+User Time  : 3.444 seconds
+System Time: 0.394 seconds
+CPU Time   : 3.839 seconds
+CPU Util.  : 81.29%
+
+RESOURCE USAGE
+Mjr Faults : 157
+In Blocks  : 41224
+Out Blocks : 0
+In Bytes   : 21106688 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 44
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:05
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 58 nodes, advised 109 nodes, skipped 47 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.70 MB
+rss start  : 1.37 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.409 seconds
+User Time  : 3.607 seconds
+System Time: 0.361 seconds
+CPU Time   : 3.967 seconds
+CPU Util.  : 80.84%
+
+RESOURCE USAGE
+Mjr Faults : 368
+In Blocks  : 84504
+Out Blocks : 0
+In Bytes   : 43266048 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 45
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:11:05
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.69 MB
+rss start  : 1.38 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 104.808 seconds (1.75 min)
+User Time  : 40.470 seconds
+System Time: 9.372 seconds
+CPU Time   : 49.841 seconds (0.83 min)
+CPU Util.  : 3.96%
+
+RESOURCE USAGE
+Mjr Faults : 305654
+In Blocks  : 28699152
+Out Blocks : 0
+In Bytes   : 14693965824 (13.68 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 45
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:12:51
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34662895 nodes, advised 83680826 nodes, skipped 20157709 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.69 MB
+rss start  : 1.38 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 116.615 seconds (1.94 min)
+User Time  : 70.445 seconds (1.17 min)
+System Time: 50.399 seconds (0.84 min)
+CPU Time   : 120.844 seconds (2.01 min)
+CPU Util.  : 8.64%
+
+RESOURCE USAGE
+Mjr Faults : 206263
+In Blocks  : 42099120
+Out Blocks : 0
+In Bytes   : 21554749440 (20.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 46
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:14:49
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.38 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.372 seconds
+User Time  : 3.373 seconds
+System Time: 0.467 seconds
+CPU Time   : 3.840 seconds
+CPU Util.  : 86.13%
+
+RESOURCE USAGE
+Mjr Faults : 92
+In Blocks  : 25216
+Out Blocks : 0
+In Bytes   : 12910592 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 46
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:14:50
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 3 nodes, advised 430 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.38 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.395 seconds
+User Time  : 3.494 seconds
+System Time: 0.496 seconds
+CPU Time   : 3.991 seconds
+CPU Util.  : 84.30%
+
+RESOURCE USAGE
+Mjr Faults : 454
+In Blocks  : 138424
+Out Blocks : 0
+In Bytes   : 70873088 (0.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 47
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:14:50
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.368 seconds
+User Time  : 3.354 seconds
+System Time: 0.441 seconds
+CPU Time   : 3.795 seconds
+CPU Util.  : 86.03%
+
+RESOURCE USAGE
+Mjr Faults : 89
+In Blocks  : 23296
+Out Blocks : 0
+In Bytes   : 11927552 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 47
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:14:51
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 18 nodes, advised 109 nodes, skipped 12 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.375 seconds
+User Time  : 3.384 seconds
+System Time: 0.375 seconds
+CPU Time   : 3.760 seconds
+CPU Util.  : 83.59%
+
+RESOURCE USAGE
+Mjr Faults : 321
+In Blocks  : 82264
+Out Blocks : 0
+In Bytes   : 42119168 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 48
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:14:51
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 334.146 seconds (5.57 min)
+User Time  : 47.230 seconds (0.79 min)
+System Time: 28.745 seconds
+CPU Time   : 75.975 seconds (1.27 min)
+CPU Util.  : 1.89%
+
+RESOURCE USAGE
+Mjr Faults : 2462392
+In Blocks  : 26263160
+Out Blocks : 0
+In Bytes   : 13446737920 (12.52 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 48
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:20:27
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 34716768 nodes, advised 84268813 nodes, skipped 19489074 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 128.643 seconds (2.14 min)
+User Time  : 70.962 seconds (1.18 min)
+System Time: 51.428 seconds (0.86 min)
+CPU Time   : 122.390 seconds (2.04 min)
+CPU Util.  : 7.93%
+
+RESOURCE USAGE
+Mjr Faults : 311709
+In Blocks  : 40944488
+Out Blocks : 0
+In Bytes   : 20963577856 (19.52 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 49
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:22:36
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.360 seconds
+User Time  : 3.414 seconds
+System Time: 0.409 seconds
+CPU Time   : 3.824 seconds
+CPU Util.  : 88.51%
+
+RESOURCE USAGE
+Mjr Faults : 69
+In Blocks  : 19488
+Out Blocks : 0
+In Bytes   : 9977856 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000800
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 49
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:22:37
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 4 nodes, advised 426 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 0.379 seconds
+User Time  : 3.407 seconds
+System Time: 0.416 seconds
+CPU Time   : 3.823 seconds
+CPU Util.  : 84.10%
+
+RESOURCE USAGE
+Mjr Faults : 423
+In Blocks  : 140448
+Out Blocks : 0
+In Bytes   : 71909376 (0.07 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 50
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:22:37
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 435.690 seconds (7.26 min)
+User Time  : 48.089 seconds (0.80 min)
+System Time: 36.867 seconds
+CPU Time   : 84.957 seconds (1.42 min)
+CPU Util.  : 1.62%
+
+RESOURCE USAGE
+Mjr Faults : 3150298
+In Blocks  : 25356232
+Out Blocks : 0
+In Bytes   : 12982390784 (12.09 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 50
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/10/14 18:29:55
+Count      : 1
+Done with initialize
+Starting advisor
+Hi
+Encountered 39964223 nodes, advised 110192402 nodes, skipped 29645353 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 6.68 MB
+rss start  : 1.39 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 359.309 seconds (5.99 min)
+User Time  : 85.148 seconds (1.42 min)
+System Time: 122.775 seconds (2.05 min)
+CPU Time   : 207.923 seconds (3.47 min)
+CPU Util.  : 4.82%
+
+RESOURCE USAGE
+Mjr Faults : 980086
+In Blocks  : 122959088
+Out Blocks : 0
+In Bytes   : 62955053056 (58.63 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:21:31
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.07 MB
+
+TIME
+Time       : 263.245 seconds (4.39 min)
+User Time  : 112.601 seconds (1.88 min)
+System Time: 18.909 seconds
+CPU Time   : 131.509 seconds (2.19 min)
+CPU Util.  : 4.16%
+
+RESOURCE USAGE
+Mjr Faults : 598905
+In Blocks  : 50871272
+Out Blocks : 0
+In Bytes   : 26046091264 (24.26 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 1
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:25:56
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 103955831 nodes, advised 186442007 nodes, skipped 59922471 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 248.446 seconds (4.14 min)
+User Time  : 191.711 seconds (3.20 min)
+System Time: 106.251 seconds (1.77 min)
+CPU Time   : 297.962 seconds (4.97 min)
+CPU Util.  : 9.99%
+
+RESOURCE USAGE
+Mjr Faults : 288919
+In Blocks  : 85777784
+Out Blocks : 0
+In Bytes   : 43918225408 (40.90 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:30:06
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 271.574 seconds (4.53 min)
+User Time  : 111.890 seconds (1.86 min)
+System Time: 20.276 seconds
+CPU Time   : 132.166 seconds (2.20 min)
+CPU Util.  : 4.06%
+
+RESOURCE USAGE
+Mjr Faults : 638888
+In Blocks  : 50973856
+Out Blocks : 0
+In Bytes   : 26098614272 (24.31 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 2
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:34:38
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 103958898 nodes, advised 190394689 nodes, skipped 61256962 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 255.501 seconds (4.26 min)
+User Time  : 188.844 seconds (3.15 min)
+System Time: 113.284 seconds (1.89 min)
+CPU Time   : 302.128 seconds (5.04 min)
+CPU Util.  : 9.85%
+
+RESOURCE USAGE
+Mjr Faults : 349665
+In Blocks  : 87823984
+Out Blocks : 0
+In Bytes   : 44965879808 (41.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 1288490.250000
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:38:55
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 311.434 seconds (5.19 min)
+User Time  : 46.947 seconds (0.78 min)
+System Time: 27.136 seconds
+CPU Time   : 74.082 seconds (1.23 min)
+CPU Util.  : 1.98%
+
+RESOURCE USAGE
+Mjr Faults : 2219573
+In Blocks  : 26524696
+Out Blocks : 0
+In Bytes   : 13580644352 (12.65 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 3
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:44:08
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34661949 nodes, advised 83301458 nodes, skipped 20271304 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 121.157 seconds (2.02 min)
+User Time  : 71.514 seconds (1.19 min)
+System Time: 49.808 seconds (0.83 min)
+CPU Time   : 121.322 seconds (2.02 min)
+CPU Util.  : 8.34%
+
+RESOURCE USAGE
+Mjr Faults : 283116
+In Blocks  : 41050176
+Out Blocks : 0
+In Bytes   : 21017690112 (19.57 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:46:10
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.384 seconds
+User Time  : 3.440 seconds
+System Time: 0.465 seconds
+CPU Time   : 3.905 seconds
+CPU Util.  : 84.63%
+
+RESOURCE USAGE
+Mjr Faults : 129
+In Blocks  : 34512
+Out Blocks : 0
+In Bytes   : 17670144 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 4
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:46:11
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 70 nodes, advised 69 nodes, skipped 53 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.394 seconds
+User Time  : 3.571 seconds
+System Time: 0.412 seconds
+CPU Time   : 3.982 seconds
+CPU Util.  : 84.17%
+
+RESOURCE USAGE
+Mjr Faults : 409
+In Blocks  : 103104
+Out Blocks : 0
+In Bytes   : 52789248 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:46:11
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 89.824 seconds (1.50 min)
+User Time  : 40.448 seconds
+System Time: 8.289 seconds
+CPU Time   : 48.738 seconds (0.81 min)
+CPU Util.  : 4.52%
+
+RESOURCE USAGE
+Mjr Faults : 124541
+In Blocks  : 29834872
+Out Blocks : 0
+In Bytes   : 15275454464 (14.23 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 5
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:47:42
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34064072 nodes, advised 85233286 nodes, skipped 20640494 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 109.387 seconds (1.82 min)
+User Time  : 69.445 seconds (1.16 min)
+System Time: 49.851 seconds (0.83 min)
+CPU Time   : 119.296 seconds (1.99 min)
+CPU Util.  : 9.09%
+
+RESOURCE USAGE
+Mjr Faults : 152798
+In Blocks  : 41124328
+Out Blocks : 0
+In Bytes   : 21055655936 (19.61 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 6
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:49:33
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.373 seconds
+User Time  : 3.409 seconds
+System Time: 0.362 seconds
+CPU Time   : 3.770 seconds
+CPU Util.  : 84.21%
+
+RESOURCE USAGE
+Mjr Faults : 108
+In Blocks  : 28248
+Out Blocks : 0
+In Bytes   : 14462976 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 6
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:49:33
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 8 nodes, advised 125 nodes, skipped 5 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.386 seconds
+User Time  : 3.452 seconds
+System Time: 0.444 seconds
+CPU Time   : 3.895 seconds
+CPU Util.  : 84.14%
+
+RESOURCE USAGE
+Mjr Faults : 408
+In Blocks  : 93536
+Out Blocks : 0
+In Bytes   : 47890432 (0.04 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 7
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:49:34
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.371 seconds
+User Time  : 3.370 seconds
+System Time: 0.407 seconds
+CPU Time   : 3.778 seconds
+CPU Util.  : 84.96%
+
+RESOURCE USAGE
+Mjr Faults : 78
+In Blocks  : 23176
+Out Blocks : 0
+In Bytes   : 11866112 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 7
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:49:34
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 16 nodes, advised 589 nodes, skipped 7 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.435 seconds
+User Time  : 3.559 seconds
+System Time: 0.396 seconds
+CPU Time   : 3.955 seconds
+CPU Util.  : 75.70%
+
+RESOURCE USAGE
+Mjr Faults : 420
+In Blocks  : 190368
+Out Blocks : 0
+In Bytes   : 97468416 (0.09 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 8
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:49:35
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 354.717 seconds (5.91 min)
+User Time  : 48.328 seconds (0.81 min)
+System Time: 27.827 seconds
+CPU Time   : 76.155 seconds (1.27 min)
+CPU Util.  : 1.79%
+
+RESOURCE USAGE
+Mjr Faults : 2474294
+In Blocks  : 26426672
+Out Blocks : 0
+In Bytes   : 13530456064 (12.60 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 8
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:55:31
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34655718 nodes, advised 82169020 nodes, skipped 19791876 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 131.596 seconds (2.19 min)
+User Time  : 71.431 seconds (1.19 min)
+System Time: 50.022 seconds (0.83 min)
+CPU Time   : 121.453 seconds (2.02 min)
+CPU Util.  : 7.69%
+
+RESOURCE USAGE
+Mjr Faults : 322973
+In Blocks  : 39619064
+Out Blocks : 0
+In Bytes   : 20284960768 (18.89 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 9
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:57:44
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.395 seconds
+User Time  : 3.496 seconds
+System Time: 0.429 seconds
+CPU Time   : 3.925 seconds
+CPU Util.  : 82.78%
+
+RESOURCE USAGE
+Mjr Faults : 152
+In Blocks  : 41416
+Out Blocks : 0
+In Bytes   : 21204992 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 9
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:57:44
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 33 nodes, advised 143 nodes, skipped 30 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.388 seconds
+User Time  : 3.481 seconds
+System Time: 0.397 seconds
+CPU Time   : 3.879 seconds
+CPU Util.  : 83.22%
+
+RESOURCE USAGE
+Mjr Faults : 527
+In Blocks  : 97960
+Out Blocks : 0
+In Bytes   : 50155520 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 10
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 12:57:45
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 430.011 seconds (7.17 min)
+User Time  : 84.136 seconds (1.40 min)
+System Time: 33.100 seconds
+CPU Time   : 117.237 seconds (1.95 min)
+CPU Util.  : 2.27%
+
+RESOURCE USAGE
+Mjr Faults : 2518606
+In Blocks  : 38265216
+Out Blocks : 0
+In Bytes   : 19591790592 (18.25 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 10
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:04:56
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 69452876 nodes, advised 133710680 nodes, skipped 39815255 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 179.458 seconds (2.99 min)
+User Time  : 129.773 seconds (2.16 min)
+System Time: 78.583 seconds (1.31 min)
+CPU Time   : 208.355 seconds (3.47 min)
+CPU Util.  : 9.68%
+
+RESOURCE USAGE
+Mjr Faults : 288942
+In Blocks  : 62768800
+Out Blocks : 0
+In Bytes   : 32137625600 (29.93 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 11
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:07:57
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 171.731 seconds (2.86 min)
+User Time  : 43.246 seconds
+System Time: 16.221 seconds
+CPU Time   : 59.468 seconds (0.99 min)
+CPU Util.  : 2.89%
+
+RESOURCE USAGE
+Mjr Faults : 911417
+In Blocks  : 27011200
+Out Blocks : 0
+In Bytes   : 13829734400 (12.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 11
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:10:50
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34748917 nodes, advised 80780873 nodes, skipped 19776107 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 120.652 seconds (2.01 min)
+User Time  : 70.805 seconds (1.18 min)
+System Time: 48.590 seconds (0.81 min)
+CPU Time   : 119.394 seconds (1.99 min)
+CPU Util.  : 8.25%
+
+RESOURCE USAGE
+Mjr Faults : 185115
+In Blocks  : 39594016
+Out Blocks : 0
+In Bytes   : 20272136192 (18.88 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 12
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:12:52
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.369 seconds
+User Time  : 3.429 seconds
+System Time: 0.440 seconds
+CPU Time   : 3.870 seconds
+CPU Util.  : 87.43%
+
+RESOURCE USAGE
+Mjr Faults : 96
+In Blocks  : 25600
+Out Blocks : 0
+In Bytes   : 13107200 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 12
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:12:52
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 7 nodes, advised 127 nodes, skipped 1 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.394 seconds
+User Time  : 3.476 seconds
+System Time: 0.425 seconds
+CPU Time   : 3.901 seconds
+CPU Util.  : 82.53%
+
+RESOURCE USAGE
+Mjr Faults : 266
+In Blocks  : 108104
+Out Blocks : 0
+In Bytes   : 55349248 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000700
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 13
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:12:53
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 106.458 seconds (1.77 min)
+User Time  : 40.846 seconds
+System Time: 9.600 seconds
+CPU Time   : 50.446 seconds (0.84 min)
+CPU Util.  : 3.95%
+
+RESOURCE USAGE
+Mjr Faults : 296106
+In Blocks  : 28273056
+Out Blocks : 0
+In Bytes   : 14475804672 (13.48 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 13
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:14:40
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34533874 nodes, advised 83269105 nodes, skipped 20452351 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 112.402 seconds (1.87 min)
+User Time  : 69.994 seconds (1.17 min)
+System Time: 50.018 seconds (0.83 min)
+CPU Time   : 120.012 seconds (2.00 min)
+CPU Util.  : 8.90%
+
+RESOURCE USAGE
+Mjr Faults : 186036
+In Blocks  : 40497520
+Out Blocks : 0
+In Bytes   : 20734730240 (19.31 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 14
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:16:34
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.370 seconds
+User Time  : 3.440 seconds
+System Time: 0.419 seconds
+CPU Time   : 3.859 seconds
+CPU Util.  : 86.93%
+
+RESOURCE USAGE
+Mjr Faults : 83
+In Blocks  : 22056
+Out Blocks : 0
+In Bytes   : 11292672 (0.01 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 14
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:16:34
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 3 nodes, advised 328 nodes, skipped 0 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.377 seconds
+User Time  : 3.468 seconds
+System Time: 0.461 seconds
+CPU Time   : 3.928 seconds
+CPU Util.  : 86.84%
+
+RESOURCE USAGE
+Mjr Faults : 412
+In Blocks  : 111016
+Out Blocks : 0
+In Bytes   : 56840192 (0.05 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 15
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:16:35
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 101.473 seconds (1.69 min)
+User Time  : 40.962 seconds
+System Time: 9.013 seconds
+CPU Time   : 49.975 seconds (0.83 min)
+CPU Util.  : 4.10%
+
+RESOURCE USAGE
+Mjr Faults : 167233
+In Blocks  : 28990728
+Out Blocks : 0
+In Bytes   : 14843252736 (13.82 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 15
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:18:17
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34739257 nodes, advised 87977488 nodes, skipped 19974340 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 115.909 seconds (1.93 min)
+User Time  : 70.143 seconds (1.17 min)
+System Time: 50.894 seconds (0.85 min)
+CPU Time   : 121.036 seconds (2.02 min)
+CPU Util.  : 8.70%
+
+RESOURCE USAGE
+Mjr Faults : 198342
+In Blocks  : 38834584
+Out Blocks : 0
+In Bytes   : 19883307008 (18.52 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 16
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:20:15
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 200.337 seconds (3.34 min)
+User Time  : 77.464 seconds (1.29 min)
+System Time: 16.050 seconds
+CPU Time   : 93.514 seconds (1.56 min)
+CPU Util.  : 3.89%
+
+RESOURCE USAGE
+Mjr Faults : 612193
+In Blocks  : 38696400
+Out Blocks : 0
+In Bytes   : 19812556800 (18.45 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 16
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:23:36
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 68668924 nodes, advised 131967612 nodes, skipped 40268918 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 199.666 seconds (3.33 min)
+User Time  : 130.353 seconds (2.17 min)
+System Time: 82.914 seconds (1.38 min)
+CPU Time   : 213.268 seconds (3.55 min)
+CPU Util.  : 8.90%
+
+RESOURCE USAGE
+Mjr Faults : 515465
+In Blocks  : 62154400
+Out Blocks : 0
+In Bytes   : 31823052800 (29.64 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 17
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:26:57
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.379 seconds
+User Time  : 3.499 seconds
+System Time: 0.387 seconds
+CPU Time   : 3.886 seconds
+CPU Util.  : 85.40%
+
+RESOURCE USAGE
+Mjr Faults : 111
+In Blocks  : 31656
+Out Blocks : 0
+In Bytes   : 16207872 (0.02 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 17
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:26:58
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 7 nodes, advised 204 nodes, skipped 2 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 0.405 seconds
+User Time  : 3.511 seconds
+System Time: 0.400 seconds
+CPU Time   : 3.912 seconds
+CPU Util.  : 80.58%
+
+RESOURCE USAGE
+Mjr Faults : 403
+In Blocks  : 118752
+Out Blocks : 0
+In Bytes   : 60801024 (0.06 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 0.000600
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 18
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:26:58
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 284.235 seconds (4.74 min)
+User Time  : 46.735 seconds (0.78 min)
+System Time: 25.700 seconds
+CPU Time   : 72.435 seconds (1.21 min)
+CPU Util.  : 2.12%
+
+RESOURCE USAGE
+Mjr Faults : 1825997
+In Blocks  : 26994688
+Out Blocks : 0
+In Bytes   : 13821280256 (12.87 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 18
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:31:44
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34670080 nodes, advised 85775129 nodes, skipped 19916381 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 126.507 seconds (2.11 min)
+User Time  : 71.158 seconds (1.19 min)
+System Time: 52.791 seconds (0.88 min)
+CPU Time   : 123.949 seconds (2.07 min)
+CPU Util.  : 8.16%
+
+RESOURCE USAGE
+Mjr Faults : 276076
+In Blocks  : 40401608
+Out Blocks : 0
+In Bytes   : 20685623296 (19.26 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 19
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:33:51
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 192.044 seconds (3.20 min)
+User Time  : 77.493 seconds (1.29 min)
+System Time: 15.326 seconds
+CPU Time   : 92.819 seconds (1.55 min)
+CPU Util.  : 4.03%
+
+RESOURCE USAGE
+Mjr Faults : 420944
+In Blocks  : 40342880
+Out Blocks : 0
+In Bytes   : 20655554560 (19.24 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 19
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:37:05
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 69300311 nodes, advised 135447640 nodes, skipped 40489150 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.62 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 187.345 seconds (3.12 min)
+User Time  : 131.257 seconds (2.19 min)
+System Time: 79.785 seconds (1.33 min)
+CPU Time   : 211.042 seconds (3.52 min)
+CPU Util.  : 9.39%
+
+RESOURCE USAGE
+Mjr Faults : 255901
+In Blocks  : 63980656
+Out Blocks : 0
+In Bytes   : 32758095872 (30.51 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 858993.437500
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+NO_MADVISE
+TRIAL 20
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:40:13
+Count      : 1
+Done with initialize
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 381.247 seconds (6.35 min)
+User Time  : 49.354 seconds (0.82 min)
+System Time: 34.303 seconds
+CPU Time   : 83.657 seconds (1.39 min)
+CPU Util.  : 1.83%
+
+RESOURCE USAGE
+Mjr Faults : 3044122
+In Blocks  : 24870512
+Out Blocks : 0
+In Bytes   : 12733702144 (11.86 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+WITH_MADVISE
+TRIAL 20
+==========BEFORE VM STAT==========
+==========LLAMA OUTPUT==========
+Benchmark  : Shortest path
+Start Time : 12/09/14 13:46:36
+Count      : 1
+Done with initialize
+Starting advisor
+last_node=61578414, start=1468365181, length=1
+Encountered 34765312 nodes, advised 84761605 nodes, skipped 19064942 nodes, 0 second time
+
+Node type  : 64-bit
+Edge type  : 64-bit
+Deletions  : no
+Levels     : 0--0
+Type       : persistence_cont
+
+# Nodes    : 61578415
+# Levels   : 1
+Memory     : 5.63 MB
+rss start  : 2.43 MB
+rss loaded : 8.06 MB
+
+TIME
+Time       : 118.992 seconds (1.98 min)
+User Time  : 70.984 seconds (1.18 min)
+System Time: 50.595 seconds (0.84 min)
+CPU Time   : 121.579 seconds (2.03 min)
+CPU Util.  : 8.51%
+
+RESOURCE USAGE
+Mjr Faults : 226523
+In Blocks  : 41184808
+Out Blocks : 0
+In Bytes   : 21086621696 (19.64 GB)
+Out Bytes  : 0 (0.00 GB)
+
+Return value: 429496.718750
+==========AFTER VM STAT==========
+==========END LLAMA OUTPUT==========
+
