@@ -1,4 +1,4 @@
-Number of queries,Time (no madvise; s),Time (madvise; s),Warmup Time (no madvise; s),Warump Time (madvise; s)
+Number of queries,Time (no madvise; s),Time (madvise; s),Warmup Time (no madvise; s),Warmup Time (madvise; s)
 1000,0.0,0.0,35.8804676,28.3837488
 2000,0.0,0.0,66.8790062,51.1278928
 5000,0.0,0.0,144.8367986,115.4641816
